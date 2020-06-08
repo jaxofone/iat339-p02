@@ -1,0 +1,420 @@
+
+/*<!--The structure of this CSS document was built from referencing Weeks 2's lab tutorials-->*/
+html {
+	line-height: 1.8rem;
+	padding: 3rem 3rem;
+}
+
+body {
+	font-family: "Suisse Intl Regular", Verdana, sans-serif; 
+	margin: 0rem;
+	font-size: 0.9rem;
+	letter-spacing: 0.03rem;
+}
+
+p, figcaption {
+	max-width: 38rem;
+}
+
+/*Referenced Stack Overflow for bg colour to adjust to text length*/
+h1.template {
+	font-family: "Suisse Intl Regular", Verdana, sans-serif; 
+	display: inline-block;
+	padding-bottom: 0;
+	border-bottom: 1.5px solid #000;
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+}
+
+h1 {
+	font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; 
+	font-size: 1.8rem;
+	letter-spacing: 0.08rem;
+	text-align: center;
+}
+
+
+h2 {
+	font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; 
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	letter-spacing: 0.08rem;
+}
+
+
+h2.landing, h2.support {
+	margin-top: 4rem;
+}
+
+h2.shop, h2.check-out {
+	margin-top: -15rem;
+}
+
+h2.services {
+	margin-top: 10rem;
+}
+
+h3 {
+	font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; 
+	font-size: 1.2rem;
+	margin-bottom: 0;
+	letter-spacing: 0.04rem;
+	text-align: center;
+}
+
+.nav-secondary-item {
+	max-width: 100%;
+	margin-top: 2rem;
+}
+
+/* Nav bar tutorial from https://www.w3schools.com/howto/howto_css_navbar_border.asp */
+.nav-secondary-item a  {
+	padding: 10px 19px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 0.05rem;
+	color: #20605A;
+	border: 2px solid #20605A;
+	font-size: .8rem
+}
+
+.nav-secondary-item a:hover, .nav-secondary-item a:active  {
+	background-color: #20605A;
+	color: white;
+}
+
+section {
+	padding-bottom: 5rem;
+	padding-top: 2rem;
+}
+
+section#task1, section#task2, section#task3, section#task4, section#task5 {
+	padding-bottom: 30px;
+}
+
+section.wireframes img {
+	width: 80%;
+    height: auto;
+}
+
+section.mockups img {
+	width: 60%;
+	height: auto;
+}
+
+figure {
+	margin-left: 0;
+}
+
+code {
+	background: #EFEFEF;
+	padding: 0.2rem;
+	display: block;
+	max-width: 50rem;
+	font-size: 0.7rem;
+	line-height: 0.9rem;
+}
+
+section.definition p, .citations p {
+	padding-bottom: 2.5rem;
+}
+section h1 {
+	font-family: "SuisseIntl-Normal", Verdana, sans-serif; 
+	font-weight: 600;
+	font-size: .9rem;
+	margin-bottom: 0;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+/* ---------- Interactive Elements ---------- */
+/* In-Text Link */
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	background-color: white;
+	color: #20605A;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+section.in-text a {
+	text-decoration: underline black;
+	padding: .25rem .25rem;
+}
+
+section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
+	color: white;
+	background-color: #0B6108;
+	text-decoration: none;
+	transition: color 0.5s;
+	padding: .25rem .5rem;
+	max-width: 8rem;
+}
+
+
+/* Buttons */
+.btn-main, .btn-submit { /*-Referenced John Fauld's "Styling Form Buttons" article for styling buttons -->*/
+	font-family: "Suisse Intl Regular", Verdana, sans-serif; 
+	font-size: 0.7rem;
+	color: white;
+	background-color: #004C45;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	border-radius: 1.2rem;
+	opacity: 0.9;
+	border: none;
+	margin-top: 2rem;
+}
+
+.btn-main:hover, .btn-main:focus, .btn-submit:hover, .btn-submit:focus { /*Reference W3schools.com for styling button hover*/
+	opacity: 1;
+}
+
+/* Colour Swatches */
+div {
+	height: 150px;
+	display: inline-block;
+}
+
+div p.colour {
+	padding: 2rem;
+}
+
+div.white {
+	background-color: #ffffff;
+	border: 1px solid #EFEFEF;
+}
+
+div.green {
+	background-color: #20605A;
+	color: #ffffff;
+}
+
+div.grey {
+	background-color: #474747;
+	color: #ffffff;
+}
+
+div.beige {
+	background-color: #F2EAE4;
+}
+
+div.pink {
+	background-color: #DDAAA0;
+}
+
+div.white p, div.beige p, div.pink p, div.grey p, div.green p {
+	max-width: 13rem;
+}
+
+div.grey p.blk-text, div.green p.blk-text  {
+	color: #000;
+}
+
+/* Form */
+input[type=text] {
+  max-width: 50rem;
+  padding: 5px 10px; /*top and bottom, right and left*/
+  display: block;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-sizing: border-box;
+} 
+
+input[type=text]:hover, input[type=text]:active {
+  border: 1px solid #20605A;
+  transition-property: border-color;
+  transition-duration:0.4s;
+  opacity: .5;
+} 
+
+/* Remove default outline on text inputs from https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: #20605A;
+} /* ---------- Interactive Elements Ends ---------- */
+
+/* ---------- Text Styling ---------- */
+/* Headings */
+h1.web {
+	font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; 
+	font-size: 3rem;
+	margin-bottom: 0;
+	letter-spacing: 0.04rem;
+	text-transform: none;
+}
+
+h2.web {
+	font-size: 2rem;
+}
+
+h3.web {
+	font-family: "SuisseIntl-Normal", Verdana, sans-serif; 
+	font-weight: 600;
+	font-size: .9rem;
+	margin-bottom: 0;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	text-align: left;
+} /* ---------- Text Styling Ends ---------- */
+
+
+/* ---------- Modular Elements ---------- */
+/* Hero Advertising */
+/*p.announcement-bar {
+	background-color: #004C45;
+	color: #FFFFFF;
+	flex: 1 1 auto; 				  
+	max-width: 100%;
+	padding: .7rem;
+	text-align: center;
+	margin: 0;
+} */
+
+.container-hero img {
+	width: 100%;
+	height: auto;
+} 
+
+.container-hero  h1 {
+	font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; 
+	font-size: 2.5rem;
+	margin-bottom: 0;
+	letter-spacing: 0.06rem;
+	text-transform: none;
+	align-items: center;
+	flex: 1 1 auto; 
+}
+
+.container-hero {
+	position: relative;
+}
+
+.top-left {
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+}
+
+.top-left h1 {
+  color: #474747;
+  max-width: 30rem;
+  line-height: 4rem;
+}
+
+.top-left button {
+	margin-top: 1rem;
+} /* Hero Advertising Ends */
+
+
+/* Product Listing */
+.container-product-listing {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 40%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.container-product-listing:hover .image {
+  opacity: 0.5;
+}
+
+.container-product-listing:hover .btn-position {
+  opacity: 1;
+}
+
+.btn-quick-add {
+  	font-family: "Suisse Intl Regular", Verdana, sans-serif; 
+	font-size: 0.7rem;
+	color: #474747;
+	background-color: #fff;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+	padding: 0.5rem 1rem;
+	border-radius: 1.2rem;
+	opacity: 0.9;
+	border: none;
+}
+
+.btn-position {
+  opacity: 0;
+  position: absolute;
+  top: 160%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+p.price {
+	margin-top: -1rem;
+	color: #474747;
+	font-size: .8rem;
+}
+
+.container-product-listing figcaption {
+	text-transform: uppercase;
+	letter-spacing: .08rem;
+	padding-top: 0.5rem;
+	color: #474747;
+	font-weight: 900;
+} /* Product Listing Ends*/
+
+/* Shipping Details */
+.form {
+  width: 80%;
+  font-family: "Suisse Intl Regular", Verdana, sans-serif; 
+}
+
+label {
+  color: #474747;
+  font-family: "Suisse Intl Regular", Verdana, sans-serif; 
+}
+
+.btn-submit {
+	width: 10%;
+}
+
+#address{
+	width: 30%;
+}	
+
+#pc {
+	width: 10%;
+}
+
+#province, #city {
+	width: 20%;
+}
+
+#fname, #lname, #email-ad {
+	width: 30%;
+}
+
+#phone-number {
+	width: 15%;
+}
+
+label {
+	margin-bottom: .5rem;
+}
+
+input {
+	margin-bottom: 2rem;
+} /* Shipping Details Ends */
+
+/* ---------- Modular Elements Ends ---------- */
+

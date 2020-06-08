@@ -1,0 +1,295 @@
+
+/* The basic structure was built from referencing Weeks 3's lab tutorials */
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+/* ------ Nav Bar ------ */
+.nav-container, .grid-container {
+	display: -webkit-flex; 			/* Supports older browsers */
+	display: -ms-flex; 				/* Supports Internet 10 */
+	display: flex;
+	flex-wrap: -webkit-flex; 
+	flex-wrap: -ms-flex; 	
+	flex-wrap: wrap;
+	justify-content: space-around; 
+}
+
+.nav-items a  {
+	padding-bottom: 0.3rem;
+	padding-top: 0.5rem;
+}
+
+nav a {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	color: black;
+	display: inline-block;
+	padding: 0rem 3.25rem 0.25rem 3.25rem;
+	text-decoration: none;
+	letter-spacing: 0.09em;
+}
+
+.nav-container {
+	box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.05); /* Box shadow from https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+	align-items: center; /* Center align items from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	padding: 1rem;
+} 
+
+/* ------ Main Grid Container & Components ------ */
+.grid-container {
+	padding-bottom: 90rem;
+}
+
+.g-block {
+	background-color: #eee;
+ 	border: .5px dashed #333;
+ 	text-align: center;
+}
+
+.g-block.footer {
+	height: 200px;
+	flex: 1 1 100%;
+}
+
+/* ------ Landing Page Template ------ */
+.g-block.col-1of1-xs {
+	height: 30px;
+	flex: 1 1 100%;
+}
+
+.g-block.col-1of1-s{
+	height: 55px;
+	flex: 1 1 100%;
+}
+
+.g-block.col-1of1-lg {
+	height: 350px;
+	flex: 1 1 100%;
+}
+
+.g-block.col-1of3, .g-block.col-2of3, .g-block.col-3of3 {
+	height: 200px;
+	flex: 1 1 20%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+.g-block.col-1of2, .g-block.col-1of2-reverse {
+	height: 300px;
+	flex: 1 1 60%;
+}
+
+.g-block.col-2of2, .g-block.col-2of2-reverse {
+	height: 300px;
+	flex: 1 1 40%;
+}
+
+.g-block#title{ 
+	height: 50px;
+	flex: 3 1 100%;
+}
+
+.g-block.input-row1, .g-block.input-row4  {
+	height: 30px;
+	flex: 1 1 27%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+}
+
+.g-block.input-row2 {
+	height: 30px;
+	flex: 2 1 57%;
+}
+
+.g-block.input-row3 {
+	height: 30px;
+	flex: 1 1 17%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-right:0.7rem;
+}
+
+.g-block.button { 
+	height: 50px;
+	flex: 1 1 3%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 1.5rem;
+}
+
+.g-block.blank {
+	background-color: #FFF;
+	flex: 2 1 30%;
+}
+
+/* ------ Support Template ------ */ 
+.side-nav-container {
+	height: 300px;
+  	display: flex;
+  	flex-direction: column;
+ 	flex: 1 1 25%;
+ 	background-color: #eee;
+ 	border: .5px dashed #333;
+ 	text-align: center;
+}
+
+.body-container {
+	display: flex;
+  	flex-direction: column;
+	height: 800px;
+	flex: 1 1 75%;
+	background-color: #eee;
+ 	border: .5px dashed #333;
+ 	text-align: center;
+}
+
+.side-nav-container .menu-item1, .side-nav-container .menu-item2, .side-nav-container .menu-item3,
+.body-container  .menu-item1, .body-container  .menu-item2, .body-container .menu-item3 {
+	background-color: #ddd;
+	border: .5px dashed #333;
+	margin: .75rem;
+	text-align: center;
+}
+
+.side-nav-container.menu-item1, .side-nav-container.menu-item2, .side-nav-container.menu-item3 {
+	height: 100px;
+	flex: 1 1 20%;
+}
+
+/* ------ Cart Template ------ */
+.cart-container {
+	display: flex;
+  	flex-direction: row;
+	height: 500px;
+	flex: 1 1 100%;
+	background-color: #eee;
+ 	border: .5px dashed #333;
+ }
+
+/*.cost-container{
+	display: flex;
+  	flex-direction: row;
+	height: 300px;
+	width: 50%
+	flex: 1 1 100%;
+	background-color: #eee;
+ 	border: .5px dashed #333;
+}*/
+
+.title-container .row-1of4, .title-container .row-2of4, .title-container .row-3of4, .title-container .row-4of4 {
+	background-color: #ddd;
+	border: .5px dashed #333;
+	margin: .75rem;
+	text-align: center;
+	flex: 1 1 50%;
+}
+
+
+.cart-container .col-1of4, .cart-container .col-2of4, .cart-container .col-3of4, .cart-container .col-4of4  {
+	background-color: #ddd;
+	border: .5px dashed #333;
+	margin: .75rem;
+	text-align: center;
+	flex: 1 1 100%;
+}
+
+/* ------ Services Template ------ */
+.g-block#blank-row-1of1 {
+	background-color: #FFF;
+	flex: 1 1 100%;
+	height: 200px;
+}
+
+.g-block.col-1of2-equal, .g-block.col-2of2-equal {
+	height: 200px;
+	flex: 1 1 20%;
+	margin-right: 10rem;
+	margin-left: 10rem;
+	margin-bottom: 10rem;
+	margin-bottom: 10rem;
+	margin-top: 1rem;
+}
+
+
+/* ---------- Media Queries ---------- */
+/* Phone and below */
+@media (max-width: 37em) {
+	.btn-submit {
+		width: 100%;
+	}
+
+	.nav-secondary-item {
+		max-width: 100%;
+		margin-top: 5rem;
+	}
+
+	.nav-secondary-item a  {
+		padding: 15px 19px;
+		margin-top: 5rem;
+	}
+
+	.top-left {
+	  position: absolute;
+	  top: 0rem;
+	  left: 5rem;
+	}
+
+	.top-left h1 {
+	  max-width: 15rem;
+	  font-size: 1.5rem;
+	}
+
+	.top-left button {
+		margin-top: 1rem;
+	} 
+
+	h2.services{
+		margin-top: 50rem;
+	}
+
+	 h2.landing, h2.shop {
+	 	margin-top: 20rem;
+	 }
+}
+
+/* Tablet and below */
+@media (max-width: 48em) {
+	.btn-submit {
+		width: 40%;
+	}
+}
+
+/* Desktop and below */
+@media (max-width: 75em) {
+	.top-left {
+	  position: absolute;
+	  top: 4rem;
+	  left: 5rem;
+	}
+
+	.top-left h1 {
+	  max-width: 40rem;
+	}
+
+	.top-left button {
+		margin-top: 1rem;
+	} 
+
+	h2.services{
+		margin-top: 50rem;
+	}
+
+	 h2.landing {
+	 	margin-top: 10rem;
+	 }
+
+	 h2.shop {
+	 	margin-top: -10rem;
+	 }
+}
+

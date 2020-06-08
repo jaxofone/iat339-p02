@@ -1,0 +1,42 @@
+
+/*<!--The structure of this CSS document was built from referencing Weeks 2's lab tutorials-->*/
+
+/*Font types are from Google Fonts*/
+@font-face {
+	font-family: 'Freight Big Pro Bold';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/FreightBigPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Freight Big Pro SemiBold';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/FreightBigPro-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Freight Big Pro Book';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/FreightBigPro-Book.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Freight Big Pro Medium';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/FreightBigPro-Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Suisse Intl Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/SuisseIntl-Regular.otf') format('opentype');
+}
+
+
+
+

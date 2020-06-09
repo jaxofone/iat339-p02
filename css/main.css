@@ -16,14 +16,40 @@ p, figcaption {
 	max-width: 38rem;
 }
 
+.nav-secondary-item {
+	max-width: 100%;
+	margin-top: 2rem;
+}
+
+/* Nav bar tutorial from https://www.w3schools.com/howto/howto_css_navbar_border.asp */
+.nav-secondary-item a  {
+	padding: 10px 19px;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	color: #20605A;
+	border: 2px solid #20605A;
+	font-size: .8rem
+}
+
+.nav-secondary-item a:hover, .nav-secondary-item a:active  {
+	background-color: #20605A;
+	color: white;
+}
+
+
 /*Referenced Stack Overflow for bg colour to adjust to text length*/
 h1.template {
 	font-family: "Suisse Intl Regular", Verdana, sans-serif; 
 	display: inline-block;
 	padding-bottom: 0;
+	padding-top: 4rem;
 	border-bottom: 1.5px solid #000;
 	letter-spacing: 0.1rem;
 	font-size: 0.8rem;
+}
+
+section h1 {
+		padding-top: 4rem;
 }
 
 h1 {
@@ -42,7 +68,7 @@ h2 {
 }
 
 
-h2.landing, h2.support {
+/*h2.landing, h2.support {
 	margin-top: 4rem;
 }
 
@@ -52,7 +78,7 @@ h2.shop, h2.check-out {
 
 h2.services {
 	margin-top: 10rem;
-}
+}*/
 
 h3 {
 	font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; 
@@ -62,30 +88,18 @@ h3 {
 	text-align: center;
 }
 
-.nav-secondary-item {
-	max-width: 100%;
-	margin-top: 2rem;
-}
+nav.grid {
+	box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.05); /* Box shadow from https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+	justify-content: center;  /*Center align items from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+	padding: 1rem;
+} 
 
-/* Nav bar tutorial from https://www.w3schools.com/howto/howto_css_navbar_border.asp */
-.nav-secondary-item a  {
-	padding: 10px 19px;
-	text-transform: uppercase;
-	font-weight: 900;
-	letter-spacing: 0.05rem;
-	color: #20605A;
-	border: 2px solid #20605A;
-	font-size: .8rem
-}
-
-.nav-secondary-item a:hover, .nav-secondary-item a:active  {
-	background-color: #20605A;
-	color: white;
+.grid a {
+	padding-bottom: 0;
 }
 
 section {
 	padding-bottom: 5rem;
-	padding-top: 2rem;
 }
 
 section#task1, section#task2, section#task3, section#task4, section#task5 {
@@ -97,9 +111,23 @@ section.wireframes img {
     height: auto;
 }
 
-section.mockups img {
+section.sitemap img, section.mockups img {
 	width: 60%;
 	height: auto;
+}
+
+section.definition p, .citations p {
+	padding-bottom: 2.5rem;
+}
+
+section h1 {
+	font-family: "SuisseIntl-Normal", Verdana, sans-serif; 
+	font-weight: 600;
+	font-size: .9rem;
+	margin-bottom: 0;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	text-align: left;
 }
 
 figure {
@@ -113,25 +141,14 @@ code {
 	max-width: 50rem;
 	font-size: 0.7rem;
 	line-height: 0.9rem;
+	margin-bottom: 5rem;
 }
 
-section.definition p, .citations p {
-	padding-bottom: 2.5rem;
-}
-section h1 {
-	font-family: "SuisseIntl-Normal", Verdana, sans-serif; 
-	font-weight: 600;
-	font-size: .9rem;
-	margin-bottom: 0;
-	letter-spacing: 0.1rem;
-	text-transform: uppercase;
-	text-align: left;
-}
 
 /* ---------- Interactive Elements ---------- */
-/* In-Text Link */
+/* ------ In-Text Link ------*/
 a {
-	color: black;
+	color: #339F95;
 	text-decoration: none;
 }
 
@@ -157,26 +174,44 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 }
 
 
-/* Buttons */
-.btn-main, .btn-submit { /*-Referenced John Fauld's "Styling Form Buttons" article for styling buttons -->*/
+/* ------ Buttons ------*/
+.btn-main { /*-Referenced John Fauld's "Styling Form Buttons" article for styling buttons -->*/
 	font-family: "Suisse Intl Regular", Verdana, sans-serif; 
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	color: white;
 	background-color: #004C45;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
-	padding: 0.5rem 1rem;
+	padding: 0.7rem 1.5rem;
 	border-radius: 1.2rem;
 	opacity: 0.9;
 	border: none;
 	margin-top: 2rem;
 }
 
+.btn-submit {
+	/*font-family: "Suisse Intl Regular", Verdana, sans-serif; */
+	font-size: 0.9rem;
+	color: #004C45;
+	background-color: #fff;
+	letter-spacing: 0.1rem;
+	border: none;
+	text-transform: uppercase;
+	opacity: 0.9;
+	font-weight: 1000;
+	margin-top: 2rem;
+	padding: 0;
+}
+
 .btn-main:hover, .btn-main:focus, .btn-submit:hover, .btn-submit:focus { /*Reference W3schools.com for styling button hover*/
 	opacity: 1;
 }
 
-/* Colour Swatches */
+.btn-submit:hover, .btn-submit:focus { 
+	border-bottom: 2px solid #004C45;
+}
+
+/* ------ Colour Swatches ------*/
 div {
 	height: 150px;
 	display: inline-block;
@@ -184,6 +219,8 @@ div {
 
 div p.colour {
 	padding: 2rem;
+	margin: 0;
+	text-align: center;
 }
 
 div.white {
@@ -217,22 +254,28 @@ div.grey p.blk-text, div.green p.blk-text  {
 	color: #000;
 }
 
-/* Form */
-input[type=text] {
-  max-width: 50rem;
+/* ------ Forms ------*/
+input {
+  /*max-width: 50rem;*/
   padding: 5px 10px; /*top and bottom, right and left*/
   display: block;
-  border: 1px solid #eee;
+  border: 1px solid #C8C8C8;
   border-radius: 4px;
   box-sizing: border-box;
+  color: #474747;
+  margin: 0;
 } 
 
-input[type=text]:hover, input[type=text]:active {
+input[type=text]:hover{
   border: 1px solid #20605A;
   transition-property: border-color;
   transition-duration:0.4s;
   opacity: .5;
 } 
+
+input[type=text]:focus {
+	color: #474747;
+}
 
 /* Remove default outline on text inputs from https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
 input:focus,
@@ -240,7 +283,8 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: #20605A;
-} /* ---------- Interactive Elements Ends ---------- */
+} 
+
 
 /* ---------- Text Styling ---------- */
 /* Headings */
@@ -264,90 +308,117 @@ h3.web {
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	text-align: left;
-} /* ---------- Text Styling Ends ---------- */
+}
 
 
 /* ---------- Modular Elements ---------- */
-/* Hero Advertising */
-/*p.announcement-bar {
-	background-color: #004C45;
-	color: #FFFFFF;
-	flex: 1 1 auto; 				  
-	max-width: 100%;
-	padding: .7rem;
-	text-align: center;
-	margin: 0;
-} */
+/* ------ Nav Bar ------*/
 
-.container-hero img {
-	width: 100%;
-	height: auto;
-} 
+nav {
+	position: unset;
+}
 
-.container-hero  h1 {
-	font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; 
-	font-size: 2.5rem;
+nav-item {
 	margin-bottom: 0;
-	letter-spacing: 0.06rem;
-	text-transform: none;
-	align-items: center;
-	flex: 1 1 auto; 
 }
 
-.container-hero {
-	position: relative;
+nav a {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	color: black;
+	display: inline-block;
+	padding: 0rem 3.25rem 0.25rem 3.25rem;
+	text-decoration: none;
+	letter-spacing: 0.09em;
 }
 
-.top-left {
-  position: absolute;
-  top: 10rem;
-  left: 5rem;
+/* ------ Hero Advertising ------*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url("../img/hero-img.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 30rem;
 }
 
-.top-left h1 {
+.hero .text {
+	padding-top: 7rem;
+	padding-left: 3rem;
+}
+
+.hero h1 {
+  font-family: "Freight Big Pro";
+  font-size: 3rem;
+  text-transform: none;
   color: #474747;
   max-width: 30rem;
   line-height: 4rem;
 }
 
-.top-left button {
+.hero button {
 	margin-top: 1rem;
-} /* Hero Advertising Ends */
+} 
+
+/* ------ Review Post -------- */
+.review p.author {
+	color: #474747;
+}
+
+.review h2, .review-body p  {
+	color: #474747;
+}
+
+.review-body p {
+	margin-top: -1rem;
+}
+
+.review-star-rating p {
+  color: #FED670;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
 
 
-/* Product Listing */
+/* ------ Product Listing -------- */
 .container-product-listing {
   position: relative;
 }
 
-.image {
-  opacity: 1;
-  display: block;
+.container-product-listing img {
   width: 40%;
   height: auto;
   transition: .5s ease;
-  backface-visibility: hidden;
+  padding: 0;
+  margin: 0;
 }
 
-.container-product-listing:hover .image {
-  opacity: 0.5;
+figure.product-item:hover img {
+  opacity: 0.4;
 }
 
-.container-product-listing:hover .btn-position {
+figure.product-item:hover .btn-position {
   opacity: 1;
 }
 
 .btn-quick-add {
   	font-family: "Suisse Intl Regular", Verdana, sans-serif; 
-	font-size: 0.7rem;
-	color: #474747;
-	background-color: #fff;
+	font-size: 0.8rem;
+	color: #20605A;
+	border: 2px solid #20605A;
+	/*background-color: #fff;*/
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
 	padding: 0.5rem 1rem;
 	border-radius: 1.2rem;
+	font-weight: 900;
 	opacity: 0.9;
-	border: none;
+}
+
+.btn-quick-add:hover {
+	color: #fff;
+    background-color: #20605A;
 }
 
 .btn-position {
@@ -360,61 +431,76 @@ h3.web {
 }
 
 p.price {
-	margin-top: -1rem;
+	margin-top: -.1rem;
 	color: #474747;
-	font-size: .8rem;
+	font-size: .9rem;
+	white-space: nowrap;
 }
 
+
 .container-product-listing figcaption {
-	text-transform: uppercase;
+	font-family: "Freight Big Pro", Verdana, sans-serif; 
+	font-size: 1.5rem;
 	letter-spacing: .08rem;
 	padding-top: 0.5rem;
 	color: #474747;
-	font-weight: 900;
-} /* Product Listing Ends*/
+} 
 
-/* Shipping Details */
-.form {
-  width: 80%;
-  font-family: "Suisse Intl Regular", Verdana, sans-serif; 
+
+/* ------ Shipping Details ------ */
+
+form .name-item, form .contact-item, form .grid-col-1of3 {
+	padding-right: 4rem;
 }
+
+form {
+	padding-top: 2rem;
+}
+
+form .btn-item {
+	float: right;
+	padding-right: 35rem;
+}
+
 
 label {
-  color: #474747;
+  color: #20605A;
   font-family: "Suisse Intl Regular", Verdana, sans-serif; 
-}
-
-.btn-submit {
-	width: 10%;
+  margin-bottom: .5rem;
 }
 
 #address{
-	width: 30%;
+	width: 25rem;
 }	
 
 #pc {
-	width: 10%;
+	width: 14rem;
 }
 
 #province, #city {
-	width: 20%;
+	width: 13rem;
 }
 
 #fname, #lname, #email-ad {
-	width: 30%;
+	width: 17rem;
 }
 
 #phone-number {
-	width: 15%;
-}
-
-label {
-	margin-bottom: .5rem;
+	width: 10rem;
 }
 
 input {
 	margin-bottom: 2rem;
-} /* Shipping Details Ends */
+}
 
+
+/* ------ Support Template ------ */ 
+.side-nav-container .menu-item1, .side-nav-container .menu-item2, .side-nav-container .menu-item3,
+.body-container  .menu-item1, .body-container  .menu-item2, .body-container .menu-item3 {
+	background-color: #ddd;
+	border: .5px dashed #333;
+	margin: .75rem;
+	text-align: center;
+}
 /* ---------- Modular Elements Ends ---------- */
 

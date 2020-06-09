@@ -5,7 +5,7 @@
 		
 	<head>
 		<meta charset="utf-8">
-		<title>PO1: Styleguide</title>
+		<title>Style Guide</title>
 
 		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
     	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,55 +18,55 @@
 	</head>
 
 	<body>
-		<h1>Four Seasons Floral Style Guide</h1>
+		<h1>Style Guide</h1>
 
-		<!--Navigation Bar-->
-		 <nav class="nav-container">
-			<a href="index.html">Home</a>
-			<a href="wireframes.html">Wireframes</a>
-			<a href='sitemap.html'>Site Map</a>
-			<a href="styleguide.html">Styleguide</a>
-			<a href="citations.html">Citations</a>
-		</nav>  <!--Navigation Bar Ends-->
+		<header>
+			<!--Navigation Bar-->
+			 <nav class="grid">
+				<a href="index.html">Home</a>
+				<a href="wireframes.html">Wireframes</a>
+				<a href="styleguide.html">Styleguide</a>
+				<a href="citations.html">Citations</a>
+			</nav> 
 
 
-		<!--Secondary Nav Bar (Anchor Links)-->
-		<nav class="nav-secondary-item">
-			<a href="#interactive-elements">Interactive Elements</a>
-			<a href="#text-styling">Text Styling</a>
-			<a href='#modular-elements'>Modular Elements</a>
-		 </nav> <!--Secondary Nav Bar (Anchor Links) Ends-->
+			<!--Secondary Nav Bar (Anchor Links)-->
+			<nav class="nav-secondary-item">
+				<a href="#interactive-elements">Interactive Elements</a>
+				<a href="#text-styling">Text Styling</a>
+				<a href='#modular-elements'>Modular Elements</a>
+			 </nav> 
+		</header>
 
 			<!-- .interactive-elements -->
 			<section id="interactive-elements">
 				
 				<section>
 					<h1>In-text Link</h1>
-						<h2> Sample: </h2>
-							This is an <a href="#">in-text link.</a>
 						<h2>CSS Code:</h2>
-						<code>
-							a { <br>
-								color: black; <br>
-								text-decoration: none; <br>
-							} <br>
+							<code>
+								a { <br>
+									color: #339F95; <br>
+									text-decoration: none; <br>
+								} <br>
 
-							a:hover, a:focus, a:active { <br>
-								background-color: white; <br>
-								color: #20605A; <br>
-								text-decoration: none; <br>
-								transition: color 0.5s; <br>
-							}
+								a:hover, a:focus, a:active { <br>
+									background-color: white; <br>
+									color: #20605A; <br>
+									text-decoration: none; <br>
+									transition: color 0.5s; <br>
+								}
+							</code>
 
-						</code>
-						<h2>HTML Code:</h2>
-		       			 <code>&lt;a href="#"&gt;an in-text link&lt;/a&gt;.</code>
+							<h2>HTML Code:</h2>
+			       			 <code>&lt;a href="#"&gt;an in-text link&lt;/a&gt;.</code>
+
+			       			 <h2> Sample: </h2>
+								This is an <a href="#">in-text link.</a>
 		       	</section>
 
 		       	<section>
 			       	<h1>CTA Button</h1>
-						<h2> Sample: </h2>
-							<button type="button" class="btn-main">Shop Bouquets</button>
 						<h2>CSS Code:</h2>
 						<code>
 							.btn-main-cta { <br>
@@ -86,19 +86,21 @@
 								opacity: 1;
 							}
 						</code>
+
 						<h2>HTML Code:</h2>
 		       			 <code>&lt;button type="button" class ="btn-main"&gt; Shop Bouquets &lt;/button&gt; 
 		       			 </code>
+
+		       			 <h2> Sample: </h2>
+							<button type="button" class="btn-main">Shop Bouquets</button>
 		       	</section> 
 
 		       
 		       	<section>
 			       	<h1>Submit and Reset Buttons (Forms)</h1>
-						<h2> Sample: </h2>
-							<button type="button" class="btn-submit">Submit → </button>
 						<h2>CSS Code:</h2>
 			       			 <code>
-			       			 	.btn-main-cta { <br>
+			       			 	.btn-submit  { <br>
 								font-family: "Suisse Intl Regular", Verdana, sans-serif; <br>
 								font-size: 0.7rem; <br>
 								color: white; <br>
@@ -109,34 +111,35 @@
 								border-radius: 1.2rem; <br>
 								opacity: 0.9; <br>
 								border: none; <br>
-							} <br>
+							 <br>
 
 							.btn-submit:hover, .btn-submit:focus{ <br>
-								opacity: 1;
+								opacity: 1; <br>
+								border-bottom: 2px solid #004C45;<br>
 							}
 			       			 </code>
+
 						<h2>HTML Code:</h2>
 			       			 <code>&lt;button type="button" class ="btn-submit"&gt; Submit &lt;/button&gt; 
 			       			 </code>
+
+			       		<h2> Sample: </h2>
+							<button type="button" class="btn-submit">Submit → </button>
 		       	</section>
 
 		    
 		       	<section>
 			       	<h1>Text Input Field & Label</h1>
-						<h2> Sample: </h2>
-							<!-- <form action="/action_page.php" method="get"> -->
-							  <label for="email">Email Address</label>
-							  <input type="text" id="email" name="email" placeholder='name@domain.com'>
-							<!-- </form> Form tag referenced from https://www.w3schools.com/tags/tag_form.asp -->
 						<h2>CSS Code:</h2>
 		       			 <code>
 		       			 	input[type=text] { <br>
   							  max-width: 50rem; <br>
 							  padding: 5px 10px; <br>
 							  display: block; <br>
-							  border: 1px solid #20605A; <br>
+							  border: 1px solid #C8C8C8; <br>
 							  border-radius: 4px; <br>
 							  box-sizing: border-box; <br>
+							  color: #474747;<br>
 							} <br>
 
 							input[type=text]:hover, input[type=text]:active  { <br>
@@ -146,11 +149,15 @@
 							  opacity: .5; <br>
 							} <br>
 
+							input[type=text]:focus { <br>
+								color: #474747; <br>
+							} <br>
+
 							input:focus, select:focus, textarea:focus, button:focus { <br>
 							   outline: none; <br>
 							}
-
 		       			 </code>
+
 						<h2>HTML Code:</h2>
 		       				<code>
 		       					&lt;form action="/action_page.php" method="get"&gt; <br>
@@ -158,6 +165,12 @@
 								&lt;input type="text" id="email" name="email" placeholder='name@domain.com'&gt; <br>
 								&lt;/form&gt;
 		       				</code>
+
+		       			<h2> Sample: </h2>
+							<!-- <form action="/action_page.php" method="get"> -->
+							  <label for="email">Email Address</label>
+							  <input type="text" id="email" name="email" placeholder='name@domain.com'>
+							<!-- </form> Form tag referenced from https://www.w3schools.com/tags/tag_form.asp -->
 		       	</section>
 
 		       	
@@ -166,14 +179,16 @@
 					<h2> Sample: </h2>
 						<div class="white"> <!--Divs referenced from Week 3's lecture-->
 							<p class ="colour">
+								White <br>
 								HEX #FFFFFF <br>
-								RGB 255 255 255
+								RGB 255 255 255 
 							<!-- </p>
 							<p>Used as a background colour for webpages, and navigation bars and sections.</p> -->
 
 						</div>
 						<div class="green">
 							<p class ="colour">
+								Forest Green <br>
 								HEX #20605A <br>
 								RGB 32 96 90
 							</p>
@@ -181,6 +196,7 @@
 						</div>
 						<div class="grey">
 							<p class ="colour">
+								Grey <br>
 								HEX #474747 <br>
 								RGB 71 71 71
 							</p>
@@ -188,6 +204,7 @@
 						</div>
 						<div class="beige">
 							<p class ="colour">
+								Beige <br>
 								HEX #F2EAE4 <br>
 								RGB 242 234 228
 							</p>
@@ -195,6 +212,7 @@
 						</div>
 						<div class="pink">
 							<p class ="colour">
+								Dusty Rose <br>
 								HEX #DDAAA0 <br>
 								RGB 221 170 160
 							</p>
@@ -210,10 +228,6 @@
 			<section id="text-styling">
 				<section>
 					<h1>Headings</h1>
-						<h2> Sample: </h2>
-							<h1 class="web"> Heading 1</h1>
-							<h2 class="web"> Heading 2</h2>
-							<h3 class="web"> Heading 3</h3>
 						<h2>CSS Code:</h2>
 		       			 <code>
 		       			 	h1.web { <br>
@@ -237,59 +251,78 @@
 								text-transform: uppercase; <br>
 							}
 		       			 </code>
+
 						<h2>HTML Code:</h2>
 		       			 <code>
 		       			 	&lt;h1&gt;Heading 1&lt;h1&gt; <br>
 		       			 	&lt;h2&gt;Heading 2&lt;h2&gt; <br>
 		       			 	&lt;h3&gt;Heading 3&lt;h3&gt;
 		       			 </code>
+
+		       			 <h2> Sample: </h2>
+							<h1 class="web"> Heading 1</h1>
+							<h2 class="web"> Heading 2</h2>
+							<h3 class="web"> Heading 3</h3>
        			 </section> 
 
 		       	
        			<section>
 			       	<h1>Paragraph</h1>
-						<h2> Sample: </h2>
-							<p> We source our flowers from local suppliers, lowering our carbon footprint and providing the freshest blooms to you.</p>
-							<h2>Sample Code:</h2>
-			       			 <code>&lt;p&gt;We source our flowers from local suppliers, lowering our carbon footprint and providing the freshest blooms to you.&lt;/p&gt;</code>
+
+			       	<h2>CSS Code:</h2>
+			       	 <code>
+			       	 	font-family: "Suisse Intl Regular", Verdana, sans-serif;  <br>
+						margin: 0rem;  <br>
+						font-size: 0.9rem;  <br>
+						letter-spacing: 0.03rem;  <br>
+			       	 	max-width: 38rem; <br>
+			       	 </code>
+
+			       	<h2>HTML Code:</h2>
+			       	 <code>&lt;p&gt;We source our flowers from local suppliers, lowering our carbon footprint and providing the freshest blooms to you.&lt;/p&gt;</code>
+						
+					<h2> Sample: </h2>
+						<p> We source our flowers from local suppliers, lowering our carbon footprint and providing the freshest blooms to you.</p>
 		       	</section> 
 
 		       	
 		       	<section>
 			       	<h1>Bulleted Lists</h1>
+				       	<h2>HTML Code:</h2>
+				       			 <code>
+				       			 	&lt;ul&gt; <br>
+				       			 	&lt;li&gt;List item&lt;/li&gt; <br>
+				       			 	&lt;li&gt;List item&lt;/li&gt; <br>
+				       			 	&lt;li&gt;List item&lt;/li&gt; <br>
+				       			 	&lt;/ul&gt;
+				       			 </code>
 						<h2> Sample: </h2>
 							<ul>
-								<li> List item </li>
-								<li> List item </li>
-								<li> List item </li>
+								<li> Consulation - either inperson, over the phone, or online </li>
+								<li> Moodboard </li>
+								<li> Continued design support </li>
+								<li> Delivery and on-site styling </li>
 							</ul>
-							<h2>HTML Code:</h2>
-			       			 <code>
-			       			 	&lt;ul&gt; <br>
-			       			 	&lt;li&gt;List item&lt;/li&gt; <br>
-			       			 	&lt;li&gt;List item&lt;/li&gt; <br>
-			       			 	&lt;li&gt;List item&lt;/li&gt; <br>
-			       			 	&lt;/ul&gt;
-			       			 </code>
 		       	</section>
 
 		       	
 		       	<section>
 			       	<h1>Numbered Lists</h1>
-						<h2> Sample: </h2>
+						<h2>HTML Code:</h2>
+		       			 <code>
+		       			 	&lt;ol&gt; <br>
+		       			 	&lt;li&gt;List item&lt;/li&gt; <br>
+		       			 	&lt;li&gt;List item&lt;/li&gt; <br>
+		       			 	&lt;li&gt;List item&lt;/li&gt; <br>
+		       			 	&lt;/ol&gt;
+		       			 </code>
+
+		       			 <h2> Sample: </h2>
 							<ol>
 								<li> List item </li>
 								<li> List item </li>
 								<li> List item </li>
 							</ol>
-							<h2>HTML Code:</h2>
-			       			 <code>
-			       			 	&lt;ol&gt; <br>
-			       			 	&lt;li&gt;List item&lt;/li&gt; <br>
-			       			 	&lt;li&gt;List item&lt;/li&gt; <br>
-			       			 	&lt;li&gt;List item&lt;/li&gt; <br>
-			       			 	&lt;/ol&gt;
-			       			 </code>
 		       	</section>    		 
 			</section> <!-- .text-styling ends -->
 
@@ -298,23 +331,9 @@
 			<section id="modular-elements">
 				<section>
 					<h1>Navigation Bar</h1>
-						<h2> Sample: </h2>
-							<nav class="nav-container">
-								<a href="#">Shop</a>
-								<a href="#">Our Services</a>
-								<a href="#">About Us</a>
-								<a href="#"><img src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
-								<a href="#">Support</a>
-								<a href="#">
-									<img src="img/icons/person-icon.png" alt="Green icon of a person" width="30" height="30">
-								</a>
-								<a href="#">
-									<img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart" width="30" height="30">
-								</a>
-							</nav> 
 						<h2>CSS Code:</h2>
 			       			 <code>
-			       			 	.nav-container {
+			       			 	.grid {
 				       			 	display: -webkit-flex;  <br>		
 									display: -ms-flex; 	 <br>				
 									display: flex; <br>	
@@ -330,7 +349,7 @@
 
 						<h2>HTML Code:</h2>
 							<code>
-								&lt;nav class="nav-container"&gt; <br>
+								&lt;nav class="grid"&gt; <br>
 									&lt;a href="#"&gt;Shop&lt;/a&gt; <br>
 									&lt;a href="#"&gt;Our Services&lt;/a&gt; <br>
 									&lt;a href="#"&gt;About Us&lt;/a&gt; <br>
@@ -346,23 +365,33 @@
 									&lt;/a&gt; <br>
 								&lt;/nav&gt; <br>
 							</code>
+
+						<h2> Sample: </h2>
+							<nav class="grid">
+						          <div class="grid-col-1of2 web-title">
+						                 <!-- <a href="index.html">Four Seasons Floral</a> -->
+						                 <a href="#"><img src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
+						          </div>
+				                  <div class="grid-col-1of6">
+				                    	<a href="#">Shop</a>
+				                  </div>
+				                  <div class="grid-col-1of6">
+				                      	<a href="#">Services</a>
+				                  </div>
+				                  <div class="grid-col-1of6">
+				                      	<a href="#">About Us</a>
+				                  </div>
+				                  <div class="grid-col-1of6">
+				                     	 <a href="#">Support</a>
+				                  </div>
+				                  <div class="grid-col-1of6">
+				                     	 <a href="#">Contact Us</a>
+				                  </div>
+					      </nav>
 			    </section>
 
 		       <section>
 			       <h1>Product Listing</h1>
-						<h2> Sample: </h2>
-							<div class="container-product-listing">
-								  <figure>
-								  	<img src="img/product-lovers-sunrise2.jpg" alt="Avatar" class="image">
-								  	<figcaption>Lover's Sunrise</figcaption>
-								  </figure>  
-						
-								  <div class="btn-position">
-										<a class ="btn-quick-add" href="#"> + Quick Add </a>
-								  </div>
-								  <p class ="price">$70.99</p>				
-							</div> <!--.container-product-listing ends-->
-						
 						<h2>CSS Code:</h2>
 		       			 <code>
 		       			 	.container-product-listing { <br>
@@ -436,19 +465,76 @@
 								  &lt;p class ="price"&gt;$70.99&lt;/p&gt; <br>				
 							&lt;/div&gt; 
 						</code>
+
+						<h2> Sample: </h2>
+							<div class="container-product-listing">
+									<figure class ="product-item">
+									  	 <img src="img/product-lovers-sunrise.jpg" alt="Photo of bouquet being held">
+									  	 <figcaption>Lover's Sunrise</figcaption>
+										  <p class ="price">$70.99</p> 
+										  <!-- <div class="overlay"></div>	 --> 	
+										  <div class="btn-position">
+												<a class ="btn-quick-add" href="#"> + Quick Add </a>
+									 	  </div>  
+									</figure>
+							</div> <!--.container-product-listing ends-->
 			    </section>
+
+			  
+			     <section> 
+				      <h1>Review Template</h1>
+
+				      <h2>HTML Code:</h2>
+		       			 <code>
+			       			 &lt;div class="container-product-listing"&gt; <br>
+								  &lt;figure&gt; <br>
+								  	 &lt;img src="img/product-lovers-sunrise2.jpg" alt="Avatar" class="image"&gt; <br>
+								  	&lt;figcaption&gt;Lover's Sunrise&lt;/figcaption&gt; <br>
+								  &lt;/figure&gt; <br>
+						
+								  &lt;div class="btn-position"&gt; <br>
+										&lt;a class ="btn-quick-add" href="#"&gt; + Quick Add &lt;/a&gt; <br>
+								  &lt;/div&gt; <br>
+								  &lt;p class ="price"&gt;$70.99&lt;/p&gt; <br>				
+							&lt;/div&gt; 
+						</code>
+
+					 <h2>CSS Code:</h2>
+		       			 <code>
+			       			
+						</code>
+
+				      <div class="review">
+				      	  <h2> Reviews <a href="#">(15)</a></h2>
+				      	  <div>
+				              <p class="author">Taylor H. |  Nov 24, 2018</p>
+				           </div>
+					  
+				           <div class="review-content">
+					            <div>
+					            	 <h2>Made from the heart</h2>
+					          	</div>
+
+					          	<!--Star unicode from https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+					          	<div class="review-star-rating">
+						              <p>&#9733;</p>
+						              <p>&#9733;</p>
+						              <p>&#9733;</p>
+						              <p>&#9733;</p>
+						              <p>&#9733;</p>
+					           	</div>
+
+					            <div class="review-body">
+					              <p>I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.
+					              </p>
+					            </div>
+
+					       </div> <!--End of .review-content-->
+				      </div> <!-- End of .review -->
+			  	</section>
 		       	
 		       	<section>
-			       	<h1>Hero Banner with CTA</h1>
-						<h2> Sample: </h2>
-								<div class="container-hero">
-									<img src="img/hero-img.png" alt="Hero image of a bouquet of pink flowers.">	
-									<div class="top-left">
-										<h1>Spread happiness with summer's blooms.</h1>
-										<button type="button" class="btn-main">Shop Bouquets</button>
-									</div>
-								</div>
-						
+			       	<h1>Hero Banner with CTA</h1>		
 						<h2>CSS Code:</h2>
 			       			 <code>
 			       			 	.container-hero img { <br>
@@ -497,220 +583,232 @@
 								&lt;/div&gt; <br>
 							&lt;/div&gt;
 		       			 </code>
+
+	       			 	<h2> Sample: </h2>
+							<div class="hero">
+								<div class="text">
+									<h1>Spread happiness with summer's blooms.</h1>
+									<button type="button" class="btn-main">Shop Bouquets</button>
+								</div>
+							</div>
 			     </section>
 
 				<section>
-			       	<h1>Shipping Details</h1>
-						<h2> Sample: </h2>
+					<h2>HTML Code:</h2>
+	       			 <code>
+		       			 &lt;div class="form"&gt; <br>
+							&lt;form action="/action_page.php"&gt;  <br>
+								&lt;label for="name"&gt;First Name&lt;/label&gt; <br>
+								&lt;input type="text" id="fname" name="fname" placeholder="Your first name"&gt; <br>
 
-							<h2> Shipping Details </h2>
-							<div class="form">
-								<form action="/action_page.php">
-									<label for="fname">First Name</label>
-									<input type="text" id="fname" name="fname" placeholder="Your first name">
+								&lt;label for="nlame"&gt;Last Name&lt;/label&gt; <br>
+								&lt;input type="text" id="lname" name="lname" placeholder="Your last name"&gt; <br>
 
-									<label for="lname">Last Name</label>
-									<input type="text" id="lname" name="lname" placeholder="Your last name">
+								&lt;label for="email"&gt;Address&lt;/label&gt; <br>
+							  	&lt;input type="text" id="address" name="address" placeholder='Your address'&gt; <br>
 
-									<label for="address">Address</label>
-								  	<input type="text" id="address" name="address" placeholder='Your address'>
+							  	&lt;label for="province"&gt;Province&lt;/label&gt; v
+							  	&lt;input type="text" id="province" name="Province" placeholder='Your address'&gt; <br>
 
-								  	<label for="province">Province</label>
-								  	<input type="text" id="province" name="Province" placeholder='Your province'>
+								&lt;label for="email"&gt;City&lt;/label&gt; <br>
+							  	&lt;input type="text" id="city" name="city" placeholder='Your city'&gt; <br>
 
-									<label for="city">City</label>
-								  	<input type="text" id="city" name="city" placeholder='Your city'>
-
-									<label for="pc">Postal Code</label>
-								  	<input type="text" id="pc" name="pc" placeholder='XXX XXX'>
-									
-								  	<label for="email-ad">Email Address</label>
-								  	<input type="text" id="email-ad" name="email-ad" placeholder='name@domain.com'>
-									
-									<label for="phone-number">Phone Number</label>
-									<input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####">
-
-									<button class="btn-submit">Submit → </button>
-								</form>
-
+								&lt;label for="email"&gt;Postal Code&lt;/label&gt; <br>
+							  	&lt;input type="text" id="pc" name="pc" placeholder='XXX XXX'&gt; <br>
 								
-							</div>
+							  	&lt;label for="email"&gt;Email Address&lt;/label&gt; <br>
+							  	&lt;input type="text" id="email" name="email" placeholder='name@domain.com'&gt; <br>
+								
+								&lt;label for="c-number"&gt;Phone Number&lt;/label&gt;
+								&lt;input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####"&gt;  <br>
+							&lt;/form&gt; <br>
 
-							<h2>HTML Code:</h2>
-			       			 <code>
-				       			 &lt;div class="form"&gt; <br>
-									&lt;form action="/action_page.php"&gt;  <br>
-										&lt;label for="name"&gt;First Name&lt;/label&gt; <br>
-										&lt;input type="text" id="fname" name="fname" placeholder="Your first name"&gt; <br>
+							&lt;button class="btn-submit"&gt;Submit → &lt;/button&gt; <br>
+						&lt;/div&gt;
+					</code>
 
-										&lt;label for="nlame"&gt;Last Name&lt;/label&gt; <br>
-										&lt;input type="text" id="lname" name="lname" placeholder="Your last name"&gt; <br>
+					<h1>Shipping Details</h1>
+					<h2> Sample: </h2>
 
-										&lt;label for="email"&gt;Address&lt;/label&gt; <br>
-									  	&lt;input type="text" id="address" name="address" placeholder='Your address'&gt; <br>
+						<h2> Shipping Details </h2>
+						<!-- <div class="form"> -->
+							<form action="/action_page.php">
+								<div class="grid-col-1of2">
+										<div class="name-item">
+											<label for="fname">First Name</label>
+											<input type="text" id="fname" name="fname" placeholder="Your first name">
+										</div>
+									
 
-									  	&lt;label for="province"&gt;Province&lt;/label&gt; v
-									  	&lt;input type="text" id="province" name="Province" placeholder='Your address'&gt; <br>
+									<div class="name-item">
+										<label for="lname">Last Name</label>
+										<input type="text" id="lname" name="lname" placeholder="Your last name">
+									</div>
+								</div>
 
-										&lt;label for="email"&gt;City&lt;/label&gt; <br>
-									  	&lt;input type="text" id="city" name="city" placeholder='Your city'&gt; <br>
- 
-										&lt;label for="email"&gt;Postal Code&lt;/label&gt; <br>
-									  	&lt;input type="text" id="pc" name="pc" placeholder='XXX XXX'&gt; <br>
-										
-									  	&lt;label for="email"&gt;Email Address&lt;/label&gt; <br>
-									  	&lt;input type="text" id="email" name="email" placeholder='name@domain.com'&gt; <br>
-										
-										&lt;label for="c-number"&gt;Phone Number&lt;/label&gt;
-										&lt;input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####"&gt;  <br>
-									&lt;/form&gt; <br>
+								<div class="grid-col-1of1">
+									<!-- <div class="address-item"> -->
+									<label for="address">Address</label>
+							  		<input type="text" id="address" name="address" placeholder='Your address'>
+							  		</div>
+							  	</div>
 
-									&lt;button class="btn-submit"&gt;Submit → &lt;/button&gt; <br>
-								&lt;/div&gt;
-							</code>
+							  	<div class="grid-col-1of3">
+							  		<label for="province">Province</label>
+							  		<input type="text" id="province" name="Province" placeholder='Your province'>
+							  	</div>
+
+							  	<div class="grid-col-1of3">
+									<label for="city">City</label>
+							  		<input type="text" id="city" name="city" placeholder='Your city'>
+							    </div>
+
+							    <div class="grid-col-1of3">
+									<label for="pc">Postal Code</label>
+							   		<input type="text" id="pc" name="pc" placeholder='XXX XXX'>
+							    	</div>
+							  	
+							  	<div class="grid-col-1of2">
+							  		<div class="contact-item">
+							  			<label for="email-ad">Email Address</label>
+							  			<input type="text" id="email-ad" name="email-ad" placeholder='name@domain.com'>
+							  		</div>
+
+									<div class="contact-item">
+										<label for="phone-number">Phone Number</label>
+										<input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####">
+									</div>
+								</div>
+
+								<div class="btn-item">
+									<button class="btn-submit">Submit → </button>
+								</div>
+						</form>
 			     </section>
 
 			     <section>
 			       	<h1>Website Grid Structure</h1>
 						<h2> Sample: </h2>
-							<h3> Landing Page Template </h3>
-
 							<section>
-								<div class ="grid-container" id="landing-page-template">
-										<div class ="g-block col-1of1-xs">Announcement Bar</div>
-										<div class ="g-block col-1of1-s"> Nav Bar</div>
-										<div class ="g-block col-1of1-lg">Hero Banner</div>
-										<div class ="g-block col-1of3">Image</div>
-										<div class ="g-block col-2of3">Image</div>
-										<div class ="g-block col-3of3">Image</div>
-										<div class ="g-block col-1of2">Image</div>
-										<div class ="g-block col-2of2">Text</div>
-										<div class ="g-block col-1of2-reverse">Image</div>
-										<div class ="g-block col-2of2-reverse">Text</div>
-										<div class ="g-block footer">Footer</div>
-								</div> <!-- .grid-container#landing-page-template ends -->
-
+								<h3> Landing Page Template </h3>
 								<h2 class="landing">HTML Code:</h2>
 					       			 <code>
-						       			 &lt;div class ="grid-container" id="landing-page-template"&gt; <br>
-											&lt;div class ="g-block col-1of1-xs"&gt;Announcement Bar&lt;/div&gt; <br>
-											&lt;div class ="g-block col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-3of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of2"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of2"&gt;Text&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of2-reverse"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of2-reverse"&gt;Text&lt;/div&gt;<br>
-											&lt;div class ="g-block footer"&gt;Footer&lt;/div&gt;<br>
+						       			 &lt;div class ="grid" id="landing-page-template"&gt; <br>
+											&lt;div class ="grid-item col-1of1-xs"&gt;Announcement Bar&lt;/div&gt; <br>
+											&lt;div class ="grid-item col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-3of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of2"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of2"&gt;Text&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of2-reverse"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of2-reverse"&gt;Text&lt;/div&gt;<br>
+											&lt;div class ="grid-item footer"&gt;Footer&lt;/div&gt;<br>
 											&lt;/div&gt;
 									</code>
+
+								<div class ="grid" id="landing-page-template">
+										<div class ="grid-item col-1of1-xs">Announcement Bar</div>
+										<div class ="grid-item col-1of1-s"> Nav Bar</div>
+										<div class ="grid-item col-1of1-lg">Hero Banner</div>
+										<div class ="grid-item col-1of3">Image</div>
+										<div class ="grid-item col-2of3">Image</div>
+										<div class ="grid-item col-3of3">Image</div>
+										<div class ="grid-item col-1of2">Image</div>
+										<div class ="grid-item col-2of2">Text</div>
+										<div class ="grid-item col-1of2-reverse">Image</div>
+										<div class ="grid-item col-2of2-reverse">Text</div>
+										<div class ="grid-item footer">Footer</div>
+								</div> <!-- .grid#landing-page-template ends -->
 							</section>
 
 							<section>
 								<h3> Shop Template </h3>
-									<div class ="grid-container" id="shop-template">
-										<div class ="g-block col-1of1-xs">Announcement Bar</div>
-										<div class ="g-block col-1of1-s">Nav Bar</div>
-										<div class ="g-block col-1of1-lg">Hero Banner</div>
-										<div class ="g-block col-1of3">Image</div>
-										<div class ="g-block col-2of3">Image</div>
-										<div class ="g-block col-3of3">Image</div>
-										<div class ="g-block col-1of3">Image</div>
-										<div class ="g-block col-2of3">Image</div>
-										<div class ="g-block col-2of3">Image</div>
-										<div class ="g-block footer">Footer</div>
-									</div> <!-- .grid-container#shop-template ends -->
-
 								<h2 class="shop">HTML Code:</h2>
 					       			 <code>
-						       			 &lt;div class ="grid-container" id="shop-template"&gt;<br>
-											&lt;div class ="g-block col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-3of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block footer"&gt;Footer&lt;/div&gt;<br>
+						       			 &lt;div class ="grid" id="shop-template"&gt;<br>
+											&lt;div class ="grid-item col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-3of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item footer"&gt;Footer&lt;/div&gt;<br>
 										&lt;/div&gt;
 										</code>
+
+								<div class ="grid" id="shop-template">
+									<div class ="grid-item col-1of1-xs">Announcement Bar</div>
+									<div class ="grid-item col-1of1-s">Nav Bar</div>
+									<div class ="grid-item col-1of1-lg">Hero Banner</div>
+									<div class ="grid-item col-1of3">Image</div>
+									<div class ="grid-item col-2of3">Image</div>
+									<div class ="grid-item col-3of3">Image</div>
+									<div class ="grid-item col-1of3">Image</div>
+									<div class ="grid-item col-2of3">Image</div>
+									<div class ="grid-item col-2of3">Image</div>
+									<div class ="grid-item footer">Footer</div>
+								</div> <!-- .grid#shop-template ends -->
 							</section>
 
 							<section>
 								<h3> Check Out Template </h3>
-									<div class ="grid-container" id="checkout-template">
-										<div class ="g-block" id="title">Title</div>
-										<div class ="g-block input-row1">Input Field</div>
-										<div class ="g-block input-row1">Input Field</div>
-										<div class ="g-block blank">White Space</div>
-										<div class ="g-block input-row2">Input Field</div>
-										<div class ="g-block blank">White Space</div>
-										<div class ="g-block input-row3">Input Field</div>
-										<div class ="g-block input-row3">Input Field</div>
-										<div class ="g-block input-row3">Input Field</div>
-										<div class ="g-block blank">White Space</div>
-										<div class ="g-block input-row4">Input Field</div>
-										<div class ="g-block input-row4">Input Field</div>
-										<div class ="g-block blank">White Space</div>
-										<div class ="g-block blank">White Space</div>
-										<div class ="g-block button">Button</div>
-										<div class ="g-block footer">Footer</div>
-									</div> <!-- .grid-container#checkout-template ends -->
-
 								<h2 class="check-out">HTML Code:</h2>
 				       			 <code>
-						       		&lt;div class ="grid-container" id="checkout-template"&gt;<br>
-										&lt;div class ="g-block" id="title"&gt;Title&lt;/div&gt;<br>
-										&lt;div class ="g-block input-row1"&gt;Input Field&lt;/div&gt;<br>
-										&lt;div class ="g-block input-row1"&gt;Input Field&lt;/div&gt;<br>
-										&lt;div class ="g-block blank"&gt;White Space&lt;/div&gt;<br>
-										&lt;div class ="g-block input-row2"&gt;Input Field&lt;/div&gt;<br>
-										&lt;div class ="g-block blank"&gt;White Space&lt;/div&gt;<br>
-										&lt;div class ="g-block input-row3"&gt;Input Field&lt;/div&gt;<br>
-										&lt;div class ="g-block input-row3"&gt;Input Field&lt;/div&gt;<br>
-										&lt;div class ="g-block input-row3"&gt;Input Field&lt;/div&gt;<br>
-										&lt;div class ="g-block blank"&gt;White Space&lt;/div&gt;<br>
-										&lt;div class ="g-block input-row4"&gt;Input Field&lt;/div&gt;<br>
-										&lt;div class ="g-block input-row4"&gt;Input Field&lt;/div&gt;<br>
-										&lt;div class ="g-block blank"&gt;White Space&lt;/div&gt;<br>
-										&lt;div class ="g-block blank"&gt;White Space&lt;/div&gt;<br>
-										&lt;div class ="g-block button"&gt;Button&lt;/div&gt;<br>
-										&lt;div class ="g-block footer"&gt;Footer&lt;/div&gt;<br>
+						       		&lt;div class ="grid" id="checkout-template"&gt;<br>
+										&lt;div class ="grid-item" id="title"&gt;Title&lt;/div&gt;<br>
+										&lt;div class ="grid-item input-row1"&gt;Input Field&lt;/div&gt;<br>
+										&lt;div class ="grid-item input-row1"&gt;Input Field&lt;/div&gt;<br>
+										&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
+										&lt;div class ="grid-item input-row2"&gt;Input Field&lt;/div&gt;<br>
+										&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
+										&lt;div class ="grid-item input-row3"&gt;Input Field&lt;/div&gt;<br>
+										&lt;div class ="grid-item input-row3"&gt;Input Field&lt;/div&gt;<br>
+										&lt;div class ="grid-item input-row3"&gt;Input Field&lt;/div&gt;<br>
+										&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
+										&lt;div class ="grid-item input-row4"&gt;Input Field&lt;/div&gt;<br>
+										&lt;div class ="grid-item input-row4"&gt;Input Field&lt;/div&gt;<br>
+										&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
+										&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
+										&lt;div class ="grid-item button"&gt;Button&lt;/div&gt;<br>
+										&lt;div class ="grid-item footer"&gt;Footer&lt;/div&gt;<br>
 									&lt;/div&gt;<br>
 								</code>
+
+
+								<div class ="grid" id="checkout-template">
+										<div class ="grid-item" id="title">Title</div>
+										<div class ="grid-item input-row1">Input Field</div>
+										<div class ="grid-item input-row1">Input Field</div>
+										<div class ="grid-item blank">White Space</div>
+										<div class ="grid-item input-row2">Input Field</div>
+										<div class ="grid-item blank">White Space</div>
+										<div class ="grid-item input-row3">Input Field</div>
+										<div class ="grid-item input-row3">Input Field</div>
+										<div class ="grid-item input-row3">Input Field</div>
+										<div class ="grid-item blank">White Space</div>
+										<div class ="grid-item input-row4">Input Field</div>
+										<div class ="grid-item input-row4">Input Field</div>
+										<div class ="grid-item blank">White Space</div>
+										<div class ="grid-item blank">White Space</div>
+										<div class ="grid-item button">Button</div>
+										<div class ="grid-item footer">Footer</div>
+								</div> <!-- .grid#checkout-template ends -->
+
 							</section>
 
 							<section>
 								<h3> Support Template </h3>
-									<div class ="grid-container" id="support-template">
-										<div class ="g-block col-1of1-xs">Announcement Bar</div>
-										<div class ="g-block col-1of1-s">Nav Bar</div>
-										<div class ="g-block col-1of1-lg">Hero Banner</div>
-										<div class="side-nav-container">
-											Side Nav Container
-											<div class ="menu-item1">Menu Item</div>
-											<div class ="menu-item2">Menu Item</div>
-											<div class ="menu-item3">Menu Item</div>
-										</div>
-										<div class ="body-container">
-											Body Container
-											<div class ="menu-item1">Question</div>
-											<div class ="menu-item2">Question</div>
-											<div class ="menu-item3">Question</div>
-										</div>
-										<div class ="g-block footer">Footer</div>
-									</div> <!-- .grid-container#support-template ends -->
-
 								<h2 class="support">HTML Code:</h2>
 				       			 <code>
-							       	&lt;div class ="grid-container" id="support-template"&gt;<br>
-										&lt;div class ="g-block col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
-										&lt;div class ="g-block col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
-										&lt;div class ="g-block col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
+							       	&lt;div class ="grid" id="support-template"&gt;<br>
+										&lt;div class ="grid-item col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
+										&lt;div class ="grid-item col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
+										&lt;div class ="grid-item col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
 										&lt;div class="side-nav-container"&gt;<br>
 											Side Nav Container
 											&lt;div class ="menu-item1"&gt;Menu Item&lt;/div&gt;<br>
@@ -723,48 +821,68 @@
 											&lt;div class ="menu-item2"&gt;Question&lt;/div&gt;<br>
 											&lt;div class ="menu-item3"&gt;Question&lt;/div&gt;<br>
 										&lt;/div&gt;<br>
-										&lt;div class ="g-block footer"&gt;Footer&lt;div&gt;<br>
+										&lt;div class ="grid-item footer"&gt;Footer&lt;div&gt;<br>
 									&lt;/div&gt;
 								</code>
+
+								<div class ="grid" id="support-template">
+										<div class ="grid-item col-1of1-xs">Announcement Bar</div>
+										<div class ="grid-item col-1of1-s">Nav Bar</div>
+										<div class ="grid-item col-1of1-lg">Hero Banner</div>
+										<div class="side-nav-container">
+											Side Nav Container
+											<div class ="menu-item1">Menu Item</div>
+											<div class ="menu-item2">Menu Item</div>
+											<div class ="menu-item3">Menu Item</div>
+										</div>
+										<div class ="body-container">
+											Body Container
+											<div class ="menu-item1">Question</div>
+											<div class ="menu-item2">Question</div>
+											<div class ="menu-item3">Question</div>
+										</div>
+										<div class ="grid-item footer">Footer</div>
+									</div> <!-- .grid#support-template ends -->
+
 							</section>
 
 					
 							<section>
-								<h3> Services Template </h3>
-									<div class ="grid-container" id="services-template">
-										<div class ="g-block col-1of1-xs">Announcement Bar</div>
-										<div class ="g-block col-1of1-s">Nav Bar</div>
-										<div class ="g-block col-1of1-lg">Hero Banner</div>
-				
-										<div class ="g-block col-1of2-equal">Image</div>
-										<div class ="g-block col-2of2-equal">Image</div>
-
-										<div class ="g-block col-1of2">Image</div>
-										<div class ="g-block col-2of2">Image</div>
-										<div class ="g-block col-1of3">Image</div>
-										<div class ="g-block col-2of3">Image</div>
-										<div class ="g-block col-2of3">Image</div>
-										<div class ="g-block footer">Footer</div>
-									</div> <!-- .grid-container#services-template ends -->
-
 									<h2 class="services"> HTML Code:</h2>
 					       			 <code>
-					       			 	&lt;div class ="grid-container" id="services-template"&gt;
-											&lt;div class ="g-block col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
+					       			 	&lt;div class ="grid" id="services-template"&gt;
+											&lt;div class ="grid-item col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
 					
-											&lt;div class ="g-block col-1of2-equal"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of2-equal"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of2-equal"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of2-equal"&gt;Image&lt;/div&gt;<br>
 
-											&lt;div class ="g-block col-1of2"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of2"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-1of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block col-2of3"&gt;Image&lt;/div&gt;<br>
-											&lt;div class ="g-block footer"&gt;Footer&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of2"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of2"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-1of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
+											&lt;div class ="grid-item footer"&gt;Footer&lt;/div&gt;<br>
 										&lt;div&gt; 
 					       			 </code>
+
+					       			<h3> Services Template </h3>
+									<div class ="grid" id="services-template">
+										<div class ="grid-item col-1of1-xs">Announcement Bar</div>
+										<div class ="grid-item col-1of1-s">Nav Bar</div>
+										<div class ="grid-item col-1of1-lg">Hero Banner</div>
+				
+										<div class ="grid-item col-1of2-equal">Image</div>
+										<div class ="grid-item col-2of2-equal">Image</div>
+
+										<div class ="grid-item col-1of2">Image</div>
+										<div class ="grid-item col-2of2">Image</div>
+										<div class ="grid-item col-1of3">Image</div>
+										<div class ="grid-item col-2of3">Image</div>
+										<div class ="grid-item col-2of3">Image</div>
+										<div class ="grid-item footer">Footer</div>
+									</div> <!-- .grid#services-template ends -->
 				       		</section>
 				    </section> <!-- sub section ends -->
 			       

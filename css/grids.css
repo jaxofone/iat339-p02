@@ -5,10 +5,6 @@
 	box-sizing: border-box;
 }
 
-.grid-container {
-	/*padding-bottom: 90rem;*/
-}
-
 .grid-item {
 	background-color: #eee;
  	border: .5px dashed #333;
@@ -16,7 +12,7 @@
 }
 
 /* ------ Nav Bar  ------ */
-.grid, .grid-container {
+.grid {
 	display: -webkit-flex; 			/* Supports older browsers */
 	display: -ms-flex; 				/* Supports Internet 10 */
 	display: flex;
@@ -39,9 +35,26 @@ nav .grid-col-1of2 {
 	flex: 2 1 20%;
 }
 
-nav .grid-col-1of6 {
-	flex: 1 1 13%;
+nav .grid-col-1of6  {
+	flex: .5 1 5%;
 }
+
+nav .grid-col-1of6.search-bar  {
+	padding-right: 3rem;
+}
+
+
+/* ------ Hero Section ------ */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url("../img/hero-img.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 30rem;
+}
+
 
 /* ------ Review Section ------ */
 

@@ -22,7 +22,7 @@
 
 		<header>
 			<!--Navigation Bar-->
-			 <nav class="grid">
+			 <nav class="grid styleguide">
 				<a href="index.html">Home</a>
 				<a href="wireframes.html">Wireframes</a>
 				<a href="styleguide.html">Styleguide</a>
@@ -100,23 +100,18 @@
 			       	<h1>Submit and Reset Buttons (Forms)</h1>
 						<h2>CSS Code:</h2>
 			       			 <code>
-			       			 	.btn-submit  { <br>
-								font-family: "Suisse Intl Regular", Verdana, sans-serif; <br>
-								font-size: 0.7rem; <br>
-								color: white; <br>
-								background-color: #004C45; <br>
-								letter-spacing: 0.1rem; <br>
-								text-transform: uppercase; <br>
-								padding: 0.5rem 1rem; <br>
-								border-radius: 1.2rem; <br>
-								opacity: 0.9; <br>
-								border: none; <br>
-							 <br>
-
-							.btn-submit:hover, .btn-submit:focus{ <br>
-								opacity: 1; <br>
-								border-bottom: 2px solid #004C45;<br>
-							}
+			       			 	.btn-submit { <br>
+									font-size: 0.9rem;<br>
+									color: #004C45;<br>
+									background-color: #fff;<br>
+									letter-spacing: 0.1rem;<br>
+									border: none;<br>
+									text-transform: uppercase;<br>
+									opacity: 0.9;<br>
+									font-weight: 1000;<br>
+									margin-top: 2rem;<br>
+									padding: 0;<br>
+								}
 			       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -361,32 +356,41 @@
 										&lt;img src="img/icons/person.png" alt="Green icon of a person"&gt; <!-- User icon from https://material.io/resources/icons/ -->
 									&lt;/a&gt; <br>
 									&lt;a href="#"&gt; 
-										&lt;mg src="img/icons/cart.png"" alt="Green icon of a shopping cart"&gt; <!-- Cart icon from https://material.io/resources/icons/ -->
+										&lt;img src="img/icons/cart.png"" alt="Green icon of a shopping cart"&gt; <!-- Cart icon from https://material.io/resources/icons/ -->
 									&lt;/a&gt; <br>
 								&lt;/nav&gt; <br>
 							</code>
 
 						<h2> Sample: </h2>
 							<nav class="grid">
-						          <div class="grid-col-1of2 web-title">
+						          <div class="grid-col-1of2 logo">
 						                 <!-- <a href="index.html">Four Seasons Floral</a> -->
 						                 <a href="#"><img src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 						          </div>
+
+				            	  <div class="grid-col-1of6 search-bar">
+				                 		 <!-- <form action="/action_page.php"> -->
+											<input type="text" id="search" name="search" placeholder="Search...">
+										<!-- </form>	 -->
+				            	  </div>
+
 				                  <div class="grid-col-1of6">
 				                    	<a href="#">Shop</a>
 				                  </div>
 				                  <div class="grid-col-1of6">
-				                      	<a href="#">Services</a>
-				                  </div>
-				                  <div class="grid-col-1of6">
-				                      	<a href="#">About Us</a>
+				                      	<a href="#">About</a>
 				                  </div>
 				                  <div class="grid-col-1of6">
 				                     	 <a href="#">Support</a>
 				                  </div>
 				                  <div class="grid-col-1of6">
-				                     	 <a href="#">Contact Us</a>
+				                     	 <a href="#">Contact</a>
 				                  </div>
+
+				                   <div class="grid-col-1of6">
+				                 		 <a href="#"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
+				            	  </div>
+
 					      </nav>
 			    </section>
 
@@ -394,39 +398,43 @@
 			       <h1>Product Listing</h1>
 						<h2>CSS Code:</h2>
 		       			 <code>
-		       			 	.container-product-listing { <br>
-							  position: relative; <br>
-							} <br>
-
-							.image { <br>
-							  opacity: 1; <br>
-							  display: block;  <br>
-							  width: 40%; <br>
-							  height: auto; <br>
-							  transition: .5s ease; <br>
-							  backface-visibility: hidden; <br>
-							} <br>
-
-							.container-product-listing:hover .image { <br>
-							  opacity: 0.5;<br>
+		       			 	container-product-listing { <br>
+							  position: relative;<br>
 							}<br>
 
-							.container-product-listing:hover .btn-position {<br>
+							.container-product-listing img {<br>
+							  width: 40%;<br>
+							  height: auto;<br>
+							  transition: .5s ease;<br>
+							  padding: 0;<br>
+							  margin: 0;<br>
+							}<br>
+
+							figure.product-item:hover img {<br>
+							  opacity: 0.4;<br>
+							}<br>
+
+							figure.product-item:hover .btn-position {<br>
 							  opacity: 1;<br>
 							}<br>
 
-							.btn-quick-add {<br>
+							.btn-quick-add {
 							  	font-family: "Suisse Intl Regular", Verdana, sans-serif; <br>
-								font-size: 0.7rem;<br>
-								color: #474747;<br>
-								background-color: #fff;<br>
+								font-size: 0.8rem;<br>
+								color: #20605A;<br>
+								border: 2px solid #20605A;<br>
 								letter-spacing: 0.05rem;<br>
 								text-transform: uppercase;<br>
 								padding: 0.5rem 1rem;<br>
 								border-radius: 1.2rem;<br>
+								font-weight: 900;<br>
 								opacity: 0.9;<br>
-								border: none;<br>
-							}
+							}<br>
+
+							.btn-quick-add:hover {<br>
+								color: #fff;<br>
+							    background-color: #20605A;<br>
+							}<br>
 
 							.btn-position {<br>
 							  opacity: 0;<br>
@@ -435,35 +443,38 @@
 							  left: 18%;<br>
 							  transform: translate(-50%, -50%);<br>
 							  text-align: center;<br>
-							}
-
-							p.price {<br>
-								margin-top: -1rem;<br>
-								color: #474747;<br>
-								font-size: .8rem;<br>
 							}<br>
 
+							p.price {<br>
+								margin-top: -.1rem;<br>
+								color: #474747;<br>
+								font-size: .9rem;<br>
+								white-space: nowrap;<br>
+							}<br>
+
+
 							.container-product-listing figcaption {<br>
-								text-transform: uppercase;<br>
+								font-family: "Freight Big Pro", Verdana, sans-serif; <br>
+								font-size: 1.5rem;<br>
 								letter-spacing: .08rem;<br>
 								padding-top: 0.5rem;<br>
 								color: #474747;<br>
-								font-weight: 900;<br>
+							} 
 		       			 </code>
 
 						<h2>HTML Code:</h2>
 		       			 <code>
 			       			 &lt;div class="container-product-listing"&gt; <br>
-								  &lt;figure&gt; <br>
-								  	 &lt;img src="img/product-lovers-sunrise2.jpg" alt="Avatar" class="image"&gt; <br>
-								  	&lt;figcaption&gt;Lover's Sunrise&lt;/figcaption&gt; <br>
-								  &lt;/figure&gt; <br>
-						
-								  &lt;div class="btn-position"&gt; <br>
-										&lt;a class ="btn-quick-add" href="#"&gt; + Quick Add &lt;/a&gt; <br>
-								  &lt;/div&gt; <br>
-								  &lt;p class ="price"&gt;$70.99&lt;/p&gt; <br>				
-							&lt;/div&gt; 
+									&lt;figure class ="product-item"&gt;<br>
+									  	 &lt;img src="img/product-lovers-sunrise.jpg" alt="Photo of bouquet being held"&gt;<br>
+									  	 &lt;figcaption>Lover's Sunrise&lt;/figcaption&gt;<br>
+										  &lt;p class ="price">$70.99&lt;/p&gt;<br>
+										  <!-- <div class="overlay"></div>	 --> 	
+										  &lt;div class="btn-position"&gt;<br>
+												&lt;a class ="btn-quick-add" href="#"> + Quick Add &lt;/a&gt;<br>
+									 	  &lt;/div&gt;<br>
+									&lt;/figure&gt;<br>
+							&lt;/div&gt;<br>
 						</code>
 
 						<h2> Sample: </h2>
@@ -486,22 +497,52 @@
 
 				      <h2>HTML Code:</h2>
 		       			 <code>
-			       			 &lt;div class="container-product-listing"&gt; <br>
-								  &lt;figure&gt; <br>
-								  	 &lt;img src="img/product-lovers-sunrise2.jpg" alt="Avatar" class="image"&gt; <br>
-								  	&lt;figcaption&gt;Lover's Sunrise&lt;/figcaption&gt; <br>
-								  &lt;/figure&gt; <br>
-						
-								  &lt;div class="btn-position"&gt; <br>
-										&lt;a class ="btn-quick-add" href="#"&gt; + Quick Add &lt;/a&gt; <br>
-								  &lt;/div&gt; <br>
-								  &lt;p class ="price"&gt;$70.99&lt;/p&gt; <br>				
-							&lt;/div&gt; 
-						</code>
+			       			 &lt;div class="review"&gt;<br>
+						      	   &lt;h2&gt; Reviews  &lt;a href="#"&gt;(15) &lt;/a>&gt;&lt;/h2&gt;<br>
+						      	   &lt;div&gt;<br>
+						               &lt;p class="author">Taylor H. |  Nov 24, 2018 &lt;/p&gt;<br>
+						            &lt;/div&gt;<br>
+							  
+						            &lt;div class="review-content"&gt;<br>
+							             &lt;div&gt;<br>
+							            	  &lt;h2>Made from the heart &lt;/h2&gt;<br>
+							          	 &lt;/div&gt;<br>
+
+							          	<!--Star unicode from https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+							          	 &lt;div class="review-star-rating"&gt;<br>
+								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
+								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
+								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
+								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
+								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
+							           	 &lt;/div&gt;<br>
+
+							             &lt;div class="review-body"&gt;<br>
+							               &lt;p&gt;I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.<br>
+							               &lt;/p&gt;<br>
+							             &lt;/div&gt;<br>
+
+							        &lt;/div&gt;<br>
+						       &lt;/div&gt;<br>
+						 	</code>
 
 					 <h2>CSS Code:</h2>
 		       			 <code>
-			       			
+			       			.review { <br>
+								  display: flex; <br>
+								  flex-direction: column; <br>
+								} <br>
+
+								.review-content { <br>
+								  display: flex; <br>
+								  flex-direction: column; <br>
+								  margin-top: -1rem; <br>
+								} <br>
+
+								.review-star-rating { <br>
+								  display: flex; <br>
+								  flex-direction: row; <br>
+								}
 						</code>
 
 				      <div class="review">
@@ -535,54 +576,46 @@
 		       	
 		       	<section>
 			       	<h1>Hero Banner with CTA</h1>		
-						<h2>CSS Code:</h2>
-			       			 <code>
-			       			 	.container-hero img { <br>
-									width: 100%; <br>
-									height: auto; <br>
-								}  <br>
-
-								.container-hero  h1 { <br>
-									font-family: "FreightBigPro-SemiBold", Verdana, sans-serif;  <br>
-									font-size: 2.5rem; <br>
-									margin-bottom: 0; <br>
-									letter-spacing: 0.06rem; <br>
-									text-transform: none; <br>
-									align-items: center; <br>
-									flex: 1 1 auto;  <br>
-								} <br>
-
-								.container-hero {  <br>
-									position: relative;<br>
-								} <br>
-
-								.top-left { <br>
-								  position: absolute; <br>
-								  top: 13rem; <br>
-								  left: 5rem; <br>
-								} <br>
-
-								.top-left h1 { <br>
-								  color: #474747; <br>
-								  max-width: 30rem; <br>
-								  line-height: 4rem; <br>
-								} <br>
-
-								.top-left button { <br>
-									margin-top: 1rem; <br>
-								} <br>
-			       			 </code>
-
-						<h2>HTML Code:</h2>
+			       		<h2>CSS Code:</h2>
 		       			 <code>
-		       			 	&lt;div class="container-hero"&gt; <br>
-								&lt;img src="img/hero-img.png" alt="Hero image of a bouquet of pink flowers."&gt; <br>
-								&lt;div class="top-left"&gt; <br>
-									&lt;h1&gt;Spread happiness with summer's blooms.&lt;/h1&gt; <br> 
-									&lt;button type="button" class="btn-main"&gt;Shop Bouquets&lt;/button&gt; <br>
-								&lt;/div&gt; <br>
-							&lt;/div&gt;
+		       			 .hero {<br>
+							  display: flex;<br>
+							  flex-direction: column;<br>
+							  align-items: flex-start;<br>
+							  background-image: url("../img/hero-img.png");<br>
+							  background-repeat: no-repeat;<br>
+							  background-size: 100%;<br>
+							  height: 30rem;<br>
+							}<br>
+
+							.hero .text {<br>
+								padding-top: 7rem;<br>
+								padding-left: 3rem;<br>
+							}<br>
+
+							.hero h1 {<br>
+							  font-family: "Freight Big Pro";<br>
+							  font-size: 3rem;<br>
+							  text-transform: none;<br>
+							  color: #474747;<br>
+							  max-width: 30rem;<br>
+							  line-height: 4rem;<br>
+							}<br>
+
+							.hero button {<br>
+								margin-top: 1rem;<br>
+							} 
 		       			 </code>
+
+		       			 <h2> HTML Code: </h2>
+		       				 <code>
+								 &lt;div class="hero"&gt; <br>
+									 &lt;div class="text"&gt;<br>
+										 &lt;h1&gt;Spread happiness with summer's blooms. &lt;/h1&gt;<br>
+										 &lt;button type="button" class="btn-ma<br>in">Shop Bouquets &lt;/button&gt;
+									 &lt;/div&gt;<br>
+								 &lt;/div&gt;
+							</code>
 
 	       			 	<h2> Sample: </h2>
 							<div class="hero">
@@ -594,6 +627,54 @@
 			     </section>
 
 				<section>
+					<h1>Shipping Details</h1>
+					<h2>CSS Code:</h2>
+		       			 <code>
+							form .name-item, form .contact-item, form .grid-col-1of3 { <br>
+								padding-right: 4rem;<br>
+							}<br>
+
+							form {<br>
+								padding-top: 2rem;<br>
+							}<br>
+
+							form .btn-item {<br>
+								float: right;<br>
+								padding-right: 35rem;<br>
+							}<br>
+
+
+							label {<br>
+							  color: #20605A;<br>
+							  font-family: "Suisse Intl Regular", Verdana, sans-serif; <br>
+							  margin-bottom: .5rem;<br>
+							}<br>
+
+							#address{<br>
+								width: 25rem;<br>
+							}	<br>
+
+							#pc {<br>
+								width: 14rem;<br>
+							}<br>
+
+							#province, #city {<br>
+								width: 13rem;<br>
+							}<br>
+
+							#fname, #lname, #email-ad {<br>
+								width: 17rem;<br>
+							}<br>
+
+							#phone-number {<br>
+								width: 10rem;<br>
+							}<br>
+
+							input {<br>
+								margin-bottom: 2rem;<br>
+							}<br>
+		       			 </code>
+
 					<h2>HTML Code:</h2>
 	       			 <code>
 		       			 &lt;div class="form"&gt; <br>
@@ -627,7 +708,6 @@
 						&lt;/div&gt;
 					</code>
 
-					<h1>Shipping Details</h1>
 					<h2> Sample: </h2>
 
 						<h2> Shipping Details </h2>

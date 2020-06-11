@@ -16,7 +16,7 @@ code {
 	background: #EFEFEF;
 	padding: 1rem;
 	display: block;
-	max-width: 50rem;
+	max-width: 30rem;
 	font-size: 0.7rem;
 	line-height: 0.9rem;
 	margin-bottom: 2rem;
@@ -121,7 +121,8 @@ section {
 	padding-bottom: 5rem;
 }
 
-section#task1, section#task2, section#task3, section#task4, section#task5 {
+section#task1, section#task2, section#task3, section#task4, 
+section#task5, section#task6, section#task7, section#task8 {
 	padding-bottom: 30px;
 }
 
@@ -132,10 +133,20 @@ section.wireframes img {
     height: auto;
 }
 
-section.sitemap img, section.mockups img {
-	width: 60%;
-	height: auto;
+section#task6 img, section#task7 img, section#task8 img {
+	width: 40%;
+    height: auto;
 }
+
+section.sitemap img, section.mockups img {
+	width: 50%;
+	height: auto;
+	display: block;
+}
+
+ section.sitemap img {
+	width: 80%;
+ }
 
 /*figure {
 	margin-left: 0;

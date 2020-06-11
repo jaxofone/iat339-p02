@@ -16,22 +16,23 @@ p, figcaption {
 	max-width: 38rem;
 }
 
-.nav-secondary-item {
-	max-width: 100%;
-	margin-top: 2rem;
+
+.sub-nav {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 }
 
 /* Nav bar tutorial from https://www.w3schools.com/howto/howto_css_navbar_border.asp */
-.nav-secondary-item a  {
-	padding: 10px 19px;
+.sub-nav a  {
+	/*padding: 2rem;*/
 	text-transform: uppercase;
 	letter-spacing: 0.05rem;
 	color: #20605A;
 	border: 2px solid #20605A;
-	font-size: .8rem
+	font-size: .8rem;
 }
 
-.nav-secondary-item a:hover, .nav-secondary-item a:active  {
+.sub-nav a:hover, .sub-nav a:active  {
 	background-color: #20605A;
 	color: white;
 }
@@ -46,10 +47,6 @@ h1.template {
 	border-bottom: 1.5px solid #000;
 	letter-spacing: 0.1rem;
 	font-size: 0.8rem;
-}
-
-section h1 {
-		padding-top: 4rem;
 }
 
 h1 {
@@ -67,19 +64,6 @@ h2 {
 	letter-spacing: 0.08rem;
 }
 
-
-/*h2.landing, h2.support {
-	margin-top: 4rem;
-}
-
-h2.shop, h2.check-out {
-	margin-top: -15rem;
-}
-
-h2.services {
-	margin-top: 10rem;
-}*/
-
 h3 {
 	font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; 
 	font-size: 1.2rem;
@@ -88,7 +72,7 @@ h3 {
 	text-align: center;
 }
 
-nav.grid {
+nav.grid.styleguide {
 	box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.05); /* Box shadow from https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
 	justify-content: center;  /*Center align items from https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 	padding: 1rem;
@@ -120,7 +104,7 @@ section.definition p, .citations p {
 	padding-bottom: 2.5rem;
 }
 
-section h1 {
+section h1  {
 	font-family: "SuisseIntl-Normal", Verdana, sans-serif; 
 	font-weight: 600;
 	font-size: .9rem;
@@ -128,6 +112,7 @@ section h1 {
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	text-align: left;
+	padding-top: 2rem;
 }
 
 figure {
@@ -136,12 +121,12 @@ figure {
 
 code {
 	background: #EFEFEF;
-	padding: 0.2rem;
+	padding: 1rem;
 	display: block;
 	max-width: 50rem;
 	font-size: 0.7rem;
 	line-height: 0.9rem;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 
 
@@ -332,8 +317,8 @@ nav a {
 }
 
 .styleguide a {
-	padding-right: 5rem;
-	padding-left: 5rem;
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
 }
 
 nav .grid-col-1of6 a {

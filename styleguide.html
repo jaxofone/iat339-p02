@@ -1,5 +1,6 @@
 
-<!-- Referenced Weeks 1 and 2 tutorials to build out structure -->
+<!-- Code structure has been mostly adapted to use from Paul Brokenshire. Additional
+	codes not learned from lecture and tutorials have been from support websites and/or from our team's own knowledge. Support websites are given credit within the code as well as in our Citiations page -->
 
 <!doctype html>
 
@@ -18,26 +19,25 @@
 	</head>
 
 	<body>
-		<h1>Style Guide</h1>
-
 		<header>
-			<!--Navigation Bar-->
-			 <nav class="grid styleguide">
+		<!-- 	 <nav class="grid styleguide">
 				<a href="index.html">Home</a>
 				<a href="sitemap.html">Site Map</a>
 				<a href="wireframes.html">Wireframes</a>
 				<a href="styleguide.html">Styleguide</a>
 				<a href="citations.html">Citations</a>
-			</nav>
+			</nav> -->
 
 
-			<!--Secondary Nav Bar (Anchor Links)-->
-			<nav class="grid sub-nav">
+			<!--Secondary Nav Bar -->
+			<nav class= "grid sub-nav">
 				<a href="#interactive-elements">Interactive Elements</a>
 				<a href="#text-styling">Text Styling</a>
 				<a href='#modular-elements'>Modular Elements</a>
-			 </nav>
+			</nav>
 		</header>
+
+		<section class="styleguide">
 
 		<section>
 			<h1>
@@ -49,7 +49,8 @@
 			<!-- .interactive-elements -->
 			<section id="interactive-elements">
 
-				<section>
+				<!----- In-text Links ----->
+				<section class="intext">
 					<h1>In-text Link</h1>
 						<h2>CSS Code:</h2>
 							<code>
@@ -73,12 +74,13 @@
 								This is an <a href="#">in-text link.</a>
 		       	</section>
 
+		       	<!-----CTA Buttons ----->
 		       	<section>
 			       	<h1>CTA Button</h1>
 						<h2>CSS Code:</h2>
 						<code>
 							.btn-main-cta { <br>
-								font-family: "Suisse Intl Regular", Verdana, sans-serif; <br>
+								font-family: "SuisseIntl-Regular", Verdana, sans-serif; <br>
 								font-size: 0.7rem; <br>
 								color: white; <br>
 								background-color: #004C45; <br>
@@ -103,7 +105,7 @@
 							<button type="button" class="btn-main">Shop Bouquets</button>
 		       	</section>
 
-
+		       	<!----- Submit Buttons ----->
 		       	<section>
 			       	<h1>Submit and Reset Buttons (Forms)</h1>
 						<h2>CSS Code:</h2>
@@ -130,7 +132,7 @@
 							<button type="button" class="btn-submit">Submit → </button>
 		       	</section>
 
-
+		       	<!----- Text Fields ----->
 		       	<section>
 			       	<h1>Text Input Field & Label</h1>
 						<h2>CSS Code:</h2>
@@ -176,7 +178,7 @@
 							<!-- </form> Form tag referenced from https://www.w3schools.com/tags/tag_form.asp -->
 		       	</section>
 
-
+		       	<!----- Colour Swathces ----->
 		       	<section>
 		       	<h1>Website Colour Swatches</h1>
 					<h2> Sample: </h2>
@@ -185,9 +187,6 @@
 								White <br>
 								HEX #FFFFFF <br>
 								RGB 255 255 255
-							<!-- </p>
-							<p>Used as a background colour for webpages, and navigation bars and sections.</p> -->
-
 						</div>
 						<div class="green">
 							<p class ="colour">
@@ -195,7 +194,6 @@
 								HEX #20605A <br>
 								RGB 32 96 90
 							</p>
-							<!-- <p class="blk-text">Used as a background colour for footer and alternating content. </p> -->
 						</div>
 						<div class="grey">
 							<p class ="colour">
@@ -203,7 +201,6 @@
 								HEX #474747 <br>
 								RGB 71 71 71
 							</p>
-							<!-- <p class="blk-text">Considered as a colour tone for imagery.</p> -->
 						</div>
 						<div class="beige">
 							<p class ="colour">
@@ -211,7 +208,6 @@
 								HEX #F2EAE4 <br>
 								RGB 242 234 228
 							</p>
-							<!-- <p>Used as the primary text colour.</p> -->
 						</div>
 						<div class="pink">
 							<p class ="colour">
@@ -219,22 +215,19 @@
 								HEX #DDAAA0 <br>
 								RGB 221 170 160
 							</p>
-							<!-- <p>Used as the background colour for CTA buttons</p> -->
-
 						</div>
 
 		       	</section>
 			</section> <!-- .interactive-elements ends -->
 
-
-			<!-- .text-styling -->
 			<section id="text-styling">
+				<!----- Headings ----->
 				<section>
 					<h1>Headings</h1>
 						<h2>CSS Code:</h2>
 		       			 <code>
 		       			 	h1.web { <br>
-								font-family: "FreightBigPro-SemiBold", Verdana, sans-serif; <br>
+								font-family: "FreightBigPro-Book", Verdana, sans-serif; <br>
 								font-size: 3rem; <br>
 								margin-bottom: 0; <br>
 								letter-spacing: 0.04rem; <br>
@@ -271,13 +264,13 @@
 								<p>Suisse Int'l Regular - 0.9rem, 0.1 letter spacing</p>
        			 </section>
 
-
+       			 <!----- Paragraphs ----->
        			<section>
 			       	<h1>Paragraph</h1>
 
 			       	<h2>CSS Code:</h2>
 			       	 <code>
-			       	 	font-family: "Suisse Intl Regular", Verdana, sans-serif;  <br>
+			       	 	font-family: "SuisseIntl-Regular", Verdana, sans-serif;  <br>
 						margin: 0rem;  <br>
 						font-size: 0.9rem;  <br>
 						letter-spacing: 0.03rem;  <br>
@@ -313,7 +306,7 @@
 							</ul>
 		       	</section>
 
-
+		       	<!----- Numbered Lists ----->
 		       	<section>
 			       	<h1>Numbered Lists</h1>
 						<h2>HTML Code:</h2>
@@ -334,9 +327,8 @@
 		       	</section>
 			</section> <!-- .text-styling ends -->
 
-
-			<!-- .modular-elements -->
 			<section id="modular-elements">
+				<!----- Nav Bar ----->
 				<section>
 					<h1>Navigation Bar</h1>
 						<h2>CSS Code:</h2>
@@ -377,14 +369,11 @@
 						<h2> Sample: </h2>
 							<nav class="grid topnav">
 						          <div class="grid-col-1of2 logo">
-						                 <!-- <a href="index.html">Four Seasons Floral</a> -->
-						                 <a href="#"><img src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
+						                 <a href="#"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 						          </div>
 
 				            	  <div class="grid-col-1of6 search-bar">
-				                 		 <!-- <form action="/action_page.php"> -->
 											<input type="text" id="search" name="search" placeholder="Search...">
-										<!-- </form>	 -->
 				            	  </div>
 
 				                  <div class="grid-col-1of6">
@@ -407,6 +396,7 @@
 					      </nav>
 			    </section>
 
+			    <!----- Product Listing ----->
 		       <section>
 			       <h1>Product Listing</h1>
 						<h2>CSS Code:</h2>
@@ -432,7 +422,7 @@
 							}<br>
 
 							.btn-quick-add {
-							  	font-family: "Suisse Intl Regular", Verdana, sans-serif; <br>
+							  	font-family: "SuisseIntl-Regular", Verdana, sans-serif; <br>
 								font-size: 0.8rem;<br>
 								color: #20605A;<br>
 								border: 2px solid #20605A;<br>
@@ -503,7 +493,7 @@
 							</div> <!--.container-product-listing ends-->
 			    </section>
 
-	<!--Indiv product description module-->
+					<!--Detailed Product View-->
 				     <section>
 				       	<h1>Detailed Product View</h1>
 				       		<h2>CSS Code:</h2>
@@ -522,8 +512,31 @@
 									</div>
 									<div class="product-desc">
 										<h1 class="web">Lover's Sunrise</h1>
-
+										  	<div class="review-star-rating">
+									              <p>&#9733;</p>
+									              <p>&#9733;</p>
+									              <p>&#9733;</p>
+									              <p>&#9733;</p>
+									              <p>&#9733;</p>
+									              <p> <a href="#">(15)</a>
+								           	</div>
 										<h2 class="web product"> $100.00 <h2>
+
+										<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
+										<form action="/action_page.php">
+											  <label for="sizes">Size:</label>
+											  <select name="sizes" id="sizes">
+											    <option value="Small">Small</option>
+											    <option value="Medium">Medium</option>
+											    <option value="Large">Large</option>
+											  </select>
+										</form>
+
+										<form>
+											<label for="quantity">Quantity:</label>
+									  		<input type="text" id="quantity" name="quantity"><br>
+										</form>
+
 										<p class="description-web-product">
 											This lovely bouquet includes purple hydrangea, light pink spray roses and white asiatic lilies arranged that can either be wrapped beautifully in recyclable paper or in a glass vase.
 										</p>
@@ -532,6 +545,7 @@
 								</div><!--.grid.detailed-product ends -->
 				     </section>
 
+				  <!----- Review Post ----->
 			     <section>
 				      <h1>Review Template</h1>
 				      <h2>HTML Code:</h2>
@@ -588,16 +602,11 @@
 				      <div class="review">
 				      	  <h2> Reviews <a href="#">(15)</a></h2>
 				      	  <div>
-				              <p class="author">Taylor H. |  Nov 24, 2018</p>
+				              <p class="author">Taylor H. from Vancouver, B.C.</p>
 				           </div>
 
 				           <div class="review-content">
-					            <div>
-					            	 <h2>Made from the heart</h2>
-					          	</div>
-
-					          	<!--Star unicode from https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
-					          	<div class="review-star-rating">
+				           	      <div class="review-star-rating">
 						              <p>&#9733;</p>
 						              <p>&#9733;</p>
 						              <p>&#9733;</p>
@@ -605,6 +614,12 @@
 						              <p>&#9733;</p>
 					           	</div>
 
+					            <div>
+					            	 <h2>Made from the heart</h2>
+					          	</div>
+
+					          	<!--Star unicode from https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
+					  
 					            <div class="review-body">
 					              <p>I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.
 					              </p>
@@ -614,6 +629,7 @@
 				      </div> <!-- End of .review -->
 			  	</section>
 
+		       	<!----- Hero Banner with CTRA ----->
 		       	<section>
 			       	<h1>Hero Banner with CTA</h1>
 			       		<h2>CSS Code:</h2>
@@ -666,6 +682,7 @@
 							</div>
 			     </section>
 
+			     <!----- Shipping Details ----->
 				<section>
 					<h1>Shipping Details</h1>
 					<h2>CSS Code:</h2>
@@ -686,7 +703,7 @@
 
 							label {<br>
 							  color: #20605A;<br>
-							  font-family: "Suisse Intl Regular", Verdana, sans-serif; <br>
+							  font-family: "SuisseIntl-Regular", Verdana, sans-serif; <br>
 							  margin-bottom: .5rem;<br>
 							}<br>
 
@@ -805,88 +822,90 @@
 						</form>
 			     </section>
 
-					 <section>
-						 <h1>Footer</h1>
-						 <h2>CSS Code:</h2>
-						 <code>
-							 .container-footer {<br>
-								 display: grid;<br>
-								 background: #EEEEEE;<br>
-								 padding-right: 5rem;<br>
-								 padding-left: 5rem;<br>
-								 grid-template-columns: 1.75fr 1fr 1fr;<br>
-								 grid-column-gap: 70px;<br>
-								 height: 250px;<br>
+				<!----- Footer ----->
+				<section>
+				 <h1>Footer</h1>
+				 <h2>CSS Code:</h2>
+				 <code>
+					 .container-footer {<br>
+						 display: grid;<br>
+						 background: #EEEEEE;<br>
+						 padding-right: 5rem;<br>
+						 padding-left: 5rem;<br>
+						 grid-template-columns: 1.75fr 1fr 1fr;<br>
+						 grid-column-gap: 70px;<br>
+						 height: 250px;<br>
 
-							 }<br>
+					 }<br>
 
-							 .child-footer {}<br>
-							 background: #EEEEEE;<br>
-						 }<br>
-					 </code>
+					 .child-footer {}<br>
+					 background: #EEEEEE;<br>
+				 }<br>
+			 </code>
 
-					 <h2>HTML Code:</h2>
-					 <code>
-						 &lt;div class="container-footer"&gt; <br>
-						 &lt;div class="child-footer"&gt; <br>
-						 &lt;h2&gt;ABOUT FOUR SEAONS FLORAL&lt;/h2&gt; <br>
-						 &lt;p&gt;We are a family-owned and full-service floral shop&lt;/p&gt <br>
-						 &lt;br&gt;based in Vancouver, BC.  creating bespoke floral;<br>
-						 &lt;br&gt;arrangements for any types of occasions.;<br>
-						 &lt;br&gt;We’re open Monday - Fridays from;<br>
-						 &lt;br&gt;10am - 5pm PST&lt;/p&gt;<br>
-						 &lt;div class="child-footer"&gt; <br>
-						 &lt;h2&gt;OUR LOCATION&lt;/h2&gt; <br>
-						 &lt;p&gt;3375 Kingsway #102,&lt;/p&gt <br>
-						 &lt;br&gt;based in Vancouver, BC.  creating bespoke floral;<br>
-						 &lt;br&gt;Vancouver, B.C. ;<br>
-						 &lt;br&gt;V5R 5K6  ;/p&gt;<br>
-						 &lt;div class="child-footer"&gt; <br>
-						 &lt;h2&gt;CONTACT US&lt;/h2&gt; <br>
-						 &lt;p&gt;(604) 738-0678&lt;/p&gt <br>
-						 &lt;br&gt;&lt;img src="img/icons/ig-icon.png" alt="Instagram logo" width="15" height="15"&gt; Instagram;<br>
-						 &lt;br&gt;&lt;img src="img/icons/fb-icon.png" alt="Facebook logo" width="15" height="15"&gt; Facebook;<br>
-						 &lt;br&gt;V5R 5K6  ;/p&gt;<br>
-						 &lt;/p&gt;<br>
-						 &lt;/div&gt;<br>
-						 &lt;/div&gt;<br>
-						 &lt;/section&gt;<br>
+			 <h2>HTML Code:</h2>
+			 <code>
+				 &lt;div class="container-footer"&gt; <br>
+				 &lt;div class="child-footer"&gt; <br>
+				 &lt;h2&gt;ABOUT FOUR SEAONS FLORAL&lt;/h2&gt; <br>
+				 &lt;p&gt;We are a family-owned and full-service floral shop&lt;/p&gt <br>
+				 &lt;br&gt;based in Vancouver, BC.  creating bespoke floral;<br>
+				 &lt;br&gt;arrangements for any types of occasions.;<br>
+				 &lt;br&gt;We’re open Monday - Fridays from;<br>
+				 &lt;br&gt;10am - 5pm PST&lt;/p&gt;<br>
+				 &lt;div class="child-footer"&gt; <br>
+				 &lt;h2&gt;OUR LOCATION&lt;/h2&gt; <br>
+				 &lt;p&gt;3375 Kingsway #102,&lt;/p&gt <br>
+				 &lt;br&gt;based in Vancouver, BC.  creating bespoke floral;<br>
+				 &lt;br&gt;Vancouver, B.C. ;<br>
+				 &lt;br&gt;V5R 5K6  ;/p&gt;<br>
+				 &lt;div class="child-footer"&gt; <br>
+				 &lt;h2&gt;CONTACT US&lt;/h2&gt; <br>
+				 &lt;p&gt;(604) 738-0678&lt;/p&gt <br>
+				 &lt;br&gt;&lt;img src="img/icons/ig-icon.png" alt="Instagram logo" width="15" height="15"&gt; Instagram;<br>
+				 &lt;br&gt;&lt;img src="img/icons/fb-icon.png" alt="Facebook logo" width="15" height="15"&gt; Facebook;<br>
+				 &lt;br&gt;V5R 5K6  ;/p&gt;<br>
+				 &lt;/p&gt;<br>
+				 &lt;/div&gt;<br>
+				 &lt;/div&gt;<br>
+				 &lt;/section&gt;<br>
 
-					 </code>
+			 </code>
 
-					 <h2> Sample: </h2>
- 						<!-- <div class="container-footer"> -->
-					 <div class="container-footer">
+			 <h2> Sample: </h2>
+					<!-- <div class="container-footer"> -->
+			 <div class="container-footer">
 
-						 <!-- <div class="child-footer"> -->
+				 <!-- <div class="child-footer"> -->
 
-						 <div class="child-footer">
-							 <h2>ABOUT FOUR SEASONS FLORAL</h2>
-							 <p>We are a family-owned and full-service floral shop
-								 <br>based in Vancouver, BC.  creating bespoke floral
-								 <br>arrangements for any types of occasions. 
-								 <br>We’re open Monday - Fridays from
-								 <br> 10am - 5pm PST</p>
-							 </div>
+				 <div class="child-footer about">
+					 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
+					 <p>We are a family-owned and full-service floral shop
+						 based in Vancouver, BC.  creating bespoke floral
+						 arrangements for any types of occasions. 
+						 We’re open Monday - Fridays from
+						 10am - 5pm PST</p>
+				</div>
 
-							 <div class="child-footer">
-								 <h2>OUR LOCATION</h2>
-								 <p>3375 Kingsway #102, 
-									 <br>Vancouver, B.C. 
-									 <br>V5R 5K6  </p>
-								 </div>
+				 <div class="child-footer location">
+					 <h3 class="web">OUR LOCATION</h3>
+					 <p>3375 Kingsway #102, 
+						Vancouver, B.C. 
+						 V5R 5K6  </p>
+				</div>
 
-								 <div class="child-footer">
-									 <h2>CONTACT US</h2>
-									 <p>(604) 738-0678
-										 <br><img src="img/icons/ig-icon.png" alt="Instagram logo" width="15" height="15"> Instagram
-										 <br><img src="img/icons/fb-logo.png" alt="Facebook logo" width="15" height="15">   Facebook
-									 </p>
-								 </div>
+				 <div class="child-footer contact">
+					 <h3 class="web">CONTACT US</h3>
+					 <p>(604) 738-0678
+						 <img src="img/icons/ig-icon.png" alt="Instagram logo" width="15" height="15"> Instagram
+						 <img src="img/icons/fb-logo.png" alt="Facebook logo" width="15" height="15">   Facebook
+					 </p>
+				 </div>
 
-							 </div>
-						 </section>
+			 </div>
+			</section>
 
+			<!----- Web Grids ----->
 			<section>
 			       	<h1>Website Grid Structures</h1>
 							<section>
@@ -1086,5 +1105,7 @@
 				    </section> <!-- sub section ends -->
 
 			</section> <!-- .modular-elements ends -->
+
+		</section> <!-- .styleguide ends -->
 	</body>
 </html>

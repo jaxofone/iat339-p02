@@ -14,7 +14,6 @@
 	flex-wrap: -ms-flex; 	
 	flex-wrap: wrap;
 	justify-content: space-around;
-
 }
 
 
@@ -32,22 +31,35 @@ nav .grid-col-1of6.search-bar  {
 	padding-right: 3rem;
 }
 
-/* ------ Hero Section ------ */
+/* ------ Hero Sections ------ */
 .hero {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   background-image: url("../img/hero-img.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 30rem;
 }
 
-/* ------ Altenating Content ------ */
+.hero.shop {
+  display: flex;
+  background-image: url("../img/victoria-priessnitz.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 30rem;
+}
 
-.alternating-content.col-1of2-reverse{
-	display: flex;
-	justify-content: flex-end;
+.hero-about .text {
+  align-items: left;
+  padding-left: 5rem;
+  padding-right: 2rem;
+}
+
+/* ------ Alternating Content ------ */
+
+.alternating-content.col-1of2-reverse {
+	/*display: flex;*/
+	/*justify-content: flex-end;*/
+
 }
 
 /* ------ Review Section ------ */
@@ -105,7 +117,7 @@ form .grid-col-1of2 {
 
 
 .col-1of2, .col-1of2-reverse {
-	flex: 2 1 80%;
+	/*flex: 2 1 80%;*/
 }
 
 .col-2of2, .col-2of2-reverse {

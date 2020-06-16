@@ -152,6 +152,10 @@ section h2 {
 }
 
 /* ------ Section Styling ------*/
+
+section.about, section.home {
+	padding-bottom: 8rem;
+}
 section.citations, section.styleguide  {
 	padding: 3rem;
 }
@@ -441,21 +445,22 @@ nav .grid-col-1of6 img {
 nav .search-bar input {
 	border-radius: .8rem;
 	height: 2rem;
+	font-size: 0.8rem;
 }
-/*nav .search-bar {
-	width: 50vw;
-}*/
+nav .search-bar {
+	width: 40rem;
+}
 
 
 /* ------ Hero Advertising ------*/
 
 .hero .text {
-	padding-top: 10rem;
+	padding-top: 7rem;
 	padding-left: 4.5rem;
 }
 
-.hero h1 {
-  font-family: "Freight Big Pro";
+.hero h1, .hero-about h1 {
+  font-family: "FreightBigPro-Book";
   font-size: 3rem;
   text-transform: none;
   color: #474747;
@@ -464,8 +469,32 @@ nav .search-bar input {
   text-align: left;
 }
 
+.hero.shop .text {
+	margin: auto;
+	text-align: center;
+	padding: 0;
+}
+
+.hero.shop h1, .hero.shop p {
+	text-align: center;
+}
+
 .hero button {
 	margin-top: 1rem;
+}
+
+.hero-about.col-2of2-reverse text{
+
+}
+ 
+ .hero-about h1, .hero-about p {
+	max-width: 37rem;
+}
+
+
+.hero-about img {
+	width: 25rem;
+	height: 100%;
 }
 
 /* ------ Home Menu Items------*/
@@ -491,8 +520,8 @@ nav .search-bar input {
 }
 
 .menu.col-1of3, .menu.col-2of3, .menu.col-3of3 {
-	margin-bottom: 5rem;
-	margin-top: 4rem;
+	/*margin-bottom: 5rem;*/
+	/*margin-top: 4rem;*/
 }
 
 /* ------ Alternating Content-----*/
@@ -504,6 +533,10 @@ nav .search-bar input {
 .alternating-content.col-2of2, .alternating-content.col-2of2-reverse  {
 	overflow: auto;
 	padding-left: 4rem;
+}
+
+.alternating-content.col-2of2-reverse {
+	float: right;
 }
 
 .alternating-content.col-2of2 p, .alternating-content.col-2of2-reverse p {

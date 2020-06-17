@@ -37,29 +37,34 @@ nav .grid-col-1of6.search-bar  {
   background-image: url("../img/hero-img.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 30rem;
+  height: 26rem;
 }
 
-.hero.shop {
+.shop .hero {
   display: flex;
   background-image: url("../img/victoria-priessnitz.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 30rem;
+  height: 23rem;
 }
 
-.hero-about .text {
-  align-items: left;
-  padding-left: 5rem;
-  padding-right: 2rem;
+.about .hero {
+  display: flex;
+  background-image: url("../img/annie-spratt.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 24rem;
 }
+
 
 /* ------ Alternating Content ------ */
+section.location {
+	text-align: center;
+}
 
-.alternating-content.col-1of2-reverse {
-	/*display: flex;*/
-	/*justify-content: flex-end;*/
-
+section.location .col-2of2{
+	padding-left: 2rem;
+	text-align: left;
 }
 
 /* ------ Review Section ------ */

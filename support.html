@@ -7,7 +7,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>About Us</title>
+		<title>Support</title>
 
 		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
     	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,14 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/grids.css">
+    <script src="main.js"></script>
 		<!-- Script for fontawesome -->
 		<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
 	</head>
 
 	<body>
 		<!----- Top Nav ----->
-		<header>
+    <header>
 			<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
 			 <nav class="grid topnav">
 		          <div class="grid-col-1of2 logo">
@@ -56,58 +57,45 @@
 		<section class ="about">
 			<div class ="hero">
 				<div class="text">
-					<h1>Meet your friendly neighbourhood garden.</h1>
+					<h1>We are here to help you.</h1>
 				</div>
 			</div>
 			<!-- <div class = "hero-about col-1of2-reverse">
 				<img src="img/product-mod-image.png " alt="Photo of bouquet of flowers being held by a woman">
 			</div> -->
 		<p class="about-desc">
-			We are a family owned and operated full-service floral shop based in Vancouver, BC. creating bespoke floral arrangements for any type of occasions. We have been committed to offering only the freshest and finest floral arrangements and gifts with friendly and timely customer service support. Your support has continued to...
+			FAQ
 		</p>
 		</section>
 
-		<!----- Values---->
-		<section class ="values">
-			<div class ="grid ">
-				<div class ="values col-1of3">
-					<img src="img/flower-tile.png" alt="Photo of peonies">
-					<h3 class="web">Family owned & operated</h3>
-					<p> We are a multigenerational business that has served Vancouver for over 25 years. </p>
-				</div>
+    <button class="accordion">Who is Four Seasons Floral?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
 
-				<div class ="values col-2of3">
-					<img src="img/plants-tile.jpg" alt="Photo of a green plant">
-					<h3 class="web">Local</h3>
-					<p>We work with a network of local growers to support low-carbon arigiculture. </p>
-				</div>
+    <button class="accordion">Why Four Seasons Floral?</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
 
-				<div class ="values col-3of3">
-					<img src="img/services-tile.jpg" alt="Photo of flowers in a tin barrel">
-					<h3 class="web">Bespoke</h3>
-					<p>We consider the details and idiosyncrasies that make each bouquet different and unique.</p>
-				</div>
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-			</div>  <!--.grid ends -->
-		</section>
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
 
-		<!----- Location ---->
-	<!-- 	<section class = "location">
-			<div class ="alternating-content col-1of2">
-				<img src="img/home-grown.jpg" alt="Photo of purple flowers in a garden">
-			</div>
-			<div class ="alternating-content col-2of2">
-				<h2>Our location</h2>
-				<p>#102-3375 Kingsway</p>
-				<p>Vancouver, B.C.</p>
-				<p>V5R 5K6</p>
-				<p>(604) 738-0678 </p>
-				<p>We’re open Monday to Fridays from 10am to 5pm.</p>
-				<p>Instagram</p>
-				<p>Facebook</p>
-			</div>
-		</section>
- -->
+
 
 		<!----- Footer----->
 		 <div class="container-footer">

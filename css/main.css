@@ -24,9 +24,12 @@ code {
 }
 
 a {
-	/*color: #000;*/
-	color: #339F95;
+	color: #000;
 	text-decoration: none;
+}
+
+a.styleguide {
+	color: #339F95;
 }
 
 section.intext a:hover, section.intext a:focus, section.intext a:active {

@@ -24,7 +24,8 @@ code {
 }
 
 a {
-	color: #000;
+	/*color: #000;*/
+	color: #339F95;
 	text-decoration: none;
 }
 
@@ -89,7 +90,7 @@ h2 {
 	margin: 0;
 }
 
-section h1  {
+section h1 {
 	font-family: "SuisseIntl-Normal", Verdana, sans-serif;
 	font-weight: 400;
 	font-size: .8rem;
@@ -279,7 +280,8 @@ input[type=text]:focus {
 }
 
 .product-desc label {
-	font-size: 1.3rem;
+	font-size: 1.1rem;
+	letter-spacing: 0.03rem;
 }
 
 .product-desc input#quantity {
@@ -316,14 +318,20 @@ button:focus {
 
 /* ---------- Text Styling ---------- */
 /* Headings */
-h1 {
+h1, section#text-styling h1.styleguide, .product-desc h1.styleguide  {
 	font-family: "FreightBigPro-Book", Verdana, sans-serif;
 	font-size: 3rem;
 	margin-bottom: 0;
 	letter-spacing: 0.1rem;
+	text-transform: capitalize;
 }
 
-h2 {
+ .product-desc h1.styleguide  {
+ 	margin-top: 0;
+	padding-top: 0;
+ }
+
+h2, section#text-styling h2.styleguide {
 	font-family: "FreightBigPro-Book", Verdana, sans-serif;
 	font-size: 2rem;
 	margin-bottom: 0;
@@ -424,7 +432,7 @@ nav .search-bar {
 }
 
 .about > .hero > .text > h1 {
-	text-align: center;
+	text-align: left;
 	color: #fff;
 }
 
@@ -497,15 +505,15 @@ nav .search-bar {
 
 /* ------ Individual Product Description -------- */
 .product-img img {
-	width: 35rem;
+	width: 30rem;
 	height: auto;
 }
 
 h2.web.product {
 	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
-	font-size: 1.9rem;
+	font-size: 1.5rem;
 	color: #474747;
-	letter-spacing: 0.15rem;
+	letter-spacing: 0.10rem;
 	padding: 0;
 	padding-top: 1.5rem;
 	padding-bottom: 1.5rem;
@@ -577,7 +585,8 @@ h1.web {
 }
 
 .product-item img {
-  width: 95%;
+  /*width: 95%;*/
+  width: 35%;
   height: auto;
   transition: .5s ease;
 }

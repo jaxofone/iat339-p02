@@ -5,6 +5,13 @@
 	box-sizing: border-box;
 }
 
+.grid-item {
+	background-color: #eee;
+	border: 1px dashed #000;
+	text-align: center;
+}
+
+
 /* ------ Nav Bar  ------ */
 .grid {
 	display: -webkit-flex; 			/* Supports older browsers */
@@ -42,7 +49,7 @@ nav .grid-col-1of6.search-bar  {
 
 .shop .hero {
   display: flex;
-  background-image: url("../img/victoria-priessnitz.jpg");
+  background-image: url("../img/dennis-ottink.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 23rem;
@@ -256,79 +263,176 @@ form .grid-col-1of2 {
 /* ---------- Media Queries ---------- */
 /* Phone and below */
 @media (max-width: 37em) {
-	.btn-submit {
-		width: 100%;
-	}
-
-	.nav-secondary-item {
-		max-width: 100%;
-		margin-top: 5rem;
-	}
-
-	.nav-secondary-item a  {
-		padding: 15px 19px;
-		margin-top: 5rem;
-	}
-
-	.top-left {
-/*	  position: absolute;
-	  top: 0rem;
-	  left: 5rem;*/
-	  display: flex;
-	  justify-content: flex-start;
-	}
-
-	.top-left h1 {
-	  max-width: 15rem;
-	  font-size: 1.5rem;
-	}
-
-	.top-left button {
-		margin-top: 1rem;
-	} 
-
-	h2.services{
-		margin-top: 50rem;
-	}
-
-	 h2.landing, h2.shop {
-	 	margin-top: 20rem;
-	 }
 }
 
 /* Tablet and below */
 @media (max-width: 48em) {
-	.btn-submit {
-		width: 40%;
+
+	p, nav .grid-col-1of6 a {
+		font-size: 1rem;
+		letter-spacing: 0.04rem;
+		line-height: 2rem;
 	}
+
+	/*----- Nav Bar ------*/
+	nav .grid-col-1of6, nav .grid-col-1of2 {
+		flex: 1 1 100%;
+		text-align: center;
+	}
+
+	nav .grid-col-1of2 {
+		margin-left: -3rem;
+	}
+
+	nav .grid-col-1of6.search-bar {
+		text-align: center;
+		margin: auto;
+		padding-right: 0;
+	}
+
+	nav .grid-col-1of6 input{
+		text-align: center;
+		margin: auto;
+	}
+
+	 nav .grid-col-1of2 a {
+	 	padding: 0;
+	 }
+
+	 /*----- Home Hero ------*/
+	 .hero .text h1 {
+   		padding-top: 0;
+   		margin-top: 0rem;
+    	padding-left: 0;
+    	font-size: 2.2rem;
+		max-width: 25rem;
+		line-height: 2.5rem;
+		text-align: center;
+	}
+
+	.hero {
+		height: 100%;
+	}
+
+	.hero .text {
+		  /*padding-top: 23rem;*/
+		  margin: auto;
+		  text-align: center;
+	}
+
+/*	section.about > .hero > .text {
+		padding-left: 0
+		padding-top: 0;
+	} */
+
+	.about > .hero > .text > h1 {
+		/*color: #474747;*/
+		font-size: 3.2rem;
+		max-width: 40rem;
+		line-height: 4rem;
+	}
+
+	.about > .hero > .text > p {
+		padding-top: 8rem;
+	}
+
+	/*----- Home 3 Tiles ------*/
+	.grid .menu.col-1of3, .grid .menu.col-2of3, .grid .menu.col-3of3  {
+		flex-basis: 100%;
+		text-align: center;
+	}
+
+	.grid .menu.col-1of3 p, .grid .menu.col-2of3 p, .grid .menu.col-3of3 p  {
+		position: absolute;
+		top: 5.5rem;
+		left: 19rem;
+	}
+
+	.grid .menu.col-1of3, .grid .menu.col-2of3 {
+		padding-bottom: 3rem;
+	}
+
+	.menu img {
+		width: 20rem;
+		height: 100%;
+	}
+
+	/*----- Home Alternating Content ------*/
+	.alternating-content-text{
+		text-align: center;
+		padding-bottom: 2rem;
+	}
+
+	/*----- Products Grid ------*/
+	.product-item.col-1of3, .product-item.col-2of3, .product-item.col-3of3 {
+		flex-basis: 100%;
+	}
+
+	.product-item.col-1of3, .product-item.col-2of3  {
+		padding-bottom: 3rem;
+	}
+
+	.product-item img {
+		width: 60%;
+		height: auto;
+	}
+
+	.product-item p.product-name {
+		font-size: 2.3rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		max-width: 50rem;
+	}
+
+	p.price {
+		font-size: 1.2rem;
+		max-width: 50rem;
+	}
+
+	.product-item:hover .btn-position {
+		opacity: 1;
+	}
+
+	.btn-position {
+		position: absolute;
+		bottom :0;
+		left: 0;
+		top: 0;
+	}
+
+	.grid.products {
+		text-align: center;
+	}
+
+	/*----- Values ------*/
+	.values img {
+		width: 50%;
+		height: auto;
+	}
+
+	.values.col-1of3, .values.col-2of3, .values.col-3of3 {
+		flex-basis: 100%;
+
+	}
+
+	.values.col-1of3, .values.col-2of3 {
+		padding-bottom: 3rem;
+	}
+
+	.values h3 {
+		font-size: 1.2rem;
+	}
+
+	.values p {
+		text-align: center;
+		max-width: 20rem;
+		margin: auto;
+	}
+	
 }
 
 /* Desktop and below */
 @media (max-width: 75em) {
-	.top-left {
-	  position: absolute;
-	  top: 4rem;
-	  left: 5rem;
-	}
-
-	.top-left h1 {
-	  max-width: 40rem;
-	}
-
-	.top-left button {
-		margin-top: 1rem;
-	} 
-
-	h2.services{
-		margin-top: 50rem;
-	}
-
-	 h2.landing {
-	 	margin-top: 10rem;
-	 }
-
-	 h2.shop {
-	 	margin-top: -10rem;
-	 }
+	
 }
 

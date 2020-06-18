@@ -588,8 +588,8 @@ h1.web {
 }
 
 .product-item img {
-  /*width: 95%;*/
-  width: 35%;
+  width: 95%;
+  /*width: 35%;*/
   height: auto;
   transition: .5s ease;
 }

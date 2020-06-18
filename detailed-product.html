@@ -7,7 +7,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Four Seasons Floral Homepage</title>
+		<title>Cart</title>
 
 		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
     	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,94 +43,77 @@
                   <div class="grid-col-1of6">
                      	 <a href="support.html">Support</a>
                   </div>
-                  <div class="grid-col-1of6">
-                     	 <a href="#">Contact</a>
-                  </div>
-
                    <div class="grid-col-1of6">
                  		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
             	  </div>
 	      </nav>
 		</header>
 
-		<!----- Hero Banner----->
-		<section class ="home">
-		<div class="hero">
-			<div class="text">
-				<h1>Spread happiness with summer's blooms.</h1>
-				<a href="shop.html">
-					<button type="button" class="btn-main"> Shop Bouquets</button>
-				</a>
+
+		<!----- Detailed Product ----->
+		<div class="grid" id="detailed-product">
+			<div class="product-img">
+				<img src="img/product-lovers-sunrise.jpg" alt="Photo of Lover's Sunrise bouquet">
 			</div>
-		</div>
-		</section>
+			<div class="product-desc">
+				<h1 class="styleguide">Lover's Sunrise</h1>
+				  	<div class="review-star-rating">
+			              <p>&#9733;</p>
+			              <p>&#9733;</p>
+			              <p>&#9733;</p>
+			              <p>&#9733;</p>
+			              <p>&#9733;</p>
+			              <p> <a href="#">(15)</a>
+		           	</div>
+				<h2 class="web product"> $100.00 <h2>
 
-		<!----- Product/Service Offerings---->
-		<section class ="home">
-		<div class ="grid">
-			<div class ="menu col-1of3">
-				<a href="shop.html">
-					<img src="img/flower-tile.png" alt="Photo of peonies">
-					<p>Flowers</p>
-				</a>
-			</div>
+				<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
+				<form action="/action_page.php">
+					  <label for="sizes">Size:</label>
+					  <select name="sizes" id="sizes">
+					    <option value="Small">Small</option>
+					    <option value="Medium">Medium</option>
+					    <option value="Large">Large</option>
+					  </select>
+				</form>
 
+				<form>
+					<label for="quantity">Quantity:</label>
+			  		<input type="text" id="quantity" name="quantity"><br>
+				</form>
 
-			<div class ="menu col-2of3">
-				<a href="shop.html">
-					<img src="img/plants-tile.jpg" alt="Photo of a green plant">
-					<p>Plants</p>
-				</a>
-			</div>
+				<p class="description-web-product">
+					This lovely bouquet includes purple hydrangea, light pink spray roses and white asiatic lilies arranged that can either be wrapped beautifully in recyclable paper or in a glass vase.
+				</p>
+				<button type="button" class="btn-main">Add to Cart</button>
+			</div> <!--.product-desc ends -->
+		</div><!--.grid#detailed-product ends -->
 
-			<div class ="menu col-3of3">
-				<a href="shop.html">
-					<img src="img/services-tile.jpg" alt="Photo of flowers in a tin barrel">
-					<p>Services</p>
-				</a>
-			</div>
-		</div>
-		</section>
+		 <div class="review">
+	      	  <h2> Reviews <a href="#">(15)</a></h2>
+	      	
+	           <div class="review-content">
+	           	   <div class="review-star-rating">
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		           </div>
+		            <div>
+		            	 <h2>Made from the heart</h2>
+		          	</div>
+		           	<div>
+		              <p class="author">Taylor H. on June 11, 2020</p>
+		           </div>
+	           	  
+		            <div class="review-body">
+		              <p>I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.
+		              </p>
+		            </div>
 
-		<!----- Alternating Content ----->
-		<div class ="alternating-content-img col-1of2">
-			<img src="img/home-grown.jpg" alt="Photo of purple flowers in a garden">
-		</div>
-		<div class ="alternating-content-text col-2of2">
-			<h2>Home grown.</h2>
-			<p>We source our flowers from local suppliers, lowering our carbon footprint and providing the freshest blooms to our customers.</p>
-			<a href="shop.html">
-				<button type="button" class="btn-main">learn more</button>
-			</a>
-		</div>
-
-		<div class ="alternating-content-text col-1of2">
-			<h2>The gift of giving.</h2>
-			<p>ive one of nature’s most beautiful gifts to the people who mean the most to you.</p>
-			<a href="shop.html">
-					<button type="button" class="btn-main">shop flowers</button>
-			</a>
-		</div>
-		<div class ="alternating-content-img col-2of2">
-			<img src="img/gift-of-giving.jpg" alt="Photo of bouquet of flowers being held by a woman">
-		</div>
-
-
-	<!-- 	<div class="grid">
-		<div class ="alternating-content col-2of2-reverse">
-			<h2>The gift of giving.</h2>
-			<p>Give one of nature’s most beautiful gifts to the people who mean the most to you.</p>
-			<a href="shop.html">
-				<button type="button" class="btn-main">shop flowers</button>
-			</a>
-		</div> -->
-
-		<!-- <div class="alternating-content-two"> -->
-		<!-- <div class ="alternating-content col-1of2-reverse">
-			<img src="img/gift-of-giving.jpg" alt="Photo of bouquet of flowers being held by a woman">
-		</div>
-		</div> -->
-		<!-- </div> -->
+		       </div> <!--End of .review-content-->
+	     </div> <!-- End of .review -->
 
 		<!----- Footer----->
 		 <div class="container-footer">

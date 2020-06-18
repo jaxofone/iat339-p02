@@ -28,7 +28,7 @@ a {
 	text-decoration: none;
 }
 
-a.styleguide {
+a.styleguide, .review a {
 	color: #339F95;
 }
 
@@ -498,7 +498,7 @@ nav .search-bar {
 
 /* ------ About Us -------- */
 .values img {
-	width: 30%;
+	width: 35%;
 	height: auto;
 }
 
@@ -506,9 +506,18 @@ nav .search-bar {
 	text-align: center;
 }
 
+.values.col-2of3 img {
+	width: 30%;
+	height: auto;
+}
+
+.values.col-1of3 img {
+	padding-bottom: 1.5rem;
+}
+
 /* ------ Individual Product Description -------- */
 .product-img img {
-	width: 30rem;
+	width: 25rem;
 	height: auto;
 }
 
@@ -554,14 +563,17 @@ h1.web {
 }
 
 .review-content h2 {
-	padding-bottom: 2rem;
+	font-size: 1.5rem;
+	padding-top: .8rem;
 }
-
-
 
 /* ------ Review Post -------- */
 .review p.author {
 	color: #474747;
+	margin: 0;
+	padding-bottom: 1.2rem;
+	padding-top: .6rem;
+}
 }
 
 .review h2, .review-body p  {
@@ -576,6 +588,11 @@ h1.web {
   color: #FED670;
   padding-right: 1rem;
   font-size: 1.2rem;
+}
+
+.review-content .review-star-rating p {
+	margin: 0;
+	margin-top: 2rem;
 }
 
 
@@ -719,7 +736,7 @@ label {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-	background-color: #F5EFEB;
+  background-color: #F5EFEB;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -727,13 +744,17 @@ label {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
   transition: 0.4s;
+  font-family: "FreightBigPro-Book", Verdana, sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  letter-spacing: 0.06rem;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #DEAA9F;
+  background-color: #20605A;
+  color: #fff;
 }
 
 .accordion:after {
@@ -746,13 +767,14 @@ label {
 
 .active:after {
   content: "\2212";
+  color: #fff;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-	padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+padding: 0 18px;
+ background-color: white;
+ max-height: 0;
+ overflow: hidden;
+ transition: max-height 0.2s ease-out;
 }

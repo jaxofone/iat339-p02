@@ -22,8 +22,7 @@
 
 	<body>
 		<header>
-			<!--Secondary Nav Bar -->
-			<nav class= "grid sub-nav">
+			<nav class= "grid">
 				<a href="#interactive-elements">Interactive Elements</a>
 				<a href="#text-styling">Text Styling</a>
 				<a href='#modular-elements'>Modular Elements</a>
@@ -31,14 +30,6 @@
 		</header>
 
 		<section class="styleguide">
-
-		<section>
-			<h1>
-				<!-- Open link in new tab from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_target -->
-				Find our github repository <a  class="styleguide" href ="https://github.com/jaxofone/iat339-p02" target="_blank">here</a>.
-			</h1>
-		</section>
-
 			<!-- .interactive-elements -->
 			<section id="interactive-elements">
 
@@ -47,17 +38,6 @@
 					<h1>In-text Link</h1>
 						<h2>CSS Code:</h2>
 							<code>
-								a { <br>
-									color: #339F95; <br>
-									text-decoration: none; <br>
-								} <br>
-
-								a:hover, a:focus, a:active { <br>
-									background-color: white; <br>
-									color: #20605A; <br>
-									text-decoration: none; <br>
-									transition: color 0.5s; <br>
-								}
 							</code>
 
 							<h2>HTML Code:</h2>
@@ -72,22 +52,6 @@
 			       	<h1>CTA Button</h1>
 						<h2>CSS Code:</h2>
 						<code>
-							.btn-main-cta { <br>
-								font-family: "SuisseIntl-Regular", Verdana, sans-serif; <br>
-								font-size: 0.7rem; <br>
-								color: white; <br>
-								background-color: #004C45; <br>
-								letter-spacing: 0.1rem; <br>
-								text-transform: uppercase; <br>
-								padding: 0.5rem 1rem; <br>
-								border-radius: 1.2rem; <br>
-								opacity: 0.9; <br>
-								border: none; <br>
-							} <br>
-
-							.btn-main:hover, .btn-main:focus{ <br>
-								opacity: 1;
-							}
 						</code>
 
 						<h2>HTML Code:</h2>
@@ -103,18 +67,6 @@
 			       	<h1>Submit and Reset Buttons (Forms)</h1>
 						<h2>CSS Code:</h2>
 			       			 <code>
-			       			 	.btn-submit { <br>
-									font-size: 0.9rem;<br>
-									color: #004C45;<br>
-									background-color: #fff;<br>
-									letter-spacing: 0.1rem;<br>
-									border: none;<br>
-									text-transform: uppercase;<br>
-									opacity: 0.9;<br>
-									font-weight: 1000;<br>
-									margin-top: 2rem;<br>
-									padding: 0;<br>
-								}
 			       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -130,30 +82,6 @@
 			       	<h1>Text Input Field & Label</h1>
 						<h2>CSS Code:</h2>
 		       			 <code>
-		       			 	input[type=text] { <br>
-  							  max-width: 50rem; <br>
-							  padding: 5px 10px; <br>
-							  display: block; <br>
-							  border: 1px solid #C8C8C8; <br>
-							  border-radius: 4px; <br>
-							  box-sizing: border-box; <br>
-							  color: #474747;<br>
-							} <br>
-
-							input[type=text]:hover, input[type=text]:active  { <br>
-							  border: 1px solid #20605A; <br>
-							  transition-property: border-color; <br>
-							  transition-duration:0.4s; <br>
-							  opacity: .5; <br>
-							} <br>
-
-							input[type=text]:focus { <br>
-								color: #474747; <br>
-							} <br>
-
-							input:focus, select:focus, textarea:focus, button:focus { <br>
-							   outline: none; <br>
-							}
 		       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -175,41 +103,40 @@
 		       	<section>
 		       	<h1>Website Colour Swatches</h1>
 					<h2> Sample: </h2>
-						<div class="white"> <!--Divs referenced from Week 3's lecture-->
+						<div class="white colour"> <!--Divs referenced from Week 3's lecture-->
 							<p class ="colour">
 								White <br>
 								HEX #FFFFFF <br>
 								RGB 255 255 255
 						</div>
-						<div class="green">
+						<div class="green colour">
 							<p class ="colour">
 								Forest Green <br>
 								HEX #20605A <br>
 								RGB 32 96 90
 							</p>
 						</div>
-						<div class="grey">
+						<div class="grey colour">
 							<p class ="colour">
 								Grey <br>
 								HEX #474747 <br>
 								RGB 71 71 71
 							</p>
 						</div>
-						<div class="beige">
+						<div class="beige colour">
 							<p class ="colour">
 								Beige <br>
 								HEX #F2EAE4 <br>
 								RGB 242 234 228
 							</p>
 						</div>
-						<div class="pink">
+						<div class="pink colour">
 							<p class ="colour">
 								Dusty Rose <br>
 								HEX #DDAAA0 <br>
 								RGB 221 170 160
 							</p>
 						</div>
-
 		       	</section>
 			</section> <!-- .interactive-elements ends -->
 
@@ -219,26 +146,6 @@
 					<h1>Headings</h1>
 						<h2>CSS Code:</h2>
 		       			 <code>
-		       			 	h1 { <br>
-								font-family: "FreightBigPro-Book", Verdana, sans-serif; <br>
-								font-size: 3rem; <br>
-								margin-bottom: 0; <br>
-								letter-spacing: 0.04rem; <br>
-								text-transform: none; <br>
-							} <br>
-
-							h2 { <br>
-								font-size: 2rem; <br>
-							} <br>
-
-							h3{ <br>
-								font-family: "SuisseIntl-Normal", Verdana, sans-serif;  <br>
-								font-weight: 600; <br>
-								font-size: .9rem; <br>
-								margin-bottom: 0; <br>
-								letter-spacing: 0.1rem; <br>
-								text-transform: uppercase; <br>
-							}
 		       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -263,11 +170,6 @@
 
 			       	<h2>CSS Code:</h2>
 			       	 <code>
-			       	 	font-family: "SuisseIntl-Regular", Verdana, sans-serif;  <br>
-						margin: 0rem;  <br>
-						font-size: 0.9rem;  <br>
-						letter-spacing: 0.03rem;  <br>
-			       	 	max-width: 38rem; <br>
 			       	 </code>
 
 			       	<h2>HTML Code:</h2>
@@ -326,18 +228,6 @@
 					<h1>Navigation Bar</h1>
 						<h2>CSS Code:</h2>
 			       			 <code>
-			       			 	.grid {
-				       			 	display: -webkit-flex;  <br>
-									display: -ms-flex; 	 <br>
-									display: flex; <br>
-									flex-wrap: -webkit-flex;  <br>
-									flex-wrap: -ms-flex; 	 <br>
-									flex-wrap: wrap;<br>
-									justify-content: space-around; <br>
-									box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.05);<br>
-									align-items:<br>
-									height: 60px;<br>
-								}
 			       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -360,32 +250,32 @@
 							</code>
 
 						<h2> Sample: </h2>
-							<nav class="grid topnav">
-						          <div class="grid-col-1of2 logo">
-						                 <a href="#"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
+							<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
+							 <nav class="grid">
+						          <div class="logo col-1of2 ">
+						                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 						          </div>
 
-				            	  <div class="grid-col-1of6 search-bar">
-											<input type="text" id="search" name="search" placeholder="Search...">
+				            	 <!--  <div class="grid-col-1of6 search-bar">
+										<input type="text" id="search" name="search" placeholder="Search...">
+				            	  </div> -->
+
+				            	  <!--  <div class="col-1of1 search-bar">
+										<input type="text" id="search" name="search" placeholder="Search...">
+				            	  </div> -->
+
+				                  <div class="col-1of6">
+				                    	<a href="shop.html">Shop</a>
+				                  </div>
+				                  <div class="col-1of6">
+				                      	<a href="about.html">About</a>
+				                  </div>
+				                  <div class="col-1of6">
+				                     	 <a href="support.html">Support</a>
+				                  </div>
+				                   <div class="col-1of6">
+				                 		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
 				            	  </div>
-
-				                  <div class="grid-col-1of6">
-				                    	<a href="#">Shop</a>
-				                  </div>
-				                  <div class="grid-col-1of6">
-				                      	<a href="#">About</a>
-				                  </div>
-				                  <div class="grid-col-1of6">
-				                     	 <a href="#">Support</a>
-				                  </div>
-				                  <div class="grid-col-1of6">
-				                     	 <a href="#">Contact</a>
-				                  </div>
-
-				                   <div class="grid-col-1of6">
-				                 		 <a href="#"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
-				            	  </div>
-
 					      </nav>
 			    </section>
 
@@ -394,68 +284,7 @@
 			       <h1>Product Listing</h1>
 						<h2>CSS Code:</h2>
 		       			 <code>
-		       			 	container-product-listing { <br>
-							  position: relative;<br>
-							}<br>
-
-							.container-product-listing img {<br>
-							  width: 40%;<br>
-							  height: auto;<br>
-							  transition: .5s ease;<br>
-							  padding: 0;<br>
-							  margin: 0;<br>
-							}<br>
-
-							figure.product-item:hover img {<br>
-							  opacity: 0.4;<br>
-							}<br>
-
-							figure.product-item:hover .btn-position {<br>
-							  opacity: 1;<br>
-							}<br>
-
-							.btn-quick-add {
-							  	font-family: "SuisseIntl-Regular", Verdana, sans-serif; <br>
-								font-size: 0.8rem;<br>
-								color: #20605A;<br>
-								border: 2px solid #20605A;<br>
-								letter-spacing: 0.05rem;<br>
-								text-transform: uppercase;<br>
-								padding: 0.5rem 1rem;<br>
-								border-radius: 1.2rem;<br>
-								font-weight: 900;<br>
-								opacity: 0.9;<br>
-							}<br>
-
-							.btn-quick-add:hover {<br>
-								color: #fff;<br>
-							    background-color: #20605A;<br>
-							}<br>
-
-							.btn-position {<br>
-							  opacity: 0;<br>
-							  position: absolute;<br>
-							  top: 160%;<br>
-							  left: 18%;<br>
-							  transform: translate(-50%, -50%);<br>
-							  text-align: center;<br>
-							}<br>
-
-							p.price {<br>
-								margin-top: -.1rem;<br>
-								color: #474747;<br>
-								font-size: .9rem;<br>
-								white-space: nowrap;<br>
-							}<br>
-
-
-							.container-product-listing figcaption {<br>
-								font-family: "Freight Big Pro", Verdana, sans-serif; <br>
-								font-size: 1.5rem;<br>
-								letter-spacing: .08rem;<br>
-								padding-top: 0.5rem;<br>
-								color: #474747;<br>
-							}
+		       			
 		       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -474,16 +303,16 @@
 						</code>
 
 						<h2> Sample: </h2>
-							<div class="container-product-listing">
-									<div class ="product-item">
-									  	 <img src="img/product-lovers-sunrise.jpg" alt="Photo of bouquet being held">
-									  	  <p class="product-name">Lover's Sunrise</p>
-										  <p class ="price">$70.99</p>
-										  <div class="btn-position">
-												<a class ="btn-quick-add" href="#"> + Quick Add </a>
-									 	  </div>
-									</div>
-							</div> <!--.container-product-listing ends-->
+						<section class ="grid products">
+							<div class ="product-item col-2of3">
+							  	 <img src="img/lavender-bouquet.jpg" alt="Photo of purple bouquet">
+							  	  <p class="product-name">Lavender Dreams</p>
+								  <p class ="price">$40.99</p>
+								  <div class="btn-position">
+										<a class ="btn-quick-add" href="#"> + Quick Add </a>
+							 	  </div>
+							</div>
+						</section>
 			    </section>
 
 					<!--Detailed Product View-->
@@ -499,22 +328,24 @@
 									 </code>
 
 		       			 	<h2> Sample: </h2>
-								<div class="grid" id="detailed-product">
-									<div class="product-img">
+								<section class="detailed-product grid">
+									<div class="product-img col-1of2">
 										<img src="img/product-lovers-sunrise.jpg" alt="Photo of Lover's Sunrise bouquet">
 									</div>
-									<div class="product-desc">
-										<h1 class="styleguide">Lover's Sunrise</h1>
-										  	<div class="review-star-rating">
-									              <p>&#9733;</p>
-									              <p>&#9733;</p>
-									              <p>&#9733;</p>
-									              <p>&#9733;</p>
-									              <p>&#9733;</p>
-									              <p> <a href="#">(15)</a>
-								           	</div>
-										<h2 class="web product"> $100.00 <h2>
-
+									<div class="product-desc col-2of2">
+										<div class= "top-level">
+											<h2>Lover's Sunrise</h2>
+											<h2 class="price"> $100.00 </h2>
+										</div>
+									  	<div class="review-star-rating">
+								              <p>&#9733;</p>
+								              <p>&#9733;</p>
+								              <p>&#9733;</p>
+								              <p>&#9733;</p>
+								              <p>&#9733;</p>
+								              <p> <a href="#">(15)</a>
+							           	</div>
+								
 										<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
 										<form action="/action_page.php">
 											  <label for="sizes">Size:</label>
@@ -530,13 +361,54 @@
 									  		<input type="text" id="quantity" name="quantity"><br>
 										</form>
 
-										<p class="description-web-product">
-											This lovely bouquet includes purple hydrangea, light pink spray roses and white asiatic lilies arranged that can either be wrapped beautifully in recyclable paper or in a glass vase.
+										<p>
+											This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a reusable glass vase.
 										</p>
-										<button type="button" class="btn-main">Add to Cart</button>
+										<a href="cart.html"><button type="button" class="btn-main">Add to Cart</button></a>
 									</div> <!--.product-desc ends -->
-								</div><!--.grid.detailed-product ends -->
+								</section><!--.grid.detailed-product ends -->
 				     </section>
+
+				  <!----- Review Form ----->
+			     <section>
+				      <h1>Review Form</h1>
+				      <h2>HTML Code:</h2>
+		       			 <code>
+			       		
+						 </code>
+
+					 <h2>CSS Code:</h2>
+		       			 <code>
+			       			.
+						</code>
+
+					  <h2> Sample: </h2>
+				      <section class="review">
+				      	  <h2> Reviews <a href="#">(15)</a></h2>
+
+				      	  <button class="btn-main">Write a Review</button>
+
+				      	  <div class="form">
+								<form action="/action_page.php">
+
+								<div class="personal-details">
+									<label for="name">Name</label>
+									<input type="text" id="fname" name="fname" placeholder="Your first name">
+
+									<label for="email">Email</label>
+									<input type="text" id="email" name="email" placeholder='name@domain.com'>
+								</div>
+
+								<label for="review-title">Review Title</label> <input type="text" id="review-title" name="review-title">
+								</form>
+
+								<label for="review-body">Review</label> <input type="text" id="review-body" name="review-body">
+								</form>
+								
+								<button class="btn-submit">Submit → </button>
+							</div>
+						</section>
+			  	</section>
 
 				  <!----- Review Post ----->
 			     <section>
@@ -574,86 +446,41 @@
 
 					 <h2>CSS Code:</h2>
 		       			 <code>
-			       			.review { <br>
-								  display: flex; <br>
-								  flex-direction: column; <br>
-								} <br>
-
-								.review-content { <br>
-								  display: flex; <br>
-								  flex-direction: column; <br>
-								  margin-top: -1rem; <br>
-								} <br>
-
-								.review-star-rating { <br>
-								  display: flex; <br>
-								  flex-direction: row; <br>
-								}
 						</code>
 
 					  <h2> Sample: </h2>
-				      <div class="review">
-				      	  <h2> Reviews <a href="#">(15)</a></h2>
-				      	    <div class="review-star-rating">
-						              <p>&#9733;</p>
-						              <p>&#9733;</p>
-						              <p>&#9733;</p>
-						              <p>&#9733;</p>
-						              <p>&#9733;</p>
-					         </div>
-				      	  
-				           <div class="review-content">
+				      <section class="review">
+					       <div class="review-content">
+				           	   <div class="review-star-rating">
+					              <p>&#9733;</p>
+					              <p>&#9733;</p>
+					              <p>&#9733;</p>
+					              <p>&#9733;</p>
+					              <p>&#9733;</p>
+					           </div>
+					            <div>
+					            	<h3>Lovely people and flowers</h3>
+					          	</div>
 					           	<div>
-					              <p class="author">Taylor H. on June 11, 2020</p>
+					              <p class="author">Elliot M. on May 29, 2020</p>
 					           </div>
 				           	  
-					            <div>
-					            	 <h2>Made from the heart</h2>
-					          	</div>
-
-					          	<!--Star unicode from https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
-					  
 					            <div class="review-body">
-					              <p>I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.
+					              <p>
+					              	I was looking for a bouquet to give to my wife of our 10th anniversary and Tiffany made the best recommendations. I ended up getting some fresh pink peonies and my wife was absolutely stunned by them!
 					              </p>
 					            </div>
-
 					       </div> <!--End of .review-content-->
-				      </div> <!-- End of .review -->
+				     </section> <!-- End of .review -->
 			  	</section>
 
 		       	<!----- Hero Banner with CTRA ----->
 		       	<section>
 			       	<h1>Hero Banner with CTA</h1>
-			       		<h2>CSS Code:</h2>
+			       		<h2>CSS Selectors</h2>
 		       			 <code>
-		       			 .hero {<br>
-							  display: flex;<br>
-							  flex-direction: column;<br>
-							  align-items: flex-start;<br>
-							  background-image: url("../img/hero-img.png");<br>
-							  background-repeat: no-repeat;<br>
-							  background-size: 100%;<br>
-							  height: 30rem;<br>
-							}<br>
-
-							.hero .text {<br>
-								padding-top: 7rem;<br>
-								padding-left: 3rem;<br>
-							}<br>
-
-							.hero h1 {<br>
-							  font-family: "Freight Big Pro";<br>
-							  font-size: 3rem;<br>
-							  text-transform: none;<br>
-							  color: #474747;<br>
-							  max-width: 30rem;<br>
-							  line-height: 4rem;<br>
-							}<br>
-
-							.hero button {<br>
-								margin-top: 1rem;<br>
-							}
+		       			 .home.hero<br>
+		       			 .hero.-text<br>
 		       			 </code>
 
 		       			 <h2> HTML Code: </h2>
@@ -667,12 +494,15 @@
 							</code>
 
 	       			 	<h2> Sample: </h2>
-							<div class="hero">
-								<div class="text">
+							<section class ="home hero">
+								<div class="hero-text">
 									<h1>Spread happiness with summer's blooms.</h1>
-									<button type="button" class="btn-main">Shop Bouquets</button>
+									<a href="shop.html">
+										<button type="button" class="btn-main"> Shop Bouquets</button>
+									</a>
 								</div>
-							</div>
+							</section>
+
 			     </section>
 
 			     <!----- Shipping Details ----->
@@ -680,49 +510,6 @@
 					<h1>Shipping Details</h1>
 					<h2>CSS Code:</h2>
 		       			 <code>
-							form .name-item, form .contact-item, form .grid-col-1of3 { <br>
-								padding-right: 4rem;<br>
-							}<br>
-
-							form {<br>
-								padding-top: 2rem;<br>
-							}<br>
-
-							form .btn-item {<br>
-								float: right;<br>
-								padding-right: 35rem;<br>
-							}<br>
-
-
-							label {<br>
-							  color: #20605A;<br>
-							  font-family: "SuisseIntl-Regular", Verdana, sans-serif; <br>
-							  margin-bottom: .5rem;<br>
-							}<br>
-
-							#address{<br>
-								width: 25rem;<br>
-							}	<br>
-
-							#pc {<br>
-								width: 14rem;<br>
-							}<br>
-
-							#province, #city {<br>
-								width: 13rem;<br>
-							}<br>
-
-							#fname, #lname, #email-ad {<br>
-								width: 17rem;<br>
-							}<br>
-
-							#phone-number {<br>
-								width: 10rem;<br>
-							}<br>
-
-							input {<br>
-								margin-bottom: 2rem;<br>
-							}<br>
 		       			 </code>
 
 					<h2>HTML Code:</h2>
@@ -820,21 +607,9 @@
 				 <h1>Footer</h1>
 				 <h2>CSS Code:</h2>
 				 <code>
-					 .container-footer {<br>
-						 display: grid;<br>
-						 background: #EEEEEE;<br>
-						 padding-right: 5rem;<br>
-						 padding-left: 5rem;<br>
-						 grid-template-columns: 1.75fr 1fr 1fr;<br>
-						 grid-column-gap: 70px;<br>
-						 height: 250px;<br>
-
-					 }<br>
-
-					 .child-footer {}<br>
-					 background: #EEEEEE;<br>
-				 }<br>
-			 </code>
+					
+			
+				 </code>
 
 			 <h2>HTML Code:</h2>
 			 <code>
@@ -866,36 +641,31 @@
 			 </code>
 
 			 <h2> Sample: </h2>
-					<!-- <div class="container-footer"> -->
-			 <div class="container-footer">
+				<section class="main-footer grid">
+					 <div class="child-footer about">
+						 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
+						 <p>We are a family-owned and full-service floral shop
+							 based in Vancouver, BC.  creating bespoke floral
+							 arrangements for any types of occasions. 
+							 We’re open Monday - Fridays from
+							 10am - 5pm PST</p>
+					</div>
 
-				 <!-- <div class="child-footer"> -->
+					 <div class="child-footer location">
+						 <h3 class="web">VISIT US</h3>
+						 <p>102 3375 Kingsway
+							Vancouver, B.C. 
+							 V5R 5K6  </p>
+					</div>
 
-				 <div class="child-footer about">
-					 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
-					 <p>We are a family-owned and full-service floral shop
-						 based in Vancouver, BC.  creating bespoke floral
-						 arrangements for any types of occasions. 
-						 We’re open Monday - Fridays from
-						 10am - 5pm PST</p>
-				</div>
-
-				 <div class="child-footer location">
-					 <h3 class="web">OUR LOCATION</h3>
-					 <p>3375 Kingsway #102, 
-						Vancouver, B.C. 
-						 V5R 5K6  </p>
-				</div>
-
-				 <div class="child-footer contact">
-					 <h3 class="web">CONTACT US</h3>
-					 <p>(604) 738-0678
-					 <p><i class="fab fa-instagram"></i> Instagram</p>
-				 	 <p><i class="fab fa-facebook-f"></i> Facebook</p>
-					 </p>
-				 </div>
-
-			 </div>
+					 <div class="child-footer contact">
+						 <h3 class="web">CONTACT US</h3>
+						 <p>(604) 738-0678</p>
+						 <p><i class="fab fa-instagram"></i> Instagram</p>
+						 <p><i class="fab fa-facebook-f"></i> Facebook</p>
+					 </div>
+				 	</div>
+			 	</section>
 			</section>
 
 			<!----- Web Grids ----->

@@ -1,16 +1,16 @@
 
 /*<!--The structure of this CSS document was built from referencing Weeks 2's lab tutorials-->*/
 html {
-	line-height: 1.8rem;
+	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
+	/*left: 7rem;*/
+	color: #474747;
+	margin: 0;
 }
 
 body {
-	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
-	margin: 0;
+	line-height: 1.8rem;
 	font-size: 0.9rem;
-	letter-spacing: 0.03rem;
-	left: 7rem;
-	color: #474747;
+	letter-spacing: 0.025rem;
 }
 
 code {
@@ -23,23 +23,26 @@ code {
 	margin-bottom: 1rem;
 }
 
+ol {
+	margin-top: 0;
+}
+
+
+/* ------ Link Styling ------*/
+section.categories a {
+	color: #474747;
+}
+
 a {
-	color: #000;
+	color: #339F95;
 	text-decoration: none;
 }
 
-a.styleguide, .review a {
-	color: #339F95;
-}
 
 section.intext a:hover, section.intext a:focus, section.intext a:active {
 	color: #20605A;
 	text-decoration: none;
 	transition: color 0.5s;
-}
-
-ol {
-	margin-top: 0;
 }
 
 /* ------ Paragraph Styling ------*/
@@ -58,101 +61,65 @@ p.about-desc {
 }
 
 /* ------ Nav Bar Styling ------*/
-.sub-nav {
-  width: 100%;
-  position: fixed;
-  z-index: 11;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  padding: .5rem;
-  border-bottom: 1px solid #C8C8C8;
-}
-
-/* Nav bar tutorial from https://www.w3schools.com/howto/howto_css_navbar_border.asp */
-.sub-nav a  {
-	text-transform: uppercase;
-	letter-spacing: 0.05rem;
-	color: #20605A;
-	font-size: .8rem;
-	display: inline-block;
-	text-align: center;
-}
-
-.sub-nav a:hover, .sub-nav a:active  {
-	color: #20605A;
-}
 
 
 /* ------ Header Styling ------*/
-h2 {
-	font-family: "FreightBigPro-Book", Verdana, sans-serif;
-	font-size: 1.5rem;
+h1 {
+  font-family: "FreightBigPro-Light";
+  font-size: 3rem;
+  text-transform: none;
+  color: #474747;
+  line-height: 4rem;
+  text-align: left;
+  max-width: 35rem;
+  letter-spacing: 0.1rem;
+}
+
+h2  {
+	font-family: "FreightBigPro-Light", Verdana, sans-serif;
+	font-size: 2rem;
 	letter-spacing: 0.08rem;
 	margin: 0;
 }
 
-section h1 {
+.styleguide h2 {
+	font-size: 1.5rem;
+}
+
+h3, .styleguide h1 {
 	font-family: "SuisseIntl-Normal", Verdana, sans-serif;
 	font-weight: 400;
-	font-size: .8rem;
-	letter-spacing: 0.08rem;
+	font-size: .9rem;
+	margin-bottom: 0;
+	letter-spacing: 0.05rem;
 	text-transform: uppercase;
-	/*text-align: left;*/
-	padding-top: 2rem;
+	text-align: left;
 }
 
-
-section h2 {
-	padding-bottom: .5rem;
-	font-size: 1.4rem;
-	letter-spacing: 0.08rem;
+.styleguide h1 {
+	color: #339F95;
 }
 
-section.values h3.web {
+section.values h3 {
 	text-align: center;
+	font-weight: 600;
+	color: #004C45;
 }
+
 
 /* ------ Section Styling ------*/
-
-section.about, section.home, section.shop {
-	padding-bottom: 8rem;
+section.categories, section.products, section.values,
+section.faq {
+	padding: 8rem 0rem 8rem 0rem;
 }
+
 section.citations, section.styleguide  {
 	padding: 3rem;
 }
 
-section#task1, section#task2, section#task3, section#task4,
-section#task5, section#task6, section#task7, section#task8 {
-	padding-bottom: 30px;
+section.detailed-product, section.review, section.alternating-content  {
+	padding-bottom: 8rem;
 }
-
-
-/* ------ Image Adjustments ------*/
-section.wireframes img {
-	width: 80%;
-    height: auto;
-}
-
-section#task6 img, section#task7 img, section#task8 img {
-	width: 40%;
-    height: auto;
-}
-
-section.sitemap img, section.mockups img {
-	width: 50%;
-	height: auto;
-	display: block;
-}
-
- section.sitemap img {
-	width: 80%;
- }
-
- section .art-direction img {
- 	display: block;
- }
 
 /* ---------- Interactive Elements ---------- */
 /* ------ In-Text Link ------*/
@@ -175,20 +142,23 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 	max-width: 8rem;
 }
 
-
 /* ------ Buttons ------*/
 .btn-main { /*-Referenced John Fauld's "Styling Form Buttons" article for styling buttons -->*/
 	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
 	font-size: 0.8rem;
-	background-color: #004C45;
+	background-color: #20605A;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	padding: 0.7rem 1.5rem;
 	border-radius: 1.2rem;
-	opacity: 0.9;
+	opacity: 1;
 	border: none;
 	margin-top: 2rem;
 	color: #fff;
+}
+
+.btn-main:hover, .btn-main:focus { /*Reference W3schools.com for styling button hover*/
+	background-color: #064C45;
 }
 
 .btn-submit {
@@ -198,14 +168,10 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 	letter-spacing: 0.1rem;
 	border: none;
 	text-transform: uppercase;
-	opacity: 0.9;
+	opacity: 1;
 	font-weight: 900;
 	/*position: absolute;*/
 	/*left: 36rem;*/
-}
-
-.btn-main:hover, .btn-main:focus, .btn-submit:hover, .btn-submit:focus { /*Reference W3schools.com for styling button hover*/
-	opacity: 1;
 }
 
 .btn-submit:hover, .btn-submit:focus {
@@ -213,7 +179,7 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 }
 
 /* ------ Colour Swatches ------*/
-div {
+div.colour {
 	display: inline-block;
 }
 
@@ -255,16 +221,40 @@ div.grey p.blk-text, div.green p.blk-text  {
 }
 
 /* ------ Forms, Text Fields ------*/
+form .name-item, form .contact-item, form .grid-col-1of3 {
+	padding-right: 4rem;
+}
+
+form {
+	padding-top: 1rem;
+}
+
+form .btn-item {
+	float: right;
+	padding-right: 35rem;
+}
+
+label {
+  color: #20605A;
+  font-family: "SuisseIntl-Regular", Verdana, sans-serif;
+  margin-bottom: .5rem;
+  letter-spacing: 0.02rem;
+  padding-right: 1rem;
+}
+
 input, select {
   padding: 5px 10px; /*top and bottom, right and left*/
   display: block;
   border: 1px solid #C8C8C8;
-  border-radius: 4px;
+  border-radius: 5px;
   box-sizing: border-box;
   color: #474747;
   margin: 0;
-  margin-bottom: 0;
   background-color: #fff;
+}
+
+input {
+	margin-bottom: 1rem;
 }
 
 input[type=text]:hover{
@@ -282,13 +272,12 @@ input[type=text]:focus {
 	display: inline-block;
 }
 
-.product-desc label {
-	font-size: 1.1rem;
-	letter-spacing: 0.03rem;
+.product-desc input#quantity {
+	max-width: 4rem;
 }
 
-.product-desc input#quantity {
-	max-width: 5rem;
+option {
+	font-size: 1.3rem;
 }
 
 /* Remove default outline on text inputs from https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
@@ -299,8 +288,8 @@ button:focus {
     outline: #20605A;
 }
 
-#address{
-	width: 25rem;
+#address, #review-title{
+	width: 29rem;
 }
 
 #pc {
@@ -312,44 +301,53 @@ button:focus {
 }
 
 #fname, #lname, #email-ad {
-	width: 17rem;
+	width: 10rem;
 }
 
 #phone-number {
 	width: 10rem;
 }
 
+label #fname, label #email  {
+	display: block;
+}
+
+#fname, #email  {
+	display: inline-block;
+}
+
+input#review-body {
+	width: 29rem;
+	height: 10rem;
+}
+
+.personal-details input {
+	margin-right: 1rem;
+}
+
 /* ---------- Text Styling ---------- */
 /* Headings */
-h1, section#text-styling h1.styleguide, .product-desc h1.styleguide  {
+/*h1, section#text-styling h1.styleguide, .product-desc h1.styleguide  {
 	font-family: "FreightBigPro-Book", Verdana, sans-serif;
 	font-size: 3rem;
 	margin-bottom: 0;
 	letter-spacing: 0.1rem;
 	text-transform: capitalize;
-}
+}*/
 
- .product-desc h1.styleguide  {
+/* .product-desc h1.styleguide  {
  	margin-top: 0;
 	padding-top: 0;
- }
+ }*/
 
-h2, section#text-styling h2.styleguide {
+/*h2, section#text-styling h2.styleguide {
 	font-family: "FreightBigPro-Book", Verdana, sans-serif;
 	font-size: 2rem;
 	margin-bottom: 0;
 	letter-spacing: 0.1rem;
-}
+}*/
 
-h3 {
-	font-family: "SuisseIntl-Normal", Verdana, sans-serif;
-	font-weight: 400;
-	font-size: .9rem;
-	margin-bottom: 0;
-	letter-spacing: 0.05rem;
-	text-transform: uppercase;
-	text-align: left;
-}
+
 
 
 /* ---------- Modular Elements ---------- */
@@ -374,31 +372,31 @@ nav a {
 	letter-spacing: 0.09em;
 }
 
-nav.grid.topnav {
+nav.grid {
 	padding: 0;
 	border: 0.5px solid #eee;
 }
 
-nav.grid.topnav img.logo {
+nav.grid img.logo {
 	margin-left: 4rem;
 }
 
-nav.grid.topnav a {
+nav.grid a {
 	padding-top: 1rem;
 	padding-bottom: 0;
 	font-size: 0.7rem;
 	letter-spacing: 0.03rem;
 }
 
- nav.grid.topnav input {
+ nav.grid input {
  	margin-top: 0.5rem;
  }
 
-nav .grid-col-1of6 a {
+/*nav .grid-col-1of6 a {
 	padding: 0rem;
-}
+}*/
 
-nav .grid-col-1of6 img {
+nav .col-1of6 img {
 	width: 20%;
 	height: auto;
 }
@@ -412,42 +410,30 @@ nav .search-bar {
 	width: 40rem;
 }
 
-
 /* ------ Hero Advertising ------*/
 
-.hero .text {
+.hero-text {
 	padding-top: 4.5rem;
-	padding-left: 4.5rem;
-}
-
-.hero h1, .shop h1 .about h1 {
-  font-family: "FreightBigPro-Book";
-  font-size: 3rem;
-  text-transform: none;
-  color: #474747;
-  line-height: 4rem;
-  text-align: left;
-  max-width: 35rem;
+	padding-left: 5rem;
 }
 
 .shop p {
 	 max-width: 25rem;
 }
-
+/*
 .about > .hero > .text > h1 {
 	text-align: left;
 	color: #fff;
-}
+}*/
 
 .hero button {
 	margin-top: 1rem;
 }
 
-
-.location img {
+/*.location img {
 	width: 25rem;
 	height: 100%;
-}
+}*/
 
 /* ------ Home Menu Items------*/
 .menu {
@@ -458,7 +444,6 @@ nav .search-bar {
 	width: 15rem;
 	height: 100%;
 }
-
 
 .menu p {
 	font-family: "FreightBigPro-Book";
@@ -471,10 +456,10 @@ nav .search-bar {
 	padding: 2rem;
 }
 
-.menu.col-1of3, .menu.col-2of3, .menu.col-3of3 {
+/*.menu.col-1of3, .menu.col-2of3, .menu.col-3of3 {*/
 	/*margin-bottom: 5rem;*/
 	/*margin-top: 4rem;*/
-}
+/*}*/
 
 /* ------ Alternating Content-----*/
 .alternating-content-img img {
@@ -485,16 +470,16 @@ nav .search-bar {
 .alternating-content-text  {
 	padding-left: 2rem;
 	padding-right: 2rem;
-}
-
-.alternating-content.col-2of2 p, .alternating-content.col-2of2-reverse p {
-	max-width: 25rem;
+	margin: auto;
 }
 
 .grid.products {
 	padding-bottom: 5rem;
 }
 
+.alternating-content p {
+	max-width: 25rem;
+}
 
 /* ------ About Us -------- */
 .values img {
@@ -516,55 +501,51 @@ nav .search-bar {
 }
 
 /* ------ Individual Product Description -------- */
+.product-desc .top-level h2, .product-desc h3 {
+	display: inline-block;
+}
+
+.product-img {
+	margin: auto;
+}
+
+.product-desc h2.price {
+	float: right;
+	font-size: 1.5rem;
+}
+
+.detailed-product {
+	padding: 3rem 12rem 0rem 12rem;
+}
+
+.detailed-product p {
+	max-width: 30rem;
+}
+
 .product-img img {
 	width: 25rem;
 	height: auto;
 }
 
-h2.web.product {
-	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
-	font-size: 1.5rem;
-	color: #474747;
-	letter-spacing: 0.10rem;
-	padding: 0;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-}
-
-#detailed-product p {
-	letter-spacing: 0.05rem;
-	max-width: 30rem;
-}
-
 .product-img, .product-desc {
 	margin-bottom: 0;
 	padding-bottom: 0;
+	padding-right: 4rem;
 }
 
-.product-desc {
-	margin: auto;
-	margin-left: 8rem;
+.product-desc h3 {
+	font-family: "FreightBigPro-Light";
+	font-size: 1.6rem;
+	letter-spacing: 0.15;
+	margin-top: 0;
 }
 
 .product-desc .review-star-rating p {
-	font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
-.description-web-product {
-	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
-	font-size: 0.9rem;
-	padding-top: 1.8rem;
-	padding-bottom: 1.8rem;
-	margin: 0;
-}
-
-h1.web {
-	padding-top: 0;
-}
-
-.review-content h2 {
-	font-size: 1.5rem;
-	padding-top: .8rem;
+.product-desc .btn-main{
+	margin-top: 1rem;
 }
 
 /* ------ Review Post -------- */
@@ -573,7 +554,6 @@ h1.web {
 	margin: 0;
 	padding-bottom: 1.2rem;
 	padding-top: .6rem;
-}
 }
 
 .review h2, .review-body p  {
@@ -585,9 +565,9 @@ h1.web {
 }
 
 .review-star-rating p {
-  color: #FED670;
-  padding-right: 1rem;
-  font-size: 1.2rem;
+  color: #339F95;
+  padding-right: .8rem;
+  font-size: 1rem;
 }
 
 .review-content .review-star-rating p {
@@ -595,6 +575,18 @@ h1.web {
 	margin-top: 2rem;
 }
 
+.review-content h3 {
+	color: #20605A;
+	font-weight: 600;
+}
+
+.form > .btn-submit {
+ 	float: right;
+}
+
+.review form {
+	padding-top: 2em;
+}
 
 /* ------ Product Listings -------- */
 .container-product-listing, .product-item {
@@ -606,9 +598,7 @@ h1.web {
 
 .product-item img {
   width: 95%;
-  /*width: 35%;*/
   height: auto;
-  transition: .5s ease;
 }
 
 .product-item:hover img {
@@ -659,35 +649,15 @@ p.price {
 	margin: 0;
 }
 
-/* ------ Shipping Details ------ */
 
-form .name-item, form .contact-item, form .grid-col-1of3 {
-	padding-right: 4rem;
-}
-
-form {
-	padding-top: 2rem;
-}
-
-form .btn-item {
-	float: right;
-	padding-right: 35rem;
-}
-
-label {
-  color: #20605A;
-  font-family: "SuisseIntl-Regular", Verdana, sans-serif;
-  margin-bottom: .5rem;
-}
 
 /*------- Footer---------*/
-.container-footer {
-	display: grid;
+.main-footer {
 	background: #F2EAE4;
 	padding-right: 4rem;
 	padding-left: 4rem;
 	padding-top: 2rem;
-	margin-top: 6rem;
+	/*margin-top: 6rem;*/
 	margin-bottom: 0;
 	grid-template-columns: 1.75fr 1fr 1fr;
 	grid-column-gap: 70px;
@@ -707,31 +677,25 @@ label {
 	max-width: 10.1rem;
 }
 
-.sub-footer p {
-	display: inline-block;
-	margin: 0;
-}
-
 .sub-footer a {
 	color: #fff;
 	opacity: 0.95;
 	letter-spacing: 0.03rem;
-
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .sub-footer a:hover, .sub-footer a:focus {
 	opacity: 1;
 }
 
-
-/* ------ Support Template ------ */
-.side-nav-container .menu-item1, .side-nav-container .menu-item2, .side-nav-container .menu-item3,
-.body-container  .menu-item1, .body-container  .menu-item2, .body-container .menu-item3 {
-	background-color: #ddd;
-	border: .5px dashed #333;
-	margin: .75rem;
+.sub-footer p {
 	text-align: center;
+	max-width: 100rem;
+	margin: 0;
+	padding: 0;
 }
+
 /* ---------- Modular Elements Ends ---------- */
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -750,6 +714,9 @@ label {
   margin-bottom: 0;
   letter-spacing: 0.06rem;
 }
+
+
+/* ------ Accordian FAQ ------ */
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
@@ -772,7 +739,7 @@ label {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-padding: 0 18px;
+ padding: 0 18px;
  background-color: white;
  max-height: 0;
  overflow: hidden;

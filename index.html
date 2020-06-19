@@ -25,63 +25,65 @@
 		<!----- Top Nav ----->
 		<header>
 			<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
-			 <nav class="grid topnav">
-		          <div class="grid-col-1of2 logo">
+			 <nav class="grid">
+		          <div class="logo col-1of2 ">
 		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 		          </div>
 
-            	  <div class="grid-col-1of6 search-bar">
+            	 <!--  <div class="grid-col-1of6 search-bar">
 						<input type="text" id="search" name="search" placeholder="Search...">
-            	  </div>
+            	  </div> -->
 
-                  <div class="grid-col-1of6">
+            	  <!--  <div class="col-1of1 search-bar">
+						<input type="text" id="search" name="search" placeholder="Search...">
+            	  </div> -->
+
+                  <div class="col-1of6">
                     	<a href="shop.html">Shop</a>
                   </div>
-                  <div class="grid-col-1of6">
+                  <div class="col-1of6">
                       	<a href="about.html">About</a>
                   </div>
-                  <div class="grid-col-1of6">
+                  <div class="col-1of6">
                      	 <a href="support.html">Support</a>
                   </div>
-                   <div class="grid-col-1of6">
+                   <div class="col-1of6">
                  		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
             	  </div>
 	      </nav>
 		</header>
 
 		<!----- Hero Banner----->
-		<section class ="home">
-		<div class="hero">
-			<div class="text">
+		<section class ="home hero">
+			<div class="hero-text">
 				<h1>Spread happiness with summer's blooms.</h1>
 				<a href="shop.html">
 					<button type="button" class="btn-main"> Shop Bouquets</button>
 				</a>
 			</div>
-		</div>
 		</section>
 
 		<!----- Product/Service Offerings---->
-		<section class ="home">
-		<div class ="grid">
-			<div class ="menu col-1of3">
+		<section class ="categories grid">
+		<!-- <div class ="grid"> -->
+			<div class ="menu">
 				<a href="shop.html">
-					<img src="img/flower-tile.png" alt="Photo of peonies">
+					<img src="img/pattern.png" alt="Photo of peonies">
 					<p>Flowers</p>
 				</a>
 			</div>
 
 
-			<div class ="menu col-2of3">
+			<div class ="menu">
 				<a href="shop.html">
-					<img src="img/plants-tile.jpg" alt="Photo of a green plant">
+					<img src="img/pattern-2.png" alt="Photo of a green plant">
 					<p>Plants</p>
 				</a>
 			</div>
 
-			<div class ="menu col-3of3">
+			<div class ="menu">
 				<a href="shop.html">
-					<img src="img/services-tile.jpg" alt="Photo of flowers in a tin barrel">
+					<img src="img/pattern-3.png" alt="Photo of flowers in a tin barrel">
 					<p>Services</p>
 				</a>
 			</div>
@@ -89,48 +91,36 @@
 		</section>
 
 		<!----- Alternating Content ----->
-		<div class ="alternating-content-img col-1of2">
-			<img src="img/home-grown.jpg" alt="Photo of purple flowers in a garden">
-		</div>
-		<div class ="alternating-content-text col-2of2">
-			<h2>Home grown.</h2>
-			<p>We source our flowers from local suppliers, lowering our carbon footprint and providing the freshest blooms to our customers.</p>
-			<a href="shop.html">
-				<button type="button" class="btn-main">learn more</button>
-			</a>
-		</div>
+		<section class="alternating-content grid">
+			<div class ="alternating-content-img col-1of2">
+				<img src="img/home-grown.jpg" alt="Photo of purple flowers in a garden">
+			</div>
+			<div class ="alternating-content-text col-2of2">
+				<h2>Home grown.</h2>
+				<p>We source our flowers from local suppliers, lowering our carbon footprint and providing the freshest blooms to our customers.</p>
+				<a href="shop.html">
+					<button type="button" class="btn-main">learn more</button>
+				</a>
+			</div>
+		</section>
 
-		<div class ="alternating-content-text col-1of2">
-			<h2>The gift of giving.</h2>
-			<p>ive one of nature’s most beautiful gifts to the people who mean the most to you.</p>
-			<a href="shop.html">
-					<button type="button" class="btn-main">shop flowers</button>
-			</a>
-		</div>
-		<div class ="alternating-content-img col-2of2">
-			<img src="img/gift-of-giving.jpg" alt="Photo of bouquet of flowers being held by a woman">
-		</div>
-
-
-	<!-- 	<div class="grid">
-		<div class ="alternating-content col-2of2-reverse">
-			<h2>The gift of giving.</h2>
-			<p>Give one of nature’s most beautiful gifts to the people who mean the most to you.</p>
-			<a href="shop.html">
-				<button type="button" class="btn-main">shop flowers</button>
-			</a>
-		</div> -->
-
-		<!-- <div class="alternating-content-two"> -->
-		<!-- <div class ="alternating-content col-1of2-reverse">
-			<img src="img/gift-of-giving.jpg" alt="Photo of bouquet of flowers being held by a woman">
-		</div>
-		</div> -->
-		<!-- </div> -->
+		<!-- <div class="grid"> -->
+		<section class="alternating-content grid">
+			<div class ="alternating-content-text col-1of2">
+				<h2>The gift of giving.</h2>
+				<p>Give one of nature’s most beautiful gifts to the people who mean the most to you.</p>
+				<a href="shop.html">
+						<button type="button" class="btn-main">shop flowers</button>
+				</a>
+			</div>
+			<div class ="alternating-content-img col-2of2">
+				<img src="img/gift-of-giving.jpg" alt="Photo of bouquet of flowers being held by a woman">
+			</div>
+		</section>
+	<!-- </div> -->
 
 		<!----- Footer----->
-		 <div class="container-footer">
-
+		 <section class="main-footer grid">
 			 <div class="child-footer about">
 				 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
 				 <p>We are a family-owned and full-service floral shop
@@ -153,13 +143,16 @@
 				 <p><i class="fab fa-instagram"></i> Instagram</p>
 				 <p><i class="fab fa-facebook-f"></i> Facebook</p>
 			 </div>
-	 	</div>
+		 	</div>
+	 	</section>
 
-	 	<div class="sub-footer">
-	 		<p>Made with love in Vancouver, B.C.</p>
-	 		<a href="styleguide.html" target="_blank"> Styleguide</a>
-	 		<a href="citations.html" target="_blank"> Citations</a>
-	 	</div>
+ 		<div class="sub-footer">
+	 		<p>	Made with love in Vancouver, B.C.
+	 			<a href="styleguide.html" target="_blank"> Styleguide</a>
+	 			<a href="citations.html" target="_blank"> Citations</a>
+	 			<a href ="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
+	 		</p>
+ 		</div>
 
 	</body>
 

@@ -11,8 +11,6 @@
 	text-align: center;
 }
 
-
-/* ------ Nav Bar  ------ */
 .grid {
 	display: -webkit-flex; 			/* Supports older browsers */
 	display: -ms-flex; 				/* Supports Internet 10 */
@@ -23,23 +21,26 @@
 	justify-content: space-around;
 }
 
+/* ------ Nav Bar ------ */
 
-/* ------ Top Nav ------ */
-
-nav .grid-col-1of2 {
-	flex: 2 1 40%;
+nav .col-1of2 {
+	flex: 7 1 40%;
 }
 
-nav .grid-col-1of6  {
-	flex: .5 1 5%;
+nav .col-1of6  {
+	flex: 2 1 2%;
 }
 
-nav .grid-col-1of6.search-bar  {
+nav .col-1of6.search-bar  {
 	padding-right: 3rem;
 }
 
+div.announcement-bar {
+	display: block;
+}
+
 /* ------ Hero Sections ------ */
-.hero {
+.home.hero {
   display: flex;
   background-image: url("../img/hero-img.png");
   background-repeat: no-repeat;
@@ -47,7 +48,7 @@ nav .grid-col-1of6.search-bar  {
   height: 26rem;
 }
 
-.shop .hero {
+.shop.hero {
   display: flex;
   background-image: url("../img/dennis-ottink.jpg");
   background-repeat: no-repeat;
@@ -55,7 +56,7 @@ nav .grid-col-1of6.search-bar  {
   height: 23rem;
 }
 
-.about .hero {
+.about.hero {
   display: flex;
   background-image: url("../img/annie-spratt.jpg");
   background-repeat: no-repeat;
@@ -65,14 +66,14 @@ nav .grid-col-1of6.search-bar  {
 
 
 /* ------ Alternating Content ------ */
-section.location {
+/*section.location {
 	text-align: center;
 }
-
-section.location .col-2of2{
+*/
+/*section.location .col-2of2{
 	padding-left: 2rem;
 	text-align: left;
-}
+}*/
 
 /* ------ Review Section ------ */
 
@@ -96,16 +97,16 @@ section.location .col-2of2{
 
 /* ------ Form Styling ------ */
 
-.grid-col-1of1, .grid-col-1of-3, .grid-col-1of2  {
-	/*display: flex;*/
-}
+/*.grid-col-1of1, .grid-col-1of-3, .col-1of2  {*/
+	/*display: flex;*//*
+}*/
 
-form .grid-col-1of1 {
+form .col-1of1 {
 	flex-direction: column;
 	align-content: flex-start; 
 }
 
-form .grid-col-1of2 {
+form .col-1of2 {
 	flex: 1 1 100%;
 }
 
@@ -126,13 +127,13 @@ form .grid-col-1of2 {
 }
 
 .col-1of3, .col-2of3, .col-3of3 {
-	flex-basis: 20%;
+	flex-basis: 23%;
 }
 
 
-.col-1of2, .col-1of2-reverse {
+/*.col-1of2, .col-1of2-reverse {*/
 	/*flex: 2 1 80%;*/
-}
+/*}*/
 
 .col-2of2, .col-2of2-reverse {
 	flex: 1 1 40%;
@@ -183,7 +184,7 @@ form .grid-col-1of2 {
 }
 
 /* ------ Support Template ------ */ 
-.side-nav-container {
+/*.side-nav-container {
 	height: 300px;
   	display: flex;
   	flex-direction: column;
@@ -191,9 +192,9 @@ form .grid-col-1of2 {
  	background-color: #eee;
  	border: .5px dashed #333;
  	text-align: center;
-}
+}*/
 
-.body-container {
+/*.body-container {
 	display: flex;
   	flex-direction: column;
 	height: 800px;
@@ -206,7 +207,7 @@ form .grid-col-1of2 {
 .side-nav-container.menu-item1, .side-nav-container.menu-item2, .side-nav-container.menu-item3 {
 	height: 100px;
 	flex: 1 1 20%;
-}
+}*/
 
 /* ------ Cart Template ------ */
 .cart-container {
@@ -245,13 +246,13 @@ form .grid-col-1of2 {
 }*/
 
 /* ------ Services Template ------ */
-.grid-item#blank-row-1of1 {
+/*.grid-item#blank-row-1of1 {
 	background-color: #FFF;
 	flex: 1 1 100%;
 	height: 200px;
-}
+}*/
 
-.grid-item.col-1of2-equal, .grid-item.col-2of2-equal {
+/*.grid-item.col-1of2-equal, .grid-item.col-2of2-equal {
 	height: 200px;
 	flex: 1 1 20%;
 	margin-right: 10rem;
@@ -259,7 +260,7 @@ form .grid-col-1of2 {
 	margin-bottom: 10rem;
 	margin-bottom: 10rem;
 	margin-top: 1rem;
-}
+}*/
 
 
 /* ---------- Media Queries ---------- */
@@ -270,7 +271,7 @@ form .grid-col-1of2 {
     	font-size: 0.9rem;
 	}
 
-	nav .grid-col-1of6 a {
+	nav .col-1of6 a {
     	font-size: 1rem;
 	}
 
@@ -284,7 +285,7 @@ form .grid-col-1of2 {
 		text-align: center;
 	}
 	
-	.hero .text { {
+	.hero .hero-text { {
 		margin: 0;
 		padding-top: 3.5rem;
    		padding-left: 3.5rem;
@@ -295,7 +296,7 @@ form .grid-col-1of2 {
 		color: #FFF;
 	}
 
-	.shop .hero .text {
+	.shop .hero .hero-text {
 		padding-left: 0;
 	}
 
@@ -304,39 +305,40 @@ form .grid-col-1of2 {
 /* Tablet and below */
 @media (max-width: 48em) {
 
-	p, nav .grid-col-1of6 a {
+	p, nav .col-1of6 a {
 		font-size: 1rem;
 		letter-spacing: 0.04rem;
 		line-height: 2rem;
 	}
 
 	/*----- Nav Bar ------*/
-	nav .grid-col-1of6, nav .grid-col-1of2 {
+	nav .col-1of6, nav .col-1of2 {
 		flex: 1 1 100%;
 		text-align: center;
 	}
 
-	nav .grid-col-1of2 {
+	nav .col-1of2 {
 		margin-left: -3rem;
+		padding-top: 1.5rem;
 	}
 
-	nav .grid-col-1of6.search-bar {
+	nav .col-1of6.search-bar {
 		text-align: center;
 		margin: auto;
 		padding-right: 0;
 	}
 
-	nav .grid-col-1of6 input{
+	nav .col-1of6 input{
 		text-align: center;
 		margin: auto;
 	}
 
-	 nav .grid-col-1of2 a {
+	 nav .col-1of2 a {
 	 	padding: 0;
 	 }
 
 	 /*----- Home Hero ------*/
-	 .hero .text h1 {
+	 .hero .hero-text h1 {
    		padding-top: 0;
    		margin-top: 0rem;
     	padding-left: 0;
@@ -347,11 +349,12 @@ form .grid-col-1of2 {
 	}
 
 	.hero {
-		height: 100%;
+		background-size: 150%;
+		height: auto;
 	}
 
-	.hero .text {
-		  margin: auto;
+	.hero .hero-text {
+		  margin: 0;
 		  text-align: center;
 	}
 
@@ -382,15 +385,25 @@ form .grid-col-1of2 {
 		padding-bottom: 3rem;
 	}
 
+	.menu {
+		padding-bottom: 5rem;
+	}
+
 	.menu img {
 		width: 20rem;
 		height: 100%;
+	}
+
+	.menu p {
+		top: 6rem;
+		left: 5.5rem;
 	}
 
 	/*----- Home Alternating Content ------*/
 	.alternating-content-text{
 		text-align: center;
 		padding-bottom: 2rem;
+		padding-top: 2rem;	
 	}
 
 	/*----- Products Grid ------*/

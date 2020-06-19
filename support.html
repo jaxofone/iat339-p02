@@ -24,65 +24,65 @@
 
 	<body>
 		<!----- Top Nav ----->
-    <header>
-			<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
-			 <nav class="grid topnav">
-		          <div class="grid-col-1of2 logo">
+    	<header>
+			 <nav class="grid">
+		          <div class="col-1of2 logo">
 		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 		          </div>
 
-            	  <div class="grid-col-1of6 search-bar">
+            	<!--   <div class="grid-col-1of6 search-bar">
 						<input type="text" id="search" name="search" placeholder="Search...">
-            	  </div>
+            	  </div> -->
 
-                  <div class="grid-col-1of6">
+                  <div class="col-1of6">
                     	<a href="shop.html">Shop</a>
                   </div>
-                  <div class="grid-col-1of6">
+                  <div class="col-1of6">
                       	<a href="about.html">About</a>
                   </div>
-                  <div class="grid-col-1of6">
+                  <div class="col-1of6">
                      	 <a href="support.html">Support</a>
                   </div>
-                   <div class="grid-col-1of6">
+                   <div class="col-1of6">
                  		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
             	  </div>
 	      </nav>
 		</header>
 
-		<section class ="about">
-			<div class ="hero">
-				<div class="text">
-					<h1>We are here to help!</h1>
-				</div>
+		<section class ="about hero">
+			<div class="hero-text">
+				<h1>Frequently Asked Questions</h1>
 			</div>
 		</section>
 
-    <button class="accordion">Who is Four Seasons Floral?</button>
-    <div class="panel">
-      <p>
-      	We are a family-owned and full-service floral shop based in Vancouver, BC.
-      </p>
-    </div>
+    <section class="faq">
+	    <button class="accordion">Who is Four Seasons Floral?</button>
+		    <div class="panel">
+		      <p>
+		      	We are a family-owned and full-service floral shop based in Vancouver, BC.
+		      </p>
+		    </div>
 
-    <button class="accordion">Where do you delivery?</button>
-    <div class="panel">
-      <p>
-      	Our shop locally serves the following cities and surrounding areas:
-		<ul>
-		    <li> Burnaby </li>
-			<li>Vancouver</li>
-		</ul>
-      </p>
-    </div>
+	    <button class="accordion">Where do you delivery?</button>
+		    <div class="panel">
+		      <p>
+		      	Our shop locally serves the following cities and surrounding areas:
+				<ul>
+				    <li> Burnaby </li>
+					<li>Vancouver</li>
+				</ul>
+		      </p>
+		    </div>
 
-    <button class="accordion">What if my choice of flowers aren't available?</button>
-    <div class="panel">
-      <p>
-      	Occasionally, substitutions may be necessary to create your bouquet due to the availability of certain flowers. Care is taken to maintain the style, theme and color scheme of the arrangement, using flowers of equal value. In single-flower arrangements, such as an all rose bouquet, or orchids, we will make every attempt to match the flower type, but may substitute with another color.
-      </p>
-    </div>
+	    <button class="accordion">What if my choice of flowers aren't available?</button>
+		    <div class="panel">
+		      <p>
+		      	Occasionally, substitutions may be necessary to create your bouquet due to the availability of certain flowers. Care is taken to maintain the style, theme and color scheme of the arrangement, using flowers of equal value. In single-flower arrangements, such as an all rose bouquet, or orchids, we will make every attempt to match the flower type, but may substitute with another color.
+		      </p>
+		    </div>
+	 </section>
 
+	<!----- Javascript for accordian----->
     <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -100,39 +100,41 @@
     }
     </script>
 
-		<!----- Footer----->
-		 <div class="container-footer">
+	<!----- Footer----->
+	 <section class="main-footer grid">
+		 <div class="child-footer about">
+			 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
+			 <p>We are a family-owned and full-service floral shop
+				 based in Vancouver, BC.  creating bespoke floral
+				 arrangements for any types of occasions. 
+				 We’re open Monday - Fridays from
+				 10am - 5pm PST</p>
+		</div>
 
-			 <div class="child-footer about">
-				 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
-				 <p>We are a family-owned and full-service floral shop
-					 based in Vancouver, BC.  creating bespoke floral
-					 arrangements for any types of occasions. 
-					 We’re open Monday - Fridays from
-					 10am - 5pm PST</p>
-			</div>
+		 <div class="child-footer location">
+			 <h3 class="web">VISIT US</h3>
+			 <p>102 3375 Kingsway
+				Vancouver, B.C. 
+				 V5R 5K6  </p>
+		</div>
 
-			 <div class="child-footer location">
-				 <h3 class="web">VISIT US</h3>
-				 <p>3375 Kingsway #102, 
-					Vancouver, B.C. 
-					 V5R 5K6  </p>
-			</div>
-
-			<div class="child-footer contact">
-				 <h3 class="web">CONTACT US</h3>
-				 <p>(604) 738-0678</p>
-				 <p><i class="fab fa-instagram"></i> Instagram</p>
-				 <p><i class="fab fa-facebook-f"></i> Facebook</p>
-			 </div>
+		 <div class="child-footer contact">
+			 <h3 class="web">CONTACT US</h3>
+			 <p>(604) 738-0678</p>
+			 <p><i class="fab fa-instagram"></i> Instagram</p>
+			 <p><i class="fab fa-facebook-f"></i> Facebook</p>
+		 </div>
 	 	</div>
+ 	</section>
 
-		 <div class="sub-footer">
-	 		<p>Made with love in Vancouver, B.C.</p>
-	 		<a href="styleguide.html" target="_blank"> Styleguide</a>
-	 		<a href="citations.html" target="_blank"> Citations</a>
-	 	</div>
+		<div class="sub-footer">
+ 		<p>	Made with love in Vancouver, B.C.
+ 			<a href="styleguide.html" target="_blank"> Styleguide</a>
+ 			<a href="citations.html" target="_blank"> Citations</a>
+ 			<a href ="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
+ 		</p>
+		</div>
 
-	</body>
+</body>
 
 </html>

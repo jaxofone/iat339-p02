@@ -25,25 +25,25 @@
 		<!----- Top Nav ----->
 		<header>
 			<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
-			 <nav class="grid topnav">
-		          <div class="grid-col-1of2 logo">
+			 <nav class="grid">
+		          <div class="col-1of2 logo">
 		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 		          </div>
 
-            	  <div class="grid-col-1of6 search-bar">
+            	 <!--  <div class="col-1of6 search-bar">
 						<input type="text" id="search" name="search" placeholder="Search...">
-            	  </div>
+            	  </div> -->
 
-                  <div class="grid-col-1of6">
+                  <div class="col-1of6">
                     	<a href="shop.html">Shop</a>
                   </div>
-                  <div class="grid-col-1of6">
+                  <div class="col-1of6">
                       	<a href="about.html">About</a>
                   </div>
-                  <div class="grid-col-1of6">
+                  <div class="col-1of6">
                      	 <a href="support.html">Support</a>
                   </div>
-                   <div class="grid-col-1of6">
+                   <div class="col-1of6">
                  		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
             	  </div>
 	      </nav>
@@ -51,22 +51,24 @@
 
 
 		<!----- Detailed Product ----->
-		<div class="grid" id="detailed-product">
-			<div class="product-img">
+		<section class="detailed-product grid">
+			<div class="product-img col-1of2">
 				<img src="img/product-lovers-sunrise.jpg" alt="Photo of Lover's Sunrise bouquet">
 			</div>
-			<div class="product-desc">
-				<h1 class="styleguide">Lover's Sunrise</h1>
-				  	<div class="review-star-rating">
-			              <p>&#9733;</p>
-			              <p>&#9733;</p>
-			              <p>&#9733;</p>
-			              <p>&#9733;</p>
-			              <p>&#9733;</p>
-			              <p> <a href="#">(15)</a>
-		           	</div>
-				<h2 class="web product"> $100.00 <h2>
-
+			<div class="product-desc col-2of2">
+				<div class= "top-level">
+					<h2>Lover's Sunrise</h2>
+					<h2 class="price"> $100.00 </h2>
+				</div>
+			  	<div class="review-star-rating">
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p> <a href="#">(15)</a>
+	           	</div>
+		
 				<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
 				<form action="/action_page.php">
 					  <label for="sizes">Size:</label>
@@ -82,15 +84,39 @@
 			  		<input type="text" id="quantity" name="quantity"><br>
 				</form>
 
-				<p class="description-web-product">
-					This lovely bouquet includes purple hydrangea, light pink spray roses and white asiatic lilies arranged that can either be wrapped beautifully in recyclable paper or in a glass vase.
+				<p>
+					This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a reusable glass vase.
 				</p>
-				<button type="button" class="btn-main">Add to Cart</button>
+				<a href="cart.html"><button type="button" class="btn-main">Add to Cart</button></a>
 			</div> <!--.product-desc ends -->
-		</div><!--.grid#detailed-product ends -->
+		</section><!--.grid.detailed-product ends -->
 
-		 <div class="review">
+
+		<!-- Review Section -->
+		 <section class="review">
 	      	  <h2> Reviews <a href="#">(15)</a></h2>
+
+	      	  <button class="btn-main">Write a Review</button>
+
+	      	  <div class="form">
+					<form action="/action_page.php">
+
+					<div class="personal-details">
+						<label for="name">Name</label>
+						<input type="text" id="fname" name="fname" placeholder="Your first name">
+
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email" placeholder='name@domain.com'>
+					</div>
+
+					<label for="review-title">Review Title</label> <input type="text" id="review-title" name="review-title">
+					</form>
+
+					<label for="review-body">Review</label> <input type="text" id="review-body" name="review-body">
+					</form>
+					
+					<button class="btn-submit">Submit → </button>
+				</div>
 	      	
 	           <div class="review-content">
 	           	   <div class="review-star-rating">
@@ -101,7 +127,7 @@
 		              <p>&#9733;</p>
 		           </div>
 		            <div>
-		            	 <h2>Made from the heart</h2>
+		            	<h3>Made from the heart</h3>
 		          	</div>
 		           	<div>
 		              <p class="author">Taylor H. on June 11, 2020</p>
@@ -111,13 +137,33 @@
 		              <p>I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.
 		              </p>
 		            </div>
-
 		       </div> <!--End of .review-content-->
-	     </div> <!-- End of .review -->
+
+		       <div class="review-content">
+	           	   <div class="review-star-rating">
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		              <p>&#9733;</p>
+		           </div>
+		            <div>
+		            	<h3>Lovely people and flowers</h3>
+		          	</div>
+		           	<div>
+		              <p class="author">Elliot M. on May 29, 2020</p>
+		           </div>
+	           	  
+		            <div class="review-body">
+		              <p>
+		              	I was looking for a bouquet to give to my wife of our 10th anniversary and Tiffany made the best recommendations. I ended up getting some fresh pink peonies and my wife was absolutely stunned by them!
+		              </p>
+		            </div>
+		       </div> <!--End of .review-content-->
+	     </section> <!-- End of .review -->
 
 		<!----- Footer----->
-		 <div class="container-footer">
-
+		 <section class="main-footer grid">
 			 <div class="child-footer about">
 				 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
 				 <p>We are a family-owned and full-service floral shop
@@ -140,13 +186,15 @@
 				 <p><i class="fab fa-instagram"></i> Instagram</p>
 				 <p><i class="fab fa-facebook-f"></i> Facebook</p>
 			 </div>
-	 	</div>
+		 	</div>
+	 	</section>
 
-	 	<div class="sub-footer">
-	 		<p>Made with love in Vancouver, B.C.</p>
-	 		<a href="styleguide.html" target="_blank"> Styleguide</a>
-	 		<a href="citations.html" target="_blank"> Citations</a>
-	 	</div>
+ 		<div class="sub-footer">
+	 		<p>	Made with love in Vancouver, B.C.
+	 			<a href="styleguide.html" target="_blank"> Styleguide</a>
+	 			<a href="citations.html" target="_blank"> Citations</a>
+	 		</p>
+ 		</div>
 
 	</body>
 

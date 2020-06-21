@@ -60,19 +60,26 @@ p.about-desc {
 	margin: auto;
 }
 
-/* ------ Nav Bar Styling ------*/
-
+.shop p {
+	padding-top: 2rem;
+}
 
 /* ------ Header Styling ------*/
 h1 {
   font-family: "FreightBigPro-Light";
-  font-size: 3rem;
+  font-weight: 100;
+  font-size: 3.4rem;
   text-transform: none;
   color: #474747;
   line-height: 4rem;
   text-align: left;
   max-width: 35rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.10rem;
+}
+
+.shop h1, .shop p {
+	margin: auto;
+ 	text-align: center;
 }
 
 h2  {
@@ -106,11 +113,20 @@ section.values h3 {
 	color: #004C45;
 }
 
+.faq h1 {
+    margin: auto;
+    text-align: center;
+    max-width: none;
+}
+
 
 /* ------ Section Styling ------*/
-section.categories, section.products, section.values,
-section.faq {
+section.categories, section.values, section.faq {
 	padding: 8rem 0rem 8rem 0rem;
+}
+
+section.products {
+	padding: 5rem 0rem 4rem 0rem;
 }
 
 section.citations, section.styleguide  {
@@ -121,7 +137,6 @@ section.detailed-product, section.review, section.alternating-content  {
 	padding-bottom: 8rem;
 }
 
-/* ---------- Interactive Elements ---------- */
 /* ------ In-Text Link ------*/
 section .intext a {
 	color: #339F95;
@@ -325,34 +340,7 @@ input#review-body {
 	margin-right: 1rem;
 }
 
-/* ---------- Text Styling ---------- */
-/* Headings */
-/*h1, section#text-styling h1.styleguide, .product-desc h1.styleguide  {
-	font-family: "FreightBigPro-Book", Verdana, sans-serif;
-	font-size: 3rem;
-	margin-bottom: 0;
-	letter-spacing: 0.1rem;
-	text-transform: capitalize;
-}*/
-
-/* .product-desc h1.styleguide  {
- 	margin-top: 0;
-	padding-top: 0;
- }*/
-
-/*h2, section#text-styling h2.styleguide {
-	font-family: "FreightBigPro-Book", Verdana, sans-serif;
-	font-size: 2rem;
-	margin-bottom: 0;
-	letter-spacing: 0.1rem;
-}*/
-
-
-
-
-/* ---------- Modular Elements ---------- */
 /* ------ Top Nav Bar ------*/
-
 .announcement-bar, .sub-footer{
 	color: #fff;
 	background-color: #004C45;
@@ -360,6 +348,14 @@ input#review-body {
 	text-align: center;
 	font-size: 0.75rem;
 	letter-spacing: 0.04rem;
+}
+
+nav .col-1of6.search-bar  {
+	padding-right: 3rem;
+}
+
+div.announcement-bar {
+	display: block;
 }
 
 nav a {
@@ -392,10 +388,6 @@ nav.grid a {
  	margin-top: 0.5rem;
  }
 
-/*nav .grid-col-1of6 a {
-	padding: 0rem;
-}*/
-
 nav .col-1of6 img {
 	width: 20%;
 	height: auto;
@@ -411,31 +403,21 @@ nav .search-bar {
 }
 
 /* ------ Hero Advertising ------*/
-
 .hero-text {
 	padding-top: 4.5rem;
 	padding-left: 5rem;
 }
 
 .shop p {
-	 max-width: 25rem;
+	 max-width: 35rem;
 }
-/*
-.about > .hero > .text > h1 {
-	text-align: left;
-	color: #fff;
-}*/
 
 .hero button {
 	margin-top: 1rem;
 }
 
-/*.location img {
-	width: 25rem;
-	height: 100%;
-}*/
 
-/* ------ Home Menu Items------*/
+/* ------ Home 3 Tiles------*/
 .menu {
 	position: relative;
 }
@@ -455,11 +437,6 @@ nav .search-bar {
 	background-color: rgba(255, 255, 255, 0.85);
 	padding: 2rem;
 }
-
-/*.menu.col-1of3, .menu.col-2of3, .menu.col-3of3 {*/
-	/*margin-bottom: 5rem;*/
-	/*margin-top: 4rem;*/
-/*}*/
 
 /* ------ Alternating Content-----*/
 .alternating-content-img img {
@@ -483,7 +460,7 @@ nav .search-bar {
 
 /* ------ About Us -------- */
 .values img {
-	width: 35%;
+	width: 25%;
 	height: auto;
 }
 
@@ -492,16 +469,16 @@ nav .search-bar {
 }
 
 .values.col-2of3 img {
-	width: 30%;
+	width: 20%;
 	height: auto;
 }
 
 .values.col-1of3 img {
-	padding-bottom: 1.5rem;
+	padding-bottom: 1rem;
 }
 
 /* ------ Individual Product Description -------- */
-.product-desc .top-level h2, .product-desc h3 {
+.product-desc .title-container h2, .product-desc h3 {
 	display: inline-block;
 }
 
@@ -591,9 +568,6 @@ nav .search-bar {
 /* ------ Product Listings -------- */
 .container-product-listing, .product-item {
   position: relative;
-/*  padding-left: 2rem;
-  padding-right: 2rem;
-  /*flex-basis: 50%;*/
 }
 
 .product-item img {
@@ -601,40 +575,41 @@ nav .search-bar {
   height: auto;
 }
 
-.product-item:hover img {
+/*.product-item:hover img {
   opacity: 0.4;
 }
 
 .product-item:hover .btn-position {
   opacity: 1;
 }
-
-.btn-quick-add {
+*/
+.btn-add {
   	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
 	font-size: 0.8rem;
 	color: #20605A;
 	border: 2px solid #20605A;
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
-	padding: 0.5rem 1rem;
-	border-radius: 1.2rem;
+	padding: 0.1rem 0.7rem;
+	border-radius: 1rem;
 	font-weight: 900;
-	opacity: 0.9;
+	float: right;
+	margin-right: 0.9rem;
 }
 
-.btn-quick-add:hover {
+.btn-add:hover {
 	color: #fff;
     background-color: #20605A;
 }
 
-.btn-position {
+/*.btn-position {
   opacity: 0;
   position: absolute;
   top: 11rem;
   left: 3rem;
   text-align: center;
 }
-
+*/
 p.price {
 	color: #474747;
 	font-size: .9rem;
@@ -650,6 +625,14 @@ p.price {
 }
 
 
+/*------- FAQ/Support---------*/
+.faq .hero-text {
+	padding-top: 0;
+	margin: auto;
+}
+.faq h1 {
+	color: #fff;
+}
 
 /*------- Footer---------*/
 .main-footer {
@@ -696,8 +679,7 @@ p.price {
 	padding: 0;
 }
 
-/* ---------- Modular Elements Ends ---------- */
-
+/* ------ Accordian FAQ ------ */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #F5EFEB;
@@ -714,9 +696,6 @@ p.price {
   margin-bottom: 0;
   letter-spacing: 0.06rem;
 }
-
-
-/* ------ Accordian FAQ ------ */
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {

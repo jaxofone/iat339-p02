@@ -31,49 +31,30 @@ nav .col-1of6  {
 	flex: 2 1 2%;
 }
 
-nav .col-1of6.search-bar  {
-	padding-right: 3rem;
-}
-
-div.announcement-bar {
-	display: block;
-}
-
 /* ------ Hero Sections ------ */
 .home.hero {
   display: flex;
-  background-image: url("../img/hero-img.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 26rem;
-}
-
-.shop.hero {
-  display: flex;
-  background-image: url("../img/dennis-ottink.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 23rem;
-}
-
-.about.hero {
-  display: flex;
-  background-image: url("../img/annie-spratt.jpg");
+  background-image: url("../img/hero/hero-img.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 24rem;
 }
 
-
-/* ------ Alternating Content ------ */
-/*section.location {
-	text-align: center;
+.about.hero {
+  display: flex;
+  background-image: url("../img/hero/annie-spratt.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 24rem;
 }
-*/
-/*section.location .col-2of2{
-	padding-left: 2rem;
-	text-align: left;
-}*/
+
+.faq.hero {
+  display: flex;
+  background-image: url("../img/hero/annie-spratt.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 24rem;
+}
 
 /* ------ Review Section ------ */
 
@@ -96,11 +77,6 @@ div.announcement-bar {
 }
 
 /* ------ Form Styling ------ */
-
-/*.grid-col-1of1, .grid-col-1of-3, .col-1of2  {*/
-	/*display: flex;*//*
-}*/
-
 form .col-1of1 {
 	flex-direction: column;
 	align-content: flex-start; 
@@ -112,11 +88,11 @@ form .col-1of2 {
 
 /* ------ Landing Page ------ */
 .col-1of1-xs {
-	height: 30px;
+	/*height: 30px;*/
 	flex: 1 1 100%;
 }
 
-.col-1of1-s{
+/*.col-1of1-s{
 	height: 55px;
 	flex: 1 1 100%;
 }
@@ -125,11 +101,10 @@ form .col-1of2 {
 	height: 350px;
 	flex: 1 1 100%;
 }
-
+*/
 .col-1of3, .col-2of3, .col-3of3 {
-	flex-basis: 23%;
+	flex-basis: 30%;
 }
-
 
 /*.col-1of2, .col-1of2-reverse {*/
 	/*flex: 2 1 80%;*/
@@ -210,7 +185,7 @@ form .col-1of2 {
 }*/
 
 /* ------ Cart Template ------ */
-.cart-container {
+/*.cart-container {
 	display: flex;
   	flex-direction: row;
 	height: 500px;
@@ -233,7 +208,7 @@ form .col-1of2 {
 	margin: .75rem;
 	text-align: center;
 	flex: 1 1 100%;
-}
+}*/
 
 /*.cost-container{
 	display: flex;
@@ -264,19 +239,26 @@ form .col-1of2 {
 
 
 /* ---------- Media Queries ---------- */
-/* Phone and below */
-@media (max-width: 37em) {
+/* ----------  Phone and below  ---------- */
+/*@media screen and (max-width: 37em) {
+	.hero .hero-text {
+		margin: 0;
+		padding-top: 3.5rem;
+   		padding-left: 3.5rem;
+   		padding: 3.5rem;
+	}
+*/
 	/*----- Nav Bar ------*/
-	nav .search-bar input {
+/*	nav .search-bar input {
     	font-size: 0.9rem;
 	}
 
 	nav .col-1of6 a {
     	font-size: 1rem;
-	}
+	}*/
 
 	/*----- About ------*/
-	.about-desc {
+/*	.about-desc {
   	 	 padding: 0rem 2rem 0rem 2rem;
 	}
 
@@ -284,34 +266,42 @@ form .col-1of2 {
 		font-size: 1.7rem;
 		text-align: center;
 	}
-	
-	.hero .hero-text { {
-		margin: 0;
-		padding-top: 3.5rem;
-   		padding-left: 3.5rem;
-	}
-
-	/*----- Shop ------*/
-	.shop h1, .shop p {
-		color: #FFF;
-	}
-
-	.shop .hero .hero-text {
-		padding-left: 0;
-	}
-
 }
-
-/* Tablet and below */
-@media (max-width: 48em) {
+*/
+/* ----------  Phone and below  ---------- */
+@media screen and (max-width: 37em) {
 
 	p, nav .col-1of6 a {
-		font-size: 1rem;
-		letter-spacing: 0.04rem;
-		line-height: 2rem;
+		font-size: 1.3rem;
+		letter-spacing: 0.05rem;
+		line-height: 2.7rem;
+	}
+
+	p {
+		font-size: 1.6rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+		font-weight: 100;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+
+	.btn-main {
+		font-size: 1.3rem;
+		padding: 2rem 2.2rem;
+		border-radius: 2.3rem;
 	}
 
 	/*----- Nav Bar ------*/
+	.announcement-bar {
+		padding: 1rem;
+		font-size: 1.2rem;
+	}
+
 	nav .col-1of6, nav .col-1of2 {
 		flex: 1 1 100%;
 		text-align: center;
@@ -337,14 +327,19 @@ form .col-1of2 {
 	 	padding: 0;
 	 }
 
+	 nav.grid img.logo,  nav .col-1of6 img {
+	 	width: 35%;
+	 	height: auto;
+	 }
+
 	 /*----- Home Hero ------*/
 	 .hero .hero-text h1 {
    		padding-top: 0;
    		margin-top: 0rem;
     	padding-left: 0;
-    	font-size: 2.2rem;
-		max-width: 25rem;
-		line-height: 2.5rem;
+    	font-size: 3.2rem;
+		max-width: none;
+		line-height: 3rem;
 		text-align: center;
 	}
 
@@ -356,20 +351,15 @@ form .col-1of2 {
 	.hero .hero-text {
 		  margin: 0;
 		  text-align: center;
+		  padding-left: 0 !important;
 	}
 
-	.about > .hero > .text > h1 {
-		/*color: #474747;*/
-		font-size: 3.2rem;
-		max-width: 40rem;
-		line-height: 4rem;
+	.home.hero {
+		background-size: 70rem;
 	}
 
-	.about > .hero > .text > p {
-		padding-top: 8rem;
-	}
 
-	/*----- Home 3 Tiles ------*/
+	/*----- Home - 3 Tiles ------*/
 	.grid .menu.col-1of3, .grid .menu.col-2of3, .grid .menu.col-3of3  {
 		flex-basis: 100%;
 		text-align: center;
@@ -387,6 +377,7 @@ form .col-1of2 {
 
 	.menu {
 		padding-bottom: 5rem;
+		flex: 1 1 100%;
 	}
 
 	.menu img {
@@ -396,17 +387,22 @@ form .col-1of2 {
 
 	.menu p {
 		top: 6rem;
-		left: 5.5rem;
+		left: 5rem;
+		font-size: 2.3rem;
 	}
 
-	/*----- Home Alternating Content ------*/
+	/*----- Home - Alternating Content ------*/
 	.alternating-content-text{
 		text-align: center;
 		padding-bottom: 2rem;
 		padding-top: 2rem;	
 	}
 
-	/*----- Products Grid ------*/
+	.alternating-content p {
+		max-width: 50rem;
+	}
+
+	/*----- Shop - Products Grid ------*/
 	.product-item.col-1of3, .product-item.col-2of3, .product-item.col-3of3 {
 		flex-basis: 100%;
 	}
@@ -421,74 +417,245 @@ form .col-1of2 {
 	}
 
 	.product-item p.product-name {
-		font-size: 2.3rem;
-		padding-bottom: 1rem;
-		padding-top: 1rem;
+		font-size: 2.8rem;
+		padding: 1rem 0rem 1rem 0rem;
 		max-width: 50rem;
 	}
 
 	p.price {
-		font-size: 1.2rem;
+		font-size: 1.8rem;
 		max-width: 50rem;
-	}
-
-	.product-item:hover .btn-position {
-		opacity: 1;
-	}
-
-	.btn-position {
-		position: absolute;
-		bottom :0;
-		left: 0;
-		top: 0;
+		padding-bottom: 2rem;
 	}
 
 	.grid.products {
 		text-align: center;
 	}
 
-	/*----- Values ------*/
-	.values img {
-		width: 50%;
+	.btn-add {
+		font-size: 1.5rem;
+		padding: 1rem;
+		border-radius: 1.4rem;
+		float: none;
+		margin-right: 0;
+	}
+
+	/*----- About - Hero ------*/
+	.about h1 {
+		color: #fff;
+	}
+
+	.about > .hero > .text > h1 {
+		font-size: 3.2rem;
+		max-width: 40rem;
+		line-height: 4rem;
+		padding-left: 0;
+	}
+
+	.about .hero-text h1 {
+		padding-left: 0 !important; 
+	}
+
+	.about > .hero > .text > p {
+		padding-top: 8rem;
+	}
+
+	/*----- About - Values ------*/
+	.values img, .values.col-2of3 img {
+		width: 20%;
 		height: auto;
 	}
 
 	.values.col-1of3, .values.col-2of3, .values.col-3of3 {
 		flex-basis: 100%;
-
 	}
 
 	.values.col-1of3, .values.col-2of3 {
-		padding-bottom: 3rem;
+		padding-bottom: 8rem;
 	}
 
 	.values h3 {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 
 	.values p {
 		text-align: center;
-		max-width: 20rem;
+		max-width: 28rem;
 		margin: auto;
-	}
-
-	.values img {
-		width: 25%;
-		height: auto;
 	}
 
 	.values {
 		text-align: center;
 	}
 
-	.values.col-2of3 img {
-		width: 22%;
+	/*----- Support ------*/
+	section.faq {
+		padding-top: 0rem;
+	}
+
+	/*----- Detailed Product Listing ------*/
+	.detailed-product {
+		padding: 3rem;
+	}
+
+	.product-desc h2.price {
+		font-size: 2rem;
+	}
+
+	.review-star-rating p {
+		font-size: 1.7rem;
+	}
+
+	label, select, input {
+		font-size: 1.7rem;
+	}
+
+ 	select, input {
+		padding: 10px 15px;
+	}
+
+	.review.form, .review-content {
+		padding: 3rem;
+	}
+
+	#fname, #lname, #email-ad {
+		width: 100%;
+	}
+
+	input#review-body {
+   	 	padding-bottom: 10rem;
+	}
+
+	.btn-submit {
+		font-size: 1.5rem;
+	}
+
+	/*----- FAQ ------*/
+	.faq .hero-text {
+		margin: auto;
+	}
+
+	.faq.hero {
+		background-size: 70rem;
+		height: auto;
+		padding-top: 7rem;
+	}
+
+	section.faq {
+		padding-top: 5rem;
+	}
+
+}
+
+
+
+
+/* ----------  Tablet and below  ---------- */
+@media (max-width: 48em) {
+
+	p {
+		font-size: 1.1rem;
+	}
+
+	/*----- Nav Bar------*/
+	nav .col-1of6 img {
+		width: 35%;
 		height: auto;
 	}
 
+	/*----- Home Hero ------*/
+	.home.hero {
+		background-size: 60rem;
+		height: auto;
+	}
 
-/* Desktop and below */
+	.home .hero-text h1 {
+		margin: 0;
+	}
+
+	.hero button {
+		margin-bottom: 2rem;
+	}
+
+	.home .hero-text {
+    	padding-left: 5rem;
+	}
+
+	/*----- Home - 3 Tiles ------*/
+	.menu {
+		flex: 1 1 50%;
+	}
+
+	/*----- Home - Alternating Content ------*/
+	.col-2of2, .col-2of2-reverse {
+		flex: 1 1 100%;
+		text-align: center;
+	}
+
+	.alternating-content-text h2 {
+		padding: 2rem 0rem 2rem 0rem;
+	}
+
+	.alternating-content-text {
+		text-align: center;
+		padding-bottom: 2rem;
+	}
+
+	.alternating-content p {
+		font-size: 1.2rem !important;
+		margin: auto;
+		max-width: 35rem;
+	}
+
+	.alternating-content-text.col-2of2 {
+		text-align: center;
+	}
+
+	.alternating-content-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	/*----- Shop - Hero ------*/
+	.shop p {
+		font-size: 1.3rem;
+	}
+
+	.hero-text {
+		padding-left: 0;
+	}
+
+	.col-1of3, .col-2of3, .col-3of3 {
+    	flex-basis: 50%;
+    	padding: 0rem 2rem 5rem 3rem;
+	}
+
+	/*----- Detailed Product Listing ------*/
+	.product-img, .product-desc {
+		padding-right: 0;
+		padding-bottom: 3rem;
+	}
+
+	.col-2of2 {
+		text-align: left;
+	}
+
+	/*----- About - Hero ------*/
+	.about.hero {
+		background-size: 80rem;
+		height: auto;
+	}
+	.about .hero-text h1 {
+		padding-left: 5rem;
+		max-width: 40rem;
+	}
+
+
+}
+
+
+
+/* ----------  Desktop and below ---------- */
 @media (max-width: 75em) {
-	
 }
 

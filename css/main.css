@@ -126,7 +126,7 @@ section.categories, section.values, section.faq {
 }
 
 section.products {
-	padding: 5rem 0rem 4rem 0rem;
+	padding: 5rem;
 }
 
 section.citations, section.styleguide  {
@@ -571,7 +571,7 @@ nav .search-bar {
 }
 
 .product-item img {
-  width: 95%;
+  width: 80%;
   height: auto;
 }
 
@@ -594,7 +594,7 @@ nav .search-bar {
 	border-radius: 1rem;
 	font-weight: 900;
 	float: right;
-	margin-right: 0.9rem;
+	margin-right: 3.5rem;
 }
 
 .btn-add:hover {
@@ -622,6 +622,10 @@ p.price {
 	letter-spacing: .08rem;
 	color: #474747;
 	margin: 0;
+}
+
+.product-item{
+	padding-bottom: 3rem;
 }
 
 

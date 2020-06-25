@@ -270,7 +270,7 @@ label {
   padding-right: 1rem;
 }
 
-input, select {
+input, select, textarea {
   padding: 5px 10px; /*top and bottom, right and left*/
   display: block;
   border: 1px solid #C8C8C8;
@@ -279,6 +279,10 @@ input, select {
   color: #474747;
   margin: 0;
   background-color: #fff;
+}
+
+textarea {
+	width: 100%;
 }
 
 input {

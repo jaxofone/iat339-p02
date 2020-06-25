@@ -2,7 +2,6 @@
 /*<!--The structure of this CSS document was built from referencing Weeks 2's lab tutorials-->*/
 html {
 	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
-	/*left: 7rem;*/
 	color: #474747;
 	margin: 0;
 }
@@ -90,7 +89,7 @@ h1, h1.web {
 }
 
 
-.shop h1, .shop p {
+.shop h1, .shop p, .services h1, .services p {
 	margin: auto;
  	text-align: center;
 }
@@ -146,8 +145,12 @@ section.citations, section.styleguide  {
 	padding: 3rem;
 }
 
-section.detailed-product, section.review, section.alternating-content  {
+section.detailed-product, section.review, .row-spacer{
 	padding-bottom: 8rem;
+}
+
+.row-1 {
+	padding-bottom: 0;
 }
 
 /* ------ In-Text Link ------*/
@@ -198,8 +201,11 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 	text-transform: uppercase;
 	opacity: 1;
 	font-weight: 900;
-	/*position: absolute;*/
-	/*left: 36rem;*/
+}
+
+.review.form .btn-submit {
+	float: right;
+	padding-top: 1rem;
 }
 
 .btn-submit:hover, .btn-submit:focus {
@@ -455,9 +461,15 @@ nav .search-bar {
 	padding: 2rem;
 }
 
+/* ------ Services 3 Tiles------*/
+.menu.services p  {
+	left: 1.5rem;
+	top: 5rem;
+}
+
 /* ------ Alternating Content-----*/
 .alternating-content-img img {
-	width: 35rem;
+	width: 39.6rem;
 	height: 100%;
 }
 
@@ -465,7 +477,17 @@ nav .search-bar {
 	padding-left: 2rem;
 	padding-right: 2rem;
 	margin: auto;
+	flex: 2 1 20%;
 }
+
+.col-1of2-right {
+	text-align: right;
+}
+
+.alternating-content-text.col-1of2-right p {
+	max-width: none;
+}
+
 
 .grid.products {
 	padding-bottom: 5rem;

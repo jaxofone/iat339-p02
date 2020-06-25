@@ -465,23 +465,23 @@
 												&lt;label for="name">Name&lt;/label&gt;<br>
 												&lt;input type="text" id="fname" name="fname" placeholder="Your first name"&gt;<br>
 
-												&lt;label for="email">Email&lt;/label>
-												&lt;input type="text" id="email" name="email" placeholder='name@domain.com'>
+												&lt;label for="email">Email&lt;/label&gt;
+												&lt;input type="text" id="email" name="email" placeholder='name@domain.com'&gt;
 											&lt;/div&gt;<br>
 
-											&lt;label for="review-title">Review Title&lt;/label> &lt;input type="text" id="review-title" name="review-title"&gt;<br>
-											&lt;/form&gt;<br>
+											&lt;label for="review-title">Review Title&lt;/label&gt; <br>
+											&lt;input type="text" id="review-title" name="review-title"&gt;<br>
 
-											&lt;label for="review-body">Review&lt;/label&gt; &lt;input type="text" id="review-body" name="review-body">
-											&lt;/form&gt;<br>
-											
+											&lt;label for="review-body">Review&lt;/label&gt; 
+											&lt;textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."&gt;&lt;/textarea&gt;<br>
+
 											&lt;button class="btn-submit">Submit → &lt;/button&gt;<br>
+											&lt;/form&gt;<br>
 										&lt;/div&gt;<br>
 								 &lt;/section&gt;
 				       			
 							 </code>
 
-						
 
 						  <h2> Sample: </h2>
 					      <section class="review">
@@ -780,14 +780,26 @@
 			<!----- Web Grids ----->
 			<section>
 			      <h1 class="styleguide">Website Grid Structure</h1>
+			       <p> The website uses an 8 column grid.
 					<section>
 						<h2>CSS Code:</h2>
 		       			 <code>
+		       			 	.grid <br>
+		       			 	.col-1of8<br>
 						</code>
 
 						<h2>HTML Code:</h2>
 			       			 <code>
-				 
+			       			 	&lt;div class ="grid"&gt;
+									 &lt;div class ="col-1of8"&gt;1/8 &lt;/div&gt; <br>
+									 &lt;div class ="col-1of8"&gt;1/8 &lt;/div&gt; <br>
+									 &lt;div class ="col-1of8"&gt;1/8 &lt;/div&gt; <br>
+									 &lt;div class ="col-1of8"&gt;1/8 &lt;/div&gt; <br>
+									 &lt;div class ="col-1of8"&gt;1/8 &lt;/div&gt; <br>
+									 &lt;div class ="col-1of8"&gt;1/8 &lt;/div&gt; <br>
+									 &lt;div class ="col-1of8"&gt;1/8 &lt;/div&gt; <br>
+									 &lt;div class ="col-1of8"&gt;1/8 &lt;/div&gt; <br>
+								&lt;div&gt;
 							</code>
 
 						<div class ="grid">
@@ -801,168 +813,6 @@
 							<div class ="col-1of8">1/8</div>
 						</div>
 					</section>
-
-					<section>
-						<h2> Shop Template </h2>
-						<h2 class="shop">HTML Code:</h2>
-			       			 <code>
-				       			 &lt;div class ="grid" id="shop-template"&gt;<br>
-									&lt;div class ="grid-item col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-1of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-3of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-1of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item footer"&gt;Footer&lt;/div&gt;<br>
-								&lt;/div&gt;
-								</code>
-
-						<div class ="grid" id="shop-template">
-							<div class ="grid-item col-1of1-xs">Announcement Bar</div>
-							<div class ="grid-item col-1of1-s">Nav Bar</div>
-							<div class ="grid-item col-1of1-lg">Hero Banner</div>
-							<div class ="grid-item col-1of3">Image</div>
-							<div class ="grid-item col-2of3">Image</div>
-							<div class ="grid-item col-3of3">Image</div>
-							<div class ="grid-item col-1of3">Image</div>
-							<div class ="grid-item col-2of3">Image</div>
-							<div class ="grid-item col-2of3">Image</div>
-							<div class ="grid-item footer">Footer</div>
-						</div> <!-- .grid#shop-template ends -->
-					</section>
-
-					<section>
-						<h2> Check Out Template </h2>
-						<h2 class="check-out">HTML Code:</h2>
-		       			 <code>
-				       		&lt;div class ="grid" id="checkout-template"&gt;<br>
-								&lt;div class ="grid-item" id="title"&gt;Title&lt;/div&gt;<br>
-								&lt;div class ="grid-item input-row1"&gt;Input Field&lt;/div&gt;<br>
-								&lt;div class ="grid-item input-row1"&gt;Input Field&lt;/div&gt;<br>
-								&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
-								&lt;div class ="grid-item input-row2"&gt;Input Field&lt;/div&gt;<br>
-								&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
-								&lt;div class ="grid-item input-row3"&gt;Input Field&lt;/div&gt;<br>
-								&lt;div class ="grid-item input-row3"&gt;Input Field&lt;/div&gt;<br>
-								&lt;div class ="grid-item input-row3"&gt;Input Field&lt;/div&gt;<br>
-								&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
-								&lt;div class ="grid-item input-row4"&gt;Input Field&lt;/div&gt;<br>
-								&lt;div class ="grid-item input-row4"&gt;Input Field&lt;/div&gt;<br>
-								&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
-								&lt;div class ="grid-item blank"&gt;White Space&lt;/div&gt;<br>
-								&lt;div class ="grid-item button"&gt;Button&lt;/div&gt;<br>
-								&lt;div class ="grid-item footer"&gt;Footer&lt;/div&gt;<br>
-							&lt;/div&gt;<br>
-						</code>
-
-						<div class ="grid" id="checkout-template">
-								<div class ="grid-item" id="title">Title</div>
-								<div class ="grid-item input-row1">Input Field</div>
-								<div class ="grid-item input-row1">Input Field</div>
-								<div class ="grid-item blank">White Space</div>
-								<div class ="grid-item input-row2">Input Field</div>
-								<div class ="grid-item blank">White Space</div>
-								<div class ="grid-item input-row3">Input Field</div>
-								<div class ="grid-item input-row3">Input Field</div>
-								<div class ="grid-item input-row3">Input Field</div>
-								<div class ="grid-item blank">White Space</div>
-								<div class ="grid-item input-row4">Input Field</div>
-								<div class ="grid-item input-row4">Input Field</div>
-								<div class ="grid-item blank">White Space</div>
-								<div class ="grid-item blank">White Space</div>
-								<div class ="grid-item button">Button</div>
-								<div class ="grid-item footer">Footer</div>
-						</div> <!-- .grid#checkout-template ends -->
-
-					</section>
-
-					<section>
-						<h2> Support Template </h2>
-						<h2 class="support">HTML Code:</h2>
-		       			 <code>
-					       	&lt;div class ="grid" id="support-template"&gt;<br>
-								&lt;div class ="grid-item col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
-								&lt;div class="side-nav-container"&gt;<br>
-									Side Nav Container
-									&lt;div class ="menu-item1"&gt;Menu Item&lt;/div&gt;<br>
-									&lt;div class ="menu-item2"&gt;Menu Item&lt;/div&gt;<br>
-									&lt;div class ="menu-item3"&gt;Menu Item&lt;/div&gt;<br>
-								&lt;/div&gt;<br>
-								&lt;div class ="body-container"&gt;<br>
-									Body Container
-									&lt;div class ="menu-item1"&gt;Question&lt;/div&gt;<br>
-									&lt;div class ="menu-item2"&gt;Question&lt;/div&gt;<br>
-									&lt;div class ="menu-item3"&gt;Question&lt;/div&gt;<br>
-								&lt;/div&gt;<br>
-								&lt;div class ="grid-item footer"&gt;Footer&lt;div&gt;<br>
-							&lt;/div&gt;
-						</code>
-
-						<div class ="grid" id="support-template">
-								<div class ="grid-item col-1of1-xs">Announcement Bar</div>
-								<div class ="grid-item col-1of1-s">Nav Bar</div>
-								<div class ="grid-item col-1of1-lg">Hero Banner</div>
-								<div class="side-nav-container">
-									Side Nav Container
-									<div class ="menu-item1">Menu Item</div>
-									<div class ="menu-item2">Menu Item</div>
-									<div class ="menu-item3">Menu Item</div>
-								</div>
-								<div class ="body-container">
-									Body Container
-									<div class ="menu-item1">Question</div>
-									<div class ="menu-item2">Question</div>
-									<div class ="menu-item3">Question</div>
-								</div>
-								<div class ="grid-item footer">Footer</div>
-							</div> <!-- .grid#support-template ends -->
-
-					</section>
-
-
-					<section>
-						<h2> Services Template </h2>
-						<h2 class="services"> HTML Code:</h2>
-		       			 <code>
-		       			 	&lt;div class ="grid" id="services-template"&gt;
-								&lt;div class ="grid-item col-1of1-xs"&gt;Announcement Bar&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
-
-								&lt;div class ="grid-item col-1of2-equal"&gt;Image&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-2of2-equal"&gt;Image&lt;/div&gt;<br>
-
-								&lt;div class ="grid-item col-1of2"&gt;Image&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-2of2"&gt;Image&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-1of3"&gt;Image&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
-								&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
-								&lt;div class ="grid-item footer"&gt;Footer&lt;/div&gt;<br>
-							&lt;div&gt;
-		       			 </code>
-
-						<div class ="grid" id="services-template">
-							<div class ="grid-item col-1of1-xs">Announcement Bar</div>
-							<div class ="grid-item col-1of1-s">Nav Bar</div>
-							<div class ="grid-item col-1of1-lg">Hero Banner</div>
-
-							<div class ="grid-item col-1of2-equal">Image</div>
-							<div class ="grid-item col-2of2-equal">Image</div>
-
-							<div class ="grid-item col-1of2">Image</div>
-							<div class ="grid-item col-2of2">Image</div>
-							<div class ="grid-item col-1of3">Image</div>
-							<div class ="grid-item col-2of3">Image</div>
-							<div class ="grid-item col-2of3">Image</div>
-							<div class ="grid-item footer">Footer</div>
-						</div> <!-- .grid#services-template ends -->
-		       		</section>
-		    </section> <!-- sub section ends -->
 
 		</section> <!-- .modular-elements ends -->
 

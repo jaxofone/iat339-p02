@@ -66,7 +66,7 @@
 		              <p>&#9733;</p>
 		              <p>&#9733;</p>
 		              <p>&#9733;</p>
-		              <p> <a href="#">(15)</a>
+		              <p> <a href="#review">(15)</a>
 	           	</div>
 
 				<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
@@ -93,33 +93,34 @@
 
 
 		<!-- Review Section -->
-		 <section class="review">
-	      	  <h2> Reviews <a href="#">(15)</a></h2>
+		 <section class="review" id="review">
+	      	  <h2> Reviews <a href="#post">(15)</a></h2>
 
 	      	  <button class="btn-main">Write a Review</button>
 
 	      	  <div class="review form">
 					<form action="/action_page.php">
 
-					<div class="personal-details">
-						<label for="name">Name</label>
-						<input type="text" id="fname" name="fname" placeholder="Your first name">
+						<div class="personal-details">
+							<label for="name">Name</label>
+							<input type="text" id="fname" name="fname" placeholder="Your first name">
 
-						<label for="email">Email</label>
-						<input type="text" id="email" name="email" placeholder='name@domain.com'>
-					</div>
+							<label for="email">Email</label>
+							<input type="text" id="email" name="email" placeholder='name@domain.com'>
+						</div>
 
-					<label for="review-title">Review Title</label> <input type="text" id="review-title" name="review-title">
-					
-					<label for="review-body">Review</label>
-					<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."></textarea>
+						<label for="review-title">Review Title</label> 
+						<input type="text" id="review-title" name="review-title">
+						
+						<label for="review-body">Review</label>
+						<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."></textarea>
+
+						<button class="btn-submit">Submit → </button>
 
 					</form>
-
-					<button class="btn-submit">Submit → </button>
 				</div>
 
-	           <div class="review-content">
+	           <div class="review-content" id="post">
 	           	   <div class="review-star-rating">
 		              <p>&#9733;</p>
 		              <p>&#9733;</p>

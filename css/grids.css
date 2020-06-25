@@ -5,12 +5,6 @@
 	box-sizing: border-box;
 }
 
-.grid-item {
-	background-color: #eee;
-	border: 1px dashed #000;
-	text-align: center;
-}
-
 .grid, section.location {
 	display: -webkit-flex; 			/* Supports older browsers */
 	display: -ms-flex; 				/* Supports Internet 10 */
@@ -23,6 +17,10 @@
 
 .col-1of8 {
 	flex: 1 1 12.5%;
+	border: #eee solid .15rem;
+	text-align: center;
+	padding: 15rem .5rem 15rem 1rem;
+
 }
 
 /* ------ Nav Bar ------ */
@@ -96,151 +94,19 @@ form .col-1of2 {
 	flex: 1 1 100%;
 }
 
-/*.col-1of1-s{
-	height: 55px;
-	flex: 1 1 100%;
-}
-
-.col-1of1-lg {
-	height: 350px;
-	flex: 1 1 100%;
-}
-*/
 .col-1of3, .col-2of3, .col-3of3 {
 	flex-basis: 30%;
 }
 
-/*.col-1of2, .col-1of2-reverse {*/
-	/*flex: 2 1 80%;*/
-/*}*/
-
 .col-2of2, .col-2of2-reverse {
-	flex: 1 1 40%;
+	flex: 1 1 10%;
 }
 
-/*.grid-item#title{
-	height: 50px;
-	flex: 3 1 100%;
-}
-
-.input-row1, .input-row4  {
-	height: 30px;
-	flex: 1 1 27%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	margin-right: 1rem;
-}
-
-.input-row2 {
-	height: 30px;
-	flex: 2 1 57%;
-}
-
-.input-row3 {
-	height: 30px;
-	flex: 1 1 17%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	margin-right:0.7rem;
-}
-*/
-/*.grid-item.button {
-	height: 50px;
-	flex: 1 1 3%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	margin-left: 1.5rem;
-}*/
-
-/*.grid-item.blank {
-	background-color: #FFF;
-	flex: 2 1 30%;
-}*/
 
 .grid-item.footer {
 	height: 200px;
 	flex: 1 1 100%;
 }
-
-/* ------ Support Template ------ */
-/*.side-nav-container {
-	height: 300px;
-  	display: flex;
-  	flex-direction: column;
- 	flex: 1 1 25%;
- 	background-color: #eee;
- 	border: .5px dashed #333;
- 	text-align: center;
-}*/
-
-/*.body-container {
-	display: flex;
-  	flex-direction: column;
-	height: 800px;
-	flex: 1 1 75%;
-	background-color: #eee;
- 	border: .5px dashed #333;
- 	text-align: center;
-}
-
-.side-nav-container.menu-item1, .side-nav-container.menu-item2, .side-nav-container.menu-item3 {
-	height: 100px;
-	flex: 1 1 20%;
-}*/
-
-/* ------ Cart Template ------ */
-/*.cart-container {
-	display: flex;
-  	flex-direction: row;
-	height: 500px;
-	flex: 1 1 100%;
-	background-color: #eee;
- 	border: .5px dashed #333;
- }
-
- .title-container .row-1of4, .title-container .row-2of4, .title-container .row-3of4, .title-container .row-4of4 {
-	background-color: #ddd;
-	border: .5px dashed #333;
-	margin: .75rem;
-	text-align: center;
-	flex: 1 1 50%;
-}
-
-.cart-container .col-1of4, .cart-container .col-2of4, .cart-container .col-3of4, .cart-container .col-4of4  {
-	background-color: #ddd;
-	border: .5px dashed #333;
-	margin: .75rem;
-	text-align: center;
-	flex: 1 1 100%;
-}*/
-
-/*.cost-container{
-	display: flex;
-  	flex-direction: row;
-	height: 300px;
-	width: 50%
-	flex: 1 1 100%;
-	background-color: #eee;
- 	border: .5px dashed #333;
-}*/
-
-/* ------ Services Template ------ */
-/*.grid-item#blank-row-1of1 {
-	background-color: #FFF;
-	flex: 1 1 100%;
-	height: 200px;
-}*/
-
-/*.grid-item.col-1of2-equal, .grid-item.col-2of2-equal {
-	height: 200px;
-	flex: 1 1 20%;
-	margin-right: 10rem;
-	margin-left: 10rem;
-	margin-bottom: 10rem;
-	margin-bottom: 10rem;
-	margin-top: 1rem;
-}*/
-
 
 /* ---------- Media Queries ---------- */
 /* ----------  Phone and below  ---------- */
@@ -250,10 +116,12 @@ form .col-1of2 {
 		font-size: 1.3rem;
 		letter-spacing: 0.05rem;
 		line-height: 2.7rem;
+
 	}
 
 	p {
 		font-size: 1.6rem;
+		padding: 2rem;
 	}
 
 	h2 {
@@ -352,7 +220,7 @@ form .col-1of2 {
 
 	.menu {
 		padding-bottom: 5rem;
-		flex: 1 1 100%;
+		/*flex: 1 1 100%;*/
 	}
 
 	.menu img {
@@ -530,13 +398,21 @@ form .col-1of2 {
 		text-align: center !important;
 	}
 
+	/*----- Services - 3 Tiles ------*/
+	.menu.services p {
+		left: 3.5rem;
+		top: 6rem;
+	}
+
+
 }
 
 /* ----------  Tablet and below  ---------- */
 @media (max-width: 48em) {
 
 	p {
-		font-size: 1.1rem;
+		font-size: .9rem;
+		line-height: 2.7rem
 	}
 
 	/*----- Nav Bar------*/
@@ -561,11 +437,6 @@ form .col-1of2 {
 
 	.home .hero-text {
     	padding-left: 5rem;
-	}
-
-	/*----- Home - 3 Tiles ------*/
-	.menu {
-		flex: 1 1 50%;
 	}
 
 	/*----- Home - Alternating Content ------*/
@@ -597,6 +468,7 @@ form .col-1of2 {
 		width: 100%;
 		height: auto;
 	}
+
 
 	/*----- Shop - Hero ------*/
 	.shop p {
@@ -634,15 +506,14 @@ form .col-1of2 {
 
 	/*----- About - Location ------*/
 	.alternating-content-img.col-1of2{
-		flex: 1 1 40%;
+		flex: 1 1 100%;
 	}
 
 	.alternating-content-text.col-2of2{
 		flex: 1 1 30%;
-		text-align: left;
+		/*text-align: left;*/
 	}
 }
-
 
 
 /* ----------  Desktop and below ---------- */

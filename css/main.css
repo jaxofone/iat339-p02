@@ -663,11 +663,12 @@ p.price {
 	padding-right: 4rem;
 	padding-left: 4rem;
 	padding-top: 2rem;
+	padding-bottom: 2rem;
 	/*margin-top: 6rem;*/
 	margin-bottom: 0;
 	grid-template-columns: 1.75fr 1fr 1fr;
 	grid-column-gap: 70px;
-	height: 17rem;
+	/* height: 17rem; */
 	font-size: 0.8rem;
 }
 

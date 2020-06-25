@@ -88,6 +88,24 @@ form .col-1of2 {
 	flex: 1 1 100%;
 }
 
+
+/* ------ Cart Template ------ */ 
+.col4 { 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	grid-column-gap: 20px; 
+	align-items: center; 
+	text-align: center; 
+} 
+.col4 { 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	grid-column-gap: 10px; 
+	align-items: center; 
+	text-align: center; 
+	padding-top: 10em; 
+} 
+
 /* ------ Landing Page ------ */
 .col-1of1-xs {
 	/*height: 30px;*/
@@ -108,7 +126,7 @@ form .col-1of2 {
 	flex: 1 1 100%;
 }
 
-/* ---------- Media Queries ---------- */
+/* ---------- MEDIA QUERIES ---------- */
 /* ----------  Phone and below  ---------- */
 @media screen and (max-width: 37em) {
 
@@ -403,8 +421,7 @@ form .col-1of2 {
 		left: 3.5rem;
 		top: 6rem;
 	}
-
-
+	
 }
 
 /* ----------  Tablet and below  ---------- */

@@ -289,6 +289,7 @@ input, select, textarea {
 
 textarea {
 	width: 100%;
+	resize: none; 
 }
 
 input {
@@ -774,3 +775,36 @@ p.price {
  overflow: hidden;
  transition: max-height 0.2s ease-out;
 }
+
+/* ------ Cart -------- */ 
+ 
+.padR-s { 
+	padding-right: 20px; 
+} 
+.padL-s { 
+	padding-left: 20px; 
+} 
+ 
+.border-bottom { 
+	border-bottom: 1px solid #474747; 
+} 
+.product-image { 
+	width: 100% 
+} 
+.half-width-left { 
+	max-width: 500px; 
+	width: 100%; 
+	margin-left: auto; 
+	padding-right: 10em; 
+	padding-bottom: 10em; 
+} 
+.flex { 
+	display: flex; 
+} 
+.jc-sb { 
+	justify-content: space-between; 
+} 
+.right-align { 
+	text-align: right; 
+} 
+

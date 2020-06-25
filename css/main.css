@@ -49,6 +49,14 @@ section.intext a:hover, section.intext a:focus, section.intext a:active {
 	color: #474747;
 }
 
+.location .alternating-content-text a {
+	color: #474747;
+}
+
+.location .alternating-content-text a:hover, .contact a:hover  {
+	color: #339F95;
+}
+
 /* ------ Paragraph Styling ------*/
 p {
 	max-width: 38rem;
@@ -684,7 +692,7 @@ p.price {
 }
 
 .sub-footer a:hover, .sub-footer a:focus {
-	opacity: 1;
+	color: #339F95;
 }
 
 .sub-footer p {

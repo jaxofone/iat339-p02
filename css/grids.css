@@ -21,6 +21,10 @@
 	justify-content: space-around;
 }
 
+.col-1of8 {
+	flex: 1 1 12.5%;
+}
+
 /* ------ Nav Bar ------ */
 
 nav .col-1of2 {

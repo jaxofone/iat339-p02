@@ -40,6 +40,7 @@
 					<h1 class="styleguide">In-text Link</h1>
 						<h2>CSS Code:</h2>
 							<code>
+								a <br>
 							</code>
 
 							<h2>HTML Code:</h2>
@@ -54,6 +55,7 @@
 			       	<h1 class="styleguide">CTA Button</h1>
 						<h2>CSS Code:</h2>
 						<code>
+							.btn-main
 						</code>
 
 						<h2>HTML Code:</h2>
@@ -69,6 +71,7 @@
 			       	<h1 class="styleguide">Submit and Reset Buttons (Forms)</h1>
 						<h2>CSS Code:</h2>
 			       			 <code>
+			       			 	.btn-submit
 			       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -84,6 +87,8 @@
 			       	<h1 class="styleguide">Text Input Field & Label</h1>
 						<h2>CSS Code:</h2>
 		       			 <code>
+		       			 	form <br>
+		       			 	label
 		       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -149,6 +154,9 @@
 					<h1 class="styleguide">Headings</h1>
 						<h2>CSS Code:</h2>
 		       			 <code>
+		       			 	h1<br> 
+		       			 	h2<br> 
+		       			 	h3
 		       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -173,6 +181,7 @@
 
 			       	<h2>CSS Code:</h2>
 			       	 <code>
+			       	 	p
 			       	 </code>
 
 			       	<h2>HTML Code:</h2>
@@ -188,6 +197,11 @@
 		       	<!----- Lists ----->
 		       	<section>
 			       	<h1 class="styleguide">Bulleted Lists</h1>
+				       	<h2>CSS Code:</h2>
+				       	 <code>
+				       	 	ul <br>
+				       	 	li
+				       	 </code>
 				       	<h2>HTML Code:</h2>
 				       			 <code>
 				       			 	&lt;ul&gt; <br>
@@ -207,6 +221,10 @@
 
 		       	<section>
 			       	<h1 class="styleguide">Numbered Lists</h1>
+			       	 	<code>
+				       	 	ol<br>
+				       	 	li
+				       	 </code>
 						<h2>HTML Code:</h2>
 		       			 <code>
 		       			 	&lt;ol&gt; <br>
@@ -234,6 +252,8 @@
 					<h1 class="styleguide">Navigation Bar</h1>
 						<h2>CSS Code:</h2>
 			       			 <code>
+			       			 	nav<br>
+			       			 	.grid
 			       			 </code>
 
 						<h2>HTML Code:</h2>
@@ -287,32 +307,35 @@
 			       <h1 class="styleguide">Product Listing</h1>
 						<h2>CSS Code:</h2>
 		       			 <code>
-		       			
+		       				.products <br>
+		       				.grid<br>
+		       				.product-item <br>
+		       				.col-2of3 <br>
+		       				.product-desc
 		       			 </code>
 
 						<h2>HTML Code:</h2>
 		       			 <code>
-			       			 &lt;div class="container-product-listing"&gt; <br>
-									&lt;figure class ="product-item"&gt;<br>
-									  	 &lt;img src="img/product-lovers-sunrise.jpg" alt="Photo of bouquet being held"&gt;<br>
-									  	 &lt;figcaption>Lover's Sunrise&lt;/figcaption&gt;<br>
-										  &lt;p class ="price">$70.99&lt;/p&gt;<br>
-										  <!-- <div class="overlay"></div>	 -->
-										  &lt;div class="btn-position"&gt;<br>
-												&lt;a class ="btn-add" href="#"> + Quick Add &lt;/a&gt;<br>
-									 	  &lt;/div&gt;<br>
-									&lt;/figure&gt;<br>
-							&lt;/div&gt;<br>
+			       			 &lt;section class ="grid products"&gt;<br>
+								&lt;div class ="product-item col-2of3"&gt;<br>
+								  	 &lt;img src="img/products/lavender-bouquet.jpg" alt="Photo of purple bouquet"&gt;<br>
+								  	  &lt;p class="product-name">Lavender Dreams&lt/p&gt;<br>
+									  &lt;p class ="price">$40.99&lt/p&gt;<br>
+									  &lt;div class="btn-position"&gt;<br>
+											&lt;a class ="btn-add" href="#"&gt; + Quick Add &lt/a&gt;<br>
+								 	  &lt;/div&gt;<br>
+								&lt;/div&gt;<br>
+							&lt;/section>&gt;
 						</code>
 
 						<h2> Sample: </h2>
 						<section class ="grid products">
 							<div class ="product-item col-2of3">
-							  	 <img src="img/lavender-bouquet.jpg" alt="Photo of purple bouquet">
+							  	 <img src="img/products/lavender-bouquet.jpg" alt="Photo of purple bouquet">
 							  	  <p class="product-name">Lavender Dreams</p>
 								  <p class ="price">$40.99</p>
 								  <div class="btn-position">
-										<a class ="btn-add" href="#"> + Quick Add </a>
+										<a class ="btn-add" href="#"> + Add </a>
 							 	  </div>
 							</div>
 						</section>
@@ -323,22 +346,68 @@
 			       	<h1 class="styleguide">Detailed Product View</h1>
 			       		<h2>CSS Code:</h2>
 		       			 <code>
-
+		       			 	section<br> 
+		       			 	.detailed-product <br> 
+		       			 	.grid <br>
+		       				.product-item <br>
+		       				.col-1of2 <br>
+		       				.col-2of2 <br>
+		       				.product-desc <br>
+		       				form
 		       			 </code>
 
 		       			 <h2> HTML Code: </h2>
-								 <code>
-								 </code>
+							 <code>
+							 	&lt;section class="detailed-product grid"&gt;<br>
+									&lt;div class="product-img col-1of2"&gt;<br>
+										&lt;img src="img/product-lovers-sunrise.jpg" alt="Photo of Lover's Sunrise bouquet"&gt;<br>
+									&lt;/div&gt;<br>
+									&lt;div class="product-desc col-2of2"&gt;<br>
+										&lt;div class= "top-level"&gt;<br>
+											&lt;h2>Lover's Sunrise&lt;/h2&gt;<br>
+											&lt;h2 class="price"> $100.00 &lt;/h2&gt;<br>
+										&lt;/div"&gt;<br>
+									  	&lt;div class="review-star-rating"&gt;<br>
+								              &lt;p>&#9733;&lt;/p&gt;<br>
+								              &lt;p>&#9733;&lt;/p&gt;<br>
+								              &lt;p>&#9733;&lt;/p&gt;<br>
+								              &lt;p>&#9733;&lt;/p&gt;<br>
+								              &lt;p>&#9733;&lt;/p&gt;<br>
+								              &lt;p> &lt;a href="#">(15)&lt;/a&gt;<br>
+							           	&lt;/div&gt;<br>
+								
+										&lt;form action="/action_page.php"&gt;<br>
+											  &lt;label for="sizes">Size:&lt;/label&gt;<br>
+											  &lt;select name="sizes" id="sizes"&gt;<br>
+											    &lt;option value="Small">Small&lt;/option&gt;<br>
+											    &lt;option value="Medium">Medium&lt;/option&gt;<br>
+											    &lt;option value="Large">Large&lt;/option&gt;<br>
+											  &lt;/select&gt;<br>
+										&lt;/form&gt;<br>
+
+										&lt;form&gt;<br>
+											&lt;label for="quantity">Quantity:&lt;/label&gt;<br>
+									  		&lt;input type="text" id="quantity" name="quantity"&gt; <br>
+										&lt;/form&gt;<br>
+
+										&lt;p&gt;<br>
+											This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a reusable glass vase.<br>
+										&lt;/p&gt;<br>
+										&lt;a href="cart.html">&lt;button type="button" class="btn-main">Add to Cart&lt;/button&gt;&lt;/a&gt;<br>
+									&lt;div&gt;<br>
+							&lt;section&gt;<br>
+			     			&lt;/section&gt;
+							 </code>
 
 	       			 	<h2> Sample: </h2>
-							<section class="detailed-product grid">
+	       			 	<section class="detailed-product grid">
 								<div class="product-img col-1of2">
-									<img src="img/product-lovers-sunrise.jpg" alt="Photo of Lover's Sunrise bouquet">
+									<img src="img/products/red-bouquet.png" alt="Photo of Lover's Sunrise bouquet">
 								</div>
 								<div class="product-desc col-2of2">
-									<div class= "top-level">
+									<div class= "container-title">
 										<h2>Lover's Sunrise</h2>
-										<h2 class="price"> $100.00 </h2>
+										<h2 class="price"> $45</h2>
 									</div>
 								  	<div class="review-star-rating">
 							              <p>&#9733;</p>
@@ -368,22 +437,51 @@
 										This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a reusable glass vase.
 									</p>
 									<a href="cart.html"><button type="button" class="btn-main">Add to Cart</button></a>
-								</div> <!--.product-desc ends -->
-							</section><!--.grid.detailed-product ends -->
-			     </section>
+								</div>
+							</section>
+							
 
 				  <!----- Review Form ----->
 			      <section>
 				      <h1 class="styleguide">Review Form</h1>
+				      	 <h2>CSS Code:</h2>
+			       			 <code>
+				       			section <br>
+				       			.review <br>
+				       			form<br>
+							</code>
+
 					      <h2>HTML Code:</h2>
 			       			 <code>
-				       		
+				       			 &lt;section class="review"&gt;
+							      	  &lt;h2&gt; Reviews &lt;a href="#">(15) &lt;/a&gt;&lt;/h2&gt;<br>
+
+							      	  &lt;button class="btn-main">Write a Review&lt;/button&gt;<br>
+
+							      	  &lt;div class="form"&gt;<br>
+											&lt;form action="/action_page.php"&gt;<br>
+
+											&lt;div class="personal-details"&gt;<br>
+												&lt;label for="name">Name&lt;/label&gt;<br>
+												&lt;input type="text" id="fname" name="fname" placeholder="Your first name"&gt;<br>
+
+												&lt;label for="email">Email&lt;/label>
+												&lt;input type="text" id="email" name="email" placeholder='name@domain.com'>
+											&lt;/div&gt;<br>
+
+											&lt;label for="review-title">Review Title&lt;/label> &lt;input type="text" id="review-title" name="review-title"&gt;<br>
+											&lt;/form&gt;<br>
+
+											&lt;label for="review-body">Review&lt;/label&gt; &lt;input type="text" id="review-body" name="review-body">
+											&lt;/form&gt;<br>
+											
+											&lt;button class="btn-submit">Submit → &lt;/button&gt;<br>
+										&lt;/div&gt;<br>
+								 &lt;/section&gt;
+				       			
 							 </code>
 
-						  <h2>CSS Code:</h2>
-			       			 <code>
-				       			.
-							</code>
+						
 
 						  <h2> Sample: </h2>
 					      <section class="review">
@@ -415,40 +513,42 @@
 
 				  <!----- Review Post ----->
 			     <section>
-				      <h1 class="styleguide">Review Template</h1>
+				      <h1 class="styleguide">Review Post</h1>
 				      <h2>HTML Code:</h2>
 		       			 <code>
-			       			 &lt;div class="review"&gt;<br>
-						      	   &lt;h2&gt; Reviews  &lt;a href="#"&gt;(15) &lt;/a>&gt;&lt;/h2&gt;<br>
-						      	   &lt;div&gt;<br>
-						               &lt;p class="author">Taylor H. on June 11, 2020 &lt;/p&gt;<br>
-						            &lt;/div&gt;<br>
-
-						            &lt;div class="review-content"&gt;<br>
-							             &lt;div&gt;<br>
-							            	  &lt;h2>Made from the heart &lt;/h2&gt;<br>
-							          	 &lt;/div&gt;<br>
-
-							          	<!--Star unicode from https://www.w3schools.com/charsets/tryit.asp?deci=9733 -->
-							          	 &lt;div class="review-star-rating"&gt;<br>
-								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
-								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
-								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
-								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
-								               &lt;p&gt;&#9733; &lt;/p&gt;<br>
-							           	 &lt;/div&gt;<br>
-
-							             &lt;div class="review-body"&gt;<br>
-							               &lt;p&gt;I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.<br>
-							               &lt;/p&gt;<br>
-							             &lt;/div&gt;<br>
-
-							        &lt;/div&gt;<br>
-						       &lt;/div&gt;<br>
+			       			  &lt;section class="review"&gt;<br>
+							       &lt;div class="review-content"&gt;<br>
+						           	   &lt;div class="review-star-rating"&gt;<br>
+							              &lt;p>&#9733;&lt;/p&gt;<br>
+							              &lt;p>&#9733;&lt;/p&gt;<br>
+							              &lt;p>&#9733;&lt;/p&gt;<br>
+							              &lt;p>&#9733;&lt;/p&gt;<br>
+							              &lt;p>&#9733;&lt;/p&gt;<br>
+							           &lt;/div&gt;<br>
+							            &lt;div&gt;<br>
+							            	&lt;h3&gt;Lovely people and flowers&lt;/h3&gt;<br>
+							          	&lt;/div&gt;<br>
+							           	&lt;div&gt;<br>
+							              &lt;p class="author">Elliot M. on May 29, 2020&lt;/p&gt;<br>
+							           &lt;/div&gt;<br>
+						           	  
+							            &lt;div class="review-body"&gt;<br>
+							              &lt;p&gt;<br>
+							              	I was looking for a bouquet to give to my wife of our 10th anniversary and Tiffany made the best recommendations. I ended up getting some fresh pink peonies and my wife was absolutely stunned by them!
+							              &lt;/p&gt;<br>
+							            &lt;/div&gt;<br>
+							       &lt;/div&gt;<br>
+						     &lt;/section&gt;<br>
 						 	</code>
 
 					 <h2>CSS Code:</h2>
 		       			 <code>
+		       			 	section <br>
+		       			 	.review <br>
+		       			 	.review-content<br>
+		       			 	.review-star-rating <br>
+		       			 	.review-body <br>
+
 						</code>
 
 					  <h2> Sample: </h2>
@@ -473,8 +573,8 @@
 					              	I was looking for a bouquet to give to my wife of our 10th anniversary and Tiffany made the best recommendations. I ended up getting some fresh pink peonies and my wife was absolutely stunned by them!
 					              </p>
 					            </div>
-					       </div> <!--End of .review-content-->
-				     </section> <!-- End of .review -->
+					       </div>
+				     </section> 
 			  	</section>
 
 		       	<!----- Hero Banner with CTRA ----->
@@ -482,15 +582,16 @@
 			       	<h1 class="styleguide">Hero Banner with CTA</h1>
 			       		<h2>CSS Selectors</h2>
 		       			 <code>
+		       			 section <br>
 		       			 .home.hero<br>
-		       			 .hero.-text<br>
+		       			 .hero.text<br>
 		       			 </code>
 
 		       			 <h2> HTML Code: </h2>
 		       				 <code>
 								 &lt;div class="hero"&gt; <br>
 									 &lt;div class="text"&gt;<br>
-										 &lt;h1&gt;Spread happiness with summer's blooms. &lt;/h1&gt;<br>
+										 &lt;h1&gt;Spread happiness with summer's blooms.&lt;/h1&gt;<br>
 										 &lt;button type="button" class="btn-ma<br>in">Shop Bouquets &lt;/button&gt;
 									 &lt;/div&gt;<br>
 								 &lt;/div&gt;
@@ -513,6 +614,10 @@
 					<h1 class="styleguide">Shipping Details</h1>
 					<h2>CSS Code:</h2>
 		       			 <code>
+		       			 	.form <br>
+		       			 	form <br>
+		       			 	label <br>
+		       			 	input
 		       			 </code>
 
 					<h2>HTML Code:</h2>
@@ -610,6 +715,8 @@
 				 <h1 class="styleguide">Footer</h1>
 				 <h2>CSS Code:</h2>
 				 <code>
+				 	.container-footer<br>
+				 	.child-footer<br>
 					
 				 </code>
 
@@ -672,39 +779,27 @@
 
 			<!----- Web Grids ----->
 			<section>
-			      <h1 class="styleguide">Website Grid Structures</h1>
+			      <h1 class="styleguide">Website Grid Structure</h1>
 					<section>
-						<h2> Landing Page Template </h2>
-						<h2 class="landing">HTML Code:</h2>
+						<h2>CSS Code:</h2>
+		       			 <code>
+						</code>
+
+						<h2>HTML Code:</h2>
 			       			 <code>
-				       			 &lt;div class ="grid" id="landing-page-template"&gt; <br>
-									&lt;div class ="grid-item col-1of1-xs"&gt;Announcement Bar&lt;/div&gt; <br>
-									&lt;div class ="grid-item col-1of1-s"&gt;Nav Bar&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-1of1-lg"&gt;Hero Banner&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-1of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-2of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-3of3"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-1of2"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-2of2"&gt;Text&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-1of2-reverse"&gt;Image&lt;/div&gt;<br>
-									&lt;div class ="grid-item col-2of2-reverse"&gt;Text&lt;/div&gt;<br>
-									&lt;div class ="grid-item footer"&gt;Footer&lt;/div&gt;<br>
-									&lt;/div&gt;
+				 
 							</code>
 
-						<div class ="grid" id="landing-page-template">
-								<div class ="grid-item col-1of1-xs">Announcement Bar</div>
-								<div class ="grid-item col-1of1-s"> Nav Bar</div>
-								<div class ="grid-item col-1of1-lg">Hero Banner</div>
-								<div class ="grid-item col-1of3">Image</div>
-								<div class ="grid-item col-2of3">Image</div>
-								<div class ="grid-item col-3of3">Image</div>
-								<div class ="grid-item col-1of2">Image</div>
-								<div class ="grid-item col-2of2">Text</div>
-								<div class ="grid-item col-1of2-reverse">Image</div>
-								<div class ="grid-item col-2of2-reverse">Text</div>
-								<div class ="grid-item footer">Footer</div>
-						</div> <!-- .grid#landing-page-template ends -->
+						<div class ="grid">
+							<div class ="col-1of8">1/8</div>
+							<div class ="col-1of8">1/8</div>
+							<div class ="col-1of8">1/8</div>
+							<div class ="col-1of8">1/8</div>
+							<div class ="col-1of8">1/8</div>
+							<div class ="col-1of8">1/8</div>
+							<div class ="col-1of8">1/8</div>
+							<div class ="col-1of8">1/8</div>
+						</div>
 					</section>
 
 					<section>

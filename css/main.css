@@ -1,31 +1,16 @@
 
 /*<!--The structure of this CSS document was built from referencing Weeks 2's lab tutorials-->*/
 html {
-	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
+	font-family: "Styrene-Regular", Verdana, sans-serif;
 	color: #474747;
 	margin: 0;
 }
 
 body {
 	line-height: 1.8rem;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	letter-spacing: 0.025rem;
 }
-
-code {
-	background: #EFEFEF;
-	padding: 1rem;
-	display: block;
-	max-width: 30rem;
-	font-size: 0.7rem;
-	line-height: 0.9rem;
-	margin-bottom: 1rem;
-}
-
-ol {
-	margin-top: 0;
-}
-
 
 /* ------ Link Styling ------*/
 section.categories a {
@@ -35,13 +20,6 @@ section.categories a {
 a {
 	color: #339F95;
 	text-decoration: none;
-}
-
-
-section.intext a:hover, section.intext a:focus, section.intext a:active {
-	color: #20605A;
-	text-decoration: none;
-	transition: color 0.5s;
 }
 
 .contact a {
@@ -58,11 +36,9 @@ section.intext a:hover, section.intext a:focus, section.intext a:active {
 
 /* ------ Paragraph Styling ------*/
 p {
-	max-width: 38rem;
-}
-
-section.definition p, .citations p {
-	padding-bottom: 2.5rem;
+	max-width: 40rem;
+	padding: 1rem 0rem 1rem 0rem;
+	line-height: 2.2rem;
 }
 
 p.about-desc {
@@ -71,15 +47,16 @@ p.about-desc {
 	margin: auto;
 }
 
-.shop p {
-	padding-top: 2rem;
+section.location .alternating-content-text p {
+	padding: 0;
 }
 
+
 /* ------ Header Styling ------*/
-h1, h1.web {
+h1 {
   font-family: "FreightBigPro-Light";
   font-weight: 100;
-  font-size: 3.4rem;
+  font-size: 3.5rem;
   text-transform: none;
   color: #474747;
   line-height: 4rem;
@@ -88,94 +65,65 @@ h1, h1.web {
   letter-spacing: 0.10rem;
 }
 
-
-.shop h1, .shop p, .services h1, .services p {
+.shop h1, .shop p, .services h1, .services p, .about h1, .about p, .faq h1, .faq p,
+.cart h1 {
 	margin: auto;
  	text-align: center;
 }
 
 h2  {
 	font-family: "FreightBigPro-Light", Verdana, sans-serif;
-	font-size: 2rem;
-	letter-spacing: 0.08rem;
+	font-weight: 100;
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
 	margin: 0;
+	line-height: 4rem;
 }
 
-.styleguide h2 {
-	font-size: 1.5rem;
-}
-
-h3, h1.styleguide {
-	font-family: "SuisseIntl-Normal", Verdana, sans-serif;
+h3 {
+	font-family: "Styrene-Regular", Verdana, sans-serif;
 	font-weight: 400;
-	font-size: .9rem;
+	font-size: 1rem;
 	margin-bottom: 0;
 	letter-spacing: 0.05rem;
 	text-transform: uppercase;
 	text-align: left;
 }
 
-h1.styleguide {
-	color: #339F95;
-}
-
 section.values h3 {
 	text-align: center;
-	font-weight: 600;
 	color: #004C45;
-}
-
-.faq h1 {
-    margin: auto;
-    text-align: center;
-    max-width: none;
 }
 
 
 /* ------ Section Styling ------*/
-section.categories, section.values, section.faq {
-	padding: 8rem 0rem 8rem 0rem;
+section.categories, section.values {
+	padding: 7rem 5rem 7rem 5rem;
 }
 
-section.products {
-	padding: 5rem;
+section.products, section.review   {
+	padding: 0rem 5rem 0rem 5rem;
 }
 
-section.citations, section.styleguide  {
-	padding: 3rem;
+section.faq {
+	padding: 0rem 5rem 5rem 5rem;
 }
 
-section.detailed-product, section.review, .row-spacer{
-	padding-bottom: 8rem;
+ .row-spacer{
+	padding-bottom: 4rem;
+}  
+
+section.detailed-product {
+	padding: 8rem;
 }
 
 .row-1 {
 	padding-bottom: 0;
 }
 
-/* ------ In-Text Link ------*/
-section .intext a {
-	color: #339F95;
-	text-decoration: none;
-}
-
-section.in-text a {
-	text-decoration: underline black;
-	padding: .25rem .25rem;
-}
-
-section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
-	color: white;
-	background-color: #0B6108;
-	text-decoration: none;
-	transition: color 0.5s;
-	padding: .25rem .5rem;
-	max-width: 8rem;
-}
 
 /* ------ Buttons ------*/
 .btn-main { /*-Referenced John Fauld's "Styling Form Buttons" article for styling buttons -->*/
-	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
 	font-size: 0.8rem;
 	background-color: #20605A;
 	letter-spacing: 0.1rem;
@@ -184,7 +132,6 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 	border-radius: 1.2rem;
 	opacity: 1;
 	border: none;
-	margin-top: 2rem;
 	color: #fff;
 }
 
@@ -193,6 +140,7 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 }
 
 .btn-submit {
+	font-family: "Styrene-Regular", Verdana, sans-serif;
 	font-size: 0.9rem;
 	color: #004C45;
 	background-color: #fff;
@@ -200,7 +148,6 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 	border: none;
 	text-transform: uppercase;
 	opacity: 1;
-	font-weight: 900;
 }
 
 .review.form .btn-submit {
@@ -212,46 +159,32 @@ section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
 	border-bottom: 2px solid #004C45;
 }
 
-/* ------ Colour Swatches ------*/
-div.colour {
-	display: inline-block;
-}
-
-div p.colour {
-	padding: 2rem;
-	margin: 0;
+.btn-add {
+  	font-family: "Styrene-Regular", Verdana, sans-serif;
+	font-size: 0.8rem;
+	color: #20605A;
+	border: 2px solid #20605A;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+	padding: 0.3rem 1rem;
+	border-radius: 1rem;
+	float: left;
 	text-align: center;
+	margin-top: 1rem;
+	width: 100%;
 }
 
-div.white {
-	background-color: #ffffff;
-	border: 1px solid #EFEFEF;
+.btn-add:hover {
+	color: #fff;
+    background-color: #20605A;
 }
 
-div.green {
-	background-color: #20605A;
-	color: #ffffff;
-}
-
-div.grey {
-	background-color: #474747;
-	color: #ffffff;
-}
-
-div.beige {
-	background-color: #F2EAE4;
-}
-
-div.pink {
-	background-color: #DDAAA0;
-}
-
-div.white p, div.beige p, div.pink p, div.grey p, div.green p {
-	max-width: 13rem;
-}
-
-div.grey p.blk-text, div.green p.blk-text  {
-	color: #000;
+.col4 button {
+	background-color: #fff;
+	border-radius: .5rem;
+	padding: .1rem .5rem .1rem .5rem;
+	border: .01rem solid #004C45;
+	cursor: pointer;
 }
 
 /* ------ Forms, Text Fields ------*/
@@ -270,10 +203,12 @@ form .btn-item {
 
 label {
   color: #20605A;
-  font-family: "SuisseIntl-Regular", Verdana, sans-serif;
+  font-family: "Styrene-Regular", Verdana, sans-serif;
   margin-bottom: .5rem;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.03rem;
   padding-right: 1rem;
+  text-transform: uppercase;
+  font-size: .9rem;
 }
 
 input, select, textarea {
@@ -292,11 +227,16 @@ textarea {
 	resize: none; 
 }
 
+/* Styling placeholder text from https://css-tricks.com/almanac/selectors/p/placeholder/*/
+input::placeholder, textarea::placeholder {
+	font-size: 1rem;
+}
+
 input {
 	margin-bottom: 1rem;
 }
 
-input[type=text]:hover{
+input[type=text]:hover {
   border: 1px solid #20605A;
   transition-property: border-color;
   transition-duration:0.4s;
@@ -327,8 +267,12 @@ button:focus {
     outline: #20605A;
 }
 
-#address, #review-title{
-	width: 29rem;
+#review-title{
+	width: 100%;
+}
+
+#address {
+	width: 20rem;
 }
 
 #pc {
@@ -339,12 +283,8 @@ button:focus {
 	width: 13rem;
 }
 
-#fname, #lname, #email-ad {
-	width: 10rem;
-}
-
-#phone-number {
-	width: 10rem;
+#fname, #lname, #email-ad, #phone-number {
+	width: 15rem;
 }
 
 label #fname, label #email  {
@@ -365,6 +305,10 @@ input#review-body {
 }
 
 /* ------ Top Nav Bar ------*/
+div.announcement-bar {
+	display: block;
+}
+
 .announcement-bar, .sub-footer{
 	color: #fff;
 	background-color: #004C45;
@@ -372,14 +316,11 @@ input#review-body {
 	text-align: center;
 	font-size: 0.75rem;
 	letter-spacing: 0.04rem;
+	padding: .5rem;
 }
 
 nav .col-1of6.search-bar  {
 	padding-right: 3rem;
-}
-
-div.announcement-bar {
-	display: block;
 }
 
 nav a {
@@ -392,9 +333,14 @@ nav a {
 	letter-spacing: 0.09em;
 }
 
+/*Sticky nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky*/
 nav.grid {
 	padding: 0;
 	border: 0.5px solid #eee;
+    position: fixed;
+  	top: 0;
+  	width: 100%;
+  	background-color: #fff;
 }
 
 nav.grid img.logo {
@@ -404,8 +350,8 @@ nav.grid img.logo {
 nav.grid a {
 	padding-top: 1rem;
 	padding-bottom: 0;
-	font-size: 0.7rem;
-	letter-spacing: 0.03rem;
+	font-size: 0.8rem;
+	letter-spacing: 0.05rem;
 }
 
  nav.grid input {
@@ -413,72 +359,55 @@ nav.grid a {
  }
 
 nav .col-1of6 img {
-	width: 20%;
+	width: 1.3rem;
 	height: auto;
-}
-
-nav .search-bar input {
-	border-radius: .8rem;
-	height: 2rem;
-	font-size: 0.8rem;
-}
-nav .search-bar {
-	width: 40rem;
 }
 
 /* ------ Hero Advertising ------*/
 .hero-text {
-	padding-top: 4.5rem;
-	padding-left: 5rem;
-}
-
+	padding: 6rem;
+} 
 .shop p {
-	 max-width: 35rem;
+	 max-width: 40rem;
 }
 
 .hero button {
 	margin-top: 1rem;
 }
 
-
 /* ------ Home 3 Tiles------*/
 .menu {
-	position: relative;
-}
-
-.menu img {
-	width: 15rem;
-	height: 100%;
+	padding: 3rem;
+	background-color: #F5EFEB;
 }
 
 .menu p {
-	font-family: "FreightBigPro-Book";
-	font-size: 1.5rem;
-	letter-spacing: 0.05rem;
-	position: absolute;
-	top: 3.5rem;
-	left: 3rem;
-	background-color: rgba(255, 255, 255, 0.85);
-	padding: 2rem;
+	font-size: .9rem;
+	letter-spacing: 0.09rem;
+	text-transform: uppercase;
 }
 
-/* ------ Services 3 Tiles------*/
-.menu.services p  {
-	left: 1.5rem;
-	top: 5rem;
+.menu h2 {
+	font-size: 2.7rem;
 }
 
-/* ------ Alternating Content-----*/
+ .menu:hover p, .menu:hover h2, .menu:hover {
+	background-color: #004C45;
+	color: #fff;
+}
+
+
+/* ------ Home - Alternating Content-----*/
 .alternating-content-img img {
-	width: 39.6rem;
+	/*width: 39.6rem;*/
+	width: 43rem;
 	height: 100%;
 }
 
 .alternating-content-text  {
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding: 0rem 4rem 0rem 4rem;
 	margin: auto;
-	flex: 2 1 20%;
+	flex: 2 1 15%;
 }
 
 .col-1of2-right {
@@ -489,18 +418,25 @@ nav .search-bar {
 	max-width: none;
 }
 
-
 .grid.products {
 	padding-bottom: 5rem;
 }
 
-.alternating-content p {
-	max-width: 25rem;
+.alternating-content {
+	padding: 0rem 5rem 5rem 5rem;
 }
+
+
+/* ------ Services - 3 Tiles------*/
+.menu.services p  {
+	left: 1.5rem;
+	top: 5rem;
+}
+
 
 /* ------ About Us -------- */
 .values img {
-	width: 20%;
+	width: 5rem;
 	height: auto;
 }
 
@@ -509,7 +445,7 @@ nav .search-bar {
 }
 
 .values.col-2of3 img {
-	width: 15%;
+	width: 4rem;
 	height: auto;
 }
 
@@ -517,42 +453,26 @@ nav .search-bar {
 	padding-bottom: 1rem;
 }
 
-
 section.location .alternating-content-img img {
 	box-shadow: 1px 2px 10px #eee;
 }
 
-
 /* ------ Individual Product Description -------- */
-.product-desc .title-container h2, .product-desc h3 {
-	display: inline-block;
-}
-
-.product-img {
-	margin: auto;
-}
-
-.product-desc h2.price {
+/*.product-desc h2.price {
 	float: right;
 	font-size: 1.5rem;
-}
-
-.detailed-product {
-	padding: 3rem 12rem 0rem 12rem;
-}
+}*/
 
 .detailed-product p {
 	max-width: 30rem;
 }
 
 .product-img img {
-	width: 25rem;
+	width: 30rem;
 	height: auto;
 }
 
-.product-img, .product-desc {
-	margin-bottom: 0;
-	padding-bottom: 0;
+.product-img {
 	padding-right: 4rem;
 }
 
@@ -563,103 +483,60 @@ section.location .alternating-content-img img {
 	margin-top: 0;
 }
 
-.product-desc .review-star-rating p {
+.product-desc .stars p {
   margin-bottom: 0;
-}
-
-.product-desc .btn-main{
-	margin-top: 1rem;
 }
 
 /* ------ Review Post -------- */
 .review p.author {
-	color: #474747;
 	margin: 0;
 	padding-bottom: 1.2rem;
 	padding-top: .6rem;
-}
-
-.review h2, .review-body p  {
-	color: #474747;
 }
 
 .review-body p {
 	margin-top: -1rem;
 }
 
-.review-star-rating p {
+.stars p {
   color: #339F95;
-  padding-right: .8rem;
-  font-size: 1rem;
 }
 
-.review-content .review-star-rating p {
+.rating .stars p {
+  opacity: 0.2;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.review-content .stars p {
 	margin: 0;
 	margin-top: 2rem;
 }
 
 .review-content h3 {
 	color: #20605A;
-	font-weight: 600;
 }
 
-.form > .btn-submit {
- 	float: right;
-}
-
-.review form {
-	padding-top: 2em;
-}
 
 /* ------ Product Listings -------- */
-.container-product-listing, .product-item {
-  position: relative;
+.product-item {
+  padding: 3rem;
 }
 
 .product-item img {
-  width: 80%;
+  width: 21rem;
   height: auto;
 }
 
-/*.product-item:hover img {
-  opacity: 0.4;
+.product-item img:hover {
+  opacity: 0.7;
 }
 
-.product-item:hover .btn-position {
-  opacity: 1;
-}
-*/
-.btn-add {
-  	font-family: "SuisseIntl-Regular", Verdana, sans-serif;
-	font-size: 0.8rem;
-	color: #20605A;
-	border: 2px solid #20605A;
-	letter-spacing: 0.05rem;
-	text-transform: uppercase;
-	padding: 0.1rem 0.7rem;
-	border-radius: 1rem;
-	font-weight: 900;
-	float: right;
-	margin-right: 3.5rem;
-}
 
-.btn-add:hover {
-	color: #fff;
-    background-color: #20605A;
-}
-
-/*.btn-position {
-  opacity: 0;
-  position: absolute;
-  top: 11rem;
-  left: 3rem;
-  text-align: center;
-}
-*/
 p.price {
 	color: #474747;
-	font-size: .9rem;
 	margin: 0;
+	padding: 0;
 }
 
 .product-item p.product-name {
@@ -670,18 +547,20 @@ p.price {
 	margin: 0;
 }
 
-.product-item{
+.product-item { 
 	padding-bottom: 3rem;
 }
 
 
 /*------- FAQ/Support---------*/
-.faq .hero-text {
-	padding-top: 0;
-	margin: auto;
+.faq .hero-text h1 {
+	max-width: none;
 }
-.faq h1 {
-	color: #fff;
+
+.panel p {
+	max-width: 55rem;
+	text-align: left;
+	margin: 0;
 }
 
 /*------- Footer---------*/
@@ -691,12 +570,16 @@ p.price {
 	padding-left: 4rem;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	/*margin-top: 6rem;*/
 	margin-bottom: 0;
 	grid-template-columns: 1.75fr 1fr 1fr;
 	grid-column-gap: 70px;
-	/* height: 17rem; */
 	font-size: 0.8rem;
+}
+
+.main-footer p {
+	padding: 0;
+	text-align: left;
+	line-height: 1.7rem;
 }
 
 .child-footer.about {
@@ -709,6 +592,28 @@ p.price {
 
 .child-footer.contact {
 	max-width: 10.1rem;
+}
+
+.child-footer.mailing-list {
+	max-width: 15rem;
+}
+
+.child-footer.mailing-list button {
+	color: #20605A;
+	border-radius: .3rem;
+	border: .1rem solid  #20605A;
+	background-color: #F2EAE4;
+}
+
+.child-footer.mailing-list button:hover {
+	border-bottom: none;
+	background-color: #20605A;
+	color: #fff;
+}
+
+
+.child-footer.mailing-list input::placeholder {
+	font-size: .8rem;
 }
 
 .sub-footer a {
@@ -727,16 +632,16 @@ p.price {
 	text-align: center;
 	max-width: 100rem;
 	margin: 0;
-	padding: 0;
 }
 
 /* ------ Accordian FAQ ------ */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #F5EFEB;
+  background-color: #fff;
+  border-bottom: .1rem solid #20605A !important;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 2rem 1rem 2rem 2rem;
   width: 100%;
   border: none;
   text-align: left;
@@ -769,15 +674,14 @@ p.price {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
- padding: 0 18px;
+ padding: 0 18px;.
  background-color: white;
  max-height: 0;
  overflow: hidden;
  transition: max-height 0.2s ease-out;
 }
 
-/* ------ Cart -------- */ 
- 
+/* ------- Cart -------- */ 
 .padR-s { 
 	padding-right: 20px; 
 } 
@@ -791,20 +695,44 @@ p.price {
 .product-image { 
 	width: 100% 
 } 
+
 .half-width-left { 
-	max-width: 500px; 
+	max-width: 50rem; 
 	width: 100%; 
 	margin-left: auto; 
 	padding-right: 10em; 
 	padding-bottom: 10em; 
 } 
+
 .flex { 
 	display: flex; 
 } 
+
 .jc-sb { 
 	justify-content: space-between; 
-} 
-.right-align { 
-	text-align: right; 
+	background-color: #F2EAE4;
+	padding: 0rem 3rem 0rem 3rem;
 } 
 
+.right-align { 
+	text-align: right; 
+	background-color: #F2EAE4;
+	padding: 3rem;
+} 
+
+.cart h1 {
+	padding-top: 1rem
+}
+
+.col4.border-bottom p {
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.product-name p, p.product-size, p.product-price, .product-quantity  {
+	font-size: 1.2rem;
+}
+
+.col4 img.product-image {
+	width: 10rem;
+}

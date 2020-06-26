@@ -22,6 +22,21 @@
 	src: url('../fonts/SuisseIntl-Regular.otf') format('opentype');
 }
 
+@font-face {
+	font-family: 'Styrene-Light';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/StyreneAWeb-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Styrene-Regular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/StyreneAWeb-Regular.woff') format('woff');
+}
+
+
 
 
 

@@ -14,6 +14,7 @@
 		<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/styleguide.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/grids.css">
 		<!-- Script for fontawesome -->
@@ -172,7 +173,7 @@
 							<h2 class="styleguide"> Heading 2</h2>
 								<p>Freight Big Pro Semibold - 2rem, 0.04rem letter spacing</p>
 							<h3 class="web"> Heading 3</h3>
-								<p>Suisse Int'l Regular - 0.9rem, 0.1 letter spacing</p>
+								<p>Styrene Regular - 1rem, 0.05 letter spacing</p>
        			 </section>
 
        			 <!----- Paragraphs ----->
@@ -364,16 +365,12 @@
 									&lt;/div&gt;<br>
 									&lt;div class="product-desc col-2of2"&gt;<br>
 										&lt;div class= "top-level"&gt;<br>
-											&lt;h2>Lover's Sunrise&lt;/h2&gt;<br>
-											&lt;h2 class="price"> $100.00 &lt;/h2&gt;<br>
+											&lt;h2>Lover's Sunrise — $45&lt;/h2&gt;<br>
 										&lt;/div"&gt;<br>
-									  	&lt;div class="review-star-rating"&gt;<br>
-								              &lt;p>&#9733;&lt;/p&gt;<br>
-								              &lt;p>&#9733;&lt;/p&gt;<br>
-								              &lt;p>&#9733;&lt;/p&gt;<br>
-								              &lt;p>&#9733;&lt;/p&gt;<br>
-								              &lt;p>&#9733;&lt;/p&gt;<br>
-								              &lt;p> &lt;a href="#">(15)&lt;/a&gt;<br>
+									  		&lt;div class="stars"&gt;<br>
+									               &lt;p>&#9733; &#9733; &#9733; &#9733; &#9733; &lt;a href="#review">(15)&lt;/a&gt;&lt;/p&gt;<br>
+								           	&lt;/div&gt;<br>
+
 							           	&lt;/div&gt;<br>
 								
 										&lt;form action="/action_page.php"&gt;<br>
@@ -406,18 +403,12 @@
 								</div>
 								<div class="product-desc col-2of2">
 									<div class= "container-title">
-										<h2>Lover's Sunrise</h2>
-										<h2 class="price"> $45</h2>
+										<h2>Lover's Sunrise — $45</h2>
 									</div>
-								  	<div class="review-star-rating">
-							              <p>&#9733;</p>
-							              <p>&#9733;</p>
-							              <p>&#9733;</p>
-							              <p>&#9733;</p>
-							              <p>&#9733;</p>
-							              <p> <a href="#">(15)</a>
-						           	</div>
-							
+								  		<div class="stars">
+								               <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#review">(15)</a></p>
+							           	</div>
+
 									<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
 									<form action="/action_page.php">
 										  <label for="sizes">Size:</label>
@@ -456,7 +447,7 @@
 				       			 &lt;section class="review"&gt;
 							      	  &lt;h2&gt; Reviews &lt;a href="#">(15) &lt;/a&gt;&lt;/h2&gt;<br>
 
-							      	  &lt;button class="btn-main">Write a Review&lt;/button&gt;<br>
+							      	  <!-- &lt;button class="btn-main">Write a Review&lt;/button&gt;<br> -->
 
 							      	  &lt;div class="form"&gt;<br>
 											&lt;form action="/action_page.php"&gt;<br>
@@ -472,8 +463,8 @@
 											&lt;label for="review-title">Review Title&lt;/label&gt; <br>
 											&lt;input type="text" id="review-title" name="review-title"&gt;<br>
 
-											&lt;label for="review-body">Review&lt;/label&gt; 
-											&lt;textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."&gt;&lt;/textarea&gt;<br>
+											&lt;label for="review-body">Review&lt;/label&gt; <br>
+											&lt;textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."&gt; &lt;/textarea&gt;<br> 
 
 											&lt;button class="btn-submit">Submit → &lt;/button&gt;<br>
 											&lt;/form&gt;<br>
@@ -487,7 +478,7 @@
 					      <section class="review">
 					      	  <h2> Reviews <a href="#">(15)</a></h2>
 
-					      	  <button class="btn-main">Write a Review</button>
+					      	  <!-- <button class="btn-main">Write a Review</button> -->
 
 					      	  <div class="form">
 									<form action="/action_page.php">
@@ -503,10 +494,10 @@
 									<label for="review-title">Review Title</label> <input type="text" id="review-title" name="review-title">
 									</form>
 
-									<label for="review-body">Review</label> <input type="text" id="review-body" name="review-body">
-									</form>
+									<label for="review-body">Review</label>
+									<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."></textarea>
 									
-									<button class="btn-submit">Submit → </button>
+									<button class="btn-submit">Submit Review → </button>
 								</div>
 							</section>
 			  	</section>
@@ -518,13 +509,9 @@
 		       			 <code>
 			       			  &lt;section class="review"&gt;<br>
 							       &lt;div class="review-content"&gt;<br>
-						           	   &lt;div class="review-star-rating"&gt;<br>
-							              &lt;p>&#9733;&lt;/p&gt;<br>
-							              &lt;p>&#9733;&lt;/p&gt;<br>
-							              &lt;p>&#9733;&lt;/p&gt;<br>
-							              &lt;p>&#9733;&lt;/p&gt;<br>
-							              &lt;p>&#9733;&lt;/p&gt;<br>
-							           &lt;/div&gt;<br>
+						           	  &lt;div class="stars"&gt;<br>
+									               &lt;p>&#9733; &#9733; &#9733; &#9733; &#9733;&lt;/p&gt;<br>
+								       &lt;/div&gt;<br>
 							            &lt;div&gt;<br>
 							            	&lt;h3&gt;Lovely people and flowers&lt;/h3&gt;<br>
 							          	&lt;/div&gt;<br>
@@ -554,13 +541,10 @@
 					  <h2> Sample: </h2>
 				      <section class="review">
 					       <div class="review-content">
-				           	   <div class="review-star-rating">
-					              <p>&#9733;</p>
-					              <p>&#9733;</p>
-					              <p>&#9733;</p>
-					              <p>&#9733;</p>
-					              <p>&#9733;</p>
-					           </div>
+				           	   <div class="stars">
+								     <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#review">(15)</a></p>
+							    </div>
+
 					            <div>
 					            	<h3>Lovely people and flowers</h3>
 					          	</div>
@@ -655,7 +639,7 @@
 
 					<h2> Sample: </h2>
 					<h2> Shipping Details </h2>
-						<!-- <div class="form"> -->
+						<div class="form">
 							<form action="/action_page.php">
 								<div class="grid-col-1of2">
 										<div class="name-item">
@@ -780,7 +764,7 @@
 			<!----- Web Grids ----->
 			<section>
 			      <h1 class="styleguide">Website Grid Structure</h1>
-			       <p> The website uses an 8 column grid.
+			       <p> The website uses an 8 column grid with 3rem padding around.
 					<section>
 						<h2>CSS Code:</h2>
 		       			 <code>

@@ -30,10 +30,6 @@
 		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 		          </div>
 
-            	 <!--  <div class="col-1of6 search-bar">
-						<input type="text" id="search" name="search" placeholder="Search...">
-            	  </div> -->
-
                   <div class="col-1of6">
                     	<a href="shop.html">Shop</a>
                   </div>
@@ -57,16 +53,13 @@
 			</div>
 			<div class="product-desc col-2of2">
 				<div class= "container-title">
-					<h2>Lover's Sunrise</h2>
-					<h2 class="price"> $45</h2>
+					<div>
+					<h2>Lover's Sunrise — $45</h2>
+					<!-- <h2> $45</h2> -->
+					</div>
 				</div>
-			  	<div class="review-star-rating">
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p> <a href="#review">(15)</a>
+			  	<div class="stars">
+		               <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#review">(15)</a></p>
 	           	</div>
 
 				<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
@@ -89,14 +82,14 @@
 				</p>
 				<a href="cart.html"><button type="button" class="btn-main">Add to Cart</button></a>
 			</div> <!--.product-desc ends -->
-		</section><!--.grid.detailed-product ends -->
+		</section><!--detailed-product.grid ends -->
 
 
 		<!-- Review Section -->
 		 <section class="review" id="review">
 	      	  <h2> Reviews <a href="#post">(15)</a></h2>
 
-	      	  <button class="btn-main">Write a Review</button>
+	      	  <!-- <button class="btn-main">Write a Review</button> -->
 
 	      	  <div class="review form">
 					<form action="/action_page.php">
@@ -109,24 +102,27 @@
 							<input type="text" id="email" name="email" placeholder='name@domain.com'>
 						</div>
 
+						<div class="rating">
+							<label for="rate">I rate it as:</label>
+							<div class="stars">
+					              <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+				           	</div>
+			           </div>
+
 						<label for="review-title">Review Title</label> 
 						<input type="text" id="review-title" name="review-title">
 						
 						<label for="review-body">Review</label>
 						<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."></textarea>
 
-						<button class="btn-submit">Submit → </button>
+						<button class="btn-submit">Submit Review → </button>
 
 					</form>
 				</div>
 
 	           <div class="review-content" id="post">
-	           	   <div class="review-star-rating">
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
+	           	   <div class="stars">
+   						<p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 		           </div>
 		            <div>
 		            	<h3>Made from the heart</h3>
@@ -139,32 +135,10 @@
 		              <p>I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.
 		              </p>
 		            </div>
-		       </div> <!--End of .review-content
-
-		       <div class="review-content">
-	           	   <div class="review-star-rating">
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		           </div>
-		            <div>
-		            	<h3>Lovely people and flowers</h3>
-		          	</div>
-		           	<div>
-		              <p class="author">Elliot M. on May 29, 2020</p>
-		           </div>
-
-		            <div class="review-body">
-		              <p>
-		              	I was looking for a bouquet to give to my wife of our 10th anniversary and Tiffany made the best recommendations. I ended up getting some fresh pink peonies and my wife was absolutely stunned by them!
-		              </p>
-		            </div>
 		       </div> <!--End of .review-content-->
-	     </section> <!-- End of .review -->
+	     </section> 
 
-		<!----- Footer----->
+		<!----- Footer--->
 		 <section class="main-footer grid">
 			 <div class="child-footer about">
 				 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
@@ -192,14 +166,19 @@
 				 	<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
 				 </p>
 			 </div>
-		 	</div>
+		 	
+		 	<div class="child-footer mailing-list">
+				 <h3>STAY IN TOUCH</h3>
+				 <p>No spam. Just great content.</p>
+				 <input type="text" id="email" name="email" placeholder='Your email address'>
+			 </div>
+			 
 	 	</section>
 
  		<div class="sub-footer">
-	 		<p>	Made with love in Vancouver, B.C.
 	 			<a href="styleguide.html" target="_blank"> Styleguide</a>
 	 			<a href="citations.html" target="_blank"> Citations</a>
-	 		</p>
+	 			<a href ="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
  		</div>
 
 	</body>

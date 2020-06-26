@@ -24,38 +24,21 @@
 }
 
 /* ------ Nav Bar ------ */
-
 nav .col-1of2 {
-	flex: 7 1 40%;
+	flex: 10 1 10%;
 }
 
 nav .col-1of6  {
-	flex: 2 1 2%;
+	flex-grow: 0.5;
 }
 
 /* ------ Hero Sections ------ */
-.home.hero {
+.home.hero   {
   display: flex;
   background-image: url("../img/hero/hero-img.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  height: 24rem;
-}
-
-.about.hero {
-  display: flex;
-  background-image: url("../img/hero/annie-spratt.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 24rem;
-}
-
-.faq.hero {
-  display: flex;
-  background-image: url("../img/hero/annie-spratt.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 24rem;
+  background-size: cover;
+  height: 100%;
 }
 
 /* ------ Review Section ------ */
@@ -73,9 +56,8 @@ nav .col-1of6  {
   margin-top: -1rem;
 }
 
-.review-star-rating {
-  display: flex;
-  flex-direction: row;
+.stars {
+  display: inline-block;
 }
 
 /* ------ Form Styling ------ */
@@ -103,23 +85,21 @@ form .col-1of2 {
 	grid-column-gap: 10px; 
 	align-items: center; 
 	text-align: center; 
-	padding-top: 10em; 
+	padding-top: 5rem; 
 } 
 
 /* ------ Landing Page ------ */
 .col-1of1-xs {
-	/*height: 30px;*/
 	flex: 1 1 100%;
 }
 
 .col-1of3, .col-2of3, .col-3of3 {
-	flex-basis: 30%;
+	flex-basis: 25%;
 }
 
 .col-2of2, .col-2of2-reverse {
 	flex: 1 1 10%;
 }
-
 
 .grid-item.footer {
 	height: 200px;
@@ -127,19 +107,15 @@ form .col-1of2 {
 }
 
 /* ---------- MEDIA QUERIES ---------- */
-/* ----------  Phone and below  ---------- */
+
+/* ----------  PHONE AND BELOW  ---------- */
 @media screen and (max-width: 37em) {
 
-	p, nav .col-1of6 a {
-		font-size: 1.3rem;
+	nav .col-1of6 a {
+		font-size: 1.1rem;
 		letter-spacing: 0.05rem;
 		line-height: 2.7rem;
 
-	}
-
-	p {
-		font-size: 1.6rem;
-		padding: 2rem;
 	}
 
 	h2 {
@@ -152,9 +128,13 @@ form .col-1of2 {
 	}
 
 	.btn-main {
-		font-size: 1.3rem;
-		padding: 2rem 2.2rem;
+		font-size: 1rem;
+		padding: 1rem 2rem;
 		border-radius: 2.3rem;
+	}
+
+	section.detailed-product {
+		padding: 5rem;
 	}
 
 	/*----- Nav Bar ------*/
@@ -188,57 +168,28 @@ form .col-1of2 {
 	 	padding: 0;
 	 }
 
-	 nav.grid img.logo,  nav .col-1of6 img {
-	 	width: 35%;
+	 nav.grid img.logo {
+	 	width: 10rem;
 	 	height: auto;
 	 }
+
+	  nav .col-1of6 img {
+	  	width: 30%;
+	 	height: auto;
+	  }
 
 	 /*----- Home Hero ------*/
 	 .hero .hero-text h1 {
    		padding-top: 0;
    		margin-top: 0rem;
-    	padding-left: 0;
     	font-size: 3.2rem;
 		max-width: none;
-		line-height: 3rem;
-		text-align: center;
+		line-height: 3.5rem;
 	}
-
-	.hero {
-		background-size: 150%;
-		height: auto;
-	}
-
-	.hero .hero-text {
-		  margin: 0;
-		  text-align: center;
-		  padding-left: 0 !important;
-	}
-
-	.home.hero {
-		background-size: 70rem;
-	}
-
 
 	/*----- Home - 3 Tiles ------*/
-	.grid .menu.col-1of3, .grid .menu.col-2of3, .grid .menu.col-3of3  {
-		flex-basis: 100%;
-		text-align: center;
-	}
-
-	.grid .menu.col-1of3 p, .grid .menu.col-2of3 p, .grid .menu.col-3of3 p  {
-		position: absolute;
-		top: 5.5rem;
-		left: 19rem;
-	}
-
-	.grid .menu.col-1of3, .grid .menu.col-2of3 {
-		padding-bottom: 3rem;
-	}
-
 	.menu {
-		padding-bottom: 5rem;
-		/*flex: 1 1 100%;*/
+		margin: 2rem 0rem 2rem 0rem;
 	}
 
 	.menu img {
@@ -247,20 +198,26 @@ form .col-1of2 {
 	}
 
 	.menu p {
-		top: 6rem;
-		left: 5rem;
-		font-size: 2.3rem;
+		font-size: .85rem;
 	}
+
+	section.categories{
+    	padding: 5rem 2rem 5rem 2rem;
+	}
+
 
 	/*----- Home - Alternating Content ------*/
 	.alternating-content-text{
 		text-align: center;
-		padding-bottom: 2rem;
-		padding-top: 2rem;
+		padding: 0;
 	}
 
 	.alternating-content p {
 		max-width: 50rem;
+	}
+
+	.alternating-content {
+		padding: 2rem;
 	}
 
 	/*----- Shop - Products Grid ------*/
@@ -273,20 +230,20 @@ form .col-1of2 {
 	}
 
 	.product-item img {
-		width: 60%;
+		width: 100%;
 		height: auto;
 	}
 
 	.product-item p.product-name {
-		font-size: 2.8rem;
+		font-size: 2.4rem;
 		padding: 1rem 0rem 1rem 0rem;
 		max-width: 50rem;
+		line-height: 2.5rem;
 	}
 
 	p.price {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 		max-width: 50rem;
-		padding-bottom: 2rem;
 	}
 
 	.grid.products {
@@ -294,60 +251,40 @@ form .col-1of2 {
 	}
 
 	.btn-add {
-		font-size: 1.5rem;
+		font-size: 1rem;
 		padding: 1rem;
 		border-radius: 1.4rem;
-		float: none;
-		margin-right: 0;
+	}
+
+	section.products {
+		padding: 0rem 2rem 0rem 2rem;
 	}
 
 	/*----- About - Hero ------*/
+	.about .hero-text {
+		padding: 3rem;
+	}
+
 	.about h1 {
-		color: #fff;
-	}
-
-	.about > .hero > .text > h1 {
-		font-size: 3.2rem;
-		max-width: 40rem;
-		line-height: 4rem;
-		padding-left: 0;
-	}
-
-	.about .hero-text h1 {
-		padding-left: 0 !important;
-	}
-
-	.about > .hero > .text > p {
-		padding-top: 8rem;
+		text-align: left;
 	}
 
 	/*----- About - Values ------*/
 	.values img, .values.col-2of3 img {
-		width: 20%;
+		width: 4rem;
 		height: auto;
 	}
 
 	.values.col-1of3, .values.col-2of3, .values.col-3of3 {
 		flex-basis: 100%;
-	}
-
-	.values.col-1of3, .values.col-2of3 {
-		padding-bottom: 8rem;
-	}
-
-	.values h3 {
-		font-size: 1.5rem;
+		padding: 1rem 0rem 3rem 0rem;
 	}
 
 	.values p {
-		text-align: center;
 		max-width: 28rem;
 		margin: auto;
 	}
 
-	.values {
-		text-align: center;
-	}
 
 	/*----- Support ------*/
 	section.faq {
@@ -355,20 +292,16 @@ form .col-1of2 {
 	}
 
 	/*----- Detailed Product Listing ------*/
-	.detailed-product {
-		padding: 3rem;
+	section.detailed-product {
+   		 padding: 5rem 3rem 5rem 3rem ;
 	}
 
-	.product-desc h2.price {
-		font-size: 2rem;
-	}
-
-	.review-star-rating p {
+	.stars p {
 		font-size: 1.7rem;
 	}
 
 	label, select, input {
-		font-size: 1.7rem;
+		font-size: 1.1rem;
 	}
 
  	select, input {
@@ -379,7 +312,7 @@ form .col-1of2 {
 		padding: 3rem;
 	}
 
-	#fname, #lname, #email-ad {
+	#fname, #lname, #email-ad, #email {
 		width: 100%;
 	}
 
@@ -388,7 +321,21 @@ form .col-1of2 {
 	}
 
 	.btn-submit {
-		font-size: 1.5rem;
+		font-size: 1rem;
+	}
+
+	section.review {
+		padding: 0;
+	}
+
+	.product-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	/*-----Shop ------*/
+	.hero-text {
+    	padding: 8rem 3rem 5rem 3rem !important;
 	}
 
 	/*----- FAQ ------*/
@@ -397,23 +344,11 @@ form .col-1of2 {
 	}
 
 	.faq.hero {
-		background-size: 70rem;
-		height: auto;
 		padding-top: 7rem;
 	}
 
 	section.faq {
-		padding-top: 5rem;
-	}
-
-	/*----- About - Location ------*/
-	.alternating-content-img.col-1of2{
-		flex: 2 1 100% !important;
-	}
-
-	.alternating-content-text.col-2of2{
-		flex: 1 1 100% !important;
-		text-align: center !important;
+		padding: 0rem 0rem 5rem 0rem;
 	}
 
 	/*----- Services - 3 Tiles ------*/
@@ -421,39 +356,46 @@ form .col-1of2 {
 		left: 3.5rem;
 		top: 6rem;
 	}
+
+	/*----- Footer ------*/
+	.child-footer.location, .child-footer.contact, .child-footer.mailing-list {
+		max-width: none;
+	}
+
+	.child-footer.mailing-list button {
+		color: #20605A;
+		border-radius: .3rem;
+		border: .1rem solid  #20605A;
+		background-color: #F2EAE4;
+		width: 100%;
+	}
+
 	
 }
 
-/* ----------  Tablet and below  ---------- */
+/* ----------  TABLET AND BELOW  ---------- */
 @media (max-width: 48em) {
-
-	p {
-		font-size: .9rem;
-		line-height: 2.7rem
-	}
 
 	/*----- Nav Bar------*/
 	nav .col-1of6 img {
-		width: 35%;
 		height: auto;
 	}
 
-	/*----- Home Hero ------*/
-	.home.hero {
-		background-size: 60rem;
-		height: auto;
+	.home .hero-text h1, .hero-text {
+		text-align: center;
 	}
 
-	.home .hero-text h1 {
-		margin: 0;
+	.hero-text {
+		padding: 8rem 5rem 5rem 5rem;
 	}
 
 	.hero button {
 		margin-bottom: 2rem;
 	}
 
-	.home .hero-text {
-    	padding-left: 5rem;
+	/*----- Home - 3 Tiles------*/
+	.menu {
+		margin: 2rem 0rem 2rem 0rem;
 	}
 
 	/*----- Home - Alternating Content ------*/
@@ -492,10 +434,6 @@ form .col-1of2 {
 		font-size: 1.3rem;
 	}
 
-	.hero-text {
-		padding-left: 0;
-	}
-
 	.col-1of3, .col-2of3, .col-3of3 {
     	flex-basis: 50%;
     	padding: 0rem 2rem 5rem 3rem;
@@ -511,28 +449,13 @@ form .col-1of2 {
 		text-align: left;
 	}
 
-	/*----- About - Hero ------*/
-	.about.hero {
-		background-size: 80rem;
-		height: auto;
-	}
-	.about .hero-text h1 {
-		padding-left: 5rem;
-		max-width: 40rem;
-	}
-
 	/*----- About - Location ------*/
 	.alternating-content-img.col-1of2{
 		flex: 1 1 100%;
 	}
-
-	.alternating-content-text.col-2of2{
-		flex: 1 1 30%;
-		/*text-align: left;*/
-	}
 }
 
 
-/* ----------  Desktop and below ---------- */
+/* ----------  DESKTOP AND BELOW ---------- */
 @media (max-width: 75em) {
 }

@@ -57,16 +57,10 @@
 			</div>
 			<div class="product-desc col-2of2">
 				<div class= "container-title">
-					<h2>Aloe Succulent</h2>
-					<h2 class="price"> $9.99 </h2>
+					<h2>Aloe Succulent — $9.99 </h2>
 				</div>
-			  	<div class="review-star-rating">
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p> <a href="#review">(5)</a>
+			  	<div class="stars">
+		              <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#review">(5)</a></p>
 	           	</div>
 		
 				<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
@@ -96,7 +90,7 @@
 		 <section class="review" id="review">
 	      	  <h2> Reviews <a href="#post">(5)</a></h2>
 
-	      	  <button class="btn-main">Write a Review</button>
+	      	  <!-- <button class="btn-main">Write a Review</button> -->
   				<div class="review form">
 					<form action="/action_page.php">
 
@@ -107,6 +101,13 @@
 							<label for="email">Email</label>
 							<input type="text" id="email" name="email" placeholder='name@domain.com'>
 						</div>
+
+						<div class="rating">
+							<label for="rate">I rate it as:</label>
+							<div class="stars">
+					              <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+				           	</div>
+			           </div>
 
 						<label for="review-title">Review Title</label> 
 						<input type="text" id="review-title" name="review-title">
@@ -120,12 +121,8 @@
 				</div>
 	      	
 	           <div class="review-content" id="post">
-	           	   <div class="review-star-rating">
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
+	           	   <div class="stars">
+		              <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 		           </div>
 		            <div>
 		            	<h3>Made from the heart</h3>
@@ -141,12 +138,8 @@
 		       </div> <!--End of .review-content-->
 
 		       <div class="review-content">
-	           	   <div class="review-star-rating">
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
-		              <p>&#9733;</p>
+	           	   <div class="stars">
+		              <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 		           </div>
 		            <div>
 		            	<h3>Lovely people and flowers</h3>
@@ -191,14 +184,19 @@
 				 	<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
 				 </p>
 			 </div>
-		 	</div>
+		 	
+		 	<div class="child-footer mailing-list">
+				 <h3>STAY IN TOUCH</h3>
+				 <p>No spam. Just great content.</p>
+				 <input type="text" id="email" name="email" placeholder='Your email address'>
+			 </div>
+			 
 	 	</section>
 
  		<div class="sub-footer">
-	 		<p>	Made with love in Vancouver, B.C.
 	 			<a href="styleguide.html" target="_blank"> Styleguide</a>
 	 			<a href="citations.html" target="_blank"> Citations</a>
-	 		</p>
+	 			<a href ="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
  		</div>
 
 	</body>

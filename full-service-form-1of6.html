@@ -51,10 +51,10 @@
 		</header>
 
 		<!----- top container---->
-		<section class="cart">
+		<section class="full-service">
 
 		<!------ Shipping ------>
-			<h1> Your shipping details </h1>
+			<h1> Tell us about yourself. </h1>
 			<div class="form">
 				<form action="/action_page.php">
 					<div class="grid-col-1of2">
@@ -101,78 +101,23 @@
 							<input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####">
 						</div>
 					</div>
-			</form>
-		</div>
 
-		<!------ Billing ------>
-		<h1> Your billing details </h1>
-		<form action="/action_page.php">
-			 <h3 class="billing-address">Billing Address:</h3>
-				  <!---Radio buttons from https://www.w3schools.com/tags/att_input_type_radio.asp-->
-				  <div class="grid-col-1of2">
-				  	<div class="name-item shipping">
-					  <input type="radio" id="shipping" name="address" value="address">
-					  <label for="address">Same as shipping address</label>
+					<div class="grid-col-1of1">
+						<label for="phone-number">Preferred method of contact</label>
+						 <select id="contact" name="contact">
+						    <option value="email">Email</option>
+						    <option value="phone">Phone</option>
+	 					 </select>
+ 					</div>
+
+					<div class="right-align">
+						<a href="full-service-form-2of5.html">
+							<button type="button" class="btn-main">LOCATION DETAILS</button>
+						</a>
 					</div>
 
-					 <div class="name-item billing">
-					  <input type="radio" id="billing" name="address" value="address">
-					  <label for="address">Different from shipping address</label>
-					</div>
-
-				</div>
-
-				
-				<div class="grid-col-1of2">
-						<div class="name-item">
-							<label for="fname">Name on Card</label>
-							<input type="text" id="fname" name="fname">
-						</div>
-
-
-						<div class="name-item">
-							<label for="cc-number">Card Number</label>
-							<input type="text" id="cc-number" name="cc-number" placeholder="#### #### #### ####">
-						</div>
-				</div>
-
-				<div class="grid-col-1of1">
-					<label for="exp-date">Expiration Date</label>
-			  		<input type="text" id="exp-date" name="exp-date" placeholder='MM/YY'>
-			  	</div>
-
-			  	<div class="grid-col-1of3">
-			  		<label for="cc-code">CVV</label>
-			  		<input type="text" id="cc-code" name="cc-code" placeholder='###'>
-			  	</div>
-		</form>
-
-		<!------ Order Summary ------>
-		<div>
-			<div class='half-width-left'>
-				<div class="flex jc-sb">
-					<p>Subtotal</p>
-					<p>$54.99</p>
-				</div>
-				<div class="flex jc-sb">
-					<p>Taxes</p>
-					<p>$6.60</p>
-				</div>
-				<div class="flex jc-sb">
-					<p>Shipping</p>
-					<p>FREE</p>
-				</div>
-				<div class="flex jc-sb">
-					<p>Estimated Total</p>
-					<p>$54.99</p>
-				</div>
-				<div class="right-align">
-					<a href="order-confirmation.html">
-						<button type="button" class="btn-main">PLACE ORDER</button>
-					</a>
-				</div>
+				</form>
 			</div>
-		</div>
 		</section>
 
 		<!----- Footer----->

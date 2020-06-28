@@ -1,16 +1,24 @@
 
 /*<!--The structure of this CSS document was built from referencing Weeks 2's lab tutorials-->*/
-html {
+html, .billing label, .shipping label {
 	font-family: "Styrene-Regular", Verdana, sans-serif;
 	color: #474747;
 	margin: 0;
-}
-
-body {
 	line-height: 1.8rem;
 	font-size: 1rem;
 	letter-spacing: 0.025rem;
 }
+
+.billing label, .shipping label {
+	text-transform: none;
+}
+
+/*body {
+	line-height: 1.8rem;
+	font-size: 1rem;
+	letter-spacing: 0.025rem;
+}
+*/
 
 /* ------ Link Styling ------*/
 section.categories a {
@@ -65,11 +73,17 @@ h1 {
   letter-spacing: 0.10rem;
 }
 
-.shop h1, .shop p, .services h1, .services p, .about h1, .about p, .faq h1, .faq p,
-.cart h1 {
+.shop h1, .shop p, .services h1, .services p, .about h1, .about p, .support h1, .support p,
+.cart h1, .confirmation h1, .confirmation p {
 	margin: auto;
  	text-align: center;
 }
+
+.confirmation .hero-text h3 {
+	text-align: center;
+	padding: 2rem 0rem 2rem 0rem;
+}
+
 
 h2  {
 	font-family: "FreightBigPro-Light", Verdana, sans-serif;
@@ -90,6 +104,7 @@ h3 {
 	text-align: left;
 }
 
+
 section.values h3 {
 	text-align: center;
 	color: #004C45;
@@ -97,7 +112,11 @@ section.values h3 {
 
 
 /* ------ Section Styling ------*/
-section.categories, section.values {
+section.values {
+	padding: 0rem 5rem 7rem 5rem;
+}
+
+section.categories {
 	padding: 7rem 5rem 7rem 5rem;
 }
 
@@ -105,7 +124,7 @@ section.products, section.review   {
 	padding: 0rem 5rem 0rem 5rem;
 }
 
-section.faq {
+section.faq  {
 	padding: 0rem 5rem 5rem 5rem;
 }
 
@@ -188,8 +207,9 @@ section.detailed-product {
 }
 
 /* ------ Forms, Text Fields ------*/
-form .name-item, form .contact-item, form .grid-col-1of3 {
+form .name-item, form .contact-item, form .grid-col-1of3, form .grid-col-1of2 {
 	padding-right: 4rem;
+	display: inline-block;
 }
 
 form {
@@ -201,7 +221,7 @@ form .btn-item {
 	padding-right: 35rem;
 }
 
-label {
+label, h3.billing-address {
   color: #20605A;
   font-family: "Styrene-Regular", Verdana, sans-serif;
   margin-bottom: .5rem;
@@ -209,6 +229,10 @@ label {
   padding-right: 1rem;
   text-transform: uppercase;
   font-size: .9rem;
+}
+
+h3.billing-address {
+	padding: 0;
 }
 
 input, select, textarea {
@@ -232,19 +256,19 @@ input::placeholder, textarea::placeholder {
 	font-size: 1rem;
 }
 
-input {
-	margin-bottom: 1rem;
+form input {
+	margin-bottom: 2rem;
 }
 
-input[type=text]:hover {
+input[type=text]:hover, input[type=text]:focus {
   border: 1px solid #20605A;
   transition-property: border-color;
   transition-duration:0.4s;
-  opacity: .5;
+  color: #C0C0C0;
 }
 
 input[type=text]:focus {
-	color: #000;
+  color: #474747;
 }
 
 .product-desc select, .product-desc input#quantity {
@@ -272,7 +296,7 @@ button:focus {
 }
 
 #address {
-	width: 20rem;
+	width: 48.5rem;
 }
 
 #pc {
@@ -287,11 +311,19 @@ button:focus {
 	width: 15rem;
 }
 
-label #fname, label #email  {
-	display: block;
+#exp-date {
+	width: 6rem;
 }
 
-#fname, #email  {
+#cc-number {
+	width: 15.5rem;
+}
+
+ #cc-code {
+ 	width: 4rem;
+ }
+
+#shipping, #billing {
 	display: inline-block;
 }
 
@@ -302,6 +334,10 @@ input#review-body {
 
 .personal-details input {
 	margin-right: 1rem;
+}
+
+.main-footer input#email {
+	display: inline-block;
 }
 
 /* ------ Top Nav Bar ------*/
@@ -337,10 +373,11 @@ nav a {
 nav.grid {
 	padding: 0;
 	border: 0.5px solid #eee;
-    position: fixed;
-  	top: 0;
+    /*position: fixed;*/
+  	top: ;
   	width: 100%;
   	background-color: #fff;
+  	z-index: 11;
 }
 
 nav.grid img.logo {
@@ -363,10 +400,37 @@ nav .col-1of6 img {
 	height: auto;
 }
 
+.dropdown-items {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0rem .2rem .5rem 0rem rgba(0,0,0,0.2);
+  padding: 0rem 1rem 1rem 1rem;
+  z-index: 12;
+}
+
+.col-1of6:hover > .dropdown-items {
+  display: block;
+}
+
+.col-1of6:hover > .dropdown-items a:hover {
+  color: #339F95;
+}
+
+
 /* ------ Hero Advertising ------*/
 .hero-text {
 	padding: 6rem;
 } 
+
+.support .hero-text, .confirmation .hero-text {
+	padding: 9rem 6rem 6rem 6rem;
+}
+
+.services .hero-text {
+	padding: 6rem 6rem 0rem 6rem;
+}
+
 .shop p {
 	 max-width: 40rem;
 }
@@ -377,7 +441,7 @@ nav .col-1of6 img {
 
 /* ------ Home 3 Tiles------*/
 .menu {
-	padding: 3rem;
+	padding: 2rem 3rem 2rem 3rem;
 	background-color: #F5EFEB;
 }
 
@@ -385,6 +449,7 @@ nav .col-1of6 img {
 	font-size: .9rem;
 	letter-spacing: 0.09rem;
 	text-transform: uppercase;
+	margin: 0;
 }
 
 .menu h2 {
@@ -523,10 +588,14 @@ section.location .alternating-content-img img {
   padding: 3rem;
 }
 
-.product-item img {
+.product-item img, .services img {
   width: 21rem;
   height: auto;
 }
+
+ .services img  {
+ 	width: 16rem;
+ }
 
 .product-item img:hover {
   opacity: 0.7;
@@ -553,7 +622,7 @@ p.price {
 
 
 /*------- FAQ/Support---------*/
-.faq .hero-text h1 {
+.support .hero-text h1 {
 	max-width: none;
 }
 
@@ -714,10 +783,14 @@ p.price {
 	padding: 0rem 3rem 0rem 3rem;
 } 
 
+.jc-sb p {
+	margin: 0;
+}
+
 .right-align { 
 	text-align: right; 
 	background-color: #F2EAE4;
-	padding: 3rem;
+	padding: 1rem 1rem 2rem 1rem;
 } 
 
 .cart h1 {
@@ -736,3 +809,41 @@ p.price {
 .col4 img.product-image {
 	width: 10rem;
 }
+
+/* ------ Shipping and Billing ------ */
+.cart h1, .full-service h1 {
+	margin: 3rem 1rem 3rem 1rem;
+	padding-top: 0;
+}
+
+.cart form, .full-service form  {
+	padding: 1rem 5rem 1rem 5rem;
+}
+
+/* ------ Full Service ------ */
+.full-service h1 {
+	margin: 3rem 1rem 3rem 5rem;
+	padding-top: 0;
+}
+
+.full-service .left-align a {
+	color: #474747;
+}
+
+.full-service .left-align a:hover, a:focus {
+	color: #20605A;
+}
+
+.full-service .left-align { 
+	text-align: left; 
+	background-color: #fff;
+	padding: 1rem 4rem 4rem 0rem;
+	display: inline-block;
+} 
+
+.full-service .right-align { 
+	text-align: right; 
+	background-color: #fff;
+	padding: 1rem 4rem 4rem 1rem;
+		display: inline-block;
+} 

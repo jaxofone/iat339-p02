@@ -51,128 +51,32 @@
 		</header>
 
 		<!----- top container---->
-		<section class="cart">
+		<section class="full-service">
 
 		<!------ Shipping ------>
-			<h1> Your shipping details </h1>
+			<h1> Art Direction </h1>
 			<div class="form">
 				<form action="/action_page.php">
-					<div class="grid-col-1of2">
-							<div class="name-item">
-								<label for="fname">First Name</label>
-								<input type="text" id="fname" name="fname" placeholder="Your first name">
-							</div>
-
-
-							<div class="name-item">
-								<label for="lname">Last Name</label>
-								<input type="text" id="lname" name="lname" placeholder="Your last name">
-							</div>
-					</div>
-
 					<div class="grid-col-1of1">
-						<label for="address">Address</label>
-				  		<input type="text" id="address" name="address" placeholder='Your address'>
-				  	</div>
-
-				  	<div class="grid-col-1of3">
-				  		<label for="province">Province</label>
-				  		<input type="text" id="province" name="Province" placeholder='Your province'>
-				  	</div>
-
-				  	<div class="grid-col-1of3">
-						<label for="city">City</label>
-				  		<input type="text" id="city" name="city" placeholder='Your city'>
-				    </div>
-
-				    <div class="grid-col-1of3">
-						<label for="pc">Postal Code</label>
-				   		<input type="text" id="pc" name="pc" placeholder='XXX XXX'>
-				   </div>
-
-				  	<div class="grid-col-1of2">
-				  		<div class="contact-item">
-				  			<label for="email-ad">Email Address</label>
-				  			<input type="text" id="email-ad" name="email-ad" placeholder='name@domain.com'>
-				  		</div>
-
-						<div class="contact-item">
-							<label for="phone-number">Phone Number</label>
-							<input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####">
-						</div>
-					</div>
-			</form>
-		</div>
-
-		<!------ Billing ------>
-		<h1> Your billing details </h1>
-		<form action="/action_page.php">
-			 <h3 class="billing-address">Billing Address:</h3>
-				  <!---Radio buttons from https://www.w3schools.com/tags/att_input_type_radio.asp-->
-				  <div class="grid-col-1of2">
-				  	<div class="name-item shipping">
-					  <input type="radio" id="shipping" name="address" value="address">
-					  <label for="address">Same as shipping address</label>
+							<div class="name-item">
+								<label for="date">Describe the mood, style, and/or colour palette</label>
+								<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Eg. Farmhouse wedding with pastel-coloured floral arrangements and theme..."></textarea>
+							</div>
 					</div>
 
-					 <div class="name-item billing">
-					  <input type="radio" id="billing" name="address" value="address">
-					  <label for="address">Different from shipping address</label>
+					<div class="left-align">
+						<a href="full-service-form-2of5.html">&#8592; Back to location details
+							</a>
 					</div>
 
-				</div>
+					<div class="right-align">
+						<a href="full-service-form-4of5.html">
+							<button type="button" class="btn-main">BUDGET</button>
+						</a>
+					</div>
 
-				
-				<div class="grid-col-1of2">
-						<div class="name-item">
-							<label for="fname">Name on Card</label>
-							<input type="text" id="fname" name="fname">
-						</div>
-
-
-						<div class="name-item">
-							<label for="cc-number">Card Number</label>
-							<input type="text" id="cc-number" name="cc-number" placeholder="#### #### #### ####">
-						</div>
-				</div>
-
-				<div class="grid-col-1of1">
-					<label for="exp-date">Expiration Date</label>
-			  		<input type="text" id="exp-date" name="exp-date" placeholder='MM/YY'>
-			  	</div>
-
-			  	<div class="grid-col-1of3">
-			  		<label for="cc-code">CVV</label>
-			  		<input type="text" id="cc-code" name="cc-code" placeholder='###'>
-			  	</div>
-		</form>
-
-		<!------ Order Summary ------>
-		<div>
-			<div class='half-width-left'>
-				<div class="flex jc-sb">
-					<p>Subtotal</p>
-					<p>$54.99</p>
-				</div>
-				<div class="flex jc-sb">
-					<p>Taxes</p>
-					<p>$6.60</p>
-				</div>
-				<div class="flex jc-sb">
-					<p>Shipping</p>
-					<p>FREE</p>
-				</div>
-				<div class="flex jc-sb">
-					<p>Estimated Total</p>
-					<p>$54.99</p>
-				</div>
-				<div class="right-align">
-					<a href="order-confirmation.html">
-						<button type="button" class="btn-main">PLACE ORDER</button>
-					</a>
-				</div>
+				</form>
 			</div>
-		</div>
 		</section>
 
 		<!----- Footer----->

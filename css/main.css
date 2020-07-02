@@ -206,8 +206,12 @@ section.detailed-product {
 	cursor: pointer;
 }
 
+.center {
+	text-align: center;
+}
+
 /* ------ Forms, Text Fields ------*/
-form .name-item, form .contact-item, form .grid-col-1of3, form .grid-col-1of2 {
+form .name-item, form .grid-col-1of3, form .grid-col-1of2 {
 	padding-right: 4rem;
 	display: inline-block;
 }
@@ -296,7 +300,7 @@ button:focus {
 }
 
 #address {
-	width: 48.5rem;
+	width: 50vw;
 }
 
 #pc {
@@ -845,5 +849,11 @@ p.price {
 	text-align: right; 
 	background-color: #fff;
 	padding: 1rem 4rem 4rem 1rem;
-		display: inline-block;
+	display: inline-block;
 } 
+
+
+.full-service .right-align-loc { 
+	text-align: right; 
+	padding: 1rem 4rem 4rem 1rem;
+}

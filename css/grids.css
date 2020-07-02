@@ -370,6 +370,19 @@ form .col-1of2 {
 		width: 100%;
 	}
 
+	/*----- Forms ------*/
+	.cart form, .full-service form {
+   		 padding: 1rem 1rem 1rem 2rem;
+	}
+
+	form .grid-col-1of2 {
+    	 padding-right: 0;
+ 	}
+
+	/*----- Cart ------*/
+	.half-width-left {
+   		 padding: 5em 0rem 5rem 0rem;
+	}
 	
 }
 

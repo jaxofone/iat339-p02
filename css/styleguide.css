@@ -43,19 +43,6 @@ section .intext a {
 	text-decoration: none;
 }
 
-/*section.in-text a {
-	text-decoration: underline black;
-	padding: .25rem .25rem;
-}*/
-
-/*section.in-text a:hover, section.in-text a:focus, section.in-text a:active {
-	color: white;
-	background-color: #0B6108;
-	text-decoration: none;
-	transition: color 0.5s;
-	padding: .25rem .5rem;
-	max-width: 8rem;*/
-
 /* ------ Paragraph Styling ------*/
 section.definition p, .citations p {
 	padding-bottom: 2.5rem;
@@ -74,7 +61,7 @@ h1.web {
   letter-spacing: 0.10rem;
 }
 
-.styleguide h2 {
+.styleguide h2, .wireframes h2 {
 	font-size: 1.5rem;
 }
 
@@ -140,4 +127,14 @@ section.citations, section.styleguide  {
 
 ol {
 	margin-top: 0;
+}
+
+/* ------ Image Adjustments ------*/
+.wireframes img, .mockups img, .sitemap img {
+	width: 65%;
+	height: auto;
+}
+
+.wireframes, .mockups, .sitemap, .user-tasks {
+	padding: 5rem;
 }

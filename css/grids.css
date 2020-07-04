@@ -15,12 +15,21 @@
 	justify-content: space-around;
 }
 
+.grid-product {
+	display: -webkit-flex; 			/* Supports older browsers */
+	display: -ms-flex; 				/* Supports Internet 10 */
+	display: flex;
+	flex-wrap: -webkit-flex;
+	flex-wrap: -ms-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .col-1of8 {
 	flex: 1 1 12.5%;
 	border: #eee solid .15rem;
 	text-align: center;
 	padding: 15rem .5rem 15rem 1rem;
-
 }
 
 /* ------ Nav Bar ------ */

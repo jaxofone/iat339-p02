@@ -32,6 +32,11 @@
 	padding: 15rem .5rem 15rem 1rem;
 }
 
+.full-service .grid-col-1of1.buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 /* ------ Nav Bar ------ */
 nav .col-1of2 {
 	flex: 10 1 10%;
@@ -114,6 +119,20 @@ form .col-1of2 {
 	height: 200px;
 	flex: 1 1 100%;
 }
+
+/* ------ Full Service Flow ------ */
+
+.full-service .left-align { 
+	background-color: #fff;
+	padding: 1rem 4rem 4rem 0rem;
+	flex: 1 0 50%;
+} 
+
+.full-service .right-align { 
+	background-color: #fff;
+	padding: 1rem 4rem 4rem 1rem;
+	flex: 1 0 50%;
+} 
 
 /* ---------- MEDIA QUERIES ---------- */
 
@@ -379,7 +398,7 @@ form .col-1of2 {
 		width: 100%;
 	}
 
-	/*----- Forms ------*/
+	/*------ Forms ------*/
 	.cart form, .full-service form {
    		 padding: 1rem 1rem 1rem 2rem;
 	}
@@ -388,10 +407,23 @@ form .col-1of2 {
     	 padding-right: 0;
  	}
 
-	/*----- Cart ------*/
+	/*----- Full Service Flow ------*/
 	.half-width-left {
    		 padding: 5em 0rem 5rem 0rem;
 	}
+
+	/*----- Full Service Flow  ------*/
+	.full-service .left-align { 
+		background-color: #fff;
+		padding: 1rem 4rem 4rem 0rem;
+		flex-basis: 100%;
+	} 
+
+	.full-service .right-align { 
+		background-color: #fff;
+		padding: 1rem 4rem 4rem 1rem;
+		flex-basis: 100%;
+	} 
 	
 }
 
@@ -450,7 +482,6 @@ form .col-1of2 {
 		height: auto;
 	}
 
-
 	/*----- Shop - Hero ------*/
 	.shop p {
 		font-size: 1.3rem;
@@ -474,6 +505,28 @@ form .col-1of2 {
 	/*----- About - Location ------*/
 	.alternating-content-img.col-1of2{
 		flex: 1 1 100%;
+	}
+
+	/*----- Full Service Flow  ------*/
+	.full-service .left-align { 
+		background-color: #fff;
+		padding: 0rem 0rem 0rem 0rem;
+		flex-grow: 2;
+	} 
+
+	.full-service .right-align { 
+		background-color: #fff;
+		padding: none;
+		flex-grow: 2;
+	} 
+
+	form .name-item {
+		padding-right: 0;
+	}
+
+	.full-service h1 {
+		margin: 3rem 1rem 3rem 0rem;
+		text-align: center;
 	}
 }
 

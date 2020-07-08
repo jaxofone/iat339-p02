@@ -13,13 +13,6 @@ html, .billing label, .shipping label {
 	text-transform: none;
 }
 
-/*body {
-	line-height: 1.8rem;
-	font-size: 1rem;
-	letter-spacing: 0.025rem;
-}
-*/
-
 /* ------ Link Styling ------*/
 section.categories a {
 	color: #474747;
@@ -152,6 +145,11 @@ section.detailed-product {
 	opacity: 1;
 	border: none;
 	color: #fff;
+
+}
+
+.full-service .btn-main {
+	display: inline-block;
 }
 
 .btn-main:hover, .btn-main:focus { /*Reference W3schools.com for styling button hover*/
@@ -838,22 +836,11 @@ p.price {
 	color: #20605A;
 }
 
-.full-service .left-align { 
-	text-align: left; 
-	background-color: #fff;
-	padding: 1rem 4rem 4rem 0rem;
-	display: inline-block;
-} 
-
-.full-service .right-align { 
-	text-align: right; 
-	background-color: #fff;
-	padding: 1rem 4rem 4rem 1rem;
-	display: inline-block;
-} 
-
-
 .full-service .right-align-loc { 
 	text-align: right; 
 	padding: 1rem 4rem 4rem 1rem;
+}
+
+.grid-col-1of1.budget, .grid-col-1of1.art-desc {
+	padding-bottom: 3rem;
 }

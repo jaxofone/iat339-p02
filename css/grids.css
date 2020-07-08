@@ -37,6 +37,10 @@
 	flex-wrap: wrap;
 }
 
+.grid-col-2 {
+	display: block;
+}
+
 /* ------ Nav Bar ------ */
 nav .col-1of2 {
 	flex: 10 1 10%;

@@ -314,10 +314,10 @@
 			       			 &lt;section class ="grid products"&gt;<br>
 								&lt;div class ="product-item col-2of3"&gt;<br>
 								  	 &lt;img src="img/products/lavender-bouquet.jpg" alt="Photo of purple bouquet"&gt;<br>
-								  	  &lt;p class="product-name">Lavender Dreams&lt/p&gt;<br>
-									  &lt;p class ="price">$40.99&lt/p&gt;<br>
+								  	  &lt;p class="product-name"&gt;Lavender Dreams&lt;/p&gt;<br>
+									  &lt;p class ="price"&gt;$40.99&lt;/p&gt;<br>
 									  &lt;div class="btn-position"&gt;<br>
-											&lt;a class ="btn-add" href="#"&gt; + Add &lt/a&gt;<br>
+											&lt;a class ="btn-add" href="#"&gt; + Add &lt;/a&gt;<br>
 								 	  &lt;/div&gt;<br>
 								&lt;/div&gt;<br>
 							&lt;/section&gt;
@@ -359,10 +359,10 @@
 									&lt;/div&gt;<br>
 									&lt;div class="product-desc col-2of2"&gt;<br>
 										&lt;div class= "top-level"&gt;<br>
-											&lt;h2>Lover's Sunrise — $45&lt;/h2&gt;<br>
+											&lt;h2&gt;Lover's Sunrise — $45&lt;/h2&gt;<br>
 										&lt;/div"&gt;<br>
 									  		&lt;div class="stars"&gt;<br>
-									               &lt;p>&#9733; &#9733; &#9733; &#9733; &#9733; &lt;a href="#review">(15)&lt;/a&gt;&lt;/p&gt;<br>
+									               &lt;p&gt;&#9733; &#9733; &#9733; &#9733; &#9733; &lt;a href="#review">(15)&lt;/a&gt;&lt;/p&gt;<br>
 								           	&lt;/div&gt;<br>
 
 							           	&lt;/div&gt;<br>
@@ -384,7 +384,7 @@
 										&lt;p&gt;<br>
 											This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a reusable glass vase.<br>
 										&lt;/p&gt;<br>
-										&lt;a href="cart.html"&gt;&lt;button type="button" class="btn-main"&gt;Add to Cart&lt;/button&gt;&lt;/a&gt;<br>
+										&lt;a class="btn-main" href="cart.html"&gt;ADD TO CART&lt;/a&gt;<br>
 									&lt;div&gt;<br>
 							&lt;section&gt;<br>
 			     			&lt;/section&gt;
@@ -400,7 +400,7 @@
 										<h2>Lover's Sunrise — $45</h2>
 									</div>
 								  		<div class="stars">
-								               <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#review">(15)</a></p>
+								               <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#">(15)</a></p>
 							           	</div>
 
 									<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
@@ -421,7 +421,7 @@
 									<p>
 										This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a reusable glass vase.
 									</p>
-									<a href="cart.html"><button type="button" class="btn-main">Add to Cart</button></a>
+									<a class="btn-main" href="cart.html">ADD TO CART</a>
 								</div>
 						</section>
 					</section>
@@ -440,7 +440,7 @@
 					      <h2>HTML Code:</h2>
 			       			 <code>
 				       			 &lt;section class="review"&gt;
-							      	  &lt;h2&gt; Reviews &lt;a href="#">(15) &lt;/a&gt;&lt;/h2&gt;<br>
+							      	  &lt;h2&gt; Reviews &lt;a href="#"&gt;(15) &lt;/a&gt;&lt;/h2&gt;<br>
 
 							      	  <!-- &lt;button class="btn-main">Write a Review&lt;/button&gt;<br> -->
 
@@ -448,17 +448,23 @@
 											&lt;form action="/action_page.php"&gt;<br>
 
 											&lt;div class="personal-details"&gt;<br>
-												&lt;label for="name">Name&lt;/label&gt;<br>
+												&lt;label for="name"&gt;Name&lt;/label&gt;<br>
 												&lt;input type="text" id="fname" name="fname" placeholder="Your first name"&gt;<br>
 
-												&lt;label for="email">Email&lt;/label&gt;
+												&lt;label for="email"&gt;Email&lt;/label&gt;
 												&lt;input type="text" id="email" name="email" placeholder='name@domain.com'&gt;
 											&lt;/div&gt;<br>
 
-											&lt;label for="review-title">Review Title&lt;/label&gt; <br>
+											&lt;div class="rating"&gt;<br>
+											&lt;label for="rate" id="rate">I rate it as:&lt;/label&gt;<br>
+											&lt;div class="stars"&gt;<br>
+									              &lt;p>&#9733; &#9733; &#9733; &#9733; &#9733;&lt;/p&gt;<br>
+								           	&lt;/div&gt;<br>
+							     
+											&lt;label for="review-title"&gt;Review Title&lt;/label&gt; <br>
 											&lt;input type="text" id="review-title" name="review-title"&gt;<br>
 
-											&lt;label for="review-body">Review&lt;/label&gt; <br>
+											&lt;label for="review-body"&gt;Review&lt;/label&gt; <br>
 											&lt;textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."&gt; &lt;/textarea&gt;<br> 
 
 											&lt;button class="btn-submit">Submit → &lt;/button&gt;<br>
@@ -472,24 +478,33 @@
 						  <h2> Sample: </h2>
 					      <section class="review">
 					      	  <h2> Reviews <a href="#">(15)</a></h2>
-					      	  <div class="form">
+				  				<div class="review form">
 									<form action="/action_page.php">
 
-									<div class="personal-details">
-										<label for="name">Name</label>
-										<input type="text" id="fname" name="fname" placeholder="Your first name">
+										<div class="personal-details">
+											<label for="fname">Name</label>
+											<input type="text" id="fname" name="fname" placeholder="Your full name">
 
-										<label for="email">Email</label>
-										<input type="text" id="email" name="email" placeholder='name@domain.com'>
-									</div>
+											<label for="email-review">Email</label>
+											<input type="text" id="email-review" name="email-review" placeholder='name@domain.com'>
+										</div>
 
-									<label for="review-title">Review Title</label> <input type="text" id="review-title" name="review-title">
+										<div class="rating">
+											<label for="rate" id="rate">I rate it as:</label>
+											<div class="stars">
+									              <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+								           	</div>
+							           </div>
+
+										<label for="review-title">Review Title</label> 
+										<input type="text" id="review-title" name="review-title">
+										
+										<label for="review-body">Review</label>
+										<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."></textarea>
+
+										<button class="btn-submit">Submit → </button>
+
 									</form>
-
-									<label for="review-body">Review</label>
-									<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."></textarea>
-									
-									<button class="btn-submit">Submit Review → </button>
 								</div>
 							</section>
 			  	</section>
@@ -502,13 +517,13 @@
 			       			  &lt;section class="review"&gt;<br>
 							       &lt;div class="review-content"&gt;<br>
 						           	  &lt;div class="stars"&gt;<br>
-									               &lt;p>&#9733; &#9733; &#9733; &#9733; &#9733;&lt;/p&gt;<br>
+									               &lt;p&gt;&#9733; &#9733; &#9733; &#9733; &#9733;&lt;/p&gt;<br>
 								       &lt;/div&gt;<br>
 							            &lt;div&gt;<br>
 							            	&lt;h3&gt;Lovely people and flowers&lt;/h3&gt;<br>
 							          	&lt;/div&gt;<br>
 							           	&lt;div&gt;<br>
-							              &lt;p class="author">Elliot M. on May 29, 2020&lt;/p&gt;<br>
+							             &lt;p class="author"&gt;Elliot M. on May 29, 2020&lt;/p&gt;<br>
 							           &lt;/div&gt;<br>
 						           	  
 							            &lt;div class="review-body"&gt;<br>
@@ -534,7 +549,7 @@
 				      <section class="review">
 					       <div class="review-content">
 				           	   <div class="stars">
-								     <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#review">(15)</a></p>
+								     <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#">(15)</a></p>
 							    </div>
 
 					            <div>
@@ -568,8 +583,7 @@
 								 &lt;div class="hero"&gt; <br>
 									 &lt;div class="text"&gt;<br>
 										 &lt;h1&gt;Spread happiness with summer's blooms.&lt;/h1&gt;<br>
-										 &lt;button type="button" class="btn-ma<br>in">Shop Bouquets &lt;/button&gt;
-									 &lt;/div&gt;<br>
+										 &lt;a class="btn-main" href="shop.html"&gt;SHOP SUMMER COLLECTION&lt;/a&gt;<br>
 								 &lt;/div&gt;
 							</code>
 
@@ -577,9 +591,7 @@
 							<section class ="home hero">
 								<div class="hero-text">
 									<h1>Spread happiness with summer's blooms.</h1>
-									<a href="shop.html">
-										<button type="button" class="btn-main"> Shop Bouquets</button>
-									</a>
+									<a class="btn-main" href="shop.html">SHOP SUMMER COLLECTION</a>
 								</div>
 							</section>
 
@@ -630,61 +642,63 @@
 					</code>
 
 					<h2> Sample: </h2>
-					<h2> Shipping Details </h2>
+					<h1> Your shipping details </h1>
 						<div class="form">
-							<form action="/action_page.php">
-								<div class="grid-col-1of2">
+								<form action="/action_page.php">
+									<div class="grid-col-1of2">
+											<div class="name-item">
+												<label for="s-fname">First Name</label>
+												<input type="text" id="s-fname" name="s-fname" placeholder="Your first name">
+											</div>
+
+
+											<div class="name-item">
+												<label for="lname">Last Name</label>
+												<input type="text" id="lname" name="lname" placeholder="Your last name">
+											</div>
+									</div>
+
+									<div class="grid-col-1of1">
 										<div class="name-item">
-											<label for="fname">First Name</label>
-											<input type="text" id="fname" name="fname" placeholder="Your first name">
+											<label for="address">Address</label>
+								  			<input type="text" id="address" name="address" placeholder='Your address'>
+								  		</div>
+								  	</div>
+
+								  	<div class="grid-col-1of3">
+								  		<div class="name-item">
+								  			<label for="province">Province</label>
+								  			<input type="text" id="province" name="Province" placeholder='Your province'>
+								  		</div>
+								  	</div>
+
+								  	<div class="grid-col-1of3">
+								  		<div class="name-item">
+											<label for="city">City</label>
+								  			<input type="text" id="city" name="city" placeholder='Your city'>
+								  		</div>
+								    </div>
+
+								    <div class="grid-col-1of3">
+								    	<div class="name-item">
+											<label for="pc">Postal Code</label>
+								   			<input type="text" id="pc" name="pc" placeholder='XXX XXX'>
+								   		</div>
+								   </div>
+
+								  	 <div class="grid-col-2">
+								  		<div class="name-item">
+								  			<label for="email-ad">Email Address</label>
+								  			<input type="text" id="email-ad" name="email-ad" placeholder='name@domain.com'>
+								  		</div>
+
+										<div class="name-item">
+											<label for="phone-number">Phone Number</label>
+											<input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####">
 										</div>
-
-
-									<div class="name-item">
-										<label for="lname">Last Name</label>
-										<input type="text" id="lname" name="lname" placeholder="Your last name">
 									</div>
-								</div>
-
-								<div class="grid-col-1of1">
-									<!-- <div class="address-item"> -->
-									<label for="address">Address</label>
-							  		<input type="text" id="address" name="address" placeholder='Your address'>
-							  		</div>
-							  	</div>
-
-							  	<div class="grid-col-1of3">
-							  		<label for="province">Province</label>
-							  		<input type="text" id="province" name="Province" placeholder='Your province'>
-							  	</div>
-
-							  	<div class="grid-col-1of3">
-									<label for="city">City</label>
-							  		<input type="text" id="city" name="city" placeholder='Your city'>
-							    </div>
-
-							    <div class="grid-col-1of3">
-									<label for="pc">Postal Code</label>
-							   		<input type="text" id="pc" name="pc" placeholder='XXX XXX'>
-							    	</div>
-
-							  	<div class="grid-col-1of2">
-							  		<div class="contact-item">
-							  			<label for="email-ad">Email Address</label>
-							  			<input type="text" id="email-ad" name="email-ad" placeholder='name@domain.com'>
-							  		</div>
-
-									<div class="contact-item">
-										<label for="phone-number">Phone Number</label>
-										<input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####">
-									</div>
-								</div>
-
-								<div class="btn-item">
-									<button class="btn-submit">Submit → </button>
-								</div>
-						</form>
-			     </section>
+							</form>
+						</div>
 
 				<!----- Footer ----->
 				<section>
@@ -701,22 +715,22 @@
 						 &lt;div class="container-footer"&gt; <br>
 						 &lt;div class="child-footer"&gt; <br>
 						 &lt;h2&gt;ABOUT FOUR SEAONS FLORAL&lt;/h2&gt; <br>
-						 &lt;p&gt;We are a family-owned and full-service floral shop&lt;/p&gt <br>
-						 &lt;br&gt;based in Vancouver, BC.  creating bespoke floral;<br>
-						 &lt;br&gt;arrangements for any types of occasions.;<br>
-						 &lt;br&gt;We’re open Monday - Fridays from;<br>
+						 &lt;p&gt;We are a family-owned and full-service floral shop
+									 based in Vancouver, BC.  creating bespoke floral
+									 arrangements for any types of occasions. 
+									 We’re open Monday - Fridays from
+									 10am - 5pm PST&lt;/p&gt;<br>
 						 &lt;br&gt;10am - 5pm PST&lt;/p&gt;<br>
 						 &lt;div class="child-footer"&gt; <br>
 						 &lt;h2&gt;OUR LOCATION&lt;/h2&gt; <br>
-						 &lt;p&gt;3375 Kingsway #102,&lt;/p&gt <br>
-						 &lt;br&gt;based in Vancouver, BC.  creating bespoke floral;<br>
-						 &lt;br&gt;Vancouver, B.C. ;<br>
-						 &lt;br&gt;V5R 5K6  ;/p&gt;<br>
+						 &lt;p&gt;102 3375 Kingsway
+									Vancouver, B.C. 
+									 V5R 5K6   &lt;/p&gt; <br>
 						 &lt;div class="child-footer"&gt; <br>
 						 &lt;h2&gt;CONTACT US&lt;/h2&gt; <br>
-						 &lt;p&gt;(604) 738-0678&lt;/p&gt <br>
-						 &lt;p>&lt;i class="fab fa-instagram"&gt;&lt;/i&gt; Instagram&lt;/p&gt;
-						 &lt;p>&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt; Facebook&lt;/p&gt;
+						 &lt;p&gt;(604) 738-0678&lt;/p&gt; <br>
+						 &lt;p&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt; Instagram&lt;/p&gt;<br>
+						 &lt;p&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt; Facebook&lt;/p&gt;
 						 &lt;br&gt;V5R 5K6  ;/p&gt;<br>
 						 &lt;/p&gt;<br>
 						 &lt;/div&gt;<br>
@@ -732,39 +746,38 @@
 					 </code>
 
 					 <h2> Sample: </h2>
-						<section class="main-footer grid">
+						<footer class="main-footer grid">
 							 <div class="child-footer about">
-								 <h3 class="web">ABOUT FOUR SEASONS FLORAL</h3>
-								 <p>We are a family-owned and full-service floral shop
-									 based in Vancouver, BC.  creating bespoke floral
-									 arrangements for any types of occasions. 
-									 We’re open Monday - Fridays from
-									 10am - 5pm PST</p>
+								 <h1>ABOUT FOUR SEASONS FLORAL</h1>
+								 <p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral arrangements.
+							 	</p>
 							</div>
 
 							 <div class="child-footer location">
-								 <h3 class="web">VISIT US</h3>
-								 <p>102 3375 Kingsway
+								 <h1>VISIT US</h1>
+								 <p>#102-3375 Kingsway
 									Vancouver, B.C. 
-									 V5R 5K6  </p>
+									V5R 5K6  </p>
 							</div>
 
 							 <div class="child-footer contact">
-								 <h3 class="web">CONTACT US</h3>
+								 <h1 >CONTACT US</h1>
 								 <p>(604) 738-0678</p>
-								 <p><i class="fab fa-instagram"></i> Instagram</p>
-								 <p><i class="fab fa-facebook-f"></i> Facebook</p>
+								 <p>
+								 	<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
+								 </p>
+								 <p>
+								 	<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
+								 </p>
 							 </div>
 
-							  <div class="child-footer mailing-list">
-								 <h3>GET THE DIRT</h3>
+							 <div class="child-footer mailing-list">
+								 <label for="newsletter">GET THE DIRT</label>
 								 <p>No spam. Just great content.</p>
-								 <input type="text" id="email" name="email" placeholder='name@domain.com'>
-								 <button type="button" class="btn-submit">→</button>
+								 <input aria-label="type email address" type="text" id="email" name="email" placeholder='name@domain.com'>
+								 <button aria-label="submit" type="button" class="btn-submit">→</button>
 							 </div>
-
-						 	</div>
-			 			</section>
+					 	</footer>
 			 </section>
 			<!----- Web Grids ----->
 			<section>
@@ -810,9 +823,12 @@
 							<div class ="col-1of12">1/12</div>
 						</div>
 			</section>
+		</section>
 
 		</section> <!-- .modular-elements ends -->
 
 	</section> <!-- .styleguide ends -->
+
   </body>
+
 </html>

@@ -62,8 +62,7 @@
 			<div class="product-desc">
 				<div class= "container-title">
 					<div>
-					<h2>Lover's Sunrise — from $45</h2>
-					<!-- <h2> $45</h2> -->
+					<h1>Lover's Sunrise — from $45</h1>
 					</div>
 				</div>
 			  	<div class="stars">
@@ -71,7 +70,7 @@
 	           	</div>
 
 				<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
-				<form action="/action_page.php">
+				<form>
 					  <label for="sizes">Size:</label>
 					  <select name="sizes" id="sizes">
 					    <option value="Small">Small</option>
@@ -83,12 +82,14 @@
 				<form>
 					<label for="quantity">Quantity:</label>
 			  		<input type="text" id="quantity" name="quantity"><br>
-				</form>
 
 				<p>
 					This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a reusable glass vase.
 				</p>
-				<a href="cart.html"><button type="button" class="btn-main">Add to Cart</button></a>
+				
+				<a class="btn-main" href="cart.html">Add to Cart</a>
+			   </form>
+
 			</div> <!--.product-desc ends -->
 		</section><!--detailed-product.grid ends -->
 
@@ -96,22 +97,19 @@
 		<!-- Review Section -->
 		 <section class="review" id="review">
 	      	  <h2> Reviews <a href="#post">(15)</a></h2>
-
-	      	  <!-- <button class="btn-main">Write a Review</button> -->
-
 	      	  <div class="review form">
 					<form action="/action_page.php">
 
 						<div class="personal-details">
-							<label for="name">Name</label>
+							<label for="fname">Name</label>
 							<input type="text" id="fname" name="fname" placeholder="Your full name">
 
-							<label for="email">Email</label>
-							<input type="text" id="email" name="email" placeholder='name@domain.com'>
+							<label for="email-review">Email</label>
+							<input arial-label="input type email address" type="text" id="email-review" name="email-review" placeholder='name@domain.com'>
 						</div>
 
 						<div class="rating">
-							<label for="rate">I rate it as:</label>
+							<label for="rate" id="rate">I rate it as:</label>
 							<div class="stars">
 					              <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 				           	</div>
@@ -173,10 +171,10 @@
 			 </div>
 
 			 <div class="child-footer mailing-list">
-				 <label><h3>GET THE DIRT</h3></label>
+				 <label for="newsletter">GET THE DIRT</label>
 				 <p>No spam. Just great content.</p>
-				 <input type="text" id="email" name="email" placeholder='name@domain.com'>
-				 <button aria-label="type email address" type="button" class="btn-submit">→</button>
+				 <input  aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
+				 <button aria-label="button submit" type="button" class="btn-submit">→</button>
 			 </div>
  	</footer>
 

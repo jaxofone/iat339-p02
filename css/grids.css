@@ -214,7 +214,7 @@ form .col-1of2 {
 	 .hero .hero-text h1 {
    		padding-top: 0;
    		margin-top: 0rem;
-    	font-size: 3.2rem;
+    	font-size: 2.7rem;
 		max-width: none;
 		line-height: 3.5rem;
 	}
@@ -344,7 +344,7 @@ form .col-1of2 {
 		padding: 3rem;
 	}
 
-	#fname, #lname, #email-ad, #email {
+	#fname, #lname, #email-ad, #email, #email-review {
 		width: 100%;
 	}
 
@@ -401,6 +401,12 @@ form .col-1of2 {
 		background-color: #F2EAE4;
 		width: 100%;
 	}
+
+	.child-footer.mailing-list label {
+		font-size: 1.5rem;
+		max-width: 15rem;
+	}
+
 
 	/*------ Forms ------*/
 	.cart form, .full-service form {

@@ -56,7 +56,7 @@
 		<!------ Shipping ------>
 			<h1> Tell us about yourself. </h1>
 			<div class="form">
-				<form action="/action_page.php">
+				<form>
 					<div class="grid-col-1of2">
 							<div class="name-item">
 								<label for="fname">First Name</label>
@@ -106,16 +106,14 @@
 
 					<div class="grid-col-1of1">
 						<label for="phone-number">Preferred method of contact</label>
-						 <select id="contact" name="contact">
+						 <select aria-label="select contact method" id="contact" name="contact">
 						    <option value="email">Email</option>
 						    <option value="phone">Phone</option>
 	 					 </select>
  					</div>
 
 					<div class="right-align-loc">
-						<a href="full-service-form-2of5.html">
-							<button type="button" class="btn-main">LOCATION DETAILS</button>
-						</a>
+						<a class="btn-main" href="full-service-form-2of5.html">LOCATION DETAILS</a>
 					</div>
 
 				</form>
@@ -125,20 +123,20 @@
 		<!----- Footer----->
 		 <footer class="main-footer grid">
 			 <div class="child-footer about">
-				 <h3>ABOUT FOUR SEASONS FLORAL</h3>
+				 <h1>ABOUT FOUR SEASONS FLORAL</h1>
 				 <p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral arrangements.
 			 	</p>
 			</div>
 
 			 <div class="child-footer location">
-				 <h3>VISIT US</h3>
+				 <h1>VISIT US</h1>
 				 <p>#102-3375 Kingsway
 					Vancouver, B.C. 
 					V5R 5K6  </p>
 			</div>
 
 			 <div class="child-footer contact">
-				 <h3 >CONTACT US</h3>
+				 <h1 >CONTACT US</h1>
 				 <p>(604) 738-0678</p>
 				 <p>
 				 	<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
@@ -148,11 +146,11 @@
 				 </p>
 			 </div>
 
-			 <div class="child-footer mailing-list">
-				 <label><h3>GET THE DIRT</h3></label>
+			  <div class="child-footer mailing-list">
+				 <label for="newsletter">GET THE DIRT</label>
 				 <p>No spam. Just great content.</p>
-				 <input type="text" id="email" name="email" placeholder='name@domain.com'>
-				 <button aria-label="type email address" type="button" class="btn-submit">→</button>
+				 <input  aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
+				 <button aria-label="button submit" type="button" class="btn-submit">→</button>
 			 </div>
 	 	</footer>
 

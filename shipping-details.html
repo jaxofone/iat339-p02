@@ -59,8 +59,8 @@
 				<form action="/action_page.php">
 					<div class="grid-col-1of2">
 							<div class="name-item">
-								<label for="fname">First Name</label>
-								<input type="text" id="fname" name="fname" placeholder="Your first name">
+								<label for="s-fname">First Name</label>
+								<input type="text" id="s-fname" name="s-fname" placeholder="Your first name">
 							</div>
 
 
@@ -115,24 +115,24 @@
 		<!------ Billing ------>
 		<h1> Your billing details </h1>
 		<form action="/action_page.php">
-			 <h3 class="billing-address">Billing Address:</h3>
+			 <h2 class="billing-address">Billing Address:</h2>
 				  <!---Radio buttons from https://www.w3schools.com/tags/att_input_type_radio.asp-->
 				  <div class="grid-col-1of2">
 					  	<div class="name-item shipping">
-						  <input type="radio" id="shipping" name="address" value="address">
+						  <input aria-label="input radio choice" type="radio" id="shipping" name="address" value="address">
 						  <label for="address">Same as shipping address</label>
 						</div>
 
 					 <div class="name-item billing">
 					 	 <input type="radio" id="billing" name="address" value="address">
-					  <label for="address">Different from shipping address</label>
+					  <label for="billing">Different from shipping address</label>
 					</div>
 				</div>
 
 				<div class="grid-col-1of1">
 						<div class="name-item">
-							<label for="fname">Name on Card</label>
-							<input type="text" id="fname" name="fname">
+							<label for="b-fname">Name on Card</label>
+							<input type="text" id="b-fname" name="b-fname">
 						</div>
 		
 						<div class="name-item">
@@ -174,9 +174,7 @@
 					<p>$61.59</p>
 				</div>
 				<div class="right-align">
-					<a href="order-confirmation.html">
-						<button type="button" class="btn-main">PLACE ORDER</button>
-					</a>
+					<a class="btn-main" href="order-confirmation.html">PLACE ORDER</a>
 				</div>
 			</div>
 		</div>
@@ -208,11 +206,11 @@
 				 </p>
 			 </div>
 
-			 <div class="child-footer mailing-list">
-				 <label><h3>GET THE DIRT</h3></label>
+			  <div class="child-footer mailing-list">
+				 <label for="newsletter">GET THE DIRT</label>
 				 <p>No spam. Just great content.</p>
-				 <input type="text" id="email" name="email" placeholder='name@domain.com'>
-				 <button aria-label="type email address" type="button" class="btn-submit">→</button>
+				 <input  aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
+				 <button aria-label="button submit" type="button" class="btn-submit">→</button>
 			 </div>
 	 	</footer>
 

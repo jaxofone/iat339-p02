@@ -1,65 +1,67 @@
-
 /*<!--The structure of this CSS document was built from referencing Weeks 2's lab tutorials-->*/
-html, .billing label, .shipping label {
-	font-family: "Styrene-Regular", Verdana, sans-serif;
-	color: #474747;
-	margin: 0;
-	line-height: 1.8rem;
-	font-size: 1rem;
-	letter-spacing: 0.025rem;
+html,
+.billing label,
+.shipping label {
+  font-family: "Styrene-Regular", Verdana, sans-serif;
+  color: #474747;
+  margin: 0;
+  line-height: 1.8rem;
+  font-size: 1rem;
+  letter-spacing: 0.025rem;
 }
 
-.billing label, .shipping label {
-	text-transform: none;
+.billing label,
+.shipping label {
+  text-transform: none;
 }
 
 /* ------ Link Styling ------*/
 section.categories a {
-	color: #474747;
+  color: #474747;
 }
 
 a {
-	color: #339F95;
-	text-decoration: none;
+  color: #339f95;
+  text-decoration: none;
 }
 
 a.button {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .contact a {
-	color: #474747;
+  color: #474747;
 }
 
 .location .alternating-content-text a {
-	color: #474747;
+  color: #474747;
 }
 
-.location .alternating-content-text a:hover, .contact a:hover  {
-	color: #339F95;
+.location .alternating-content-text a:hover,
+.contact a:hover {
+  color: #339f95;
 }
 
 /* ------ Paragraph Styling ------*/
 p {
-	max-width: 40rem;
-	padding: 1rem 0rem 1rem 0rem;
-	line-height: 2.2rem;
+  max-width: 40rem;
+  padding: 1rem 0rem 1rem 0rem;
+  line-height: 2.2rem;
 }
 
 p.about-desc {
-	text-align: center;
-	padding-top: 5rem;
-	margin: auto;
+  text-align: center;
+  padding-top: 5rem;
+  margin: auto;
 }
 
 section.location .alternating-content-text p {
-	padding: 0;
+  padding: 0;
 }
 
-
 /* ------ Header Styling ------*/
-h1  {
+h1 {
   font-family: "FreightBigPro-Light";
   font-weight: 100;
   font-size: 3.5rem;
@@ -68,186 +70,205 @@ h1  {
   line-height: 4rem;
   text-align: left;
   max-width: 35rem;
-  letter-spacing: 0.10rem;
+  letter-spacing: 0.1rem;
 }
 
-.shop h1, .shop p, .services h1, .services p, .about h1, .about p, .support h1, .support p,
-.cart h1, .confirmation h1, .confirmation p {
-	margin: auto;
- 	text-align: center;
+.shop h1,
+.shop p,
+.services h1,
+.services p,
+.about h1,
+.about p,
+.support h1,
+.support p,
+.cart h1,
+.confirmation h1,
+.confirmation p {
+  margin: auto;
+  text-align: center;
 }
 
 .confirmation .hero-text h3 {
-	text-align: center;
-	padding: 2rem 0rem 2rem 0rem;
+  text-align: center;
+  padding: 2rem 0rem 2rem 0rem;
 }
 
-
-h2, .product-desc h1  {
-	font-family: "FreightBigPro-Light", Verdana, sans-serif;
-	font-weight: 100;
-	font-size: 3rem;
-	letter-spacing: 0.1rem;
-	margin: 0;
-	line-height: 4rem;
+h2,
+.product-desc h1 {
+  font-family: "FreightBigPro-Light", Verdana, sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  line-height: 4rem;
 }
 
-h3, .child-footer.mailing-list label, footer h1 {
-	font-family: "Styrene-Regular", Verdana, sans-serif;
-	font-weight: 400;
-	font-size: 1rem;
-	margin-bottom: 0;
-	letter-spacing: 0.05rem;
-	text-transform: uppercase;
-	text-align: left;
+h3,
+.child-footer.mailing-list label,
+footer h1 {
+  font-family: "Styrene-Regular", Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 section.values h3 {
-	text-align: center;
-	color: #004C45;
+  text-align: center;
+  color: #004c45;
 }
-
 
 /* ------ Section Styling ------*/
 section.values {
-	padding: 0rem 5rem 7rem 5rem;
+  padding: 0rem 5rem 7rem 5rem;
 }
 
 section.categories {
-	padding: 7rem 5rem 7rem 5rem;
+  padding: 7rem 5rem 7rem 5rem;
 }
 
-section.products, section.review   {
-	padding: 0rem 5rem 0rem 5rem;
+section.products,
+section.review {
+  padding: 0rem 5rem 0rem 5rem;
 }
 
-section.faq  {
-	padding: 0rem 5rem 5rem 5rem;
+section.faq {
+  padding: 0rem 5rem 5rem 5rem;
 }
 
- .row-spacer{
-	padding-bottom: 4rem;
-}  
+.row-spacer {
+  padding-bottom: 4rem;
+}
 
 section.detailed-product {
-	padding: 8rem;
+  padding: 8rem;
 }
 
 .row-1 {
-	padding-bottom: 0;
+  padding-bottom: 0;
 }
 
-
 /* ------ Buttons ------*/
-.btn-main { /*-Referenced John Fauld's "Styling Form Buttons" article for styling buttons -->*/
-	font-size: 0.8rem;
-	background-color: #20605A;
-	letter-spacing: 0.1rem;
-	text-transform: uppercase;
-	padding: 1rem 1.5rem;
-	border-radius: 1.5rem;
-	opacity: 1;
-	border: none;
-	color: #fff;
+.btn-main {
+  /*-Referenced John Fauld's "Styling Form Buttons" article for styling buttons -->*/
+  font-size: 0.8rem;
+  background-color: #20605a;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  opacity: 1;
+  border: none;
+  color: #fff;
 }
 
 .full-service .btn-main {
-	display: inline-block;
+  display: inline-block;
 }
 
-.btn-main:hover, .btn-main:focus { /*Reference W3schools.com for styling button hover*/
-	background-color: #064C45;
+.btn-main:hover,
+.btn-main:focus {
+  /*Reference W3schools.com for styling button hover*/
+  background-color: #064c45;
 }
 
 .btn-submit {
-	font-family: "Styrene-Regular", Verdana, sans-serif;
-	font-size: 0.9rem;
-	color: #004C45;
-	background-color: #fff;
-	letter-spacing: 0.1rem;
-	border: none;
-	text-transform: uppercase;
-	opacity: 1;
+  font-family: "Styrene-Regular", Verdana, sans-serif;
+  font-size: 0.9rem;
+  color: #004c45;
+  background-color: #fff;
+  letter-spacing: 0.1rem;
+  border: none;
+  text-transform: uppercase;
+  opacity: 1;
 }
 
 .review.form .btn-submit {
-	float: right;
-	padding-top: 1rem;
+  float: right;
+  padding-top: 1rem;
 }
 
-.btn-submit:hover, .btn-submit:focus {
-	border-bottom: 2px solid #004C45;
+.btn-submit:hover,
+.btn-submit:focus {
+  border-bottom: 2px solid #004c45;
 }
 
 .btn-add {
-  	font-family: "Styrene-Regular", Verdana, sans-serif;
-	font-size: 0.8rem;
-	color: #20605A;
-	border: 2px solid #20605A;
-	letter-spacing: 0.05rem;
-	text-transform: uppercase;
-	padding: 0.3rem 1rem;
-	border-radius: 1rem;
-	float: left;
-	text-align: center;
-	margin-top: 1rem;
-	width: 100%;
+  font-family: "Styrene-Regular", Verdana, sans-serif;
+  font-size: 0.8rem;
+  color: #20605a;
+  border: 2px solid #20605a;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  float: left;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
 }
 
 .btn-add:hover {
-	color: #fff;
-    background-color: #20605A;
+  color: #fff;
+  background-color: #20605a;
 }
 
 .col4 button {
-	background-color: #fff;
-	border-radius: .5rem;
-	padding: .1rem .5rem .1rem .5rem;
-	border: .01rem solid #004C45;
-	cursor: pointer;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  border: 0.01rem solid #004c45;
+  cursor: pointer;
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 /* ------ Forms, Text Fields ------*/
-form .name-item, form .grid-col-1of3, form .grid-col-1of2 {
-	padding-right: 4rem;
-	display: inline-block;
+form .name-item,
+form .grid-col-1of3,
+form .grid-col-1of2 {
+  padding-right: 4rem;
+  display: inline-block;
 }
 
 form {
-	padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 form .btn-item {
-	float: right;
-	padding-right: 35rem;
+  float: right;
+  padding-right: 35rem;
 }
 
-label, h2.billing-address {
-  color: #20605A;
+label,
+h2.billing-address {
+  color: #20605a;
   font-family: "Styrene-Regular", Verdana, sans-serif;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 0.03rem;
   padding-right: 1rem;
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .child-footer.mailing-list label {
-	color: #474747;
+  color: #474747;
 }
 
 h2.billing-address {
-	padding: 0;
+  padding: 0;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   padding: 5px 10px; /*top and bottom, right and left*/
   display: block;
-  border: 1px solid #C8C8C8;
+  border: 1px solid #c8c8c8;
   border-radius: 5px;
   box-sizing: border-box;
   color: #474747;
@@ -256,40 +277,43 @@ input, select, textarea {
 }
 
 textarea {
-	width: 100%;
-	resize: none; 
+  width: 100%;
+  resize: none;
 }
 
 /* Styling placeholder text from https://css-tricks.com/almanac/selectors/p/placeholder/*/
-input::placeholder, textarea::placeholder {
-	font-size: 1rem;
+input::placeholder,
+textarea::placeholder {
+  font-size: 1rem;
 }
 
 form input {
-	margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-input[type=text]:hover, input[type=text]:focus {
-  border: 1px solid #20605A;
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border: 1px solid #20605a;
   transition-property: border-color;
-  transition-duration:0.4s;
-  color: #C0C0C0;
+  transition-duration: 0.4s;
+  color: #c0c0c0;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   color: #474747;
 }
 
-.product-desc select, .product-desc input#quantity {
-	display: inline-block;
+.product-desc select,
+.product-desc input#quantity {
+  display: inline-block;
 }
 
 .product-desc input#quantity {
-	max-width: 4rem;
+  max-width: 4rem;
 }
 
 option {
-	font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 /* Remove default outline on text inputs from https://stackoverflow.com/questions/1457849/how-to-remove-the-border-highlight-on-an-input-text-element */
@@ -297,121 +321,128 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: #20605A;
+  outline: #20605a;
 }
 
-#review-title{
-	width: 100%;
+#review-title {
+  width: 100%;
 }
 
 #address {
-	width: 50vw;
+  width: 50vw;
 }
 
 #pc {
-	width: 14rem;
+  width: 14rem;
 }
 
-#province, #city {
-	width: 13rem;
+#province,
+#city {
+  width: 13rem;
 }
 
-#fname, #lname, #email-ad, #phone-number {
-	width: 15rem;
+#fname,
+#lname,
+#email-ad,
+#phone-number {
+  width: 15rem;
 }
 
 #exp-date {
-	width: 6rem;
+  width: 6rem;
 }
 
 #cc-number {
-	width: 16rem;
+  width: 16rem;
 }
 
- #cc-code {
- 	width: 5rem;
- }
+#cc-code {
+  width: 5rem;
+}
 
-#shipping, #billing {
-	display: inline-block;
+#shipping,
+#billing {
+  display: inline-block;
 }
 
 input#review-body {
-	width: 29rem;
-	height: 10rem;
+  width: 29rem;
+  height: 10rem;
 }
 
 .personal-details input {
-	margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .main-footer input#email {
-	display: inline-block;
+  display: inline-block;
 }
 
 /* ------ Top Nav Bar ------*/
 div.announcement-bar {
-	display: block;
+  display: block;
 }
 
-.announcement-bar, .sub-footer{
-	color: #fff;
-	background-color: #004C45;
-	width: 100%;
-	text-align: center;
-	font-size: 0.75rem;
-	letter-spacing: 0.04rem;
-	padding: .5rem;
+.announcement-bar,
+.sub-footer {
+  color: #fff;
+  background-color: #004c45;
+  width: 100%;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.04rem;
+  padding: 0.5rem;
 }
 
-nav .col-1of6.search-bar  {
-	padding-right: 3rem;
+nav .col-1of6.search-bar {
+  padding-right: 3rem;
 }
 
 nav a {
-	text-transform: uppercase;
-	font-size: 0.8rem;
-	color: #474747;
-	display: inline-block;
-	padding: .5rem;
-	text-decoration: none;
-	letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #474747;
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  letter-spacing: 0.09em;
 }
 
 /*Sticky nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky*/
 nav.grid {
-	padding: 0;
-	border: 0.5px solid #eee;
-  	width: 100%;
-  	background-color: #fff;
-  	z-index: 11;
+  padding: 0;
+  border: 0.5px solid #eee;
+  width: 100%;
+  background-color: #fff;
+  z-index: 11;
+  align-items: center;
 }
 
 nav.grid img.logo {
-	margin-left: 4rem;
+  margin-left: 4rem;
 }
 
 nav.grid a {
-	padding-top: 1rem;
-	padding-bottom: 0;
-	font-size: 0.8rem;
-	letter-spacing: 0.05rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
 }
 
- nav.grid input {
- 	margin-top: 0.5rem;
- }
+nav.grid input {
+  margin-top: 0.5rem;
+}
 
 nav .col-1of6 img {
-	width: 1.3rem;
-	height: auto;
+  width: 1.3rem;
+  height: auto;
 }
 
 .dropdown-items {
   display: none;
   position: absolute;
   background-color: #fff;
-  box-shadow: 0rem .2rem .5rem 0rem rgba(0,0,0,0.2);
+  box-shadow: 0rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.2);
   padding: 0rem 1rem 1rem 1rem;
   z-index: 12;
 }
@@ -421,133 +452,132 @@ nav .col-1of6 img {
 }
 
 .col-1of6:hover > .dropdown-items a:hover {
-  color: #339F95;
+  color: #339f95;
 }
-
 
 /* ------ Hero Advertising ------*/
 .hero-text {
-	padding: 6rem;
-} 
+  padding: 6rem;
+}
 
-.support .hero-text, .confirmation .hero-text {
-	padding: 9rem 6rem 6rem 6rem;
+.support .hero-text,
+.confirmation .hero-text {
+  padding: 9rem 6rem 6rem 6rem;
 }
 
 .services .hero-text {
-	padding: 6rem 6rem 0rem 6rem;
+  padding: 6rem 6rem 0rem 6rem;
 }
 
 .shop p {
-	 max-width: 40rem;
+  max-width: 40rem;
 }
 
 .hero button {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 /* ------ Home 3 Tiles------*/
 .menu {
-	padding: 2rem 3rem 2rem 3rem;
-	background-color: #F5EFEB;
+  padding: 2rem 3rem 2rem 3rem;
+  background-color: #f5efeb;
 }
 
 .menu p {
-	font-size: .9rem;
-	letter-spacing: 0.09rem;
-	text-transform: uppercase;
-	margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .menu h2 {
-	font-size: 2.7rem;
+  font-size: 2.7rem;
 }
 
- .menu:hover p, .menu:hover h2, .menu:hover {
-	background-color: #004C45;
-	color: #fff;
+.menu:hover p,
+.menu:hover h2,
+.menu:hover {
+  background-color: #004c45;
+  color: #fff;
 }
-
 
 /* ------ Home - Alternating Content-----*/
 .alternating-content-img img {
-	/*width: 39.6rem;*/
-	width: 43rem;
-	height: 100%;
+  /*width: 39.6rem;*/
+  width: 43rem;
+  height: 100%;
 }
 
-.alternating-content-text  {
-	padding: 0rem 4rem 0rem 4rem;
-	margin: auto;
-	flex: 2 1 15%;
+.alternating-content-text {
+  padding: 0rem 4rem 0rem 4rem;
+  margin: auto;
+  flex: 2 1 15%;
 }
 
 .col-1of2-right {
-	text-align: right;
+  text-align: right;
 }
 
 .alternating-content-text.col-1of2-right p {
-	max-width: none;
+  max-width: none;
 }
 
 .grid.products {
-	padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 .alternating-content {
-	padding: 0rem 5rem 5rem 5rem;
+  padding: 0rem 5rem 5rem 5rem;
 }
-
 
 /* ------ Services - 3 Tiles------*/
-.menu.services p  {
-	left: 1.5rem;
-	top: 5rem;
+.menu.services p {
+  left: 1.5rem;
+  top: 5rem;
 }
-
 
 /* ------ About Us -------- */
 .values img {
-	width: 5rem;
-	height: auto;
+  width: 5rem;
+  height: auto;
 }
 
 .values {
-	text-align: center;
+  text-align: center;
 }
 
 .values.col-2of3 img {
-	width: 4rem;
-	height: auto;
+  width: 4rem;
+  height: auto;
 }
 
 .values.col-1of3 img {
-	padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 section.location .alternating-content-img img {
-	box-shadow: 1px 2px 10px #eee;
+  box-shadow: 1px 2px 10px #eee;
 }
 
 /* ------ Individual Product Description -------- */
 .detailed-product p {
-	max-width: 30rem;
+  max-width: 30rem;
 }
 
 .product-img img {
-	width: 30rem;
-	height: auto;
+  width: 30rem;
+  height: auto;
 }
 
 .product-img {
-	padding-right: 4rem;
+  padding-right: 4rem;
 }
 
 .product-desc h3 {
-	font-family: "FreightBigPro-Light";
-	font-size: 1.6rem;
-	letter-spacing: 0.15rem;
-	margin-top: 0;
+  font-family: "FreightBigPro-Light";
+  font-size: 1.6rem;
+  letter-spacing: 0.15rem;
+  margin-top: 0;
 }
 
 .product-desc .stars p {
@@ -556,17 +586,17 @@ section.location .alternating-content-img img {
 
 /* ------ Review Post -------- */
 .review p.author {
-	margin: 0;
-	padding-bottom: 1.2rem;
-	padding-top: .6rem;
+  margin: 0;
+  padding-bottom: 1.2rem;
+  padding-top: 0.6rem;
 }
 
 .review-body p {
-	margin-top: -1rem;
+  margin-top: -1rem;
 }
 
 .stars p {
-  color: #339F95;
+  color: #339f95;
 }
 
 .rating .stars p {
@@ -576,151 +606,149 @@ section.location .alternating-content-img img {
 }
 
 .review-content .stars p {
-	margin: 0;
-	margin-top: 2rem;
+  margin: 0;
+  margin-top: 2rem;
 }
 
 .review-content h3 {
-	color: #20605A;
+  color: #20605a;
 }
-
 
 /* ------ Product Listings -------- */
 .product-item {
   padding: 3rem;
 }
 
-.product-item img, .services img {
+.product-item img,
+.services img {
   width: 21rem;
   height: auto;
 }
 
- .services img  {
- 	width: 16rem;
- }
+.services img {
+  width: 16rem;
+}
 
 .product-item img:hover {
   opacity: 0.7;
 }
 
-
 p.price {
-	color: #474747;
-	margin: 0;
-	padding: 0;
+  color: #474747;
+  margin: 0;
+  padding: 0;
 }
 
 p.price.sale {
-	color: red;
+  color: red;
 }
 
 del.old-price {
-	color: #474747;
-	font-size: .8rem;
+  color: #474747;
+  font-size: 0.8rem;
 }
 
 .product-item p.product-name {
-	font-family: "FreightBigPro-Book", Verdana, sans-serif;
-	font-size: 1.5rem;
-	letter-spacing: .08rem;
-	color: #474747;
-	margin: 0;
+  font-family: "FreightBigPro-Book", Verdana, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.08rem;
+  color: #474747;
+  margin: 0;
 }
 
-.product-item { 
-	padding-bottom: 3rem;
+.product-item {
+  padding-bottom: 3rem;
 }
-
 
 /*------- FAQ/Support---------*/
 .support .hero-text h1 {
-	max-width: none;
+  max-width: none;
 }
 
 .panel p {
-	max-width: 55rem;
-	text-align: left;
-	margin: 0;
+  max-width: 55rem;
+  text-align: left;
+  margin: 0;
 }
 
 /*------- Footer---------*/
 .main-footer {
-	background: #F2EAE4;
-	padding-right: 4rem;
-	padding-left: 4rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	margin-bottom: 0;
-	grid-template-columns: 1.75fr 1fr 1fr;
-	grid-column-gap: 70px;
-	font-size: 0.8rem;
+  background: #f2eae4;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0;
+  grid-template-columns: 1.75fr 1fr 1fr;
+  grid-column-gap: 70px;
+  font-size: 0.8rem;
 }
 
 .main-footer p {
-	padding: 0;
-	text-align: left;
-	line-height: 1.7rem;
+  padding: 0;
+  text-align: left;
+  line-height: 1.7rem;
 }
 
 .child-footer.about {
-	max-width: 20rem;
+  max-width: 20rem;
 }
 
 .child-footer.location {
-	max-width: 12rem;
+  max-width: 12rem;
 }
 
 .child-footer.contact {
-	max-width: 10.1rem;
+  max-width: 10.1rem;
 }
 
 .child-footer.mailing-list {
-	max-width: 15rem;
-	padding-top: 1rem;
+  max-width: 15rem;
+  padding-top: 1rem;
 }
 
 .child-footer.mailing-list button {
-	color: #20605A;
-	border-radius: .3rem;
-	border: .1rem solid  #20605A;
-	background-color: #F2EAE4;
+  color: #20605a;
+  border-radius: 0.3rem;
+  border: 0.1rem solid #20605a;
+  background-color: #f2eae4;
 }
 
 .child-footer.mailing-list button:hover {
-	border-bottom: none;
-	background-color: #20605A;
-	color: #fff;
+  border-bottom: none;
+  background-color: #20605a;
+  color: #fff;
 }
 
-
 .child-footer.mailing-list input::placeholder {
-	font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .sub-footer a {
-	color: #fff;
-	opacity: 0.95;
-	letter-spacing: 0.03rem;
-	margin-top: auto;
-	margin-bottom: auto;
+  color: #fff;
+  opacity: 0.95;
+  letter-spacing: 0.03rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.sub-footer a:hover, .sub-footer a:focus {
-	color: #339F95;
+.sub-footer a:hover,
+.sub-footer a:focus {
+  color: #339f95;
 }
 
 .sub-footer p {
-	text-align: center;
-	max-width: 100rem;
-	margin: 0;
+  text-align: center;
+  max-width: 100rem;
+  margin: 0;
 }
 
 /* ------ Accordian FAQ ------ */
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: #fff;
-  border-bottom: .1rem solid #20605A !important;
-  color: #444;
+  background-color: #20605a;
+  border-bottom: 0.1rem solid #20605a !important;
+  color: #fff;
   cursor: pointer;
   padding: 2rem 1rem 2rem 2rem;
   width: 100%;
@@ -735,13 +763,14 @@ del.old-price {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #20605A;
+/* .active,
+.accordion:hover {
+  background-color: #20605a;
   color: #fff;
 }
 
 .accordion:after {
-  content: '\002B';
+  content: "\002B";
   color: #777;
   font-weight: bold;
   float: right;
@@ -751,106 +780,123 @@ del.old-price {
 .active:after {
   content: "\2212";
   color: #fff;
-}
+} */
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
- padding: 0 18px;
- background-color: white;
- max-height: 0;
- overflow: hidden;
- transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: white;
+  /* max-height: 0; */
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
-/* ------- Cart -------- */ 
-.padR-s { 
-	padding-right: 20px; 
-} 
-.padL-s { 
-	padding-left: 20px; 
-} 
- 
-.border-bottom { 
-	border-bottom: 1px solid #474747; 
-} 
-.product-image { 
-	width: 100% 
-} 
+/* ------- Cart -------- */
+.padR-s {
+  padding-right: 20px;
+}
+.padL-s {
+  padding-left: 20px;
+}
 
-.half-width-left { 
-	max-width: 50rem; 
-	width: 100%; 
-	margin-left: auto; 
-	padding-right: 10em; 
-	padding-bottom: 10em; 
-} 
+.border-bottom {
+  border-bottom: 1px solid #474747;
+}
+.product-image {
+  width: 100%;
+}
 
-.flex { 
-	display: flex; 
-} 
+.half-width-left {
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+  padding-right: 10em;
+  padding-bottom: 10em;
+}
 
-.jc-sb { 
-	justify-content: space-between; 
-	background-color: #F2EAE4;
-	padding: 0rem 3rem 0rem 3rem;
-} 
+.flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+  background-color: #f2eae4;
+  padding: 0rem 3rem 0rem 3rem;
+}
 
 .jc-sb p {
-	margin: 0;
+  margin: 0;
 }
 
-.right-align { 
-	text-align: right; 
-	background-color: #F2EAE4;
-	padding: 1rem 1rem 2rem 1rem;
-} 
+.right-align {
+  text-align: right;
+  background-color: #f2eae4;
+  padding: 1rem 1rem 2rem 1rem;
+}
 
 .cart h1 {
-	padding-top: 1rem
+  padding-top: 1rem;
 }
 
 .col4.border-bottom p {
-	font-size: 1rem;
-	text-transform: uppercase;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
-.product-name p, p.product-size, p.product-price, .product-quantity  {
-	font-size: 1.2rem;
+.product-name p,
+p.product-size,
+p.product-price,
+.product-quantity {
+  font-size: 1.2rem;
+}
+
+.cart .product-quantity {
+  width: 100%;
+  max-width: 75px;
+  margin: 0 auto;
 }
 
 .col4 img.product-image {
-	width: 10rem;
+  width: 10rem;
+}
+.cart .totals .taxes,
+.cart .totals .shipping {
+  flex-wrap: wrap;
 }
 
 /* ------ Shipping and Billing ------ */
-.cart h1, .full-service h1 {
-	margin: 3rem 1rem 3rem 1rem;
-	padding-top: 0;
+.cart h1,
+.full-service h1 {
+  margin: 3rem 1rem 3rem 1rem;
+  padding-top: 0;
 }
 
-.cart form, .full-service form  {
-	padding: 1rem 5rem 1rem 5rem;
+.cart form,
+.full-service form {
+  padding: 1rem 5rem 1rem 5rem;
 }
 
 /* ------ Full Service ------ */
 .full-service h1 {
-	margin: 3rem 1rem 3rem 5rem;
-	padding-top: 0;
+  margin: 3rem 1rem 3rem 5rem;
+  padding-top: 0;
 }
 
 .full-service .left-align a {
-	color: #474747;
+  color: #474747;
 }
 
-.full-service .left-align a:hover, a:focus {
-	color: #20605A;
+.full-service .left-align a:hover,
+a:focus {
+  color: #20605a;
 }
 
-.full-service .right-align-loc { 
-	text-align: right; 
-	padding: 1rem 4rem 4rem 1rem;
+.full-service .right-align-loc {
+  text-align: right;
+  padding: 1rem 4rem 4rem 1rem;
 }
 
-.grid-col-1of1.budget, .grid-col-1of1.art-desc {
-	padding-bottom: 3rem;
+.grid-col-1of1.budget,
+.grid-col-1of1.art-desc {
+  padding-bottom: 3rem;
 }

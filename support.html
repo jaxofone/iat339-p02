@@ -1,109 +1,134 @@
-
 <!-- Code structure has been mostly adapted to use from Paul Brokenshire. Additional
 	codes not learned from lecture and tutorials have been from support websites and/or from our team's own knowledge. Support websites are given credit within the code as well as in our Citiations page -->
 
 
 <!doctype html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Support</title>
+<head>
+	<meta charset="utf-8">
+	<title>Support</title>
 
-		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
-    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/grids.css">
-    <script src="main.js"></script>
-		<!-- Script for fontawesome -->
-		<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
-	</head>
+	<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/grids.css">
+	<script src="main.js"></script>
+	<!-- Script for fontawesome -->
+	<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
+</head>
 
-	<body>
-		<!----- Top Nav ----->
-    	<header>
-			 <nav class="grid">
-		          <div class="logo col-1of2 ">
-		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
-		          </div>
-		          		
-                  <div class="col-1of6">
-                    	<a href="shop.html">Shop</a>
-                    	<!---Dropdown tutorial from https://www.w3schools.com/css/css_dropdowns.asp-->
-                    	<div class="dropdown-items">
-                    		 <a href="shop.html">Flowers</a>
-                    		 <a href="shop-plants.html">Plants</a>
-                    	</div>
-                  </div>
-                   <div class="col-1of6">
-                      	<a href="shop-services.html">Services</a>
-                  </div>
-                  <div class="col-1of6">
-                      	<a href="about.html">About</a>
-                  </div>
-                  <div class="col-1of6">
-                     	 <a href="support.html">Support</a>
-                  </div>
-                   <div class="col-1of6">
-                 		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
-            	  </div>       	
-	      </nav>
-		</header>
-
-		<section class ="support hero">
-			<div class="hero-text">
-				<h1>Frequently Asked Questions</h1>
-				<p> 
-					Couldn't find an answer you were looking for? Reach out to us at <a href ="mailto:fourseasonsfloristry@gmail.com">fourseasonsfloristry@gmail.com</a>.
-				</p>
+<body>
+	<!----- Top Nav ----->
+	<header>
+		<nav class="grid">
+			<div class="logo col-1of2 ">
+				<a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 			</div>
-		</section>
+			<div class="hamburger-container">
+				<span class="fa fa-bars" aria-hidden="true"></span>
+				<div class="hamburger-menu">
+					<ul>
+						<li class="hamburger-dropdown"><a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="shop.html">Flowers</a>
 
-    <section class="faq">
-	    <button class="accordion">Who is Four Seasons Floral?</button>
-		    <div class="panel">
-		      <p>
-		      	We are a family-owned and full-service floral shop based in Vancouver, BC.
-		      </p>
-		    </div>
+						</li>
+						<li>
+							<a href="shop-plants.html">Plants</a>
 
-	    <button class="accordion">Where do you delivery?</button>
-		    <div class="panel">
-		      <p>Our shop locally serves the following cities and surrounding areas:</p>
-				<ul>
-				    <li> Burnaby </li>
-					<li>Vancouver</li>
-				</ul>
-		    </div>
+						</li>
+						<li><a href="shop-services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="support.html">Support</a></li>
+						<li><a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a href="shop.html">Flowers</a>
+					<a href="shop-plants.html">Plants</a>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop-services.html">Services</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="about.html">About</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="support.html">Support</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
+			</div>
 
-	    <button class="accordion">What if my choice of flowers aren't available?</button>
-		    <div class="panel">
-		      <p>
-		      	Occasionally, substitutions may be necessary to create your bouquet due to the availability of certain flowers. Care is taken to maintain the style, theme and color scheme of the arrangement, using flowers of equal value. In single-flower arrangements, such as an all rose bouquet, or orchids, we will make every attempt to match the flower type, but may substitute with another color.
-		      </p>
-		    </div>
+		</nav>
+	</header>
 
-		    <button class="accordion">What types of payments do you accept?</button>
-		    <div class="panel">
-		      <p>
-		      	For our online orders, we currently take Visa, MasterCard, and American Express! 
-		      </p>
-		    </div>
+	<section class="support hero">
+		<div class="hero-text">
+			<h1>Frequently Asked Questions</h1>
+			<p>
+				Couldn't find an answer you were looking for? Reach out to us at <a
+					href="mailto:fourseasonsfloristry@gmail.com">fourseasonsfloristry@gmail.com</a>.
+			</p>
+		</div>
+	</section>
 
-		    <button class="accordion">What is your refund policy?</button>
-		    <div class="panel">
-		      <p>
-		      	All arrangements are a final sale. We are always striving to create high quality arrangments, but if you feel that it wasn't up to your standards, reach out to us at fourseasonsfloristry@gmail.com. We can explore a solution that best accomodates you.
-		      </p>
-		   </div>
+	<section class="faq">
+		<button class="accordion">Who is Four Seasons Floral?</button>
+		<div class="panel">
+			<p>
+				We are a family-owned and full-service floral shop based in Vancouver, BC.
+			</p>
+		</div>
 
-	 </section>
+		<button class="accordion">Where do you delivery?</button>
+		<div class="panel">
+			<p>Our shop locally serves the following cities and surrounding areas:</p>
+			<ul>
+				<li> Burnaby </li>
+				<li>Vancouver</li>
+			</ul>
+		</div>
+
+		<button class="accordion">What if my choice of flowers aren't available?</button>
+		<div class="panel">
+			<p>
+				Occasionally, substitutions may be necessary to create your bouquet due to the availability of certain flowers.
+				Care is taken to maintain the style, theme and color scheme of the arrangement, using flowers of equal value. In
+				single-flower arrangements, such as an all rose bouquet, or orchids, we will make every attempt to match the
+				flower type, but may substitute with another color.
+			</p>
+		</div>
+
+		<button class="accordion">What types of payments do you accept?</button>
+		<div class="panel">
+			<p>
+				For our online orders, we currently take Visa, MasterCard, and American Express!
+			</p>
+		</div>
+
+		<button class="accordion">What is your refund policy?</button>
+		<div class="panel">
+			<p>
+				All arrangements are a final sale. We are always striving to create high quality arrangments, but if you feel
+				that it wasn't up to your standards, reach out to us at fourseasonsfloristry@gmail.com. We can explore a
+				solution that best accomodates you.
+			</p>
+		</div>
+
+	</section>
 
 	<!----- Javascript for accordian----->
-    <script>
+	<!-- <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -118,47 +143,48 @@
         }
       });
     }
-    </script>
+    </script> -->
 
 	<!----- Footer----->
-	 <footer class="main-footer grid">
-		 <div class="child-footer about">
-			 <h1>ABOUT FOUR SEASONS FLORAL</h1>
-			 <p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral arrangements.
-		 	</p>
+	<footer class="main-footer grid">
+		<div class="child-footer about">
+			<h1>ABOUT FOUR SEASONS FLORAL</h1>
+			<p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral
+				arrangements.
+			</p>
 		</div>
 
-		 <div class="child-footer location">
-			 <h1>VISIT US</h1>
-			 <p>#102-3375 Kingsway
+		<div class="child-footer location">
+			<h1>VISIT US</h1>
+			<p>#102-3375 Kingsway
 				Vancouver, B.C. 
 				V5R 5K6  </p>
 		</div>
 
-		 <div class="child-footer contact">
-			 <h1 >CONTACT US</h1>
-			 <p>(604) 738-0678</p>
-			 <p>
-			 	<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
-			 </p>
-			 <p>
-			 	<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
-			 </p>
-		 </div>
+		<div class="child-footer contact">
+			<h1>CONTACT US</h1>
+			<p>(604) 738-0678</p>
+			<p>
+				<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
+			</p>
+			<p>
+				<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
+			</p>
+		</div>
 
-		 <div class="child-footer mailing-list">
-			 <label for="newsletter">GET THE DIRT</label>
-			 <p>No spam. Just great content.</p>
-			 <input aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
-			 <button aria-label="button submit" type="button" class="btn-submit">→</button>
-		 </div>
- 	</footer>
+		<div class="child-footer mailing-list">
+			<label for="newsletter">GET THE DIRT</label>
+			<p>No spam. Just great content.</p>
+			<input aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
+			<button aria-label="button submit" type="button" class="btn-submit">→</button>
+		</div>
+	</footer>
 
 	<div class="sub-footer">
-			<a href="styleguide.html" target="_blank"> Styleguide</a>
-			<a href="citations.html" target="_blank"> Citations</a>
-			<a href ="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
-		</div>
+		<a href="styleguide.html" target="_blank"> Styleguide</a>
+		<a href="citations.html" target="_blank"> Citations</a>
+		<a href="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
+	</div>
 
 </body>
 

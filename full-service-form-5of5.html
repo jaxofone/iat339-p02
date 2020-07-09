@@ -1,72 +1,91 @@
-
 <!-- Code structure has been mostly adapted to use from Paul Brokenshire. Additional
 	codes not learned from lecture and tutorials have been from support websites and/or from our team's own knowledge. Support websites are given credit within the code as well as in our Citiations page -->
 
 
 <!doctype html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Support</title>
+<head>
+	<meta charset="utf-8">
+	<title>Support</title>
 
-		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
-    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/grids.css">
-    <script src="main.js"></script>
-		<!-- Script for fontawesome -->
-		<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
-	</head>
+	<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/grids.css">
+	<script src="main.js"></script>
+	<!-- Script for fontawesome -->
+	<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
+</head>
 
-	<body>
-		<!----- Top Nav ----->
-    	<header>
-			 <nav class="grid">
-		          <div class="logo col-1of2 ">
-		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
-		          </div>
-		          		
-                  <div class="col-1of6">
-                    	<a href="shop.html">Shop</a>
-                    	<!---Dropdown tutorial from https://www.w3schools.com/css/css_dropdowns.asp-->
-                    	<div class="dropdown-items">
-                    		 <a href="shop.html">Flowers</a>
-                    		 <a href="shop-plants.html">Plants</a>
-                    	</div>
-                  </div>
-                   <div class="col-1of6">
-                      	<a href="shop-services.html">Services</a>
-                  </div>
-                  <div class="col-1of6">
-                      	<a href="about.html">About</a>
-                  </div>
-                  <div class="col-1of6">
-                     	 <a href="support.html">Support</a>
-                  </div>
-                   <div class="col-1of6">
-                 		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
-            	  </div>       	
-	      </nav>
-		</header>
+<body>
+	<!----- Top Nav ----->
+	<header>
+		<nav class="grid">
+			<div class="logo col-1of2 ">
+				<a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
+			</div>
+			<div class="hamburger-container">
+				<span class="fa fa-bars" aria-hidden="true"></span>
+				<div class="hamburger-menu">
+					<ul>
+						<li class="hamburger-dropdown"><a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="shop.html">Flowers</a>
 
-		<section class ="confirmation hero">
-			<div class="hero-text">
-				<h1>Your form has been submitted!</h1>
-				<p>
-					Be on the lookout for an email within 1-3 business days. Thank you for your support!
-				</p>
+						</li>
+						<li>
+							<a href="shop-plants.html">Plants</a>
 
+						</li>
+						<li><a href="shop-services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="support.html">Support</a></li>
+						<li><a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a href="shop.html">Flowers</a>
+					<a href="shop-plants.html">Plants</a>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop-services.html">Services</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="about.html">About</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="support.html">Support</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
 			</div>
 
-			<div class ="center">
-				<a class="btn-main" href="index.html">RETURN HOME</a>
-			</div>
+		</nav>
+	</header>
 
-		</section>
+	<section class="confirmation hero">
+		<div class="hero-text">
+			<h1>Your form has been submitted!</h1>
+			<p>
+				Be on the lookout for an email within 1-3 business days. Thank you for your support!
+			</p>
+
+		</div>
+
+		<div class="center">
+			<a class="btn-main" href="index.html">RETURN HOME</a>
+		</div>
+
+	</section>
 </body>
 
 </html>

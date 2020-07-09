@@ -1,157 +1,177 @@
-
 <!-- Code structure has been mostly adapted to use from Paul Brokenshire. Additional codes not learned from lecture and tutorials have been from support websites and/or from our team's own knowledge. Support websites are given credit within the code as well as in our Citiations page -->
 
 <!doctype html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Cart</title>
+<head>
+	<meta charset="utf-8">
+	<title>Cart</title>
 
-		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
-    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/grids.css">
-		<!-- Script for fontawesome -->
-		<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
-	</head>
+	<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/grids.css">
+	<!-- Script for fontawesome -->
+	<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
+</head>
 
-	<body>
-		<!----- Top Nav ----->
-		<header>
-			<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
-			 <nav class="grid">
-		          <div class="logo col-1of2 ">
-		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
-		          </div>
-                  <div class="col-1of6">
-                    	<a href="shop.html">Shop</a>
-                    	<div class="dropdown-items">
-                    		 <a href="shop.html">Flowers</a>
-                    		 <a href="shop-plants.html">Plants</a>
-                    	</div>
-                  </div>
-                   <div class="col-1of6">
-                      	<a href="shop-services.html">Services</a>
-                  </div>
-                  <div class="col-1of6">
-                      	<a href="about.html">About</a>
-                  </div>
-                  <div class="col-1of6">
-                     	 <a href="support.html">Support</a>
-                  </div>
-                   <div class="col-1of6">
-                 		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
-            	  </div>
-		            	
-	      </nav>
-		</header>
+<body>
+	<!----- Top Nav ----->
+	<header>
+		<div class="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
+		<nav class="grid">
+			<div class="logo col-1of2 ">
+				<a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
+			</div>
+			<div class="hamburger-container">
+				<span class="fa fa-bars" aria-hidden="true"></span>
+				<div class="hamburger-menu">
+					<ul>
+						<li class="hamburger-dropdown"><a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="shop.html">Flowers</a>
 
-		<!----- top container---->
-		<section class="cart">
+						</li>
+						<li>
+							<a href="shop-plants.html">Plants</a>
+
+						</li>
+						<li><a href="shop-services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="support.html">Support</a></li>
+						<li><a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a href="shop.html">Flowers</a>
+					<a href="shop-plants.html">Plants</a>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop-services.html">Services</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="about.html">About</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="support.html">Support</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
+			</div>
+
+		</nav>
+	</header>
+
+	<!----- top container---->
+	<section class="cart">
 
 		<!------ Shipping ------>
-			<h1> Your shipping details </h1>
-			<div class="form">
-				<form action="/action_page.php">
-					<div class="grid-col-1of2">
-							<div class="name-item">
-								<label for="s-fname">First Name</label>
-								<input type="text" id="s-fname" name="s-fname" placeholder="Your first name">
-							</div>
-
-
-							<div class="name-item">
-								<label for="lname">Last Name</label>
-								<input type="text" id="lname" name="lname" placeholder="Your last name">
-							</div>
+		<h1> Your shipping details </h1>
+		<div class="form">
+			<form action="/action_page.php">
+				<div class="grid-col-1of2">
+					<div class="name-item">
+						<label for="s-fname">First Name</label>
+						<input type="text" id="s-fname" name="s-fname" placeholder="Your first name">
 					</div>
 
-					<div class="grid-col-1of1">
-						<div class="name-item">
-							<label for="address">Address</label>
-				  			<input type="text" id="address" name="address" placeholder='Your address'>
-				  		</div>
-				  	</div>
 
-				  	<div class="grid-col-1of3">
-				  		<div class="name-item">
-				  			<label for="province">Province</label>
-				  			<input type="text" id="province" name="Province" placeholder='Your province'>
-				  		</div>
-				  	</div>
-
-				  	<div class="grid-col-1of3">
-				  		<div class="name-item">
-							<label for="city">City</label>
-				  			<input type="text" id="city" name="city" placeholder='Your city'>
-				  		</div>
-				    </div>
-
-				    <div class="grid-col-1of3">
-				    	<div class="name-item">
-							<label for="pc">Postal Code</label>
-				   			<input type="text" id="pc" name="pc" placeholder='XXX XXX'>
-				   		</div>
-				   </div>
-
-				  	 <div class="grid-col-2">
-				  		<div class="name-item">
-				  			<label for="email-ad">Email Address</label>
-				  			<input type="text" id="email-ad" name="email-ad" placeholder='name@domain.com'>
-				  		</div>
-
-						<div class="name-item">
-							<label for="phone-number">Phone Number</label>
-							<input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####">
-						</div>
+					<div class="name-item">
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lname" placeholder="Your last name">
 					</div>
+				</div>
+
+				<div class="grid-col-1of1">
+					<div class="name-item">
+						<label for="address">Address</label>
+						<input type="text" id="address" name="address" placeholder='Your address'>
+					</div>
+				</div>
+
+				<div class="grid-col-1of3">
+					<div class="name-item">
+						<label for="province">Province</label>
+						<input type="text" id="province" name="Province" placeholder='Your province'>
+					</div>
+				</div>
+
+				<div class="grid-col-1of3">
+					<div class="name-item">
+						<label for="city">City</label>
+						<input type="text" id="city" name="city" placeholder='Your city'>
+					</div>
+				</div>
+
+				<div class="grid-col-1of3">
+					<div class="name-item">
+						<label for="pc">Postal Code</label>
+						<input type="text" id="pc" name="pc" placeholder='XXX XXX'>
+					</div>
+				</div>
+
+				<div class="grid-col-2">
+					<div class="name-item">
+						<label for="email-ad">Email Address</label>
+						<input type="text" id="email-ad" name="email-ad" placeholder='name@domain.com'>
+					</div>
+
+					<div class="name-item">
+						<label for="phone-number">Phone Number</label>
+						<input type="text" id="phone-number" name="phone-number" placeholder="(###) ###-####">
+					</div>
+				</div>
 			</form>
 		</div>
 
 		<!------ Billing ------>
 		<h1> Your billing details </h1>
 		<form action="/action_page.php">
-			 <h2 class="billing-address">Billing Address:</h2>
-				  <!---Radio buttons from https://www.w3schools.com/tags/att_input_type_radio.asp-->
-				  <div class="grid-col-1of2">
-					  	<div class="name-item shipping">
-						  <input aria-label="input radio choice" type="radio" id="shipping" name="address" value="address">
-						  <label for="address">Same as shipping address</label>
-						</div>
-
-					 <div class="name-item billing">
-					 	 <input type="radio" id="billing" name="address" value="address">
-					  <label for="billing">Different from shipping address</label>
-					</div>
+			<h2 class="billing-address">Billing Address:</h2>
+			<!---Radio buttons from https://www.w3schools.com/tags/att_input_type_radio.asp-->
+			<div class="grid-col-1of2">
+				<div class="name-item shipping">
+					<input aria-label="input radio choice" type="radio" id="shipping" name="address" value="address">
+					<label for="address">Same as shipping address</label>
 				</div>
 
-				<div class="grid-col-1of1">
-						<div class="name-item">
-							<label for="b-fname">Name on Card</label>
-							<input type="text" id="b-fname" name="b-fname">
-						</div>
-		
-						<div class="name-item">
-							<label for="cc-number">Card Number</label>
-							<input type="text" id="cc-number" name="cc-number" placeholder="#### #### #### ####">
-						</div>
+				<div class="name-item billing">
+					<input type="radio" id="billing" name="address" value="address">
+					<label for="billing">Different from shipping address</label>
+				</div>
+			</div>
+
+			<div class="grid-col-1of1">
+				<div class="name-item">
+					<label for="b-fname">Name on Card</label>
+					<input type="text" id="b-fname" name="b-fname">
 				</div>
 
-				<div class="grid-col-1of1">
-					<div class="name-item">
-						<label for="exp-date">Expiration Date</label>
-			  			<input type="text" id="exp-date" name="exp-date" placeholder='MM/YY'>
-			  		</div>
+				<div class="name-item">
+					<label for="cc-number">Card Number</label>
+					<input type="text" id="cc-number" name="cc-number" placeholder="#### #### #### ####">
+				</div>
+			</div>
 
-			  		<div class="name-item">
-			  			<label for="cc-code">CVV</label>
-			  			<input type="text" id="cc-code" name="cc-code" placeholder='###'>
-			  		</div>
-			  	</div>
+			<div class="grid-col-1of1">
+				<div class="name-item">
+					<label for="exp-date">Expiration Date</label>
+					<input type="text" id="exp-date" name="exp-date" placeholder='MM/YY'>
+				</div>
+
+				<div class="name-item">
+					<label for="cc-code">CVV</label>
+					<input type="text" id="cc-code" name="cc-code" placeholder='###'>
+				</div>
+			</div>
 		</form>
 
 		<!------ Order Summary ------>
@@ -178,48 +198,49 @@
 				</div>
 			</div>
 		</div>
-		</section>
+	</section>
 
-		<!----- Footer----->
-		 <footer class="main-footer grid">
-			 <div class="child-footer about">
-				 <h3>ABOUT FOUR SEASONS FLORAL</h3>
-				 <p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral arrangements.
-			 	</p>
-			</div>
+	<!----- Footer----->
+	<footer class="main-footer grid">
+		<div class="child-footer about">
+			<h3>ABOUT FOUR SEASONS FLORAL</h3>
+			<p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral
+				arrangements.
+			</p>
+		</div>
 
-			 <div class="child-footer location">
-				 <h3>VISIT US</h3>
-				 <p>#102-3375 Kingsway
-					Vancouver, B.C. 
-					V5R 5K6  </p>
-			</div>
+		<div class="child-footer location">
+			<h3>VISIT US</h3>
+			<p>#102-3375 Kingsway
+				Vancouver, B.C. 
+				V5R 5K6  </p>
+		</div>
 
-			 <div class="child-footer contact">
-				 <h3 >CONTACT US</h3>
-				 <p>(604) 738-0678</p>
-				 <p>
-				 	<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
-				 </p>
-				 <p>
-				 	<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
-				 </p>
-			 </div>
+		<div class="child-footer contact">
+			<h3>CONTACT US</h3>
+			<p>(604) 738-0678</p>
+			<p>
+				<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
+			</p>
+			<p>
+				<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
+			</p>
+		</div>
 
-			  <div class="child-footer mailing-list">
-				 <label for="newsletter">GET THE DIRT</label>
-				 <p>No spam. Just great content.</p>
-				 <input  aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
-				 <button aria-label="button submit" type="button" class="btn-submit">→</button>
-			 </div>
-	 	</footer>
+		<div class="child-footer mailing-list">
+			<label for="newsletter">GET THE DIRT</label>
+			<p>No spam. Just great content.</p>
+			<input aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
+			<button aria-label="button submit" type="button" class="btn-submit">→</button>
+		</div>
+	</footer>
 
- 		<div class="sub-footer">
-	 			<a href="styleguide.html" target="_blank"> Styleguide</a>
-	 			<a href="citations.html" target="_blank"> Citations</a>
-	 			<a href ="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
- 		</div>
+	<div class="sub-footer">
+		<a href="styleguide.html" target="_blank"> Styleguide</a>
+		<a href="citations.html" target="_blank"> Citations</a>
+		<a href="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
+	</div>
 
-	</body>
+</body>
 
 </html>

@@ -1,189 +1,216 @@
-
 <!-- Code structure has been mostly adapted to use from Paul Brokenshire. Additional
 	codes not learned from lecture and tutorials have been from support websites and/or from our team's own knowledge. Support websites are given credit within the code as well as in our Citiations page -->
 
 
 <!doctype html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Cart</title>
+<head>
+	<meta charset="utf-8">
+	<title>Cart</title>
 
-		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
-    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/grids.css">
-		<!-- Script for fontawesome -->
-		<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
-	</head>
+	<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/grids.css">
+	<!-- Script for fontawesome -->
+	<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
+</head>
 
-	<body>
-		<!----- Top Nav ----->
-		<header>
-			<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
-			 <nav class="grid">
-		          <div class="logo col-1of2 ">
-		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
-		          </div>
-		          		
-                  <div class="col-1of6">
-                    	<a href="shop.html">Shop</a>
-                    	<div class="dropdown-items">
-                    		 <a href="shop.html">Flowers</a>
-                    		 <a href="shop-plants.html">Plants</a>
-                    	</div>
-                  </div>
-                   <div class="col-1of6">
-                      	<a href="shop-services.html">Services</a>
-                  </div>
-                  <div class="col-1of6">
-                      	<a href="about.html">About</a>
-                  </div>
-                  <div class="col-1of6">
-                     	 <a href="support.html">Support</a>
-                  </div>
-                   <div class="col-1of6">
-                 		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
-            	  </div>
-		            	
-	      </nav>
-		</header>
-
-
-		<!----- Detailed Product ----->
-		<section class="detailed-product grid-product">
-			<div class="product-img col-1of2">
-				<img src="img/products/red-bouquet.png" alt="Photo of Lover's Sunrise bouquet">
+<body>
+	<!----- Top Nav ----->
+	<header>
+		<div class="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
+		<nav class="grid">
+			<div class="logo col-1of2 ">
+				<a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 			</div>
-			<div class="product-desc">
-				<div class= "container-title">
-					<div>
-					<h1>Lover's Sunrise — from $45</h1>
-					</div>
+			<div class="hamburger-container">
+				<span class="fa fa-bars" aria-hidden="true"></span>
+				<div class="hamburger-menu">
+					<ul>
+						<li class="hamburger-dropdown"><a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="shop.html">Flowers</a>
+
+						</li>
+						<li>
+							<a href="shop-plants.html">Plants</a>
+
+						</li>
+						<li><a href="shop-services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="support.html">Support</a></li>
+						<li><a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a></li>
+					</ul>
 				</div>
-			  	<div class="stars">
-		               <p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#review">(15)</a></p>
-	           	</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a href="shop.html">Flowers</a>
+					<a href="shop-plants.html">Plants</a>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop-services.html">Services</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="about.html">About</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="support.html">Support</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
+			</div>
 
-				<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
-				<form>
-					  <label for="sizes">Size:</label>
-					  <select name="sizes" id="sizes">
-					    <option value="Small">Small</option>
-					    <option value="Medium">Medium</option>
-					    <option value="Large">Large</option>
-					  </select>
-				</form>
+		</nav>
+	</header>
 
-				<form>
-					<label for="quantity">Quantity:</label>
-			  		<input type="text" id="quantity" name="quantity"><br>
+
+	<!----- Detailed Product ----->
+	<section class="detailed-product grid-product">
+		<div class="product-img col-1of2">
+			<img src="img/products/red-bouquet.png" alt="Photo of Lover's Sunrise bouquet">
+		</div>
+		<div class="product-desc">
+			<div class="container-title">
+				<div>
+					<h1>Lover's Sunrise — from $45</h1>
+				</div>
+			</div>
+			<div class="stars">
+				<p>&#9733; &#9733; &#9733; &#9733; &#9733; <a href="#review">(15)</a></p>
+			</div>
+
+			<!-- Select tag retrieved from https://www.w3schools.com/tags/tag_select.asp -->
+			<form>
+				<label for="sizes">Size:</label>
+				<select name="sizes" id="sizes">
+					<option value="Small">Small</option>
+					<option value="Medium">Medium</option>
+					<option value="Large">Large</option>
+				</select>
+			</form>
+
+			<form>
+				<label for="quantity">Quantity:</label>
+				<input type="text" id="quantity" name="quantity"><br>
 
 				<p>
-					This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a reusable glass vase.
+					This lovely pastel bouquet features fuchsia peonies, light pink roses chrysanthemums and carnations, pink
+					lilies, magenta gerbaras and eucalyptus that can either be wrapped beautifully in recyclable paper or in a
+					reusable glass vase.
 				</p>
-				
+
 				<a class="btn-main" href="cart.html">Add to Cart</a>
-			   </form>
+			</form>
 
-			</div> <!--.product-desc ends -->
-		</section><!--detailed-product.grid ends -->
+		</div>
+		<!--.product-desc ends -->
+	</section>
+	<!--detailed-product.grid ends -->
 
 
-		<!-- Review Section -->
-		 <section class="review" id="review">
-	      	  <h2> Reviews <a href="#post">(15)</a></h2>
-	      	  <div class="review form">
-					<form action="/action_page.php">
+	<!-- Review Section -->
+	<section class="review" id="review">
+		<h2> Reviews <a href="#post">(15)</a></h2>
+		<div class="review form">
+			<form action="/action_page.php">
 
-						<div class="personal-details">
-							<label for="fname">Name</label>
-							<input type="text" id="fname" name="fname" placeholder="Your full name">
+				<div class="personal-details">
+					<label for="fname">Name</label>
+					<input type="text" id="fname" name="fname" placeholder="Your full name">
 
-							<label for="email-review">Email</label>
-							<input arial-label="input type email address" type="text" id="email-review" name="email-review" placeholder='name@domain.com'>
-						</div>
-
-						<div class="rating">
-							<label for="rate" id="rate">I rate it as:</label>
-							<div class="stars">
-					              <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-				           	</div>
-			           </div>
-
-						<label for="review-title">Review Title</label> 
-						<input type="text" id="review-title" name="review-title">
-						
-						<label for="review-body">Review</label>
-						<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."></textarea>
-
-						<button class="btn-submit">Submit Review → </button>
-
-					</form>
+					<label for="email-review">Email</label>
+					<input arial-label="input type email address" type="text" id="email-review" name="email-review"
+						placeholder='name@domain.com'>
 				</div>
 
-	           <div class="review-content" id="post">
-	           	   <div class="stars">
-   						<p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-		           </div>
-		            <div>
-		            	<h3>Made from the heart</h3>
-		          	</div>
-		           	<div>
-		              <p class="author">Taylor H. on June 11, 2020</p>
-		           </div>
+				<div class="rating">
+					<label for="rate" id="rate">I rate it as:</label>
+					<div class="stars">
+						<p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+					</div>
+				</div>
 
-		            <div class="review-body">
-		              <p>I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen this much attention-to-detail from anyone before.
-		              </p>
-		            </div>
-		       </div> <!--End of .review-content-->
-	     </section> 
+				<label for="review-title">Review Title</label>
+				<input type="text" id="review-title" name="review-title">
 
-		<!----- Footer----->
-		 <footer class="main-footer grid">
-			 <div class="child-footer about">
-				 <h3>ABOUT FOUR SEASONS FLORAL</h3>
-				 <p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral arrangements.
-			 	</p>
+				<label for="review-body">Review</label>
+				<textarea id="review-body" name="review-body" rows="4" cols="50" placeholder="Write review..."></textarea>
+
+				<button class="btn-submit">Submit Review → </button>
+
+			</form>
+		</div>
+
+		<div class="review-content" id="post">
+			<div class="stars">
+				<p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+			</div>
+			<div>
+				<h3>Made from the heart</h3>
+			</div>
+			<div>
+				<p class="author">Taylor H. on June 11, 2020</p>
 			</div>
 
-			 <div class="child-footer location">
-				 <h3>VISIT US</h3>
-				 <p>#102-3375 Kingsway
-					Vancouver, B.C. 
-					V5R 5K6  </p>
+			<div class="review-body">
+				<p>I can tell that time, effort and love were spent into designing and arranging of the bouquet. I've never seen
+					this much attention-to-detail from anyone before.
+				</p>
 			</div>
+		</div>
+		<!--End of .review-content-->
+	</section>
 
-			 <div class="child-footer contact">
-				 <h3 >CONTACT US</h3>
-				 <p>(604) 738-0678</p>
-				 <p>
-				 	<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
-				 </p>
-				 <p>
-				 	<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
-				 </p>
-			 </div>
+	<!----- Footer----->
+	<footer class="main-footer grid">
+		<div class="child-footer about">
+			<h3>ABOUT FOUR SEASONS FLORAL</h3>
+			<p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral
+				arrangements.
+			</p>
+		</div>
 
-			 <div class="child-footer mailing-list">
-				 <label for="newsletter">GET THE DIRT</label>
-				 <p>No spam. Just great content.</p>
-				 <input  aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
-				 <button aria-label="button submit" type="button" class="btn-submit">→</button>
-			 </div>
- 	</footer>
+		<div class="child-footer location">
+			<h3>VISIT US</h3>
+			<p>#102-3375 Kingsway
+				Vancouver, B.C. 
+				V5R 5K6  </p>
+		</div>
 
- 		<div class="sub-footer">
-	 			<a href="styleguide.html" target="_blank"> Styleguide</a>
-	 			<a href="citations.html" target="_blank"> Citations</a>
-	 			<a href ="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
- 		</div>
+		<div class="child-footer contact">
+			<h3>CONTACT US</h3>
+			<p>(604) 738-0678</p>
+			<p>
+				<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
+			</p>
+			<p>
+				<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
+			</p>
+		</div>
 
-	</body>
+		<div class="child-footer mailing-list">
+			<label for="newsletter">GET THE DIRT</label>
+			<p>No spam. Just great content.</p>
+			<input aria-label="input email address" type="text" id="email" name="email" placeholder='name@domain.com'>
+			<button aria-label="button submit" type="button" class="btn-submit">→</button>
+		</div>
+	</footer>
+
+	<div class="sub-footer">
+		<a href="styleguide.html" target="_blank"> Styleguide</a>
+		<a href="citations.html" target="_blank"> Citations</a>
+		<a href="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
+	</div>
+
+</body>
 
 </html>

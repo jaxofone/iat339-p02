@@ -1,131 +1,152 @@
-
 <!-- Code structure has been mostly adapted to use from Paul Brokenshire. Additional
 	codes not learned from lecture and tutorials have been from support websites and/or from our team's own knowledge. Support websites are given credit within the code as well as in our Citiations page -->
 
 <!doctype html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Shop</title>
+<head>
+	<meta charset="utf-8">
+	<title>Shop</title>
 
-		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
-    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/grids.css">
-		<!-- Script for fontawesome -->
-		<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
-	</head>
+	<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/grids.css">
+	<!-- Script for fontawesome -->
+	<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
+</head>
 
-	<body>
-		<!----- Top Nav ----->
-		<header>
-			<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
-			 <nav class="grid">
-		          <div class="logo col-1of2 ">
-		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
-		          </div>
-		          		
-                  <div class="col-1of6">
-                    	<a href="shop.html">Shop</a>
-                    	<div class="dropdown-items">
-                    		 <a href="shop.html">Flowers</a>
-                    		 <a href="shop-plants.html">Plants</a>
-                    	</div>
-                  </div>
-                   <div class="col-1of6">
-                      	<a href="shop-services.html">Services</a>
-                  </div>
-                  <div class="col-1of6">
-                      	<a href="about.html">About</a>
-                  </div>
-                  <div class="col-1of6">
-                     	 <a href="support.html">Support</a>
-                  </div>
-                   <div class="col-1of6">
-                 		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
-            	  </div>
-		            	
-	      </nav>
+<body>
+	<!----- Top Nav ----->
+	<header>
+		<div class="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
+		<nav class="grid">
+			<div class="logo col-1of2 ">
+				<a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
+			</div>
+			<div class="hamburger-container">
+				<span class="fa fa-bars" aria-hidden="true"></span>
+				<div class="hamburger-menu">
+					<ul>
+						<li class="hamburger-dropdown"><a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="shop.html">Flowers</a>
 
-		</header>
+						</li>
+						<li>
+							<a href="shop-plants.html">Plants</a>
 
-		<!----- Introduction----->
-		<section class="services hero">
-				<div class="hero-text">
-					<h1>Our services</h1>
-					<p>Flowers can become part of an experience that makes an occasion memorable. At Four Seasons Floral, we strive to create arrangements that complement a wedding, birthday, or a corporate gathering.</p>
+						</li>
+						<li><a href="shop-services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="support.html">Support</a></li>
+						<li><a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a></li>
+					</ul>
 				</div>
-		</section>
-
-		<!----- Products ---->
-		<section class ="categories grid">
-			<div class ="menu services">
-				<a href="full-service-form-1of5.html">
-					<img src="img/alexander-ross.jpg" alt="Photo of bride holding white and pink bouquet">
-					<p>Full Service</p>
-				</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a href="shop.html">Flowers</a>
+					<a href="shop-plants.html">Plants</a>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop-services.html">Services</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="about.html">About</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="support.html">Support</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
 			</div>
 
+		</nav>
 
-			<div class ="menu services">
-				<a href="shop-plants.html">
-					<img src="img/annie-spratt.jpg" alt="Photo of pink and green flowers on dinner table">
-					<p>Corporate</p>
-				</a>
-			</div>
+	</header>
 
-			<div class ="menu services">
-				<a href="shop-plants.html">
-					<img src="img/annie-spratt-plate.jpg" alt="Photo of flowers wrapped in utensils on plate">
-					<p>Add Ons</p>
-				</a>
-			</div>
-		</section>
+	<!----- Introduction----->
+	<section class="services hero">
+		<div class="hero-text">
+			<h1>Our services</h1>
+			<p>Flowers can become part of an experience that makes an occasion memorable. At Four Seasons Floral, we strive to
+				create arrangements that complement a wedding, birthday, or a corporate gathering.</p>
+		</div>
+	</section>
 
-		<!----- Footer----->
-		 <footer class="main-footer grid">
-			 <div class="child-footer about">
-				 <h1>ABOUT FOUR SEASONS FLORAL</h1>
-				 <p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral arrangements.
-			 	</p>
-			</div>
+	<!----- Products ---->
+	<section class="categories grid">
+		<div class="menu services">
+			<a href="full-service-form-1of5.html">
+				<img src="img/alexander-ross.jpg" alt="Photo of bride holding white and pink bouquet">
+				<p>Full Service</p>
+			</a>
+		</div>
 
-			 <div class="child-footer location">
-				 <h1>VISIT US</h1>
-				 <p>#102-3375 Kingsway
-					Vancouver, B.C. 
-					V5R 5K6  </p>
-			</div>
 
-			 <div class="child-footer contact">
-				 <h1>CONTACT US</h1>
-				 <p>(604) 738-0678</p>
-				 <p>
-				 	<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
-				 </p>
-				 <p>
-				 	<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
-				 </p>
-			 </div>
+		<div class="menu services">
+			<a href="shop-plants.html">
+				<img src="img/annie-spratt.jpg" alt="Photo of pink and green flowers on dinner table">
+				<p>Corporate</p>
+			</a>
+		</div>
 
-			 <div class="child-footer mailing-list">
-				 <label for="newsletter">GET THE DIRT</label>
-				 <p>No spam. Just great content.</p>
-				 <input aria-label="type email address"type="text" id="email" name="email" placeholder='name@domain.com'>
-				 <button aria-label="submit" type="button" class="btn-submit">→</button>
-			 </div>
-	 	</footer>
+		<div class="menu services">
+			<a href="shop-plants.html">
+				<img src="img/annie-spratt-plate.jpg" alt="Photo of flowers wrapped in utensils on plate">
+				<p>Add Ons</p>
+			</a>
+		</div>
+	</section>
 
- 		<div class="sub-footer">
-	 			<a href="styleguide.html" target="_blank"> Styleguide</a>
-	 			<a href="citations.html" target="_blank"> Citations</a>
-	 			<a href ="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
- 		</div>
+	<!----- Footer----->
+	<footer class="main-footer grid">
+		<div class="child-footer about">
+			<h1>ABOUT FOUR SEASONS FLORAL</h1>
+			<p>We are a family-owned and full-service floral shop based in Vancouver, BC. that creates bespoke floral
+				arrangements.
+			</p>
+		</div>
 
-	</body>
+		<div class="child-footer location">
+			<h1>VISIT US</h1>
+			<p>#102-3375 Kingsway
+				Vancouver, B.C. 
+				V5R 5K6  </p>
+		</div>
+
+		<div class="child-footer contact">
+			<h1>CONTACT US</h1>
+			<p>(604) 738-0678</p>
+			<p>
+				<a href="https://www.instagram.com/fourseasonsfloristry"><i class="fab fa-instagram"></i> Instagram</a>
+			</p>
+			<p>
+				<a href="https://www.facebook.com/fourseasonsfloral/"><i class="fab fa-facebook-f"></i> Facebook</a>
+			</p>
+		</div>
+
+		<div class="child-footer mailing-list">
+			<label for="newsletter">GET THE DIRT</label>
+			<p>No spam. Just great content.</p>
+			<input aria-label="type email address" type="text" id="email" name="email" placeholder='name@domain.com'>
+			<button aria-label="submit" type="button" class="btn-submit">→</button>
+		</div>
+	</footer>
+
+	<div class="sub-footer">
+		<a href="styleguide.html" target="_blank"> Styleguide</a>
+		<a href="citations.html" target="_blank"> Citations</a>
+		<a href="https://github.com/jaxofone/iat339-p02" target="_blank">GitHub</a>
+	</div>
+
+</body>
 
 </html>

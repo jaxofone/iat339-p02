@@ -1,126 +1,142 @@
-
 <!-- Code structure has been mostly adapted to use from Paul Brokenshire. Additional
 	codes not learned from lecture and tutorials have been from support websites and/or from our team's own knowledge. Support websites are given credit within the code as well as in our Citiations page -->
 
 
 <!doctype html>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Cart</title>
+<head>
+	<meta charset="utf-8">
+	<title>Cart</title>
 
-		 <!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
-    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Referenced from Week 3's coding tutorial and https://web.dev/responsive-web-design-basics/#viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/grids.css">
-		<!-- Script for fontawesome -->
-		<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
-	</head>
+	<!--Referenced Week 2's CSS coding tutorial for linking CSS files-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/grids.css">
+	<!-- Script for fontawesome -->
+	<script src="https://kit.fontawesome.com/036df06bbb.js" crossorigin="anonymous"> </script>
+</head>
 
-	<body>
-		<!----- Top Nav ----->
-		<header>
-			<div class ="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
-			<nav class="grid">
-		          <div class="logo col-1of2 ">
-		                 <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
-		          </div>
-		          		
-                  <div class="col-1of6">
-                    	<a href="shop.html">Shop</a>
-                    	<div class="dropdown-items">
-                    		 <a href="shop.html">Flowers</a>
-                    		 <a href="shop-plants.html">Plants</a>
-                    	</div>
-                  </div>
-                   <div class="col-1of6">
-                      	<a href="shop-services.html">Services</a>
-                  </div>
-                  <div class="col-1of6">
-                      	<a href="about.html">About</a>
-                  </div>
-                  <div class="col-1of6">
-                     	 <a href="support.html">Support</a>
-                  </div>
-                   <div class="col-1of6">
-                 		 <a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
-            	  </div>
-		            	
-	      </nav>
-		</header>
-
-		<!----- top container---->
-		<section class="cart">
-
-			<h1> My Cart </h1>
-
-			<div class='padR-s padL-s'>
-				<div class="col4 border-bottom">
-					<p>Product</p>
-					<p>Size</p>
-					<p>Quantity</p>
-					<p>Price</p>
-				</div>
-
-				<div class="col4">
-					<div class="product-name">
-						<img class="product-image" src="img/products/red-bouquet.png" alt="Photo of Lover's Sunrise bouquet">
-						<p>Lover's Sunrise</p>
-					</div>
-					<p class="product-size">Small</p>
-					<div>
-						<button aria-label="button remove quantity item1">-</button>
-							<span class="product-quantity">1</span>
-						<button aria-label="button add quantity item1">+</button>
-					</div>
-					<p class="product-price">$45</p>
-				</div>
-
-				<div class="col4">
-					<div class="product-name">
-						<img class="product-image" src="img/products/mong-bui.jpg" alt="Photo of an aloe succulent in a wooden planter">
-						<p>Aloe Succulent</p>
-					</div>
-					<p class="product-size">Small</p>
-					<div>
-						<button aria-label="button remove quantity item2 ">-</button>
-							<span class="product-quantity">1</span>
-						<button aria-label="button add quantity item2">+</button>
-					</div>
-					<p class="product-price">$9.99</p>
-				</div>
-
+<body>
+	<!----- Top Nav ----->
+	<header>
+		<div class="announcement-bar col-1of1-xs">Free delivery over $49. Curbside pickup is available!</div>
+		<nav class="grid">
+			<div class="logo col-1of2 ">
+				<a href="index.html"><img class="logo" src="img/logo.png" alt="Logo of company" width="120" height="30"></a>
 			</div>
-			<div>
-				<div class='half-width-left'>
-					<div class="flex jc-sb">
-						<p>Subtotal</p>
-						<p>$54.99</p>
-					</div>
-					<div class="flex jc-sb">
-						<p>Taxes</p>
-						<p>Calculated upon check out</p>
-					</div>
-					<div class="flex jc-sb">
-						<p>Shipping</p>
-						<p>Calculated upon check out</p>
-					</div>
-					<div class="flex jc-sb">
-						<p>Estimated Total</p>
-						<p>$54.99</p>
-					</div>
-					<div class="right-align">
-						<a class="btn-main" href="shipping-details.html">Check Out</a>
-				</div>
+			<div class="hamburger-container">
+				<span class="fa fa-bars" aria-hidden="true"></span>
+				<div class="hamburger-menu">
+					<ul>
+						<li class="hamburger-dropdown"><a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="shop.html">Flowers</a>
+
+						</li>
+						<li>
+							<a href="shop-plants.html">Plants</a>
+
+						</li>
+						<li><a href="shop-services.html">Services</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="support.html">Support</a></li>
+						<li><a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a></li>
+					</ul>
 				</div>
 			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop.html">Shop</a>
+				<div class="dropdown-items">
+					<a href="shop.html">Flowers</a>
+					<a href="shop-plants.html">Plants</a>
+				</div>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="shop-services.html">Services</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="about.html">About</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="support.html">Support</a>
+			</div>
+			<div class="col-1of6 mobile-hide">
+				<a href="cart.html"> <img src="img/icons/cart-icon.png" alt="Green icon of a shopping cart"> </a>
+			</div>
 
-		</section>
+		</nav>
+	</header>
 
-	</body>
+	<!----- top container---->
+	<section class="cart">
+
+		<h1> My Cart </h1>
+
+		<div class='padR-s padL-s'>
+			<div class="col4 border-bottom">
+				<p>Product</p>
+				<p>Size</p>
+				<p>Quantity</p>
+				<p>Price</p>
+			</div>
+
+			<div class="col4">
+				<div class="product-name">
+					<img class="product-image" src="img/products/red-bouquet.png" alt="Photo of Lover's Sunrise bouquet">
+					<p>Lover's Sunrise</p>
+				</div>
+				<p class="product-size">Small</p>
+				<div>
+					<input type="number" value='1' step='1' class="product-quantity" />
+				</div>
+				<p class="product-price">$45</p>
+			</div>
+
+			<div class="col4">
+				<div class="product-name">
+					<img class="product-image" src="img/products/mong-bui.jpg"
+						alt="Photo of an aloe succulent in a wooden planter">
+					<p>Aloe Succulent</p>
+				</div>
+				<p class="product-size">Small</p>
+				<div>
+					<input type="number" value='1' step='1' class="product-quantity" />
+				</div>
+				<p class="product-price">$9.99</p>
+			</div>
+
+		</div>
+		<div class="totals">
+			<div class='half-width-left'>
+				<div class="flex jc-sb subtotal">
+					<p>Subtotal</p>
+					<p>$54.99</p>
+				</div>
+				<div class="flex jc-sb taxes">
+					<p>Taxes</p>
+					<p>Calculated upon check out</p>
+				</div>
+				<div class="flex jc-sb shipping">
+					<p>Shipping</p>
+					<p>Calculated upon check out</p>
+				</div>
+				<div class="flex jc-sb estimated">
+					<p>Estimated Total</p>
+					<p>$54.99</p>
+				</div>
+				<div class="right-align">
+					<a class="btn-main" href="shipping-details.html">Check Out</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+</body>
 
 </html>

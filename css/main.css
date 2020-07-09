@@ -233,6 +233,10 @@ label, h3.billing-address {
   font-size: .9rem;
 }
 
+.child-footer.mailing-list label {
+	color: #474747;
+}
+
 h3.billing-address {
 	padding: 0;
 }
@@ -375,8 +379,6 @@ nav a {
 nav.grid {
 	padding: 0;
 	border: 0.5px solid #eee;
-    /*position: fixed;*/
-  	top: ;
   	width: 100%;
   	background-color: #fff;
   	z-index: 11;
@@ -525,11 +527,6 @@ section.location .alternating-content-img img {
 }
 
 /* ------ Individual Product Description -------- */
-/*.product-desc h2.price {
-	float: right;
-	font-size: 1.5rem;
-}*/
-
 .detailed-product p {
 	max-width: 30rem;
 }
@@ -546,7 +543,7 @@ section.location .alternating-content-img img {
 .product-desc h3 {
 	font-family: "FreightBigPro-Light";
 	font-size: 1.6rem;
-	letter-spacing: 0.15;
+	letter-spacing: 0.15rem;
 	margin-top: 0;
 }
 
@@ -608,6 +605,15 @@ p.price {
 	color: #474747;
 	margin: 0;
 	padding: 0;
+}
+
+p.price.sale {
+	color: red;
+}
+
+s.old-price {
+	color: #474747;
+	font-size: .8rem;
 }
 
 .product-item p.product-name {
@@ -745,7 +751,7 @@ p.price {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
- padding: 0 18px;.
+ padding: 0 18px;
  background-color: white;
  max-height: 0;
  overflow: hidden;

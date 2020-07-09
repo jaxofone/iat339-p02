@@ -525,11 +525,6 @@ section.location .alternating-content-img img {
 }
 
 /* ------ Individual Product Description -------- */
-/*.product-desc h2.price {
-	float: right;
-	font-size: 1.5rem;
-}*/
-
 .detailed-product p {
 	max-width: 30rem;
 }
@@ -608,6 +603,15 @@ p.price {
 	color: #474747;
 	margin: 0;
 	padding: 0;
+}
+
+p.price.sale {
+	color: red;
+}
+
+s.old-price {
+	color: #474747;
+	font-size: .8rem;
 }
 
 .product-item p.product-name {
